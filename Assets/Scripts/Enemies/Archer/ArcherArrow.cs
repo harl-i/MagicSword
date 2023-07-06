@@ -3,7 +3,8 @@ using UnityEngine;
 public class ArcherArrow : MonoBehaviour, IObjectFromPool
 {
     [SerializeField] private float _speed;
-    
+    [SerializeField] private ArrowDirection _arrowDirection;
+
     private Transform _parent;
 
     private void Awake()
@@ -21,7 +22,14 @@ public class ArcherArrow : MonoBehaviour, IObjectFromPool
 
     private void Update()
     {
-        transform.Translate(Vector3.right * _speed * Time.deltaTime);
+        if (_arrowDirection == ArrowDirection.left)
+        {
+            transform.Translate(Vector3.left * _speed * Time.deltaTime);
+        }
+        else if (_arrowDirection == ArrowDirection.right)
+        {
+            transform.Translate(Vector3.right * _speed * Time.deltaTime);
+        }
     }
 
     public GameObject GetGameObject()
@@ -38,4 +46,10 @@ public class ArcherArrow : MonoBehaviour, IObjectFromPool
 
         gameObject.SetActive(false);
     }
+}
+
+public enum ArrowDirection
+{
+    left,
+    right
 }

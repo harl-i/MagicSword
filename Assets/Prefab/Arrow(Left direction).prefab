@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1447188630668363263}
   - component: {fileID: 8068837561543368256}
   m_Layer: 0
-  m_Name: Archer_arrow
+  m_Name: Arrow(Left direction)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
+  _arrowDirection: 0
 --- !u!61 &8068837561543368256
 BoxCollider2D:
   m_ObjectHideFlags: 0

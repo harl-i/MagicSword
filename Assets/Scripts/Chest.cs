@@ -12,4 +12,15 @@ public class Chest : MonoBehaviour
             _coins.Add(child.gameObject);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out MagicSword magicSword))
+        {
+            foreach (var coin in _coins)
+            {
+                coin.SetActive(true);
+            }
+        }
+    }
 }
