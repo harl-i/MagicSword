@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CircleCollider2D))]
 public class Coin : MonoBehaviour, IObjectFromPool
 {
+    [SerializeField] private LayerMask _coinLayer;
     [SerializeField] private float _colliderEnableDelay;
     [SerializeField] private float _coinDisableDelay;
     [SerializeField] private float _minForce;
