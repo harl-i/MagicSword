@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-public class Archer : MonoBehaviour, IAttackable
+public class Archer : Enemy, IAttackable
 {
     [SerializeField] private ArcherArrowsPool _pool;
     private Animator _animator;
@@ -12,6 +12,11 @@ public class Archer : MonoBehaviour, IAttackable
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+        OnEnemyStarted?.Invoke();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -53,6 +58,7 @@ public class Archer : MonoBehaviour, IAttackable
 
     private void Die()
     {
+        OnEnemyDied?.Invoke();
         gameObject.SetActive(false);
     }
 }
