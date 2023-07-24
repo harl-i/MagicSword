@@ -5,14 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(CircleCollider2D))]
 public class Coin : MonoBehaviour, IObjectFromPool
 {
+    [SerializeField] private CoinType _coinType;
     [SerializeField] private LayerMask _coinLayer;
     [SerializeField] private float _colliderEnableDelay;
-    [SerializeField] private float _coinDisableDelay;
+    [SerializeField] private float _moveDelay;
     [SerializeField] private float _minForce;
     [SerializeField] private float _maxForce;
     [SerializeField] private float _minAngle;
     [SerializeField] private float _maxAngle;
+    [SerializeField] private float _moveDurationToTarget;
 
+    private Transform _target;
     private Rigidbody2D _rigidbody;
     private CircleCollider2D _circleCollider;
     private Transform _parent;
@@ -28,8 +31,12 @@ public class Coin : MonoBehaviour, IObjectFromPool
     private void OnEnable()
     {
         Invoke(nameof(EnableCollider), _colliderEnableDelay);
-        _rigidbody.AddForce(GetRandomDirection() * GetRandomForce(), ForceMode2D.Impulse);
-        StartCoroutine(Disable());
+
+        if (_coinType == CoinType.GameCoin)
+        {
+            _rigidbody.AddForce(GetRandomDirection() * GetRandomForce(), ForceMode2D.Impulse);
+        }
+        StartCoroutine(MoveCoinToTarget());
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -55,10 +62,27 @@ public class Coin : MonoBehaviour, IObjectFromPool
         _circleCollider.enabled = true;
     }
 
-    private IEnumerator Disable()
+    private IEnumerator MoveCoinToTarget()
     {
-        yield return new WaitForSeconds(_coinDisableDelay);
+        yield return new WaitForSeconds(_moveDelay);
+
+        float elapsedTime = 0.0f;
+        Vector3 startingPos = transform.position;
+        Vector3 targetPos = _target.position;
+
+        while (elapsedTime < _moveDurationToTarget)
+        {
+            transform.position = Vector3.Lerp(startingPos, targetPos, elapsedTime / _moveDurationToTarget);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
         gameObject.SetActive(false);
+    }
+
+    public void SetTarget(Transform target)
+    {
+        _target = target;
     }
 
     public void ReturnToPool()
@@ -75,4 +99,10 @@ public class Coin : MonoBehaviour, IObjectFromPool
     {
         return gameObject;
     }
+}
+
+public enum CoinType
+{
+    GameCoin,
+    UICoin
 }

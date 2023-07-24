@@ -16,12 +16,12 @@ public class Archer : Enemy, IAttackable
 
     private void Start()
     {
-        OnEnemyStarted?.Invoke();
+        EnemyStarted?.Invoke();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out MagicSword magicSword))
+        if (collision.TryGetComponent(out Player magicSword))
         {
             _animator.SetBool(IsDie, true);
         }
@@ -58,7 +58,7 @@ public class Archer : Enemy, IAttackable
 
     private void Die()
     {
-        OnEnemyDied?.Invoke();
+        EnemyDied?.Invoke();
         gameObject.SetActive(false);
     }
 }

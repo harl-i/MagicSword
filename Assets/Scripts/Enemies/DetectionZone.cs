@@ -13,7 +13,7 @@ public class DetectionZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out MagicSword magicSword) && _attackableEnemy != null)
+        if (collision.TryGetComponent(out Player magicSword) && _attackableEnemy != null)
             _attackableEnemy.StartAttack();
     }
 }

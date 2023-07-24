@@ -41,13 +41,14 @@ public class Chest : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent(out MagicSword magicSword) && _isClosed == true)
+        if (collision.gameObject.TryGetComponent(out Player magicSword) && _isClosed == true)
         {
-            StartCoroutine(OpenChest());
+            StartCoroutine(OpenChest(magicSword));
+            magicSword.IncreaseCoinsCount(_coins.Count);
         }
     }
 
-    private IEnumerator OpenChest()
+    private IEnumerator OpenChest(Player player)
     {
         _animator.SetBool(WasSwordTouchChest, true);
         _isClosed = false;
@@ -57,6 +58,7 @@ public class Chest : MonoBehaviour
         foreach (var coin in _coins)
         {
             coin.SetActive(true);
+            coin.GetComponent<Coin>().SetTarget(player.transform);
         }
     }
 }

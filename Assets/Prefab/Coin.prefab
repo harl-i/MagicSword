@@ -136,9 +136,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd134706f750974b827a62f58146121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coinType: 0
+  _coinLayer:
+    serializedVersion: 2
+    m_Bits: 128
   _colliderEnableDelay: 0.7
-  _coinDisableDelay: 2
+  _moveDelay: 2
   _minForce: 5
   _maxForce: 8
   _minAngle: -110
   _maxAngle: 110
+  _moveDurationToTarget: 0.5

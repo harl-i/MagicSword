@@ -4,16 +4,18 @@ public class LevelManager : MonoBehaviour
 {
     private int _enemiesCount;
 
+    public int EnemiesCount => _enemiesCount;
+
     private void OnEnable()
     {
-        Enemy.OnEnemyStarted += IncreaseEnemyCount;
-        Enemy.OnEnemyDied += DecreaseEnemyCount;
+        Enemy.EnemyStarted += IncreaseEnemyCount;
+        Enemy.EnemyDied += DecreaseEnemyCount;
     }
 
     private void OnDisable()
     {
-        Enemy.OnEnemyStarted -= IncreaseEnemyCount;
-        Enemy.OnEnemyDied -= DecreaseEnemyCount;
+        Enemy.EnemyStarted -= IncreaseEnemyCount;
+        Enemy.EnemyDied -= DecreaseEnemyCount;
     }
 
     private void IncreaseEnemyCount()
