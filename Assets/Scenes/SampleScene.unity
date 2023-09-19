@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 115259072}
   - component: {fileID: 115259071}
   - component: {fileID: 115259073}
+  - component: {fileID: 115259074}
   m_Layer: 5
   m_Name: EndLevel
   m_TagString: Untagged
@@ -353,6 +354,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b67df0dcf26d84d9af6b359413dada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &115259074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115259069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd65fb8b968dd84baf9973263a53c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coinMovementObject: {fileID: 567750373}
+  _coinMovementActivationDelay: 2
 --- !u!1 &167046660
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +726,7 @@ GameObject:
   - component: {fileID: 567750372}
   - component: {fileID: 567750371}
   - component: {fileID: 567750370}
+  - component: {fileID: 567750373}
   m_Layer: 5
   m_Name: MovedCoin
   m_TagString: Untagged
@@ -796,6 +812,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567750368}
   m_CullTransparentMesh: 1
+--- !u!114 &567750373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567750368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d8152331dd20747b296390e02d0600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &588937385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,7 +1133,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3244,6 +3272,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711136440}
   m_CullTransparentMesh: 1
+--- !u!1 &1717007221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717007223}
+  - component: {fileID: 1717007222}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1717007222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717007221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71bd141c0464bf84c855cd83818a976e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelEndScreen: {fileID: 115259074}
+--- !u!4 &1717007223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717007221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.20327267, y: -0.31916577, z: 0.051922392}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1851637880
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,10 @@ public class LevelEndScreen : MonoBehaviour
     [SerializeField] private CoinMovementObject _coinMovementObject;
     [SerializeField] private float _coinMovementActivationDelay;
 
+    private const string RepeatCount = "repeatCount";
+
+    private float _coinCount = 3;
+
     private void Awake()
     {
         gameObject.SetActive(false);
