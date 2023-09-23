@@ -366,7 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd65fb8b968dd84baf9973263a53c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinMovementObject: {fileID: 567750373}
+  _coinMovement: {fileID: 567750373}
   _coinMovementActivationDelay: 2
 --- !u!1 &167046660
 GameObject:
@@ -821,9 +821,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 567750368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50d8152331dd20747b296390e02d0600, type: 3}
+  m_Script: {fileID: 11500000, guid: 95b9999050f1771479990d9324efbfd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 567750370}
 --- !u!1 &588937385
 GameObject:
   m_ObjectHideFlags: 0

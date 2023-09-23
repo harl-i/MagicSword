@@ -3,12 +3,10 @@ using UnityEngine;
 
 public class LevelEndScreen : MonoBehaviour
 {
-    [SerializeField] private CoinMovementObject _coinMovementObject;
+    [SerializeField] private CoinMovementAnimationController _coinMovement;
     [SerializeField] private float _coinMovementActivationDelay;
 
-    private const string RepeatCount = "repeatCount";
-
-    private float _coinCount = 3;
+    private int _coinsCount;
 
     private void Awake()
     {
@@ -20,10 +18,16 @@ public class LevelEndScreen : MonoBehaviour
         StartCoroutine(ActivateCoinMovement(_coinMovementActivationDelay));
     }
 
+    public void SetCoinsCount(int coinsCount)
+    {
+        _coinsCount = coinsCount;
+    }
+
     private IEnumerator ActivateCoinMovement(float coinMovementActivationDelay)
     {
         yield return new WaitForSeconds(coinMovementActivationDelay);
 
-        _coinMovementObject.gameObject.SetActive(true);
+        _coinMovement.SetRepeatCount(_coinsCount);
+        _coinMovement.gameObject.SetActive(true);
     }
 }

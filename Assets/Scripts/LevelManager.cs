@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
 
     private int _enemiesCount;
 
+    //public static LevelManager MyProperty { get; set; }
     public int Coins { get; private set; }
     public int EnemiesCount => _enemiesCount;
 
@@ -43,12 +44,13 @@ public class LevelManager : MonoBehaviour
 
         if (_enemiesCount == 0)
         {
-            ShowLevelEndScreen();
+            ShowLevelEndScreen(Coins);
         }
     }
 
-    private void ShowLevelEndScreen()
+    private void ShowLevelEndScreen(int coinsCount)
     {
         _levelEndScreen.gameObject.SetActive(true);
+        _levelEndScreen.SetCoinsCount(coinsCount);
     }
 }
