@@ -7,27 +7,37 @@ public class LevelManager : MonoBehaviour
 
     private int _enemiesCount;
 
+    public int Coins { get; private set; }
     public int EnemiesCount => _enemiesCount;
+
+    public static Action<int> CoinsChanged;
 
     private void OnEnable()
     {
-        Enemy.EnemyStarted += IncreaseEnemyCount;
-        Enemy.EnemyDied += DecreaseEnemyCount;
+        Enemy.EnemyStarted += OnIncreaseEnemyCount;
+        Enemy.EnemyDied += OnDecreaseEnemyCount;
+        Player.CoinsIncrease += OnIncreaseCoins;
     }
 
     private void OnDisable()
     {
-        Enemy.EnemyStarted -= IncreaseEnemyCount;
-        Enemy.EnemyDied -= DecreaseEnemyCount;
+        Enemy.EnemyStarted -= OnIncreaseEnemyCount;
+        Enemy.EnemyDied -= OnDecreaseEnemyCount;
+        Player.CoinsIncrease -= OnIncreaseCoins;
     }
 
-    private void IncreaseEnemyCount()
+    private void OnIncreaseCoins(int count)
+    {
+        Coins += count;
+        CoinsChanged?.Invoke(Coins);
+    }
+
+    private void OnIncreaseEnemyCount()
     {
         _enemiesCount++;
-        Debug.Log(_enemiesCount);
     }
 
-    private void DecreaseEnemyCount()
+    private void OnDecreaseEnemyCount()
     {
         _enemiesCount--;
 
@@ -35,8 +45,6 @@ public class LevelManager : MonoBehaviour
         {
             ShowLevelEndScreen();
         }
-
-        Debug.Log(_enemiesCount);
     }
 
     private void ShowLevelEndScreen()

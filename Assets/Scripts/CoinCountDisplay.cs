@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -15,12 +13,12 @@ public class CoinCountDisplay : MonoBehaviour
 
     private void OnEnable()
     {
-        Player.CoinsChanged += OnChangeCoinAmount;
+        LevelManager.CoinsChanged += OnChangeCoinAmount;
     }
 
     private void OnDisable()
     {
-        Player.CoinsChanged -= OnChangeCoinAmount;
+        LevelManager.CoinsChanged -= OnChangeCoinAmount;
     }
 
     private void OnChangeCoinAmount(int count)

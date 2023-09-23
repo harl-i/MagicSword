@@ -1,15 +1,12 @@
 using System;
 using UnityEngine;
 
-public class Player : MonoBehaviour 
+public class Player : MonoBehaviour
 {
-    public int Coins { get; private set; }
-
-    public static Action<int> CoinsChanged;
+    public static Action<int> CoinsIncrease;
 
     public void IncreaseCoinsCount(int count)
     {
-        Coins += count;
-        CoinsChanged?.Invoke(Coins);
+        CoinsIncrease?.Invoke(count);
     }
 }
