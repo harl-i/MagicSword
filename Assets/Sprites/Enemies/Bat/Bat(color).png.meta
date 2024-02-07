@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,406 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Bat(color)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.625, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793082a0d9523ce4c9a5634765d3defa
+      internalID: -1743179156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 37
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.625, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ca71224f9427c4d90a8a7979130ebf
+      internalID: -1229110070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 37
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.625, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8726644efa0270b46a2ebad84d61f2ca
+      internalID: 1899336925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 37
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.625, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4304531bf9d91a4498eb663f4c3e7595
+      internalID: 2046135482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 37
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.625, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6990ee8837f83034080e8054f9f8971e
+      internalID: -1444201110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 37
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.625, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353532f108d1d564da77edc6c89f236a
+      internalID: -1053844190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 37
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.625, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b284ff12cd39590469e35f8ced30e1ef
+      internalID: -1481636973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dc8859fc560d5419dbe1f5ef42d026
+      internalID: 1950307175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb83760d035a34946bc220d8ce9c9022
+      internalID: 1516832433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fab3e64c341c104eb63a406122442de
+      internalID: 636090832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_10
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5807dbaae267c9643890b497f914b5b9
+      internalID: 1035186367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc334c8a6db762847b5ad88d0e1a3672
+      internalID: 934367956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_12
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d17c37b5a348234caeb0a9c93dd5f7a
+      internalID: 866773032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_13
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df0f872d8de91640bace4b4fe71a3c4
+      internalID: -1602713426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_14
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d520af325ef430044b05b87e1d641618
+      internalID: 1890688873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38925de3a7f4274ca4cc278030d5656
+      internalID: -793546116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_16
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678e0671361d6c149aaf727479b71547
+      internalID: 489260295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_17
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0667256c39426048b4317c2a6ff9cf8
+      internalID: 1249920805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat(color)_18
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.63, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f7f8423b0d3fa4fb34b6197d0efd23
+      internalID: 1636375518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +518,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bat(color)_0: -1743179156
+      Bat(color)_1: -1229110070
+      Bat(color)_10: 1035186367
+      Bat(color)_11: 934367956
+      Bat(color)_12: 866773032
+      Bat(color)_13: -1602713426
+      Bat(color)_14: 1890688873
+      Bat(color)_15: -793546116
+      Bat(color)_16: 489260295
+      Bat(color)_17: 1249920805
+      Bat(color)_18: 1636375518
+      Bat(color)_2: 1899336925
+      Bat(color)_3: 2046135482
+      Bat(color)_4: -1444201110
+      Bat(color)_5: -1053844190
+      Bat(color)_6: -1481636973
+      Bat(color)_7: 1950307175
+      Bat(color)_8: 1516832433
+      Bat(color)_9: 636090832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

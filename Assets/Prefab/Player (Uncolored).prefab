@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3076148135391080678}
   - component: {fileID: 5698630840115873261}
+  - component: {fileID: 4103820965366329226}
   m_Layer: 0
   m_Name: MagicSword
   m_TagString: Untagged
@@ -115,6 +116,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4103820965366329226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792489265430181455}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df8269ea6fbd3042b03d1fb94af431f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _blinkTime: 1
+  _blinkRate: 0.1
 --- !u!1 &6687076036335812422
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,6 +241,7 @@ GameObject:
   - component: {fileID: 6954253962906840462}
   - component: {fileID: 7208253477478671763}
   - component: {fileID: 4264661296926478956}
+  - component: {fileID: 1674012268540990583}
   m_Layer: 0
   m_Name: Player (Uncolored)
   m_TagString: Untagged
@@ -378,6 +394,19 @@ MonoBehaviour:
   _shakeTime: 0.5
   _shakeAmount: 0.02
   _shakeSpeed: 1
+--- !u!114 &1674012268540990583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209657049776036277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309764def3e9c6047a683ac081d9ee0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteBlink: {fileID: 4103820965366329226}
 --- !u!1 &9219368336617496105
 GameObject:
   m_ObjectHideFlags: 0
