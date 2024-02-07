@@ -18,7 +18,6 @@ public class SwordThrow : MonoBehaviour
     private float _throwDistance = 1f;
     private bool _canMove;
     private bool _isFirstThrow;
-    private bool _isSwordFlying;
     private float _minimumAngleThreshold = 130f;
     private float _angleCoefficient = 15f;
     private float _inversion = -1f;
@@ -34,7 +33,6 @@ public class SwordThrow : MonoBehaviour
     private void Start()
     {
         _canMove = false;
-        _isSwordFlying = false;
         _isFirstThrow = true;
         _arrow.gameObject.SetActive(false);
     }
@@ -53,9 +51,8 @@ public class SwordThrow : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.TryGetComponent(out Platform platform))
+        if (collision.collider.TryGetComponent(out Obstacle platform))
         {
-            _isSwordFlying = false;
             _canMove = false;
 
             ÑorrectSwordWallAngle(collision);
