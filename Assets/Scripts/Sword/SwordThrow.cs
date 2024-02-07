@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -23,7 +24,8 @@ public class SwordThrow : MonoBehaviour
     private float _inversion = -1f;
     private float _rotateSpeed = 0.05f;
 
-    public UnityAction<bool> StuckInWall;
+    public Action<bool> StuckInWall;
+    public Action<bool> SwordLaunched;
 
     private void Awake()
     {
@@ -54,6 +56,7 @@ public class SwordThrow : MonoBehaviour
         if (collision.collider.TryGetComponent(out Obstacle platform))
         {
             _canMove = false;
+            SwordLaunched?.Invoke(false);
 
             ÑorrectSwordWallAngle(collision);
         }
@@ -115,6 +118,7 @@ public class SwordThrow : MonoBehaviour
         {
             _canMove = true;
             _isFirstThrow = false;
+            SwordLaunched?.Invoke(true);
         }
         StuckInWall?.Invoke(false);
         _arrow.gameObject.SetActive(false);

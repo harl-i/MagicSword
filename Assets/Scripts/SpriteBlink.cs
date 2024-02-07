@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class SpriteBlink : MonoBehaviour
 {
+    [SerializeField] private ObjectDisableOption _disableOption;
     [SerializeField] private float _blinkTime = 1.0f;
     [SerializeField] private float _blinkRate = 0.1f;
 
@@ -42,7 +43,15 @@ public class SpriteBlink : MonoBehaviour
         _spriteRenderer.enabled = true;
         _isBlinking = false;
 
-        //
-        //gameObject.SetActive(false);
+        if (_disableOption == ObjectDisableOption.Enable)
+        {
+            gameObject.SetActive(false);
+        }
     }
+}
+
+public enum ObjectDisableOption
+{
+    Disable,
+    Enable
 }
