@@ -22,7 +22,7 @@ public class VectorCreator : MonoBehaviour
 
             _vectorLength = Vector2.Distance(_currentMousePosition, _initialMousePosition);
 
-            if (_vectorLength > 180f)
+            if (_vectorLength > 1f)
             {
                 Vector2 direction = _currentMousePosition - _initialMousePosition;
                 direction.Normalize();
