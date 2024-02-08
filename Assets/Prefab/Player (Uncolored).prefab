@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7604407211964136080}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BladeEnd
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 3076148135391080678}
   - component: {fileID: 5698630840115873261}
   - component: {fileID: 4103820965366329226}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MagicSword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0df8269ea6fbd3042b03d1fb94af431f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _disableOption: 0
   _blinkTime: 1
   _blinkRate: 0.1
 --- !u!1 &6687076036335812422
@@ -141,7 +142,7 @@ GameObject:
   - component: {fileID: 5832304834750430086}
   - component: {fileID: 2291714360927812129}
   - component: {fileID: 7923464534229680304}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +243,7 @@ GameObject:
   - component: {fileID: 7208253477478671763}
   - component: {fileID: 4264661296926478956}
   - component: {fileID: 1674012268540990583}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player (Uncolored)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,9 +343,9 @@ PolygonCollider2D:
     - - {x: 0.025484765, y: 0.5430142}
       - {x: -0.0075522717, y: 0.57016075}
       - {x: -0.046619613, y: 0.5365545}
-      - {x: -0.13713746, y: -0.3521806}
+      - {x: -0.09699187, y: -0.2822597}
       - {x: -0.015341393, y: -0.29031032}
-      - {x: 0.10641924, y: -0.33191842}
+      - {x: 0.0874263, y: -0.27980486}
   m_UseDelaunayMesh: 0
 --- !u!114 &6954253962906840462
 MonoBehaviour:
@@ -416,10 +417,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5688831702143297534}
-  m_Layer: 0
-  m_Name: BladeEnd (1)
+  m_Layer: 7
+  m_Name: BladeEndForRotate
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

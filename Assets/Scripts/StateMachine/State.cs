@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +5,9 @@ public abstract class State : MonoBehaviour
 {
     [SerializeField] private List<Transition> _transitions;
 
-    internal void Enter()
+    protected Transform Player { get; private set; }
+
+    public void Enter()
     {
         if (enabled == false)
         {
@@ -19,7 +20,7 @@ public abstract class State : MonoBehaviour
         }
     }
 
-    internal void Exit()
+    public void Exit()
     {
         if (enabled == true)
         {
@@ -30,14 +31,19 @@ public abstract class State : MonoBehaviour
         enabled = false;
     }
 
-    internal State GetNextState()
+    public State GetNextState()
     {
-        foreach(var transition in _transitions)
+        foreach (var transition in _transitions)
         {
             if (transition.NeedTransit)
                 return transition.TargetState;
         }
 
         return null;
+    }
+
+    public void SetPlayerTransform(Transform playerTransform)
+    {
+        Player = playerTransform;
     }
 }

@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour, IDamaging, IDamageable
 {
-    [SerializeField] private SpriteBlink _spriteBlink;
-
     public void ApplyDamage(Player player)
     {
         player.TakeDamage();
