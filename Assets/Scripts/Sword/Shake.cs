@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Shake : MonoBehaviour
 {
-    [SerializeField] private SwordThrow _swordThrow;
+    [SerializeField] private SwordMovingState _swordThrow;
     [SerializeField] private Transform _bladeEnd;
     [SerializeField] private float _shakeTime = 0.5f;
     [SerializeField] private float _shakeAmount = 0.05f;

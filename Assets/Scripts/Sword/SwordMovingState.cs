@@ -1,11 +1,9 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Events;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(VectorCreator))]
-public class SwordThrow : MonoBehaviour
+[RequireComponent(typeof(PolygonCollider2D))]
+public class SwordMovingState : State
 {
     [SerializeField] private float _speed;
     [SerializeField] private Arrow _arrow;
@@ -13,6 +11,7 @@ public class SwordThrow : MonoBehaviour
     [SerializeField] private float _raycastDistance;
     [SerializeField] private Transform _bladeEnd;
 
+    private PolygonCollider2D _swordCollider;
     private VectorCreator _vectorCreator;
     private Vector3 _direction;
     private float _angle;
@@ -30,6 +29,7 @@ public class SwordThrow : MonoBehaviour
     private void Awake()
     {
         _vectorCreator = GetComponent<VectorCreator>();
+        _swordCollider = GetComponent<PolygonCollider2D>();
     }
 
     private void Start()
@@ -43,6 +43,16 @@ public class SwordThrow : MonoBehaviour
     {
         _vectorCreator.MouseDirectionChanged += HandleMouseDirectionChange;
         _vectorCreator.DirectionSelectionCompleted += HandleDirectionSelectionCompleted;
+
+        _swordCollider.enabled = true;
+    }
+
+    private void Update()
+    {
+        if (_canMove)
+        {
+            Throw();
+        }
     }
 
     private void OnDisable()
@@ -71,7 +81,7 @@ public class SwordThrow : MonoBehaviour
         {
             float rotationAngleInRadians = angleBetweenSwordAndWall * Mathf.Deg2Rad;
 
-            StartCoroutine(RotateAroundSmoothly(_bladeEnd.position, Vector3.forward, 
+            StartCoroutine(RotateAroundSmoothly(_bladeEnd.position, Vector3.forward,
                 rotationAngleInRadians * _angleCoefficient * _inversion, _rotateSpeed));
         }
     }
@@ -124,13 +134,6 @@ public class SwordThrow : MonoBehaviour
         _arrow.gameObject.SetActive(false);
     }
 
-    private void Update()
-    {
-        if (_canMove)
-        {
-            Throw();
-        }
-    }
 
     public void SetDirectionAndAngle(Vector2 direction, float angle)
     {

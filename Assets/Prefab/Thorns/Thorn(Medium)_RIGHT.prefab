@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8843270246b0184d8b264351a5e1519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _delayEnableTrigger: 3
 --- !u!50 &6124947226717221374
 Rigidbody2D:
   serializedVersion: 4
@@ -310,7 +311,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

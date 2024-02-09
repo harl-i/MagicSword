@@ -1,33 +1,31 @@
 using UnityEngine;
 
-[RequireComponent(typeof(SwordThrow))]
+[RequireComponent(typeof(SwordMovingState))]
 public class Player : MonoBehaviour, IDamageable
 {
-    [SerializeField] private SpriteBlink _spriteBlink;
-
     private bool _isLaunched;
-    private SwordThrow _swordThrow;
+    private SwordMovingState _swordMovingState;
 
     public bool IsLaunched => _isLaunched;
 
     private void Awake()
     {
-        _swordThrow = GetComponent<SwordThrow>();
+        _swordMovingState = GetComponent<SwordMovingState>();
     }
 
     private void OnEnable()
     {
-        _swordThrow.SwordLaunched += OnSwordLaunched;
+        _swordMovingState.SwordLaunched += OnSwordLaunched;
     }
 
     private void OnDisable()
     {
-        _swordThrow.SwordLaunched -= OnSwordLaunched;
+        _swordMovingState.SwordLaunched -= OnSwordLaunched;
     }
 
     public void TakeDamage()
     {
-        _spriteBlink.enabled = true;
+        
     }
 
     private void OnSwordLaunched(bool isLaunched)

@@ -1,14 +1,13 @@
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
 public class SpriteBlink : MonoBehaviour
 {
     [SerializeField] private ObjectDisableOption _disableOption;
     [SerializeField] private float _blinkTime = 1.0f;
     [SerializeField] private float _blinkRate = 0.1f;
+    [SerializeField] private SpriteRenderer _spriteRenderer;
 
-    private SpriteRenderer _spriteRenderer;
     private bool _isBlinking = false;
 
     void Awake()

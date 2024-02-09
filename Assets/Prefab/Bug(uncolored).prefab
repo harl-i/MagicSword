@@ -222,6 +222,7 @@ MonoBehaviour:
   _disableOption: 1
   _blinkTime: 1
   _blinkRate: 0.1
+  _spriteRenderer: {fileID: 0}
 --- !u!114 &4163927043953213168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,7 +235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c23ae1658a30f34ab5ab67a3d47b834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spriteBlink: {fileID: 4125968103984180103}
 --- !u!114 &7998427109944483040
 MonoBehaviour:
   m_ObjectHideFlags: 0

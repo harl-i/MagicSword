@@ -428,7 +428,6 @@ MonoBehaviour:
   _rayLength: 1
   _numberOfRays: 12
   _rayStartOffset: 0.1
-  newPosition: {x: 0, y: 0}
   _colliderForEnable: {fileID: 2195533075859934044}
 --- !u!114 &4763464403801573637
 MonoBehaviour:
