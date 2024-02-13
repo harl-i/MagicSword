@@ -36,9 +36,10 @@ public class SpriteSwapperActivator : MonoBehaviour
             {
                 swapper.enabled = true;
             }
+
+            StartCoroutine(DelayBeforeInvoke(_delayBeforeDeactivateSprite));
         }
 
-        StartCoroutine(DelayBeforeInvoke(_delayBeforeDeactivateSprite));
     }
 
     private IEnumerator DelayBeforeInvoke(float delay)
@@ -47,15 +48,4 @@ public class SpriteSwapperActivator : MonoBehaviour
 
         AllSpritesSwapped?.Invoke();
     }
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.TryGetComponent(out Player player))
-    //    {
-    //        foreach (var swapper in _swappers)
-    //        {
-    //            swapper.enabled = true;
-    //        }
-    //    }
-    //}
 }

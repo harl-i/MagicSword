@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestructiblePlatform : MonoBehaviour 
+public class DestructiblePlatform : MonoBehaviour
 {
     public List<ParticleSystem> _particleSystems = new List<ParticleSystem>();
     private float _delay = 1;
@@ -21,12 +21,14 @@ public class DestructiblePlatform : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        foreach (ParticleSystem ps in _particleSystems)
+        if (other.TryGetComponent(out Player player))
         {
-            ps.Play();
+            foreach (ParticleSystem ps in _particleSystems)
+                ps.Play();
+
+            StartCoroutine(DelayBeforeDisablePlatform(_delay));
         }
 
-        StartCoroutine(DelayBeforeDisablePlatform(_delay));
     }
 
     private IEnumerator DelayBeforeDisablePlatform(float delay)
