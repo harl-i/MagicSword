@@ -11,7 +11,7 @@ public class LevelTransition : MonoBehaviour
         StartCoroutine(LoadWithDelay());
     }
 
-    IEnumerator LoadWithDelay()
+    private IEnumerator LoadWithDelay()
     {
         yield return new WaitForSeconds(_loadDelay);
 
