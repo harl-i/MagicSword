@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelTransition : MonoBehaviour
 {
-    private float _loadDelay = 2f;
+    private float _loadDelay = 1f;
 
-    public void LoadNextLevel()
+    public void LoadAdminScene()
     {
         StartCoroutine(LoadWithDelay());
     }
@@ -15,14 +15,14 @@ public class LevelTransition : MonoBehaviour
     {
         yield return new WaitForSeconds(_loadDelay);
 
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = currentSceneIndex + 1;
+        //int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        //int nextSceneIndex = currentSceneIndex + 1;
 
-        SceneManager.LoadScene(nextSceneIndex);
+        SceneManager.LoadScene(0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        LoadNextLevel();
+        LoadAdminScene();
     }
 }
