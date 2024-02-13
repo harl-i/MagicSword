@@ -1,49 +1,59 @@
 using UnityEngine;
 
-public class DetectTransition : Transition
+public class PlayerExitDetection : Transition
 {
     [SerializeField] private DetectionZoneType _detectionZoneType;
     [SerializeField] private float _detectionRadius = 5f;
     [SerializeField] private Vector2 _detectionRectangleSize = new Vector2(10f, 5f);
     [SerializeField] private LayerMask _playerLayer;
 
-    private Transform _playerTransform;
+    private bool _playerInside;
+    private float _checkInterval = 1f;
+    private float _timeSinceLastCheck = 0f;
 
     private void Update()
     {
-        if (_detectionZoneType == DetectionZoneType.Circle)
+        Debug.Log("Player Inside: " + _playerInside);
+        _timeSinceLastCheck += Time.deltaTime;
+
+        if (_timeSinceLastCheck > _checkInterval)
         {
-            DetectUsingCircle();
-        }
-        else if (_detectionZoneType == DetectionZoneType.Rectangle)
-        {
-            DetectUsingRectangle();
+            _timeSinceLastCheck = 0f;
+
+            if (_detectionZoneType == DetectionZoneType.Circle)
+            {
+                _playerInside = IsPlayerInsideCircle();
+            }
+            else if (_detectionZoneType == DetectionZoneType.Rectangle)
+            {
+                _playerInside = IsPlayerInsideRectangle();
+            }
+
+            if (!_playerInside)
+            {
+                HandlePlayerExit();
+            }
         }
     }
 
-    private void DetectUsingCircle()
+    private bool IsPlayerInsideCircle()
     {
         Collider2D hit = Physics2D.OverlapCircle(transform.position, _detectionRadius, _playerLayer);
-        if (hit != null)
-        {
-            _playerTransform = hit.transform;
-
-            _targetState.SetPlayerTransform(_playerTransform);
-            NeedTransit = true;
-        }
+        return hit != null;
     }
 
-    private void DetectUsingRectangle()
+    private bool IsPlayerInsideRectangle()
     {
         Vector2 halfSize = _detectionRectangleSize / 2;
         Collider2D hit = Physics2D.OverlapBox(transform.position, _detectionRectangleSize, 0f, _playerLayer);
-        if (hit != null)
-        {
-            _playerTransform = hit.transform;
+        return hit != null;
+    }
 
-            _targetState.SetPlayerTransform(_playerTransform);
-            NeedTransit = true;
-        }
+    private void HandlePlayerExit()
+    {
+        _playerInside = false;
+
+        NeedTransit = true;
     }
 
     private void OnDrawGizmosSelected()
@@ -59,10 +69,4 @@ public class DetectTransition : Transition
             Gizmos.DrawWireCube(transform.position, _detectionRectangleSize);
         }
     }
-}
-
-public enum DetectionZoneType
-{
-    Circle,
-    Rectangle
 }

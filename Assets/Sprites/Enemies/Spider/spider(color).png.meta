@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,9 +106,652 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spider(color)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 61
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.675, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98030c3ebb380634280189769e797726
+      internalID: 548481933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 61
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10851937f79a7954dad78e54e99c034c
+      internalID: 1725714853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 61
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf90dbc52491bc4d91897ac9d4afdbd
+      internalID: 336704816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_3
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 61
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0188174b54fe3f146b45c8f5a3306d0a
+      internalID: -419345471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 61
+        width: 30
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ed29ba7135bf646acfc1bc4c0b490b
+      internalID: 613371496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_5
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 61
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d8edb64aa5f5d4eaf9bb44e66d8c3e
+      internalID: -1671983035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_6
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 61
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e1f9a81c7142b49a3e4b846b0dbcd1
+      internalID: 648892798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_7
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 61
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15cdef7a3d799c40bab4b0e6799b521
+      internalID: 424046970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f304cbe8657b8de43918850e8dbb488d
+      internalID: 1799073746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c97f836fb51c9428d237e32e791b72
+      internalID: 808096800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_11
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 31
+        width: 31
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28e83c051a39244a88c5b5d3ceefd6c
+      internalID: 1165469613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_12
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 31
+        width: 32
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f58b845747b10b439dd0259ec2c9581
+      internalID: -88022852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_13
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 31
+        width: 30
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8fe809d89c3c54c928b6062aca9a28
+      internalID: 1038547445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_14
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 31
+        width: 30
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c652989b9fd42ef40999a5101cdcf305
+      internalID: 277049308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_15
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 31
+        width: 30
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0e2ca2ac3e25748ba7105a3a3d3574
+      internalID: 96145017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_16
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 31
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e22d5bec7ab3b44aa189a5b2b90f2c
+      internalID: -622282019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5664ac9266ad18a4fa4cf24f296c39c6
+      internalID: -1507871178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_19
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e367df4ab1da34d8c1277c5274d07b
+      internalID: -1890109194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_20
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1e25d3152962d4b90a441d1db1924c
+      internalID: -117859709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_21
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0217141ec89679d44b9e1ba6f6085791
+      internalID: -734474105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5bed4af633eeb429bfc5df7ebe3e89
+      internalID: -1187474961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_23
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075f329cc695e4d4c87ace1da3b2b3b9
+      internalID: -936720358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_24
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa35c34455afcdb48bdbc76c160a8f56
+      internalID: 952216566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_25
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49f423b6002c9347b86b4a986a5e5db
+      internalID: -841173518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_26
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9cdab224df85e488902faa5e6118ad
+      internalID: 865990159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_27
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ab793fcaff401408f818cb2b1e7a6e
+      internalID: 927675249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_28
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa9abf69ff7e114682b7098ae1c8206
+      internalID: -1436421840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_29
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2905fdae774fc43ad770813324f783
+      internalID: -1169963813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_30
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30082149cdf60349b17745acdac43a9
+      internalID: -926546605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider(color)_31
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a7dcf9f8b426d448c7438192c89566
+      internalID: -353773139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +762,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spider(color)_0: 548481933
+      spider(color)_1: 1725714853
+      spider(color)_10: 808096800
+      spider(color)_11: 1165469613
+      spider(color)_12: -88022852
+      spider(color)_13: 1038547445
+      spider(color)_14: 277049308
+      spider(color)_15: 96145017
+      spider(color)_16: -622282019
+      spider(color)_17: 1660446465
+      spider(color)_18: -1507871178
+      spider(color)_19: -1890109194
+      spider(color)_2: 336704816
+      spider(color)_20: -117859709
+      spider(color)_21: -734474105
+      spider(color)_22: -1187474961
+      spider(color)_23: -936720358
+      spider(color)_24: 952216566
+      spider(color)_25: -841173518
+      spider(color)_26: 865990159
+      spider(color)_27: 927675249
+      spider(color)_28: -1436421840
+      spider(color)_29: -1169963813
+      spider(color)_3: -419345471
+      spider(color)_30: -926546605
+      spider(color)_31: -353773139
+      spider(color)_4: 613371496
+      spider(color)_5: -1671983035
+      spider(color)_6: 648892798
+      spider(color)_7: 424046970
+      spider(color)_8: -1598683005
+      spider(color)_9: 1799073746
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

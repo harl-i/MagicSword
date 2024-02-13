@@ -220,7 +220,7 @@ Animator:
   m_GameObject: {fileID: 3919226550435368052}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fbbb7198610f79240b0c0482a07929cc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 001aefcc10563ed45a1d9d0e938df94e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetState: {fileID: 4045728366334402735}
-  _detectionRadius: 3.5
+  _detectionRadius: 1.84
   _playerLayer:
     serializedVersion: 2
     m_Bits: 128

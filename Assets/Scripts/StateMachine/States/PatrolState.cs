@@ -4,13 +4,14 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PatrolState : State
 {
+    [SerializeField] private MoveDirection _moveDirection;
     [SerializeField] private Transform[] _waypoints;
     [SerializeField] private float _speed = 2f;
-    
+
     private int waypointIndex = 0;
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
- 
+
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -44,7 +45,14 @@ public class PatrolState : State
         transform.position = Vector2.MoveTowards(transform.position, _waypoints[waypointIndex].position, _speed * Time.deltaTime);
 
         Vector2 direction = (_waypoints[waypointIndex].position - transform.position).normalized;
-        _spriteRenderer.flipX = direction.x < 0;
+        if (_moveDirection == MoveDirection.Vertical)
+        {
+            _spriteRenderer.flipX = direction.y > 0;
+        }
+        else if (_moveDirection == MoveDirection.Horizontal)
+        {
+            _spriteRenderer.flipX = direction.x < 0;
+        }
     }
 
     private bool ReachedCurrentWaypoint()
@@ -56,4 +64,10 @@ public class PatrolState : State
     {
         waypointIndex = (waypointIndex + 1) % _waypoints.Length;
     }
+}
+
+public enum MoveDirection
+{
+    Horizontal,
+    Vertical
 }
