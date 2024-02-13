@@ -132,7 +132,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -305,6 +305,7 @@ MonoBehaviour:
   _transitions:
   - {fileID: 4726608783155134913}
   - {fileID: 7579014230301006321}
+  _moveDirection: 0
   _waypoints:
   - {fileID: 2405936607693678608}
   - {fileID: 6427783562664394758}
@@ -335,7 +336,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetState: {fileID: 247272616341823111}
+  _detectionZoneType: 0
   _detectionRadius: 3.5
+  _detectionRectangleSize: {x: 10, y: 5}
   _playerLayer:
     serializedVersion: 2
     m_Bits: 128

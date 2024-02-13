@@ -20,11 +20,11 @@ public class CameraFollow : MonoBehaviour
         if (_player.position.x > 2.4f)
         {
             // Смещение камеры вправо, если игрок перешел через проход
-            _cameraPos = new Vector2(5.6f, _player.position.y);
+            _cameraPos = new Vector2(5.6f, Mathf.Clamp(_cameraPos.y, _minY, float.MaxValue));
         }
         else if (_player.position.x < 2.4f)
         {
-            _cameraPos = new Vector2(0f, _player.position.y);
+            _cameraPos = new Vector2(0f, Mathf.Clamp(_cameraPos.y, _minY, float.MaxValue));
         }
         //else
         //{
