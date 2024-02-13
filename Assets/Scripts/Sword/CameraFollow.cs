@@ -15,7 +15,28 @@ public class CameraFollow : MonoBehaviour
         _cameraPos = new Vector3(currentX, _player.position.y, _player.position.z);
         _cameraPos.y = Mathf.Clamp(_cameraPos.y, _minY, float.MaxValue);
 
+        //transform.position = Vector3.SmoothDamp(transform.position, _cameraPos, ref _velocity, _dampTime);
+
+        if (_player.position.x > 2.4f)
+        {
+            // Смещение камеры вправо, если игрок перешел через проход
+            _cameraPos = new Vector2(5.6f, _player.position.y);
+        }
+        else if (_player.position.x < 2.4f)
+        {
+            _cameraPos = new Vector2(0f, _player.position.y);
+        }
+        //else
+        //{
+        //    // Обычное следование за игроком
+        //    //_cameraPos = new Vector3(currentX, _player.position.y, _player.position.z);
+        //    //_cameraPos.y = Mathf.Clamp(_cameraPos.y, _minY, float.MaxValue);
+
+        //}
+
         transform.position = Vector3.SmoothDamp(transform.position, _cameraPos, ref _velocity, _dampTime);
+        // Применяем плавное смещение к новой позиции камеры
+        //transform.position = Vector3.SmoothDamp(transform.position, cameraPos, ref velocity, dampTime);
     }
 }
 
