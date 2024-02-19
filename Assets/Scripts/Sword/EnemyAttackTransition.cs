@@ -7,7 +7,7 @@ public class EnemyAttackTransition : Transition
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!_player.IsLaunched && collision.gameObject.TryGetComponent(out Enemy enemy))
+        if (!_player.IsLaunched && !_player.IsShieldActivated && collision.gameObject.TryGetComponent(out Enemy enemy))
         {
             NeedTransit = true;
         }
