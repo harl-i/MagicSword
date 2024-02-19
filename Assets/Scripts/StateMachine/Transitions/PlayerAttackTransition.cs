@@ -11,5 +11,9 @@ public class PlayerAttackTransition : Transition
                 NeedTransit = true;
             }
         }
+        else if(collision.TryGetComponent(out Shield shield))
+        {
+            NeedTransit = true;
+        }
     }
 }
