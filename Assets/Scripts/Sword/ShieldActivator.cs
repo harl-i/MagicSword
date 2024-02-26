@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShieldActivator : MonoBehaviour
 {
-    [SerializeField] private Shield _shieldObject;
+    [SerializeField] private Shield _shield;
 
     public Action<bool> ShieldActivated;
 
@@ -25,12 +25,12 @@ public class ShieldActivator : MonoBehaviour
 
     private IEnumerator TemporarilyEnable(float time)
     {
-        _shieldObject.gameObject.SetActive(true);
+        _shield.gameObject.SetActive(true);
         ShieldActivated?.Invoke(true);
 
         yield return new WaitForSeconds(time);
 
-        _shieldObject.gameObject.SetActive(false);
+        _shield.gameObject.SetActive(false);
         ShieldActivated?.Invoke(false);
     }
 }

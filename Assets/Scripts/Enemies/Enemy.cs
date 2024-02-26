@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(PolygonCollider2D))]
 public class Enemy : MonoBehaviour, IDamaging, IDamageable
 {
-    private float _enableColliderDelay = 2f;
+    private float _enableColliderDelay = 1.5f;
     private PolygonCollider2D _collider;
 
     private void Awake()

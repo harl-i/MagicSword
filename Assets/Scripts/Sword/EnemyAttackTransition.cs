@@ -12,7 +12,7 @@ public class EnemyAttackTransition : Transition
             NeedTransit = true;
         }
 
-        if (collision.gameObject.TryGetComponent(out Thorn thorn))
+        if (!_player.IsShieldActivated && collision.gameObject.TryGetComponent(out Thorn thorn))
         {
             NeedTransit = true;
         }

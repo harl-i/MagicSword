@@ -126,6 +126,7 @@ public class SwordMovingState : State
     {
         if (CheckThrowDistance() && CheckPlatformInMovementDirection())
         {
+            _swordCollider.enabled = false;
             _canMove = true;
             _isFirstThrow = false;
             SwordLaunched?.Invoke(true);
@@ -159,6 +160,9 @@ public class SwordMovingState : State
     {
         transform.localRotation = Quaternion.Euler(0f, 0f, transform.localRotation.z + _angle);
         transform.Translate(transform.InverseTransformDirection(transform.up) * Time.deltaTime * _speed);
+
+        if (!_swordCollider.enabled)
+            _swordCollider.enabled = true;
     }
 
     private bool CheckThrowDistance()
