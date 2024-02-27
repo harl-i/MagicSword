@@ -429,7 +429,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.61
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -454,7 +454,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -474,6 +474,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 2312857867701516587}
   _dampTime: 0.4
+  _maxY: 28
+  _minY: 1
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,6 +567,18 @@ PrefabInstance:
     - target: {fileID: 5354108831782790660, guid: 2ee954ed8082d2249b0926a7ac150b0b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431656924339496102, guid: 2ee954ed8082d2249b0926a7ac150b0b, type: 3}
+      propertyPath: m_Spacing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431656924339496102, guid: 2ee954ed8082d2249b0926a7ac150b0b, type: 3}
+      propertyPath: m_ChildAlignment
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431656924339496102, guid: 2ee954ed8082d2249b0926a7ac150b0b, type: 3}
+      propertyPath: m_Padding.m_Right
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7444619553739461822, guid: 2ee954ed8082d2249b0926a7ac150b0b, type: 3}
       propertyPath: m_Pivot.x
