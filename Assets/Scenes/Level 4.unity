@@ -21760,17 +21760,29 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1661687941006229296, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3145041935945990608, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_Name
       value: Player (Colored)
       objectReference: {fileID: 0}
+    - target: {fileID: 3145041935945990608, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150738934783977899, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8318345084276774920, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.077
+      value: 1.327
       objectReference: {fileID: 0}
     - target: {fileID: 8318345084276774920, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.741
+      value: -3.753
       objectReference: {fileID: 0}
     - target: {fileID: 8318345084276774920, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21778,19 +21790,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8318345084276774920, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.17186677
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8318345084276774920, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8318345084276774920, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8318345084276774920, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.98512024
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8318345084276774920, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -21802,7 +21814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8318345084276774920, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -199.793
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21811,6 +21823,26 @@ PrefabInstance:
     - target: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.25005335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.9682321
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -208.961
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
