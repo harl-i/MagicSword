@@ -14,14 +14,17 @@ public class SwordMovingState : State
     private PolygonCollider2D _swordCollider;
     private VectorCreator _vectorCreator;
     private Vector3 _direction;
-    private float _angle;
-    private float _throwDistance = 1f;
+
     private bool _canMove;
     private bool _isFirstThrow;
+
+    private float _angle;
+    private float _throwDistance = 1f;
     private float _minimumAngleThreshold = 130f;
     private float _angleCoefficient = 15f;
     private float _inversion = -1f;
     private float _rotateSpeed = 0.05f;
+    private float _triggerEnableDelay = 0.1f;
 
     public Action<bool> StuckInWall;
     public Action<bool> SwordLaunched;
@@ -162,7 +165,7 @@ public class SwordMovingState : State
         transform.Translate(transform.InverseTransformDirection(transform.up) * Time.deltaTime * _speed);
 
         if (!_swordCollider.enabled)
-            _swordCollider.enabled = true;
+            StartCoroutine(EnableTriggerWithDelay(_triggerEnableDelay));
     }
 
     private bool CheckThrowDistance()
@@ -186,5 +189,11 @@ public class SwordMovingState : State
 
         Debug.DrawLine(transform.position, transform.position + _direction * _raycastDistance, Color.cyan);
         return !raycastHit;
+    }
+
+    private IEnumerator EnableTriggerWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        _swordCollider.enabled = true;
     }
 }

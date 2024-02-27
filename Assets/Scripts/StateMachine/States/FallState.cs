@@ -17,7 +17,11 @@ public class FallState : State
 
     private void OnEnable()
     {
-        _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
         _animator.SetTrigger("Fall");
+    }
+
+    public void OnAnmationEnd()
+    {
+        _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
     }
 }
