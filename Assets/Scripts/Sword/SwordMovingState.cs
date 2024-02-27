@@ -3,13 +3,14 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(PolygonCollider2D))]
+[RequireComponent(typeof(VectorCreator))]
 public class SwordMovingState : State
 {
-    [SerializeField] private float _speed;
     [SerializeField] private Arrow _arrow;
-    [SerializeField] private LayerMask _obstacleLayer;
-    [SerializeField] private float _raycastDistance;
     [SerializeField] private Transform _bladeEnd;
+    [SerializeField] private LayerMask _obstacleLayer;
+    [SerializeField] private float _speed;
+    [SerializeField] private float _raycastDistance;
 
     private PolygonCollider2D _swordCollider;
     private VectorCreator _vectorCreator;
@@ -70,6 +71,7 @@ public class SwordMovingState : State
         {
             _canMove = false;
             SwordLaunched?.Invoke(false);
+            _vectorCreator.enabled = true;
 
             ÑorrectSwordWallAngle(collision);
         }
@@ -133,6 +135,7 @@ public class SwordMovingState : State
             _canMove = true;
             _isFirstThrow = false;
             SwordLaunched?.Invoke(true);
+            _vectorCreator.enabled = false;
         }
         StuckInWall?.Invoke(false);
         _arrow.gameObject.SetActive(false);
