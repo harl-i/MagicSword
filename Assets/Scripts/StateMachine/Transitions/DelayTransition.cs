@@ -13,7 +13,7 @@ public class DelayTransition : Transition
 
     private IEnumerator Delay(float delay)
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSecondsRealtime(delay);
 
         NeedTransit = true;
     }

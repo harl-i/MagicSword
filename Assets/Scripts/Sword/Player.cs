@@ -48,12 +48,11 @@ public class Player : MonoBehaviour, IDamageable
 
     public void TakeDamage()
     {
-        if (_healthCount > 0)
+        if (_healthCount > 0 && !_isShieldActivated)
         {
             _healthCount--;
+            HealthHasChanged?.Invoke(_healthCount);
         }
-
-        HealthHasChanged?.Invoke(_healthCount);
     }
 
     private void OnSwordLaunched(bool isLaunched)
