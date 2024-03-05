@@ -8,7 +8,13 @@ public class DelayTransition : Transition
 
     private void OnEnable()
     {
+        
         StartCoroutine(Delay(_delay));
+    }
+
+    private void OnDisable()
+    {
+        NeedTransit = false;
     }
 
     private IEnumerator Delay(float delay)

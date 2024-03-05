@@ -29,14 +29,22 @@ public class TrapActivationState : State
 
     public void CheckPlayerInTrap()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(_raycastOrigin.position, transform.forward, out hit, _raycastLength, _playerLayerMask))
+        //RaycastHit hit;
+        //if (Physics2D.Raycast(_raycastOrigin.position, transform.forward, out hit, _raycastLength, _playerLayerMask))
+        //{
+        //    if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
+        //    {
+        //        Player player = hit.collider.gameObject.GetComponent<Player>();
+        //        ApplyDamage(player);
+        //    }
+        //}
+
+        RaycastHit2D hit = Physics2D.Raycast(_raycastOrigin.position, Vector2.right, _raycastLength, _playerLayerMask);
+
+        if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
-            {
-                Player player = hit.collider.gameObject.GetComponent<Player>();
-                ApplyDamage(player);
-            }
+            Player player = hit.collider.gameObject.GetComponent<Player>();
+            ApplyDamage(player);
         }
     }
 
