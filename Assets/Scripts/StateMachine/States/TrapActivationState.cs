@@ -23,7 +23,7 @@ public class TrapActivationState : State
     {
         Gizmos.color = Color.red;
         Vector3 raycastOrigin = _raycastOrigin.position;
-        Vector3 raycastDirection = transform.forward;
+        Vector3 raycastDirection = transform.right;
         Gizmos.DrawRay(raycastOrigin, raycastDirection * _raycastLength);
     }
 
@@ -39,7 +39,7 @@ public class TrapActivationState : State
         //    }
         //}
 
-        RaycastHit2D hit = Physics2D.Raycast(_raycastOrigin.position, Vector2.right, _raycastLength, _playerLayerMask);
+        RaycastHit2D hit = Physics2D.Raycast(_raycastOrigin.position, transform.right, _raycastLength, _playerLayerMask);
 
         if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
