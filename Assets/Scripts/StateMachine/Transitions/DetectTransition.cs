@@ -1,9 +1,11 @@
+using System.Collections;
 using UnityEngine;
 
 public class DetectTransition : Transition
 {
     [SerializeField] private DetectionZoneType _detectionZoneType;
     [SerializeField] private float _detectionRadius = 5f;
+    [SerializeField] private float _detectReactionDelay;
     [SerializeField] private Vector2 _detectionRectangleSize = new Vector2(10f, 5f);
     [SerializeField] private LayerMask _playerLayer;
 
@@ -26,10 +28,9 @@ public class DetectTransition : Transition
         Collider2D hit = Physics2D.OverlapCircle(transform.position, _detectionRadius, _playerLayer);
         if (hit != null)
         {
-            _playerTransform = hit.transform;
+            SendPlayerTransform(hit.transform);
 
-            _targetState.SetPlayerTransform(_playerTransform);
-            NeedTransit = true;
+            StartCoroutine(TransitAfterDelay(_detectReactionDelay));
         }
     }
 
@@ -39,11 +40,23 @@ public class DetectTransition : Transition
         Collider2D hit = Physics2D.OverlapBox(transform.position, _detectionRectangleSize, 0f, _playerLayer);
         if (hit != null)
         {
-            _playerTransform = hit.transform;
+            SendPlayerTransform(hit.transform);
 
-            _targetState.SetPlayerTransform(_playerTransform);
-            NeedTransit = true;
+            StartCoroutine(TransitAfterDelay(_detectReactionDelay));
         }
+    }
+
+    private void SendPlayerTransform(Transform playerTransform)
+    {
+        _playerTransform = playerTransform;
+        _targetState.SetPlayerTransform(_playerTransform);
+    }
+
+    private IEnumerator TransitAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        NeedTransit = true;
     }
 
     private void OnDrawGizmosSelected()

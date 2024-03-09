@@ -488,6 +488,7 @@ MonoBehaviour:
   _targetState: {fileID: 6458018909080853869}
   _detectionZoneType: 1
   _detectionRadius: 5
+  _detectReactionDelay: 0.5
   _detectionRectangleSize: {x: 1, y: 4.67}
   _playerLayer:
     serializedVersion: 2

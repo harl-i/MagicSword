@@ -1,18 +1,21 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(PolygonCollider2D))]
 public class FallState : State
 {
+    private PolygonCollider2D _colliderForDisable;
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
+    private float _delayForDisableGameobject = 5f;
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _colliderForDisable = GetComponent<PolygonCollider2D>();
     }
 
     private void OnEnable()
@@ -22,6 +25,16 @@ public class FallState : State
 
     public void OnAnmationEnd()
     {
+        _colliderForDisable.enabled = false;
         _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+
+        StartCoroutine(DisableAfterDelay(_delayForDisableGameobject));
+    }
+
+    private IEnumerator DisableAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        gameObject.SetActive(false);
     }
 }

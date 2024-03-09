@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BlinkEndTransition : Transition
+public class AnimationEndTransition : Transition
 {
     public void AnimationEnded()
     {

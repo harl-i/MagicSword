@@ -126,8 +126,8 @@ TextureImporter:
       name: snake(color)_8
       rect:
         serializedVersion: 2
-        x: 1
-        y: 291
+        x: 20
+        y: 290
         width: 50
         height: 35
       alignment: 7
@@ -147,9 +147,9 @@ TextureImporter:
       name: snake(color)_10
       rect:
         serializedVersion: 2
-        x: 71
-        y: 291
-        width: 50
+        x: 89
+        y: 290
+        width: 52
         height: 35
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -168,9 +168,9 @@ TextureImporter:
       name: snake(color)_11
       rect:
         serializedVersion: 2
-        x: 140
-        y: 291
-        width: 50
+        x: 161
+        y: 290
+        width: 51
         height: 35
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -189,8 +189,8 @@ TextureImporter:
       name: snake(color)_12
       rect:
         serializedVersion: 2
-        x: 210
-        y: 291
+        x: 236
+        y: 290
         width: 50
         height: 35
       alignment: 7
@@ -210,9 +210,9 @@ TextureImporter:
       name: snake(color)_13
       rect:
         serializedVersion: 2
-        x: 283
-        y: 291
-        width: 50
+        x: 301
+        y: 290
+        width: 53
         height: 35
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -231,8 +231,8 @@ TextureImporter:
       name: snake(color)_15
       rect:
         serializedVersion: 2
-        x: 356
-        y: 291
+        x: 366
+        y: 290
         width: 59
         height: 35
       alignment: 9
@@ -252,8 +252,8 @@ TextureImporter:
       name: snake(color)_16
       rect:
         serializedVersion: 2
-        x: 427
-        y: 291
+        x: 438
+        y: 290
         width: 58
         height: 35
       alignment: 9
@@ -273,8 +273,8 @@ TextureImporter:
       name: snake(color)_18
       rect:
         serializedVersion: 2
-        x: 498
-        y: 291
+        x: 517
+        y: 290
         width: 53
         height: 35
       alignment: 9
@@ -294,8 +294,8 @@ TextureImporter:
       name: snake(color)_19
       rect:
         serializedVersion: 2
-        x: 565
-        y: 291
+        x: 590
+        y: 290
         width: 50
         height: 35
       alignment: 7
@@ -315,8 +315,8 @@ TextureImporter:
       name: snake(color)_21
       rect:
         serializedVersion: 2
-        x: 640
-        y: 291
+        x: 660
+        y: 290
         width: 50
         height: 35
       alignment: 7
@@ -336,8 +336,8 @@ TextureImporter:
       name: snake(color)_22
       rect:
         serializedVersion: 2
-        x: 711
-        y: 291
+        x: 728
+        y: 290
         width: 52
         height: 35
       alignment: 9
@@ -357,8 +357,8 @@ TextureImporter:
       name: snake(color)_24
       rect:
         serializedVersion: 2
-        x: 782
-        y: 291
+        x: 801
+        y: 290
         width: 50
         height: 35
       alignment: 7
@@ -378,8 +378,8 @@ TextureImporter:
       name: snake(color)_25
       rect:
         serializedVersion: 2
-        x: 1
-        y: 220
+        x: 305
+        y: 219
         width: 50
         height: 35
       alignment: 7
@@ -399,8 +399,8 @@ TextureImporter:
       name: snake(color)_26
       rect:
         serializedVersion: 2
-        x: 72
-        y: 220
+        x: 374
+        y: 219
         width: 52
         height: 35
       alignment: 9
@@ -420,9 +420,9 @@ TextureImporter:
       name: snake(color)_27
       rect:
         serializedVersion: 2
-        x: 143
-        y: 220
-        width: 57
+        x: 446
+        y: 219
+        width: 52
         height: 35
       alignment: 9
       pivot: {x: 0.56667745, y: 0}
@@ -441,8 +441,8 @@ TextureImporter:
       name: snake(color)_29
       rect:
         serializedVersion: 2
-        x: 214
-        y: 220
+        x: 516
+        y: 219
         width: 54
         height: 35
       alignment: 9
@@ -462,9 +462,9 @@ TextureImporter:
       name: snake(color)_30
       rect:
         serializedVersion: 2
-        x: 285
-        y: 220
-        width: 50
+        x: 584
+        y: 219
+        width: 54
         height: 35
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -483,9 +483,9 @@ TextureImporter:
       name: snake(color)_31
       rect:
         serializedVersion: 2
-        x: 356
-        y: 220
-        width: 50
+        x: 652
+        y: 219
+        width: 57
         height: 35
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -504,9 +504,9 @@ TextureImporter:
       name: snake(color)_33
       rect:
         serializedVersion: 2
-        x: 427
-        y: 220
-        width: 50
+        x: 728
+        y: 219
+        width: 52
         height: 35
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -525,8 +525,8 @@ TextureImporter:
       name: snake(color)_34
       rect:
         serializedVersion: 2
-        x: 498
-        y: 220
+        x: 801
+        y: 219
         width: 50
         height: 35
       alignment: 7
@@ -546,7 +546,7 @@ TextureImporter:
       name: snake(color)_36
       rect:
         serializedVersion: 2
-        x: 711
+        x: 730
         y: 149
         width: 50
         height: 35
@@ -567,8 +567,8 @@ TextureImporter:
       name: snake(color)_37
       rect:
         serializedVersion: 2
-        x: 72
-        y: 150
+        x: 91
+        y: 148
         width: 50
         height: 35
       alignment: 7
@@ -588,8 +588,8 @@ TextureImporter:
       name: snake(color)_38
       rect:
         serializedVersion: 2
-        x: 143
-        y: 149
+        x: 162
+        y: 148
         width: 50
         height: 35
       alignment: 7
@@ -609,8 +609,8 @@ TextureImporter:
       name: snake(color)_39
       rect:
         serializedVersion: 2
-        x: 356
-        y: 149
+        x: 375
+        y: 148
         width: 50
         height: 35
       alignment: 7
@@ -630,8 +630,8 @@ TextureImporter:
       name: snake(color)_40
       rect:
         serializedVersion: 2
-        x: 427
-        y: 149
+        x: 446
+        y: 148
         width: 50
         height: 35
       alignment: 7
@@ -651,8 +651,8 @@ TextureImporter:
       name: snake(color)_41
       rect:
         serializedVersion: 2
-        x: 640
-        y: 149
+        x: 660
+        y: 148
         width: 50
         height: 35
       alignment: 7
@@ -672,8 +672,8 @@ TextureImporter:
       name: snake(color)_51
       rect:
         serializedVersion: 2
-        x: 1
-        y: 149
+        x: 21
+        y: 148
         width: 50
         height: 35
       alignment: 7
@@ -693,8 +693,8 @@ TextureImporter:
       name: snake(color)_52
       rect:
         serializedVersion: 2
-        x: 71
-        y: 4
+        x: 235
+        y: 3
         width: 50
         height: 35
       alignment: 7
@@ -714,8 +714,8 @@ TextureImporter:
       name: snake(color)_53
       rect:
         serializedVersion: 2
-        x: 214
-        y: 149
+        x: 233
+        y: 148
         width: 50
         height: 35
       alignment: 7
@@ -735,8 +735,8 @@ TextureImporter:
       name: snake(color)_54
       rect:
         serializedVersion: 2
-        x: 285
-        y: 149
+        x: 304
+        y: 148
         width: 50
         height: 35
       alignment: 7
@@ -756,8 +756,8 @@ TextureImporter:
       name: snake(color)_55
       rect:
         serializedVersion: 2
-        x: 498
-        y: 149
+        x: 517
+        y: 148
         width: 50
         height: 35
       alignment: 7
@@ -777,8 +777,8 @@ TextureImporter:
       name: snake(color)_56
       rect:
         serializedVersion: 2
-        x: 569
-        y: 149
+        x: 588
+        y: 148
         width: 50
         height: 35
       alignment: 7
@@ -798,8 +798,8 @@ TextureImporter:
       name: snake(color)_66
       rect:
         serializedVersion: 2
-        x: 782
-        y: 149
+        x: 801
+        y: 148
         width: 50
         height: 35
       alignment: 7
@@ -819,8 +819,8 @@ TextureImporter:
       name: snake(color)_71
       rect:
         serializedVersion: 2
-        x: 142
-        y: 76
+        x: 446
+        y: 75
         width: 50
         height: 35
       alignment: 7
@@ -840,8 +840,8 @@ TextureImporter:
       name: snake(color)_72
       rect:
         serializedVersion: 2
-        x: 213
-        y: 76
+        x: 517
+        y: 75
         width: 50
         height: 35
       alignment: 7
@@ -861,8 +861,8 @@ TextureImporter:
       name: snake(color)_74
       rect:
         serializedVersion: 2
-        x: 284
-        y: 76
+        x: 588
+        y: 75
         width: 50
         height: 35
       alignment: 7
@@ -882,8 +882,8 @@ TextureImporter:
       name: snake(color)_75
       rect:
         serializedVersion: 2
-        x: 355
-        y: 76
+        x: 659
+        y: 75
         width: 50
         height: 35
       alignment: 7
@@ -903,8 +903,8 @@ TextureImporter:
       name: snake(color)_76
       rect:
         serializedVersion: 2
-        x: 425
-        y: 76
+        x: 728
+        y: 75
         width: 50
         height: 35
       alignment: 7
@@ -924,8 +924,8 @@ TextureImporter:
       name: snake(color)_78
       rect:
         serializedVersion: 2
-        x: 497
-        y: 76
+        x: 801
+        y: 75
         width: 50
         height: 35
       alignment: 7
@@ -945,8 +945,8 @@ TextureImporter:
       name: snake(color)_79
       rect:
         serializedVersion: 2
-        x: 6
-        y: 4
+        x: 164
+        y: 3
         width: 50
         height: 35
       alignment: 7
@@ -966,8 +966,8 @@ TextureImporter:
       name: snake(color)_80
       rect:
         serializedVersion: 2
-        x: 1
-        y: 76
+        x: 304
+        y: 75
         width: 50
         height: 35
       alignment: 9
@@ -987,8 +987,8 @@ TextureImporter:
       name: snake(color)_81
       rect:
         serializedVersion: 2
-        x: 74
-        y: 76
+        x: 375
+        y: 75
         width: 50
         height: 35
       alignment: 9
@@ -1008,8 +1008,8 @@ TextureImporter:
       name: snake(color)_82
       rect:
         serializedVersion: 2
-        x: 143
-        y: 4
+        x: 307
+        y: 3
         width: 50
         height: 35
       alignment: 7
@@ -1029,8 +1029,8 @@ TextureImporter:
       name: snake(color)_83
       rect:
         serializedVersion: 2
-        x: 212
-        y: 4
+        x: 378
+        y: 3
         width: 50
         height: 35
       alignment: 7
@@ -1050,8 +1050,8 @@ TextureImporter:
       name: snake(color)_84
       rect:
         serializedVersion: 2
-        x: 283
-        y: 4
+        x: 449
+        y: 3
         width: 50
         height: 35
       alignment: 7
@@ -1071,8 +1071,8 @@ TextureImporter:
       name: snake(color)_85
       rect:
         serializedVersion: 2
-        x: 353
-        y: 4
+        x: 519
+        y: 3
         width: 50
         height: 35
       alignment: 7
@@ -1092,8 +1092,8 @@ TextureImporter:
       name: snake(color)_86
       rect:
         serializedVersion: 2
-        x: 423
-        y: 4
+        x: 590
+        y: 3
         width: 50
         height: 35
       alignment: 7
@@ -1113,8 +1113,8 @@ TextureImporter:
       name: snake(color)_87
       rect:
         serializedVersion: 2
-        x: 494
-        y: 4
+        x: 659
+        y: 3
         width: 50
         height: 35
       alignment: 7
@@ -1134,8 +1134,8 @@ TextureImporter:
       name: snake(color)_91
       rect:
         serializedVersion: 2
-        x: 565
-        y: 4
+        x: 732
+        y: 3
         width: 50
         height: 35
       alignment: 7
@@ -1155,8 +1155,8 @@ TextureImporter:
       name: snake(color)_92
       rect:
         serializedVersion: 2
-        x: 636
-        y: 4
+        x: 797
+        y: 3
         width: 50
         height: 35
       alignment: 7
