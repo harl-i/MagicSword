@@ -10,7 +10,7 @@ public class JumpAttackState : State
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
-    private Vector2 _currentDirection;
+    //private Vector2 _currentDirection;
 
     private void Awake()
     {
@@ -44,6 +44,8 @@ public class JumpAttackState : State
     {
         _initialYPosition = transform.position.y;
 
+        FlipToPlayer();
+
         _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
 
         float jumpAngleRad = _jumpAngle * Mathf.Deg2Rad;
@@ -52,5 +54,20 @@ public class JumpAttackState : State
         _rigidbody2D.AddForce(new Vector2(jumpX, jumpY), ForceMode2D.Impulse);
 
         _animator.SetTrigger("Jump");
+    }
+
+    private void FlipToPlayer()
+    {
+        Vector2 directionToPlayer = Player.transform.position - transform.position;
+        directionToPlayer.Normalize();
+
+        if (directionToPlayer.x > 0)
+        {
+            _spriteRenderer.flipX = false;
+        }
+        else if (directionToPlayer.x < 0)
+        {
+            _spriteRenderer.flipX = true;
+        }
     }
 }
