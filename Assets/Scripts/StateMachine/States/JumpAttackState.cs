@@ -1,10 +1,13 @@
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class JumpAttackState : State
 {
-    public float _jumpForce = 5f;
-    public float _jumpAngle = 45f;
+    [SerializeField] private float _jumpForce = 5f;
+    [SerializeField] private float _jumpAngle = 45f;
+
     private float _initialYPosition;
+    private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
     private Vector2 _currentDirection;
@@ -13,6 +16,7 @@ public class JumpAttackState : State
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void OnEnable()
@@ -43,7 +47,7 @@ public class JumpAttackState : State
         _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
 
         float jumpAngleRad = _jumpAngle * Mathf.Deg2Rad;
-        float jumpX = _jumpForce * _currentDirection.x * Mathf.Cos(jumpAngleRad);
+        float jumpX = _jumpForce * (_spriteRenderer.flipX ? -1 : 1) * Mathf.Cos(jumpAngleRad);
         float jumpY = _jumpForce * Mathf.Sin(jumpAngleRad);
         _rigidbody2D.AddForce(new Vector2(jumpX, jumpY), ForceMode2D.Impulse);
 

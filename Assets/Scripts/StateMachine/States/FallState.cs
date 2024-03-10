@@ -27,14 +27,5 @@ public class FallState : State
     {
         _colliderForDisable.enabled = false;
         _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
-
-        StartCoroutine(DisableAfterDelay(_delayForDisableGameobject));
-    }
-
-    private IEnumerator DisableAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-
-        gameObject.SetActive(false);
     }
 }

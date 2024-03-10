@@ -8,8 +8,17 @@ public class DetectTransition : Transition
     [SerializeField] private float _detectReactionDelay;
     [SerializeField] private Vector2 _detectionRectangleSize = new Vector2(10f, 5f);
     [SerializeField] private LayerMask _playerLayer;
+    [SerializeField] private bool _isCooldownActive;
+    [SerializeField] private float _cooldown;
+    [SerializeField] private float _offsetY;
 
     private Transform _playerTransform;
+    private float _timeAfterDetect;
+
+    private void Awake()
+    {
+        _timeAfterDetect = _cooldown;
+    }
 
     private void Update()
     {
@@ -36,14 +45,22 @@ public class DetectTransition : Transition
 
     private void DetectUsingRectangle()
     {
-        Vector2 halfSize = _detectionRectangleSize / 2;
-        Collider2D hit = Physics2D.OverlapBox(transform.position, _detectionRectangleSize, 0f, _playerLayer);
-        if (hit != null)
+        if (_timeAfterDetect >= _cooldown)
         {
-            SendPlayerTransform(hit.transform);
+            Vector2 offset = new Vector2(0, _offsetY);
+            Vector2 adjustedPosition = (Vector2)transform.position + offset;
 
-            StartCoroutine(TransitAfterDelay(_detectReactionDelay));
+            Collider2D hit = Physics2D.OverlapBox(adjustedPosition, _detectionRectangleSize, 0f, _playerLayer);
+            if (hit != null)
+            {
+                SendPlayerTransform(hit.transform);
+
+                StartCoroutine(TransitAfterDelay(_detectReactionDelay));
+            }
+            _timeAfterDetect = 0f;
         }
+
+        _timeAfterDetect += Time.deltaTime;
     }
 
     private void SendPlayerTransform(Transform playerTransform)
@@ -68,8 +85,11 @@ public class DetectTransition : Transition
         }
         else if (_detectionZoneType == DetectionZoneType.Rectangle)
         {
+            Vector2 offset = new Vector2(0, _offsetY);
+            Vector2 adjustedPosition = (Vector2)transform.position + offset;
+
             Gizmos.color = Color.blue;
-            Gizmos.DrawWireCube(transform.position, _detectionRectangleSize);
+            Gizmos.DrawWireCube(adjustedPosition, _detectionRectangleSize);
         }
     }
 }
