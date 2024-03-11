@@ -4,7 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class ShootState : State
 {
-    [SerializeField] private Shooting _shooting;
+    [SerializeField] private ShootingEnemyType _enemyType;
+    [SerializeField] private Shooting _shootingComponent;
 
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
@@ -17,14 +18,18 @@ public class ShootState : State
 
     private void OnEnable()
     {
-        FlipToPlayer();
+        if (_enemyType == ShootingEnemyType.Spider)
+        {
+            FlipToPlayer();
+        }
+
         _animator.SetTrigger("Shoot");
-        _shooting.enabled = true;
+        _shootingComponent.enabled = true;
     }
 
     private void OnDisable()
     {
-        _shooting.enabled = false;
+        _shootingComponent.enabled = false;
     }
 
     private void FlipToPlayer()
@@ -34,7 +39,7 @@ public class ShootState : State
 
         if (directionToPlayer.y > 0)
         {
-            _spriteRenderer.flipX = true; 
+            _spriteRenderer.flipX = true;
         }
         else if (directionToPlayer.y < 0)
         {
@@ -42,3 +47,10 @@ public class ShootState : State
         }
     }
 }
+
+//public enum ShootingEnemyType
+//{
+//    Spider,
+//    Gargoyle,
+//    Turret
+//}

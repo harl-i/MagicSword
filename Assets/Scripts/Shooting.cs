@@ -7,7 +7,6 @@ public class Shooting : BulletPool
     [SerializeField] private Bullet _bullet;
 
     private SpriteRenderer _spriteRenderer;
-    private float _elapsedTime = 0f;
 
     private void Awake()
     {
