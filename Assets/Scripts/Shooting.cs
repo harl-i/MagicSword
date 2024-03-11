@@ -4,7 +4,7 @@ public class Shooting : BulletPool
 {
     [SerializeField] private Transform _shootPoint;
     [SerializeField] private float _secondsBetweenShoot;
-    [SerializeField] private Bullet _webBullet;
+    [SerializeField] private Bullet _bullet;
 
     private SpriteRenderer _spriteRenderer;
     private float _elapsedTime = 0f;
@@ -12,7 +12,7 @@ public class Shooting : BulletPool
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        Initialize(_webBullet);
+        Initialize(_bullet);
     }
 
     private void OnEnable()
@@ -35,21 +35,6 @@ public class Shooting : BulletPool
             FlipX();
         }
     }
-
-    //private void Update()
-    //{
-    //    _elapsedTime += Time.deltaTime;
-
-    //    if (_elapsedTime >= _secondsBetweenShoot)
-    //    {
-    //        if (TryGetObject(out Bullet bullet))
-    //        {
-    //            _elapsedTime = 0;
-
-    //            Shoot(bullet);
-    //        }
-    //    }
-    //}
 
     public void FlipX()
     {

@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -9,7 +8,6 @@ public class FallState : State
     private PolygonCollider2D _colliderForDisable;
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
-    private float _delayForDisableGameobject = 5f;
 
     private void Awake()
     {
