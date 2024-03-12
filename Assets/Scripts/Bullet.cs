@@ -1,27 +1,11 @@
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public abstract class Bullet : MonoBehaviour
 {
-    [SerializeField] private float _speed;
+    [SerializeField] protected float _speed;
 
-    private bool _isFlip;
-
-    public void SetFlip(bool isFlip)
-    {
-        _isFlip = isFlip;
-    }
-
-    private void Update()
-    {
-        if (_isFlip)
-        {
-            transform.Translate(new Vector2(0, _speed * Time.deltaTime), Space.Self);
-        }
-        else
-        {
-            transform.Translate(new Vector2(0, _speed * Time.deltaTime * -1), Space.Self);
-        }
-    }
+    protected Transform _target;
+    protected bool _isFlip;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -31,5 +15,15 @@ public class Bullet : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+    }
+
+    public void SetFlip(bool isFlip)
+    {
+        _isFlip = isFlip;
+    }
+
+    public void SetTarget(Transform target)
+    {
+        _target = target;
     }
 }

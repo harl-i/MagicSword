@@ -25,6 +25,8 @@ public class ShootState : State
 
         _animator.SetTrigger("Shoot");
         _shootingComponent.enabled = true;
+        _shootingComponent.SetEnemyType(_enemyType);
+        _shootingComponent.SetPlayerTransform(Player);
     }
 
     private void OnDisable()
@@ -34,7 +36,7 @@ public class ShootState : State
 
     private void FlipToPlayer()
     {
-        Vector2 directionToPlayer = Player.transform.position - transform.position;
+        Vector2 directionToPlayer = Player.position - transform.position;
         directionToPlayer.Normalize();
 
         if (directionToPlayer.y > 0)
@@ -47,10 +49,3 @@ public class ShootState : State
         }
     }
 }
-
-//public enum ShootingEnemyType
-//{
-//    Spider,
-//    Gargoyle,
-//    Turret
-//}

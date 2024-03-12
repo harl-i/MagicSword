@@ -664,7 +664,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7317,14 +7317,6 @@ PrefabInstance:
     - target: {fileID: 4198468690211321842, guid: c81cdbd2c529a254b873341e4b6c68f7, type: 3}
       propertyPath: m_Name
       value: gargoyle(color)_0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097604672527248045, guid: c81cdbd2c529a254b873341e4b6c68f7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.425
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097604672527248045, guid: c81cdbd2c529a254b873341e4b6c68f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 9095825777887833146, guid: c81cdbd2c529a254b873341e4b6c68f7, type: 3}
       propertyPath: m_LocalPosition.x
