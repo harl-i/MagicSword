@@ -1,20 +1,23 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class Shooting : BulletPool
 {
     [SerializeField] private ShootingEnemyType _enemyType;
     [SerializeField] private Transform _shootPoint;
-    [SerializeField] private float _secondsBetweenShoot;
     [SerializeField] private TowardsBullet _towardsBullet;
     [SerializeField] private StraightBullet _straightBullet;
     [SerializeField] private HomingBullet _homingBullet;
+    [SerializeField] private ShowTurret _showTurretComponent;
 
     private SpriteRenderer _spriteRenderer;
     private Transform _playerTransform;
+    private Animator _animator;
 
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _animator = GetComponent<Animator>();
 
         switch (_enemyType)
         {
@@ -34,10 +37,38 @@ public class Shooting : BulletPool
 
     private void OnEnable()
     {
-        if (_enemyType == ShootingEnemyType.Spider)
+        switch (_enemyType)
         {
-            SetShootPointPosition();
+            case ShootingEnemyType.Spider:
+                SetShootPointPosition();
+                break;
+            case ShootingEnemyType.Turret:
+                _showTurretComponent.enabled = true;
+                break;
+            default:
+                break;
         }
+    }
+
+    private void OnDisable()
+    {
+        switch (_enemyType)
+        {
+            case ShootingEnemyType.Spider:
+                break;
+            case ShootingEnemyType.Gargoyle:
+                break;
+            case ShootingEnemyType.Turret:
+                _showTurretComponent.enabled = false;
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void PlayShootAnimation()
+    {
+        _animator.SetTrigger("Shoot");
     }
 
     public void Shoot()
@@ -80,13 +111,15 @@ public class Shooting : BulletPool
         Bullet bullet = GetBulletFromPool();
 
         bullet.SetFlip(_spriteRenderer.flipX);
+        bullet.gameObject.SetActive(true);
     }
 
     private void ShootWithTowardsBullet()
     {
         Bullet bullet = GetBulletFromPool();
-
         bullet.SetTarget(_playerTransform);
+        bullet.CalculateDirection();
+        bullet.gameObject.SetActive(true);
     }
 
     private void ShootWithHomingBullet()
@@ -94,12 +127,12 @@ public class Shooting : BulletPool
         Bullet bullet = GetBulletFromPool();
 
         bullet.SetTarget(_playerTransform);
+        bullet.gameObject.SetActive(true);
     }
 
     private Bullet GetBulletFromPool()
     {
         TryGetObject(out Bullet bullet);
-        bullet.gameObject.SetActive(true);
         bullet.transform.position = _shootPoint.position;
         return bullet;
     }

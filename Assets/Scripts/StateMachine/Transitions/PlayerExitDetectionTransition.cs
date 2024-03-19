@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class PlayerExitDetection : Transition
+public class PlayerExitDetectionTransition : Transition
 {
     [SerializeField] private DetectionZoneType _detectionZoneType;
     [SerializeField] private float _detectionRadius = 5f;
     [SerializeField] private Vector2 _detectionRectangleSize = new Vector2(10f, 5f);
     [SerializeField] private LayerMask _playerLayer;
+    [SerializeField] private float _offsetY;
 
     private bool _playerInside;
     private float _checkInterval = 1f;
@@ -13,7 +14,6 @@ public class PlayerExitDetection : Transition
 
     private void Update()
     {
-        Debug.Log("Player Inside: " + _playerInside);
         _timeSinceLastCheck += Time.deltaTime;
 
         if (_timeSinceLastCheck > _checkInterval)
@@ -44,8 +44,10 @@ public class PlayerExitDetection : Transition
 
     private bool IsPlayerInsideRectangle()
     {
-        Vector2 halfSize = _detectionRectangleSize / 2;
-        Collider2D hit = Physics2D.OverlapBox(transform.position, _detectionRectangleSize, 0f, _playerLayer);
+        Vector2 offset = new Vector2(0, _offsetY);
+        Vector2 adjustedPosition = (Vector2)transform.position + offset;
+
+        Collider2D hit = Physics2D.OverlapBox(adjustedPosition, _detectionRectangleSize, 0f, _playerLayer);
         return hit != null;
     }
 
@@ -65,8 +67,11 @@ public class PlayerExitDetection : Transition
         }
         else if (_detectionZoneType == DetectionZoneType.Rectangle)
         {
+            Vector2 offset = new Vector2(0, _offsetY);
+            Vector2 adjustedPosition = (Vector2)transform.position + offset;
+
             Gizmos.color = Color.blue;
-            Gizmos.DrawWireCube(transform.position, _detectionRectangleSize);
+            Gizmos.DrawWireCube(adjustedPosition, _detectionRectangleSize);
         }
     }
 }

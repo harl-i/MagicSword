@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1b9e071a47aded4899e6dc4fa4d8a83
+guid: 2231fd1aa704de94480bf8132fcd8d1f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 35
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,6 +69,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -106,417 +119,446 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gargoyle(color)_0
+      name: crumbling_liana_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 42
-        width: 44
-        height: 43
-      alignment: 9
-      pivot: {x: 0.27435553, y: 0}
+        y: 1081
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d478d5c80061edb459af75a7328cc3fb
-      internalID: 424810339
+      spriteID: cb5fee88a3da43e4193c6c6e91a20e0c
+      internalID: -1419103878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gargoyle(color)_1
+      name: crumbling_liana_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 42
-        width: 44
-        height: 43
-      alignment: 9
-      pivot: {x: 0.3190468, y: 0}
+        x: 0
+        y: 1027
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 914d3010136f90840a059c646b297fab
-      internalID: 879099714
+      spriteID: 2b897939f4a71cd49ac2ba0c117a44a5
+      internalID: -20782439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gargoyle(color)_2
+      name: crumbling_liana_2
       rect:
         serializedVersion: 2
-        x: 88
-        y: 42
-        width: 44
-        height: 43
-      alignment: 9
-      pivot: {x: 0.31904688, y: 0}
+        x: 0
+        y: 973
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5aa604df09ec6a245a194cc42c70859b
-      internalID: -793045638
+      spriteID: 8bd6404318f039e41a5dddacde616385
+      internalID: 1494790457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gargoyle(color)_3
+      name: crumbling_liana_3
       rect:
         serializedVersion: 2
-        x: 132
-        y: 42
-        width: 44
-        height: 43
-      alignment: 9
-      pivot: {x: 0.29531547, y: 0}
+        x: 0
+        y: 919
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a395028a184cfe4cb31951677ca0b32
-      internalID: 170185743
+      spriteID: 877d4fe6f88cdc045b5d96191d35e470
+      internalID: 1573531863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gargoyle(color)_4
+      name: crumbling_liana_4
       rect:
         serializedVersion: 2
-        x: 176
-        y: 42
-        width: 43
-        height: 43
-      alignment: 9
-      pivot: {x: 0.27993137, y: 0}
+        x: 0
+        y: 865
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1607e871cfc676468a017e9bb2eb01a
-      internalID: 96272059
+      spriteID: 6950b58c21232ae4fb2139575a434123
+      internalID: -1963251102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gargoyle(color)_5
+      name: crumbling_liana_5
       rect:
         serializedVersion: 2
-        x: 220
-        y: 42
-        width: 41
-        height: 43
-      alignment: 9
-      pivot: {x: 0.24532002, y: 0}
+        x: 0
+        y: 811
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbbb8e2c5678e7e4f84057a111f7b496
-      internalID: -813811965
+      spriteID: 3569588fc5b1a724d804e0388f584bbe
+      internalID: 31580802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gargoyle(color)_6
+      name: crumbling_liana_6
       rect:
         serializedVersion: 2
-        x: 262
-        y: 42
-        width: 42
-        height: 43
-      alignment: 9
-      pivot: {x: 0.2622608, y: 0}
+        x: 0
+        y: 757
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebe055fa5ecb0464fbb729bd4db70d9c
-      internalID: 1386737580
+      spriteID: a6596bd5a756c5b42b99c56bf98d0584
+      internalID: -1894462819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gargoyle(color)_7
+      name: crumbling_liana_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 703
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e36f72dad382e4c8b381f360e8c907
+      internalID: 2046373238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 649
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f012a4c1aac9e504ea601bb2fe76e6e9
+      internalID: 561588176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2b7a799b7968b408543763c1587a3c
+      internalID: -1128788734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 541
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56e538fedcf626469d245904e489aae
+      internalID: 2056004439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 487
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfaca923fc9de9c458023f559afd7bbe
+      internalID: 1530119030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 433
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1672e8f5035916c4eb35a9c7e00a1b79
+      internalID: -1889739691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 379
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f78a990363aa94db40835bfb12b9a5
+      internalID: -867508327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 325
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fcad9177272b149a776fbd1abacc08
+      internalID: -436214453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 271
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a05f3cf82c1014bbef23945d3c8367
+      internalID: 1366710134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 217
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe48ef0b52c3ec94ab406150652fe60d
+      internalID: 1154344626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 163
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1a35c1cbe48a74c8d45805ab44171a
+      internalID: 574027469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c3966de5e2d9e4d93f11d653e7e891
+      internalID: -1017395371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f514ae8628fc3d41934bc32ebbe0ddf
+      internalID: -1522350347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crumbling_liana_20
       rect:
         serializedVersion: 2
         x: 0
         y: 1
-        width: 44
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf07d7b44565d3449a3167aa2f494006
-      internalID: -16807044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoyle(color)_8
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 1
-        width: 44
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0ac93219f323cb469b805d4d5767b85
-      internalID: -1746029931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoyle(color)_9
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 1
-        width: 44
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de0e4e666ec6e1b498c2c6046f4061d6
-      internalID: 261185108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoyle(color)_10
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 1
-        width: 44
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 654b37e621786464c921ee2777375727
-      internalID: -1551328457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoyle(color)_11
-      rect:
-        serializedVersion: 2
-        x: 177
-        y: 1
-        width: 44
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85504d4703c091140a896d757c081217
-      internalID: -1461168977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoyle(color)_12
-      rect:
-        serializedVersion: 2
-        x: 221
-        y: 1
-        width: 44
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4af5798bc6fa2b42847f20ba3a57e73
-      internalID: -774915665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoyle(color)_13
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 1
-        width: 44
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1289aebf10097c14389e00deef8422f9
-      internalID: 1327186637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoyle(color)_14
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 1
-        width: 44
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a294a805cdea83044ac84051ba9cdef3
-      internalID: 1369327345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoyle(color)_15
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 1
-        width: 44
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be540f254cbac7640979b8c25da3b9f2
-      internalID: 1732350694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoyle(color)_16
-      rect:
-        serializedVersion: 2
-        x: 397
-        y: 1
-        width: 44
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75584de3d992e4643a911b8e126db400
-      internalID: -322095336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoyle(color)_17
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 1
-        width: 44
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b0a72e9679bac641afe5c387dd77330
-      internalID: 266661121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gargoyle(color)_18
-      rect:
-        serializedVersion: 2
-        x: 485
-        y: 1
-        width: 43
-        height: 40
-      alignment: 9
-      pivot: {x: 0.275, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8df14f3b733020b4aac0c16dd27a7b2d
-      internalID: 603584056
+      spriteID: 80b89f65e25eb1c4bb961577430b9240
+      internalID: -441655035
       vertices: []
       indices: 
       edges: []
@@ -532,25 +574,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gargoyle(color)_0: 424810339
-      gargoyle(color)_1: 879099714
-      gargoyle(color)_10: -1551328457
-      gargoyle(color)_11: -1461168977
-      gargoyle(color)_12: -774915665
-      gargoyle(color)_13: 1327186637
-      gargoyle(color)_14: 1369327345
-      gargoyle(color)_15: 1732350694
-      gargoyle(color)_16: -322095336
-      gargoyle(color)_17: 266661121
-      gargoyle(color)_18: 603584056
-      gargoyle(color)_2: -793045638
-      gargoyle(color)_3: 170185743
-      gargoyle(color)_4: 96272059
-      gargoyle(color)_5: -813811965
-      gargoyle(color)_6: 1386737580
-      gargoyle(color)_7: -16807044
-      gargoyle(color)_8: -1746029931
-      gargoyle(color)_9: 261185108
+      crumbling_liana_0: -1419103878
+      crumbling_liana_1: -20782439
+      crumbling_liana_10: 2056004439
+      crumbling_liana_11: 1530119030
+      crumbling_liana_12: -1889739691
+      crumbling_liana_13: -867508327
+      crumbling_liana_14: -436214453
+      crumbling_liana_15: 1366710134
+      crumbling_liana_16: 1154344626
+      crumbling_liana_17: 574027469
+      crumbling_liana_18: -1017395371
+      crumbling_liana_19: -1522350347
+      crumbling_liana_2: 1494790457
+      crumbling_liana_20: -441655035
+      crumbling_liana_3: 1573531863
+      crumbling_liana_4: -1963251102
+      crumbling_liana_5: 31580802
+      crumbling_liana_6: -1894462819
+      crumbling_liana_7: 2046373238
+      crumbling_liana_8: 561588176
+      crumbling_liana_9: -1128788734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

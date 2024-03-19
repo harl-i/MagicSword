@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c23ae1658a30f34ab5ab67a3d47b834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enableColliderDelay: 1.5
 --- !u!114 &7686268655443260772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,7 +301,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions:
   - {fileID: 7816754728314362182}
-  _colliderForDisable: {fileID: 2317680064022017103}
 --- !u!114 &7816754728314362182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,6 +345,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _raycastFrequency: 0.5
+  _raycastDirection: 1
 --- !u!114 &3280231507076138224
 MonoBehaviour:
   m_ObjectHideFlags: 0

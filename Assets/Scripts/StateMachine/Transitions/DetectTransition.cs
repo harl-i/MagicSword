@@ -93,9 +93,3 @@ public class DetectTransition : Transition
         }
     }
 }
-
-public enum DetectionZoneType
-{
-    Circle,
-    Rectangle
-}

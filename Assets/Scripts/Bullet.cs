@@ -6,6 +6,7 @@ public abstract class Bullet : MonoBehaviour
 
     protected Transform _target;
     protected bool _isFlip;
+    protected Vector3 _direction;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -15,6 +16,14 @@ public abstract class Bullet : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+    }
+
+    public void CalculateDirection()
+    {
+        if (_target != null)
+        {
+            _direction = (_target.position - transform.position).normalized;
+        }
     }
 
     public void SetFlip(bool isFlip)

@@ -7,7 +7,7 @@ public class BulletPool : MonoBehaviour
     [SerializeField] private Transform _container;
     [SerializeField] private int _capacity;
 
-    private List<Bullet> _pool = new List<Bullet>();
+    protected List<Bullet> _pool = new List<Bullet>();
 
     protected void Initialize(Bullet prefab)
     {

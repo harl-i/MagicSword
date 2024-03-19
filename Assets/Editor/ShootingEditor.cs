@@ -7,19 +7,23 @@ public class ShootingEditor : Editor
 {
     private SerializedProperty _enemyType;
     private SerializedProperty _shootPoint;
-    private SerializedProperty _secondsBetweenShoot;
+    private SerializedProperty _container;
+    private SerializedProperty _capacity;
     private SerializedProperty _towardsBullet;
     private SerializedProperty _straightBullet;
     private SerializedProperty _homingBullet;
+    private SerializedProperty _showTurretComponent;
 
     private void OnEnable()
     {
         _enemyType = serializedObject.FindProperty("_enemyType");
         _shootPoint = serializedObject.FindProperty("_shootPoint");
-        _secondsBetweenShoot = serializedObject.FindProperty("_secondsBetweenShoot");
+        _container = serializedObject.FindProperty("_container");
+        _capacity = serializedObject.FindProperty("_capacity");
         _towardsBullet = serializedObject.FindProperty("_towardsBullet");
         _straightBullet = serializedObject.FindProperty("_straightBullet");
         _homingBullet = serializedObject.FindProperty("_homingBullet");
+        _showTurretComponent = serializedObject.FindProperty("_showTurretComponent");
     }
 
     public override void OnInspectorGUI()
@@ -37,6 +41,7 @@ public class ShootingEditor : Editor
                 break;
             case (int)ShootingEnemyType.Turret:
                 EditorGUILayout.PropertyField(_towardsBullet);
+                EditorGUILayout.PropertyField(_showTurretComponent);
                 break;
             default:
                 break;
@@ -45,7 +50,8 @@ public class ShootingEditor : Editor
         DrawLine();
 
         EditorGUILayout.PropertyField(_shootPoint);
-        EditorGUILayout.PropertyField(_secondsBetweenShoot);
+        EditorGUILayout.PropertyField(_container);
+        EditorGUILayout.PropertyField(_capacity);
 
         serializedObject.ApplyModifiedProperties();
     }

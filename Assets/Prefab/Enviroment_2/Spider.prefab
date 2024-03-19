@@ -371,9 +371,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _container: {fileID: 8968686843497621948}
   _capacity: 10
+  _enemyType: 0
   _shootPoint: {fileID: 1525337018594870181}
   _secondsBetweenShoot: 3
-  _webBullet: {fileID: 7152493612259182188, guid: 8c930718c6841294e8358772ed9d7345, type: 3}
+  _towardsBullet: {fileID: 0}
+  _straightBullet: {fileID: 660479779829443832, guid: 8c930718c6841294e8358772ed9d7345, type: 3}
+  _homingBullet: {fileID: 0}
 --- !u!114 &6083558608973486173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c23ae1658a30f34ab5ab67a3d47b834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enableColliderDelay: 1.5
 --- !u!114 &2395735614009474815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,7 +450,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions:
   - {fileID: 4450131895200134299}
-  _colliderForDisable: {fileID: 4073647845641791309}
 --- !u!114 &4450131895200134299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,6 +496,9 @@ MonoBehaviour:
   _playerLayer:
     serializedVersion: 2
     m_Bits: 128
+  _isCooldownActive: 0
+  _cooldown: 0
+  _offsetY: 0
 --- !u!114 &6458018909080853869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,7 +514,9 @@ MonoBehaviour:
   _transitions:
   - {fileID: 6839155469942275086}
   - {fileID: 2837040927635280758}
-  _shooting: {fileID: 431540153994367427}
+  _enemyType: 0
+  _shootingComponent: {fileID: 431540153994367427}
+  _shootDelay: 3
 --- !u!114 &2837040927635280758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,3 +536,4 @@ MonoBehaviour:
   _playerLayer:
     serializedVersion: 2
     m_Bits: 128
+  _offsetY: 0

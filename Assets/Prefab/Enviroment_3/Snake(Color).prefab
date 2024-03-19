@@ -564,6 +564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetState: {fileID: 143011923239356256}
+  _raycastDirection: 1
   _raycastLength: 0.5
   _layerMask:
     serializedVersion: 2
