@@ -2,19 +2,23 @@ using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(PolygonCollider2D))]
 public class PatrolState : State
 {
     [SerializeField] private MoveDirection _moveDirection;
     [SerializeField] private Transform[] _waypoints;
     [SerializeField] private float _speed = 2f;
+    [SerializeField] private float _colliderOffsetX;
 
     private int waypointIndex = 0;
     private SpriteRenderer _spriteRenderer;
+    private PolygonCollider2D _collider;
     private Animator _animator;
 
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _collider = GetComponent<PolygonCollider2D>();
         _animator = GetComponent<Animator>();
     }
 
@@ -45,14 +49,29 @@ public class PatrolState : State
         transform.position = Vector2.MoveTowards(transform.position, _waypoints[waypointIndex].position, _speed * Time.deltaTime);
 
         Vector2 direction = (_waypoints[waypointIndex].position - transform.position).normalized;
-        if (_moveDirection == MoveDirection.Vertical)
+        //if (_moveDirection == MoveDirection.Vertical)
+        //{
+        //    _spriteRenderer.flipX = direction.y > 0;
+        //}
+        //else if (_moveDirection == MoveDirection.Horizontal)
+        //{
+        //    _spriteRenderer.flipX = direction.x < 0;
+        //}
+
+        switch (_moveDirection)
         {
-            _spriteRenderer.flipX = direction.y > 0;
+            case MoveDirection.Horizontal:
+                _spriteRenderer.flipX = direction.x < 0;
+                _collider.offset = new Vector2(_spriteRenderer.flipX ? _colliderOffsetX : 0, _collider.offset.y);
+                break;
+            case MoveDirection.Vertical:
+                _spriteRenderer.flipX = direction.y > 0;
+                break;
+            default:
+                break;
         }
-        else if (_moveDirection == MoveDirection.Horizontal)
-        {
-            _spriteRenderer.flipX = direction.x < 0;
-        }
+
+        
     }
 
     private bool ReachedCurrentWaypoint()
