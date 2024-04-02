@@ -49,14 +49,6 @@ public class PatrolState : State
         transform.position = Vector2.MoveTowards(transform.position, _waypoints[waypointIndex].position, _speed * Time.deltaTime);
 
         Vector2 direction = (_waypoints[waypointIndex].position - transform.position).normalized;
-        //if (_moveDirection == MoveDirection.Vertical)
-        //{
-        //    _spriteRenderer.flipX = direction.y > 0;
-        //}
-        //else if (_moveDirection == MoveDirection.Horizontal)
-        //{
-        //    _spriteRenderer.flipX = direction.x < 0;
-        //}
 
         switch (_moveDirection)
         {
