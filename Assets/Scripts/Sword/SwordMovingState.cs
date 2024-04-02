@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(PolygonCollider2D))]
+[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(VectorCreator))]
 public class SwordMovingState : State
 {
@@ -13,6 +14,7 @@ public class SwordMovingState : State
     [SerializeField] private float _raycastDistance;
 
     private PolygonCollider2D _swordCollider;
+    private Rigidbody2D _rigidbody2D;
     private VectorCreator _vectorCreator;
     private Vector3 _direction;
 
@@ -34,6 +36,7 @@ public class SwordMovingState : State
     {
         _vectorCreator = GetComponent<VectorCreator>();
         _swordCollider = GetComponent<PolygonCollider2D>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     private void Start()
@@ -75,6 +78,11 @@ public class SwordMovingState : State
 
             ÑorrectSwordWallAngle(collision);
         }
+
+        //if (collision.collider.TryGetComponent(out FaliingRock faliingRock))
+        //{
+        //    _canMove = false;
+        //}
     }
 
     private void ÑorrectSwordWallAngle(Collision2D collision)
