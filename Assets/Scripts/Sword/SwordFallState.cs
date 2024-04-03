@@ -5,8 +5,8 @@ using UnityEngine;
 public class SwordFallState : State
 {
     private Rigidbody2D _rigidbody2D;
-    private float _spinForce = 0.00000000001f;
-    private float _division—oefficient = 100f;
+    private float _spinForce = 0.5f;
+    private float _division—oefficient = 1f;
 
     private void Awake()
     {
