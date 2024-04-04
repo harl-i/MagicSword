@@ -8,6 +8,7 @@ public class DetectTransitionEditor : Editor
     private SerializedProperty _targetState;
     private SerializedProperty _playerLayer;
     private SerializedProperty _detectionZoneType;
+    private SerializedProperty _zoneMovementType;
     private SerializedProperty _detectionRadius;
     private SerializedProperty _detectionRectangleSize;
     private SerializedProperty _detectReactionDelay;
@@ -21,6 +22,7 @@ public class DetectTransitionEditor : Editor
         _targetState = serializedObject.FindProperty("_targetState");
         _playerLayer = serializedObject.FindProperty("_playerLayer");
         _detectionZoneType = serializedObject.FindProperty("_detectionZoneType");
+        _zoneMovementType = serializedObject.FindProperty("_zoneMovementType");
         _detectionRadius = serializedObject.FindProperty("_detectionRadius");
         _detectionRectangleSize = serializedObject.FindProperty("_detectionRectangleSize");
         _detectReactionDelay = serializedObject.FindProperty("_detectReactionDelay");
@@ -61,6 +63,7 @@ public class DetectTransitionEditor : Editor
     private void ShowRectangleZoneFields()
     {
         EditorGUILayout.PropertyField(_detectionRectangleSize);
+        EditorGUILayout.PropertyField(_zoneMovementType);
         EditorGUILayout.PropertyField(_offsetY);
         EditorGUILayout.PropertyField(_isCooldownActive);
         if (_isCooldownActive.boolValue)

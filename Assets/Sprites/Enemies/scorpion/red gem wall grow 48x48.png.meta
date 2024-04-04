@@ -1,0 +1,660 @@
+fileFormatVersion: 2
+guid: 94994d7f265af7746bead871b03de041
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcb9ec8fd49614468d1c9110831ce1d
+      internalID: -2033298328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821e6cc4279f23246ad452b123d573d4
+      internalID: -839951690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5161d1eb8453143aa369f8c60f9db8
+      internalID: 1437784522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ea709f022021848865c820b85e9242
+      internalID: -1881444911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432a1f68585f48847ae5bd306a40063a
+      internalID: 1633479332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f43b9684817cc04ea48ba5405784b74
+      internalID: -1866884782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48eb07058a2edd242baf007a3a05b775
+      internalID: 21837285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434e4a8da997d29418e4b3a51d980b97
+      internalID: 1904976938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d416a550cbcdce4fad670cc634a6a7a
+      internalID: 1314354181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945a4c7dd4e666949b438c66cc394564
+      internalID: -1125134239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378423062031b5c4ba8d8c9b0384cd23
+      internalID: -1599089406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d950c92d90b898d478bc9005185602da
+      internalID: -743185974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c13e62276940aa468424eb066dcf280
+      internalID: 1324810843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54adf07be09c0894f9370c21af3e8105
+      internalID: -291496234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ba351a06eb900468c478547d8f9262
+      internalID: -259896487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5ff17afa708744896ba32a8f785867
+      internalID: 199504161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81b50492ddbcb3459d7ece130fde2fc
+      internalID: 200351167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aca8b459b632f54cb811483723ef9e3
+      internalID: -1324703156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f37bb55214ec5e4fb1f80238b9660dc
+      internalID: 1073523168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_19
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6789b75eb111d54380ba3cb9de57f88
+      internalID: -1192534052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d513f069fb41547afbcfd9d6f983fa
+      internalID: -1284069936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall grow 48x48_21
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd65e3dc29827c7418149e60290f804a
+      internalID: 1080019994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      red gem wall grow 48x48_0: -2033298328
+      red gem wall grow 48x48_1: -839951690
+      red gem wall grow 48x48_10: -1599089406
+      red gem wall grow 48x48_11: -743185974
+      red gem wall grow 48x48_12: 1324810843
+      red gem wall grow 48x48_13: -291496234
+      red gem wall grow 48x48_14: -259896487
+      red gem wall grow 48x48_15: 199504161
+      red gem wall grow 48x48_16: 200351167
+      red gem wall grow 48x48_17: -1324703156
+      red gem wall grow 48x48_18: 1073523168
+      red gem wall grow 48x48_19: -1192534052
+      red gem wall grow 48x48_2: 1437784522
+      red gem wall grow 48x48_20: -1284069936
+      red gem wall grow 48x48_21: 1080019994
+      red gem wall grow 48x48_22: 1129785592
+      red gem wall grow 48x48_23: 615203472
+      red gem wall grow 48x48_24: -1103283201
+      red gem wall grow 48x48_25: 1908961505
+      red gem wall grow 48x48_26: 505970525
+      red gem wall grow 48x48_27: 1126283949
+      red gem wall grow 48x48_28: -690443310
+      red gem wall grow 48x48_29: -1064136334
+      red gem wall grow 48x48_3: -1881444911
+      red gem wall grow 48x48_30: 1527765978
+      red gem wall grow 48x48_31: -1171565201
+      red gem wall grow 48x48_32: -1738134467
+      red gem wall grow 48x48_33: 1700736239
+      red gem wall grow 48x48_34: -1676069301
+      red gem wall grow 48x48_35: -2142595494
+      red gem wall grow 48x48_36: 654213165
+      red gem wall grow 48x48_37: -336914803
+      red gem wall grow 48x48_38: -1349765922
+      red gem wall grow 48x48_39: -2010262074
+      red gem wall grow 48x48_4: 1633479332
+      red gem wall grow 48x48_40: 1423911008
+      red gem wall grow 48x48_41: -62116280
+      red gem wall grow 48x48_42: 996557243
+      red gem wall grow 48x48_43: -858129413
+      red gem wall grow 48x48_44: -389442448
+      red gem wall grow 48x48_45: 1050896933
+      red gem wall grow 48x48_46: -996053161
+      red gem wall grow 48x48_47: -2006731469
+      red gem wall grow 48x48_48: 496698814
+      red gem wall grow 48x48_49: 569561247
+      red gem wall grow 48x48_5: -1866884782
+      red gem wall grow 48x48_50: 336780604
+      red gem wall grow 48x48_51: -1448956832
+      red gem wall grow 48x48_52: 684283370
+      red gem wall grow 48x48_53: -1488638174
+      red gem wall grow 48x48_54: -1510192117
+      red gem wall grow 48x48_55: 1892072976
+      red gem wall grow 48x48_56: -1416187568
+      red gem wall grow 48x48_57: -1141322622
+      red gem wall grow 48x48_6: 21837285
+      red gem wall grow 48x48_7: 1904976938
+      red gem wall grow 48x48_8: 1314354181
+      red gem wall grow 48x48_9: -1125134239
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

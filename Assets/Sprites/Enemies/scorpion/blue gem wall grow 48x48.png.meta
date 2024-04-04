@@ -1,0 +1,660 @@
+fileFormatVersion: 2
+guid: 033c8bd88fe9626498e02511bea4b3e9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817f9f72aaa140a4cabf3b9bd4358f17
+      internalID: 1464988995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e468ee28add381c428c75ea225d9ca7a
+      internalID: -2136308492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd41a03d04ee0064db97a417dcd40e98
+      internalID: 1570666368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e103ac2bc79424aaedcc118fefddd1
+      internalID: -500853231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1995228a9a741a44bb7b64c03e0db90
+      internalID: 4186994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2069ae705eda70b4cb274d2a69bf34fe
+      internalID: -614864491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d53fe5fa12b1e4b89ce2ea97e3372a
+      internalID: -1954126037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410f537f9d9edbb4787d63d3a9973d73
+      internalID: 594194108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bcfe7286a2a194b8b66b304165a1ee
+      internalID: 1620439084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdcb90bf3d897614fb4b3dd75ae4e16b
+      internalID: 454066070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff48e9d408fa10f46b3f72f70af2a243
+      internalID: -1185924403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a119ea3d384d34393c40f6077de7ac
+      internalID: -1748540450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971103dacf2b0b44ca5e899054b67ef7
+      internalID: -659763120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25438fa6b731a724baddd9526dd511fd
+      internalID: 1567071848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d357f3708204e5f488d7f00cc622fcc3
+      internalID: 372384157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bb840533867c04585e49840d034ba1
+      internalID: 358541804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5b985885874124189b3bf7349941a6
+      internalID: -931888939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e2b6841bd2b5e4b986de7f412fc222
+      internalID: 1635827647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9553badb2f3b79449069104893d546d
+      internalID: 2128658238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_19
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5a7185c76a28c4891fc2f04decf7a1
+      internalID: -1322382817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593ba43211cc23a4a996d3400ec2c54d
+      internalID: 439703858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall grow 48x48_21
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 77
+        width: 48
+        height: 20
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4123a9a44c779914280691155fb6f9f8
+      internalID: -6110545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      blue gem wall grow 48x48_0: 1464988995
+      blue gem wall grow 48x48_1: -2136308492
+      blue gem wall grow 48x48_10: -1185924403
+      blue gem wall grow 48x48_11: -1748540450
+      blue gem wall grow 48x48_12: -659763120
+      blue gem wall grow 48x48_13: 1567071848
+      blue gem wall grow 48x48_14: 372384157
+      blue gem wall grow 48x48_15: 358541804
+      blue gem wall grow 48x48_16: -931888939
+      blue gem wall grow 48x48_17: 1635827647
+      blue gem wall grow 48x48_18: 2128658238
+      blue gem wall grow 48x48_19: -1322382817
+      blue gem wall grow 48x48_2: 1570666368
+      blue gem wall grow 48x48_20: 439703858
+      blue gem wall grow 48x48_21: -6110545
+      blue gem wall grow 48x48_22: -258288897
+      blue gem wall grow 48x48_23: -878473
+      blue gem wall grow 48x48_24: 1742592001
+      blue gem wall grow 48x48_25: 2043603011
+      blue gem wall grow 48x48_26: -744052083
+      blue gem wall grow 48x48_27: -838649853
+      blue gem wall grow 48x48_28: -347900472
+      blue gem wall grow 48x48_29: -569236506
+      blue gem wall grow 48x48_3: -500853231
+      blue gem wall grow 48x48_30: -1202202245
+      blue gem wall grow 48x48_31: -2126873485
+      blue gem wall grow 48x48_32: 384209167
+      blue gem wall grow 48x48_33: 86527358
+      blue gem wall grow 48x48_34: -1241993791
+      blue gem wall grow 48x48_35: 1673104964
+      blue gem wall grow 48x48_36: 967454464
+      blue gem wall grow 48x48_37: -20734862
+      blue gem wall grow 48x48_38: -916214564
+      blue gem wall grow 48x48_39: 592999221
+      blue gem wall grow 48x48_4: 4186994
+      blue gem wall grow 48x48_40: 249116627
+      blue gem wall grow 48x48_41: -1507241944
+      blue gem wall grow 48x48_42: -350196146
+      blue gem wall grow 48x48_43: -1560661453
+      blue gem wall grow 48x48_44: 1745161519
+      blue gem wall grow 48x48_45: -1625304411
+      blue gem wall grow 48x48_46: -1066348378
+      blue gem wall grow 48x48_47: -837512982
+      blue gem wall grow 48x48_48: -1298497501
+      blue gem wall grow 48x48_49: -1572108251
+      blue gem wall grow 48x48_5: -614864491
+      blue gem wall grow 48x48_50: 741072791
+      blue gem wall grow 48x48_51: 505564742
+      blue gem wall grow 48x48_52: -57967102
+      blue gem wall grow 48x48_53: 786481531
+      blue gem wall grow 48x48_54: 1821355832
+      blue gem wall grow 48x48_55: -1439534916
+      blue gem wall grow 48x48_56: 1634954920
+      blue gem wall grow 48x48_57: 421446575
+      blue gem wall grow 48x48_6: -1954126037
+      blue gem wall grow 48x48_7: 594194108
+      blue gem wall grow 48x48_8: 1620439084
+      blue gem wall grow 48x48_9: 454066070
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

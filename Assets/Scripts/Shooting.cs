@@ -25,6 +25,7 @@ public class Shooting : BulletPool
                 Initialize(_straightBullet);
                 break;
             case ShootingEnemyType.Gargoyle:
+            case ShootingEnemyType.Scorpion:
                 Initialize(_homingBullet);
                 break;
             case ShootingEnemyType.Turret:
@@ -40,6 +41,7 @@ public class Shooting : BulletPool
         switch (_enemyType)
         {
             case ShootingEnemyType.Spider:
+            case ShootingEnemyType.Scorpion:
                 SetShootPointPosition();
                 break;
             case ShootingEnemyType.Turret:
@@ -55,7 +57,7 @@ public class Shooting : BulletPool
         switch (_enemyType)
         {
             case ShootingEnemyType.Spider:
-                break;
+            case ShootingEnemyType.Scorpion:
             case ShootingEnemyType.Gargoyle:
                 break;
             case ShootingEnemyType.Turret:
@@ -79,6 +81,7 @@ public class Shooting : BulletPool
                 ShootWithStraightBullet();
                 break;
             case ShootingEnemyType.Gargoyle:
+            case ShootingEnemyType.Scorpion:
                 ShootWithHomingBullet();
                 break;
             case ShootingEnemyType.Turret:

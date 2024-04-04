@@ -1,0 +1,692 @@
+fileFormatVersion: 2
+guid: 1ce8759d15ae0b54e8226a9bc5ef9c40
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d994a25a42f8034f9a1e672a7c58bb8
+      internalID: 1052755770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d822afc0236954da86fa5ad86280fe
+      internalID: 1656856226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1a65c59f57fc64d8da4b57911f0287
+      internalID: -649341903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638d8ae5abbad7847977c25ded469fa1
+      internalID: -322880231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbd7f719256f4d49afeddb3b91bcf38
+      internalID: 929845524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1477d49abe1f124d867fe956a7ea6b8
+      internalID: -56527676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd0b50260c1fcd42aee6d4d249730c0
+      internalID: -870139185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97efb9e513d6e9a49984ffa1d778d45c
+      internalID: 2014619268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b2bcdd2d908094b99580dbc3e7ba38
+      internalID: 1530234358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0bf8d78c7a914479026c1a0b1de0cf
+      internalID: -982799379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0184990c0c19484eaac598058d2415c
+      internalID: 595644492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f854c72a902c6544828ed4cedf97d75
+      internalID: 201766960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31833b230b8afa9488a2bf876c60438e
+      internalID: -854966607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fbbdd29b87a8348a15afe27a4b5505
+      internalID: -388258473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731f93ee2a9f5f74c9d4cbedad45a304
+      internalID: -1142875025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2383bb28cb7bd48b10e41db9b2600c
+      internalID: 1368803172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a4747ca00fada4dac7f5ec34912f4b
+      internalID: -1034332067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8786fb7861dcd2a4e9d9cb87c4ae7df8
+      internalID: 481858884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78c69b77c24c5c4981bc1da40666a51
+      internalID: -1533782198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_19
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484a11217a04bb74c8869aee1b1212ed
+      internalID: 725071758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96c9c6bb216879479a41e65f3d71f54
+      internalID: -1006244811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_21
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6edc9aa0353eb4f90df4c7db1c792e
+      internalID: 1476778452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_22
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f656051db075d41ba6f8377cc2346e
+      internalID: 1583965621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red gem wall destroy 48x48_23
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0, y: 0.84}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1717881292f134a9f54d7bedce7f51
+      internalID: -1443292007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      red gem wall destroy 48x48_0: 1052755770
+      red gem wall destroy 48x48_1: 1656856226
+      red gem wall destroy 48x48_10: 595644492
+      red gem wall destroy 48x48_11: 201766960
+      red gem wall destroy 48x48_12: -854966607
+      red gem wall destroy 48x48_13: -388258473
+      red gem wall destroy 48x48_14: -1142875025
+      red gem wall destroy 48x48_15: 1368803172
+      red gem wall destroy 48x48_16: -1034332067
+      red gem wall destroy 48x48_17: 481858884
+      red gem wall destroy 48x48_18: -1533782198
+      red gem wall destroy 48x48_19: 725071758
+      red gem wall destroy 48x48_2: -649341903
+      red gem wall destroy 48x48_20: -1006244811
+      red gem wall destroy 48x48_21: 1476778452
+      red gem wall destroy 48x48_22: 1583965621
+      red gem wall destroy 48x48_23: -1443292007
+      red gem wall destroy 48x48_24: 1124362136
+      red gem wall destroy 48x48_25: 541824339
+      red gem wall destroy 48x48_26: -7753554
+      red gem wall destroy 48x48_27: -956413468
+      red gem wall destroy 48x48_28: 45863299
+      red gem wall destroy 48x48_29: 1233939315
+      red gem wall destroy 48x48_3: -322880231
+      red gem wall destroy 48x48_30: -1856533116
+      red gem wall destroy 48x48_31: -144656999
+      red gem wall destroy 48x48_32: 974135524
+      red gem wall destroy 48x48_33: -204995992
+      red gem wall destroy 48x48_34: -30100962
+      red gem wall destroy 48x48_35: 574332291
+      red gem wall destroy 48x48_36: -376371773
+      red gem wall destroy 48x48_37: 388353269
+      red gem wall destroy 48x48_38: -1016033541
+      red gem wall destroy 48x48_39: 1415140411
+      red gem wall destroy 48x48_4: 929845524
+      red gem wall destroy 48x48_40: 1791115467
+      red gem wall destroy 48x48_41: 826751380
+      red gem wall destroy 48x48_42: 1978563511
+      red gem wall destroy 48x48_43: -1600291752
+      red gem wall destroy 48x48_44: -501757175
+      red gem wall destroy 48x48_45: -1761779287
+      red gem wall destroy 48x48_46: -713867117
+      red gem wall destroy 48x48_47: 1488707162
+      red gem wall destroy 48x48_5: -56527676
+      red gem wall destroy 48x48_6: -870139185
+      red gem wall destroy 48x48_7: 2014619268
+      red gem wall destroy 48x48_8: 1530234358
+      red gem wall destroy 48x48_9: -982799379
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

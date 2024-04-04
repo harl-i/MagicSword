@@ -1,6 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(Shooting))]
 public class ShootState : State
 {
     [SerializeField] private ShootingEnemyType _enemyType;
@@ -10,6 +11,8 @@ public class ShootState : State
     private SpriteRenderer _spriteRenderer;
     private float _shootElapsedTime = 0f;
 
+    public ShootingEnemyType EnemyType => _enemyType;
+
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -18,7 +21,8 @@ public class ShootState : State
 
     private void OnEnable()
     {
-        if (_enemyType == ShootingEnemyType.Spider)
+        if (_enemyType == ShootingEnemyType.Spider ||
+            _enemyType == ShootingEnemyType.Scorpion)
         {
             FlipToPlayer();
         }

@@ -2,5 +2,6 @@ public enum ShootingEnemyType
 {
     Spider,
     Gargoyle,
-    Turret
+    Turret,
+    Scorpion
 }

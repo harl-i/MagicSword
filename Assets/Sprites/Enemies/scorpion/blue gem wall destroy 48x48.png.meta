@@ -1,0 +1,692 @@
+fileFormatVersion: 2
+guid: a31f972fa89da474e9128ac85679c040
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7f3b5ccfc083b4e938a1148b7dae93
+      internalID: -465518543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9163ca110e32e4aa7145a06250bb2a
+      internalID: 2036873471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7863e00156c3b4e8649ce480c012b4
+      internalID: -69452708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a377ef2da610824459b8453e07fb79c8
+      internalID: 181936057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d469c47f499953b4ba4de49c9d8cbc5b
+      internalID: 1709764499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b648ff7687805874481062851130bb9b
+      internalID: -1611735438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb917729726cfa4ab77440c8470d7ed
+      internalID: 1465738441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5016f138bef31a4b92bd312015c3aba
+      internalID: -102305394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5167daacc66504b99748d8b83c745d
+      internalID: 740848180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c42e2f78122f5f4cb70bf155a26720c
+      internalID: 210857977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3f92b393a2694438119a6680e4d31d
+      internalID: -1383420196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9121a437604961547bf0f4bded9016cf
+      internalID: 1787019854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2824059ee6c03d940befadf299e9bdb1
+      internalID: -1263955619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80eaeb2be596b2b40a7016719f7ab5a5
+      internalID: 1025697919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863079fbe6c841848915ab26f698c48d
+      internalID: -1222172527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e41ff18c17f2445b461b0eaabd6b13
+      internalID: -1683763851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ad0323db0485c42bc3f1cf7d6b8405
+      internalID: 1278499208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb8da7c0b78ddf4c8223bd18b2d671b
+      internalID: -1500137230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20106abfebb2b584fba9900b7197131f
+      internalID: -946512264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_19
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d29196e2fa01e429e615f378b0f0f6
+      internalID: -1803194669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1486ee48a4f574245981f0029a7510ef
+      internalID: 746682591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_21
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbd827b93b021643a440f62c632b402
+      internalID: 994174243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_22
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8102bba729e6fe4aad582dc7b99bd3d
+      internalID: -1250744175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue gem wall destroy 48x48_23
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 57
+        width: 48
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7dde5cb64dd8540873cd640eed58be
+      internalID: 380529430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      blue gem wall destroy 48x48_0: -465518543
+      blue gem wall destroy 48x48_1: 2036873471
+      blue gem wall destroy 48x48_10: -1383420196
+      blue gem wall destroy 48x48_11: 1787019854
+      blue gem wall destroy 48x48_12: -1263955619
+      blue gem wall destroy 48x48_13: 1025697919
+      blue gem wall destroy 48x48_14: -1222172527
+      blue gem wall destroy 48x48_15: -1683763851
+      blue gem wall destroy 48x48_16: 1278499208
+      blue gem wall destroy 48x48_17: -1500137230
+      blue gem wall destroy 48x48_18: -946512264
+      blue gem wall destroy 48x48_19: -1803194669
+      blue gem wall destroy 48x48_2: -69452708
+      blue gem wall destroy 48x48_20: 746682591
+      blue gem wall destroy 48x48_21: 994174243
+      blue gem wall destroy 48x48_22: -1250744175
+      blue gem wall destroy 48x48_23: 380529430
+      blue gem wall destroy 48x48_24: 1571568591
+      blue gem wall destroy 48x48_25: -1032466148
+      blue gem wall destroy 48x48_26: 1453752222
+      blue gem wall destroy 48x48_27: 108608855
+      blue gem wall destroy 48x48_28: 1444397649
+      blue gem wall destroy 48x48_29: 1570332890
+      blue gem wall destroy 48x48_3: 181936057
+      blue gem wall destroy 48x48_30: 55497282
+      blue gem wall destroy 48x48_31: 1709765010
+      blue gem wall destroy 48x48_32: -495303446
+      blue gem wall destroy 48x48_33: -2145377332
+      blue gem wall destroy 48x48_34: -632992197
+      blue gem wall destroy 48x48_35: 996223728
+      blue gem wall destroy 48x48_36: 1164581488
+      blue gem wall destroy 48x48_37: -460891691
+      blue gem wall destroy 48x48_38: -447836067
+      blue gem wall destroy 48x48_39: 1282884614
+      blue gem wall destroy 48x48_4: 1709764499
+      blue gem wall destroy 48x48_40: 665473760
+      blue gem wall destroy 48x48_41: 152161146
+      blue gem wall destroy 48x48_42: 1155805239
+      blue gem wall destroy 48x48_43: -1242363678
+      blue gem wall destroy 48x48_44: -1971014300
+      blue gem wall destroy 48x48_45: -504453436
+      blue gem wall destroy 48x48_46: 145747595
+      blue gem wall destroy 48x48_47: -215976698
+      blue gem wall destroy 48x48_5: -1611735438
+      blue gem wall destroy 48x48_6: 1465738441
+      blue gem wall destroy 48x48_7: -102305394
+      blue gem wall destroy 48x48_8: 740848180
+      blue gem wall destroy 48x48_9: 210857977
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

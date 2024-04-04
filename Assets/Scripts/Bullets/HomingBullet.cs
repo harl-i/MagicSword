@@ -5,7 +5,6 @@ public class HomingBullet : Bullet
     [SerializeField] private float _rotationSpeed;
     [SerializeField] private float _lifetime;
 
-    //private Vector3 _direction;
     private float _elapsedTime;
 
     private void OnEnable()
@@ -15,7 +14,6 @@ public class HomingBullet : Bullet
 
     private void Update()
     {
-        //_direction = (_target.position - transform.position).normalized;
         CalculateDirection();
         float angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg - 90f;
 

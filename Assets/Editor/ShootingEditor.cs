@@ -5,7 +5,6 @@ using UnityEngine;
 [CanEditMultipleObjects]
 public class ShootingEditor : Editor
 {
-    private SerializedProperty _enemyType;
     private SerializedProperty _shootPoint;
     private SerializedProperty _container;
     private SerializedProperty _capacity;
@@ -16,7 +15,6 @@ public class ShootingEditor : Editor
 
     private void OnEnable()
     {
-        _enemyType = serializedObject.FindProperty("_enemyType");
         _shootPoint = serializedObject.FindProperty("_shootPoint");
         _container = serializedObject.FindProperty("_container");
         _capacity = serializedObject.FindProperty("_capacity");
@@ -28,30 +26,44 @@ public class ShootingEditor : Editor
 
     public override void OnInspectorGUI()
     {
-        serializedObject.Update();
+        Shooting shootingComponentTarget = (Shooting)target;
+        ShootState shootState = shootingComponentTarget.GetComponent<ShootState>();
 
-        EditorGUILayout.PropertyField(_enemyType);
-        switch (_enemyType.enumValueIndex)
+        ShootingEnemyType enemyType;
+
+        serializedObject.Update();
+        if (shootState != null)
         {
-            case (int)ShootingEnemyType.Gargoyle:
-                EditorGUILayout.PropertyField(_homingBullet);
-                break;
-            case (int)ShootingEnemyType.Spider:
-                EditorGUILayout.PropertyField(_straightBullet);
-                break;
-            case (int)ShootingEnemyType.Turret:
-                EditorGUILayout.PropertyField(_towardsBullet);
-                EditorGUILayout.PropertyField(_showTurretComponent);
-                break;
-            default:
-                break;
-        }
+            enemyType = shootState.EnemyType;
+
+            switch (enemyType)
+            {
+                case ShootingEnemyType.Spider:
+                    EditorGUILayout.PropertyField(_straightBullet);
+                    break;
+                case ShootingEnemyType.Turret:
+                    EditorGUILayout.PropertyField(_towardsBullet);
+                    EditorGUILayout.PropertyField(_showTurretComponent);
+                    break;
+                case ShootingEnemyType.Gargoyle:
+                case ShootingEnemyType.Scorpion:
+                    EditorGUILayout.PropertyField(_homingBullet);
+                    break;
+                default:
+                    break;
+            }
+        }        
 
         DrawLine();
 
         EditorGUILayout.PropertyField(_shootPoint);
         EditorGUILayout.PropertyField(_container);
         EditorGUILayout.PropertyField(_capacity);
+
+        if (GUI.changed)
+        {
+            EditorUtility.SetDirty(shootingComponentTarget);
+        }
 
         serializedObject.ApplyModifiedProperties();
     }
