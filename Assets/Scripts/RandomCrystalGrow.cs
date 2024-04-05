@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
@@ -50,7 +48,7 @@ public class RandomCrystalGrow : MonoBehaviour
 
     private void SetGrowDirection()
     {
-        if (transform.position.x > _levelCenter)
+        if (transform.parent.position.x > _levelCenter)
         {
             _spriteRenderer.flipX = true;
         }
@@ -62,7 +60,7 @@ public class RandomCrystalGrow : MonoBehaviour
 
     private void ColliderOffset()
     {
-        if (transform.position.x > _levelCenter)
+        if (transform.parent.position.x > _levelCenter)
         {
             _collider.offset = _rightGrowColliderOffset;
         }

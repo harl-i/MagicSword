@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class CrystalTrapActivationState : State
 {
-    [SerializeField] private Transform _firstGrowPoint;
-    [SerializeField] private Transform _secondGrowPoint;
+    [SerializeField] private CrystalTrap _crystalFromFirstGrowPoint;
+    [SerializeField] private CrystalTrap _crystalFromSecondGrowPoint;
 
     private void OnEnable()
     {
-        _firstGrowPoint.gameObject.SetActive(true);
-        _secondGrowPoint.gameObject.SetActive(true);
+        _crystalFromFirstGrowPoint.gameObject.SetActive(true);
+        _crystalFromSecondGrowPoint.gameObject.SetActive(true);
     }
 }

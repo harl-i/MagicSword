@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class DetectTransition : Transition
 {
     [SerializeField] private DetectionZoneType _detectionZoneType;
@@ -23,7 +24,7 @@ public class DetectTransition : Transition
 
         if (_zoneMovementType == DetectionZoneMovementType.Static)
         {
-            _fixedDetectionPosition = new Vector2(0, 0);
+            _fixedDetectionPosition = transform.parent.position;
         }
     }
 
