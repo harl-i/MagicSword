@@ -124,7 +124,6 @@ public class SwordMovingState : State
 
     private void HandleMouseDirectionChange(Vector2 direction)
     {
-        Debug.Log("Mouse direction changed: " + direction);
         if (_isFirstThrow)
         {
             StuckInWall?.Invoke(false);

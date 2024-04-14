@@ -17,6 +17,7 @@ public class ShootState : State
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _shootElapsedTime = _shootDelay;
+        _shootingComponent.SetEnemyType(_enemyType);
     }
 
     private void OnEnable()
@@ -28,7 +29,6 @@ public class ShootState : State
         }
 
         _shootingComponent.enabled = true;
-        _shootingComponent.SetEnemyType(_enemyType);
         _shootingComponent.SetPlayerTransform(Player);
     }
 

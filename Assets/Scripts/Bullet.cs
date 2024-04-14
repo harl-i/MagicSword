@@ -18,6 +18,11 @@ public abstract class Bullet : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public void SetDirection(Vector3 direction)
+    {
+        _direction = direction;
+    }
+
     public void CalculateDirection()
     {
         if (_target != null)

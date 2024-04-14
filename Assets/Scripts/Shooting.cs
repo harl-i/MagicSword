@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
@@ -9,10 +10,14 @@ public class Shooting : BulletPool
     [SerializeField] private StraightBullet _straightBullet;
     [SerializeField] private HomingBullet _homingBullet;
     [SerializeField] private ShowTurret _showTurretComponent;
+    [SerializeField] private LookAtBullet _lookAtBullet;
 
     private SpriteRenderer _spriteRenderer;
     private Transform _playerTransform;
     private Animator _animator;
+    public float _minAngle = -45f;
+    public float _maxAngle = 55f;
+    private float _rotationSpeed = 150f;
 
     private void Awake()
     {
@@ -31,6 +36,9 @@ public class Shooting : BulletPool
             case ShootingEnemyType.Turret:
                 Initialize(_towardsBullet);
                 break;
+            case ShootingEnemyType.TowardsTurret:
+                Initialize(_lookAtBullet);
+                break;
             default:
                 break;
         }
@@ -45,6 +53,7 @@ public class Shooting : BulletPool
                 SetShootPointPosition();
                 break;
             case ShootingEnemyType.Turret:
+            case ShootingEnemyType.TowardsTurret:
                 _showTurretComponent.enabled = true;
                 break;
             default:
@@ -87,11 +96,51 @@ public class Shooting : BulletPool
             case ShootingEnemyType.Turret:
                 ShootWithTowardsBullet();
                 break;
+            case ShootingEnemyType.TowardsTurret:
+                StartCoroutine(LookAtPlayerAndShoot());
+                break;
             default:
                 break;
         }
     }
-    
+
+    private IEnumerator LookAtPlayerAndShoot()
+    {
+        WaitForSeconds wait = new WaitForSeconds(Time.deltaTime);
+        WaitForSeconds delayBeforeShoot = new WaitForSeconds(0.5f);
+        while (true)
+        {
+            Vector2 direction = (Vector2)_playerTransform.position - (Vector2)transform.position;
+            float targetAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            targetAngle = Mathf.Clamp(targetAngle, _minAngle, _maxAngle);
+
+            Quaternion targetRotation = Quaternion.Euler(0, 0, targetAngle);
+
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
+
+            if (Quaternion.Angle(transform.rotation, targetRotation) < 0.1f)
+            {
+                yield return delayBeforeShoot;
+                //ShootWithLookAtBullet(new Vector2(transform.forward.z, transform.forward.y));
+
+                ShootWithLookAtBullet(transform.right);
+
+                Debug.Log(transform.right);
+                yield break;
+            }
+
+            yield return wait;
+        }
+    }
+
+    private void ShootWithLookAtBullet(Vector3 direction)
+    {
+        Bullet bullet = GetBulletFromPool();
+        bullet.SetDirection(direction);
+        bullet.gameObject.SetActive(true);
+    }
+
     public void FlipX()
     {
         Vector2 position = _shootPoint.localPosition;
