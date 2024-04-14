@@ -24,7 +24,6 @@ public class CollisionWithPlatformsWhenFallingTransition : Transition
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //NeedTransit = false;
         if (collision.gameObject.TryGetComponent(out StopFallingPlatform stopFallingPlatform))
         {
             SwitchToKinematic();
@@ -34,7 +33,6 @@ public class CollisionWithPlatformsWhenFallingTransition : Transition
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        //NeedTransit = false;
         if (collision.gameObject.TryGetComponent(out StopFallingPlatform stopFallingPlatform))
         {
             SwitchToKinematic();

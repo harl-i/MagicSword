@@ -48,10 +48,18 @@ public class SwordMovingState : State
 
     private void OnEnable()
     {
+        ResetSwordState();
+
         _vectorCreator.MouseDirectionChanged += HandleMouseDirectionChange;
         _vectorCreator.DirectionSelectionCompleted += HandleDirectionSelectionCompleted;
 
         _swordCollider.enabled = true;
+    }
+
+    private void ResetSwordState()
+    {
+        _direction = Vector2.zero;
+        _angle = 45f;
     }
 
     private void Update()
@@ -78,11 +86,6 @@ public class SwordMovingState : State
 
             ÑorrectSwordWallAngle(collision);
         }
-
-        //if (collision.collider.TryGetComponent(out FaliingRock faliingRock))
-        //{
-        //    _canMove = false;
-        //}
     }
 
     private void ÑorrectSwordWallAngle(Collision2D collision)
@@ -121,6 +124,7 @@ public class SwordMovingState : State
 
     private void HandleMouseDirectionChange(Vector2 direction)
     {
+        Debug.Log("Mouse direction changed: " + direction);
         if (_isFirstThrow)
         {
             StuckInWall?.Invoke(false);

@@ -7,6 +7,7 @@ public class PatrolState : State
 {
     [SerializeField] private MoveDirection _moveDirection;
     [SerializeField] private Transform[] _waypoints;
+    [SerializeField] private bool _needUpdateWaypointPosition;
     [SerializeField] private float _speed = 2f;
     [SerializeField] private float _colliderOffsetX;
 
@@ -24,7 +25,23 @@ public class PatrolState : State
 
     private void OnEnable()
     {
+        if (_needUpdateWaypointPosition)
+        {
+            UpdateWaypointsPositions();
+        }
+
         _animator.SetTrigger("Patrol");
+
+    }
+
+    private void UpdateWaypointsPositions()
+    {
+        float newPositionY = transform.position.y;
+        foreach (var waypoint in _waypoints)
+        {
+            Vector2 newPosition = new Vector2(waypoint.position.x, newPositionY);
+            waypoint.position = newPosition;
+        }
     }
 
     private void Start()
@@ -64,7 +81,7 @@ public class PatrolState : State
                 break;
         }
 
-        
+
     }
 
     private bool ReachedCurrentWaypoint()
