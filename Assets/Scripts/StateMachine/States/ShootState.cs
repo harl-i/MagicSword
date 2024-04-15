@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[ExecuteInEditMode]
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Shooting))]
 public class ShootState : State

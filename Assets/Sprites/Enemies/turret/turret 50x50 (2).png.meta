@@ -143,6 +143,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: turret 50x50 (2)_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 67
+        width: 34
+        height: 20
+      alignment: 9
+      pivot: {x: 0.88204056, y: 0.20151405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ce4134a07f4c64987ca5f89c6b8065
+      internalID: 1004690928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -155,6 +176,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       turret 50x50 (2)_0: 1350988101
+      turret 50x50 (2)_1: 1004690928
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

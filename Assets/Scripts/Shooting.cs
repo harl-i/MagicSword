@@ -15,8 +15,15 @@ public class Shooting : BulletPool
     private SpriteRenderer _spriteRenderer;
     private Transform _playerTransform;
     private Animator _animator;
-    public float _minAngle = -45f;
-    public float _maxAngle = 55f;
+
+    private float _minAngleLeftSide = -45f;
+    private float _maxAngleLeftSide = 55f;
+
+    private float _maxPositiveAngleRightSide = 130f;
+    private float _minPositiveAngleRightSide = 180f;
+    private float _maxNegativeAngleRightSide = -180f;
+    private float _minNegativeAngleRightSide = -140f;
+
     private float _rotationSpeed = 150f;
 
     private void Awake()
@@ -70,6 +77,7 @@ public class Shooting : BulletPool
             case ShootingEnemyType.Gargoyle:
                 break;
             case ShootingEnemyType.Turret:
+            case ShootingEnemyType.TowardsTurret:
                 _showTurretComponent.enabled = false;
                 break;
             default:
@@ -113,7 +121,21 @@ public class Shooting : BulletPool
             Vector2 direction = (Vector2)_playerTransform.position - (Vector2)transform.position;
             float targetAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-            targetAngle = Mathf.Clamp(targetAngle, _minAngle, _maxAngle);
+            if (transform.position.x < 0)
+            {
+                targetAngle = Mathf.Clamp(targetAngle, _minAngleLeftSide, _maxAngleLeftSide);
+            }
+            else
+            {
+                if (targetAngle > 0)
+                {
+                    targetAngle = Mathf.Clamp(targetAngle, _minPositiveAngleRightSide, _maxPositiveAngleRightSide);
+                }
+                else
+                {
+                    targetAngle = Mathf.Clamp(targetAngle, _minNegativeAngleRightSide, _maxNegativeAngleRightSide);
+                }
+            }
 
             Quaternion targetRotation = Quaternion.Euler(0, 0, targetAngle);
 
@@ -122,11 +144,9 @@ public class Shooting : BulletPool
             if (Quaternion.Angle(transform.rotation, targetRotation) < 0.1f)
             {
                 yield return delayBeforeShoot;
-                //ShootWithLookAtBullet(new Vector2(transform.forward.z, transform.forward.y));
 
                 ShootWithLookAtBullet(transform.right);
 
-                Debug.Log(transform.right);
                 yield break;
             }
 
