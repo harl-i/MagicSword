@@ -41,6 +41,7 @@ public class Shooting : BulletPool
                 Initialize(_homingBullet);
                 break;
             case ShootingEnemyType.Turret:
+            case ShootingEnemyType.Archer:
                 Initialize(_towardsBullet);
                 break;
             case ShootingEnemyType.TowardsTurret:
@@ -57,6 +58,7 @@ public class Shooting : BulletPool
         {
             case ShootingEnemyType.Spider:
             case ShootingEnemyType.Scorpion:
+            case ShootingEnemyType.Archer:
                 SetShootPointPosition();
                 break;
             case ShootingEnemyType.Turret:
@@ -72,10 +74,10 @@ public class Shooting : BulletPool
     {
         switch (_enemyType)
         {
-            case ShootingEnemyType.Spider:
-            case ShootingEnemyType.Scorpion:
-            case ShootingEnemyType.Gargoyle:
-                break;
+            //case ShootingEnemyType.Spider:
+            //case ShootingEnemyType.Scorpion:
+            //case ShootingEnemyType.Gargoyle:
+            //    break;
             case ShootingEnemyType.Turret:
             case ShootingEnemyType.TowardsTurret:
                 _showTurretComponent.enabled = false;
@@ -102,6 +104,7 @@ public class Shooting : BulletPool
                 ShootWithHomingBullet();
                 break;
             case ShootingEnemyType.Turret:
+            case ShootingEnemyType.Archer:
                 ShootWithTowardsBullet();
                 break;
             case ShootingEnemyType.TowardsTurret:

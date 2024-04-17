@@ -4,5 +4,6 @@ public enum ShootingEnemyType
     Gargoyle,
     Turret,
     Scorpion,
-    TowardsTurret
+    TowardsTurret,
+    Archer
 }

@@ -55,6 +55,9 @@ public class ShootingEditor : Editor
                 case ShootingEnemyType.Scorpion:
                     EditorGUILayout.PropertyField(_homingBullet);
                     break;
+                case ShootingEnemyType.Archer:
+                    EditorGUILayout.PropertyField(_towardsBullet);
+                    break;
                 default:
                     break;
             }
