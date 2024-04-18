@@ -23,10 +23,17 @@ public class ShootState : State
 
     private void OnEnable()
     {
-        if (_enemyType == ShootingEnemyType.Spider ||
-            _enemyType == ShootingEnemyType.Scorpion)
+        switch (_enemyType)
         {
-            FlipToPlayer();
+            case ShootingEnemyType.Spider:
+            case ShootingEnemyType.Scorpion:
+                FlipToPlayer(MoveDirection.Vertical);
+                break;
+            case ShootingEnemyType.Archer:
+                FlipToPlayer(MoveDirection.Horizontal);
+                break;
+            default:
+                break;
         }
 
         _shootingComponent.enabled = true;
@@ -48,11 +55,39 @@ public class ShootState : State
         }
     }
 
-    private void FlipToPlayer()
+    private void FlipToPlayer(MoveDirection moveDirection)
     {
         Vector2 directionToPlayer = Player.position - transform.position;
         directionToPlayer.Normalize();
 
+        switch (moveDirection)
+        {
+            case MoveDirection.Horizontal:
+                FlipX(directionToPlayer);
+                break;
+            case MoveDirection.Vertical:
+                FlipY(directionToPlayer);
+                break;
+            default:
+                break;
+        }
+
+    }
+
+    private void FlipX(Vector2 directionToPlayer)
+    {
+        if (directionToPlayer.x > 0)
+        {
+            _spriteRenderer.flipX = false;
+        }
+        else if (directionToPlayer.x < 0)
+        {
+            _spriteRenderer.flipX = true;
+        }
+    }
+
+    private void FlipY(Vector2 directionToPlayer)
+    {
         if (directionToPlayer.y > 0)
         {
             _spriteRenderer.flipX = true;

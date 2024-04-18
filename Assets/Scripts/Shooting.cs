@@ -10,7 +10,6 @@ public class Shooting : BulletPool
     [SerializeField] private StraightBullet _straightBullet;
     [SerializeField] private HomingBullet _homingBullet;
     [SerializeField] private ShowTurret _showTurretComponent;
-    [SerializeField] private LookAtBullet _lookAtBullet;
 
     private SpriteRenderer _spriteRenderer;
     private Transform _playerTransform;
@@ -45,7 +44,7 @@ public class Shooting : BulletPool
                 Initialize(_towardsBullet);
                 break;
             case ShootingEnemyType.TowardsTurret:
-                Initialize(_lookAtBullet);
+                Initialize(_towardsBullet);
                 break;
             default:
                 break;
@@ -74,10 +73,6 @@ public class Shooting : BulletPool
     {
         switch (_enemyType)
         {
-            //case ShootingEnemyType.Spider:
-            //case ShootingEnemyType.Scorpion:
-            //case ShootingEnemyType.Gargoyle:
-            //    break;
             case ShootingEnemyType.Turret:
             case ShootingEnemyType.TowardsTurret:
                 _showTurretComponent.enabled = false;
@@ -104,8 +99,10 @@ public class Shooting : BulletPool
                 ShootWithHomingBullet();
                 break;
             case ShootingEnemyType.Turret:
+                ShootWithTowardsBullet(false);
+                break;
             case ShootingEnemyType.Archer:
-                ShootWithTowardsBullet();
+                ShootWithTowardsBullet(true);
                 break;
             case ShootingEnemyType.TowardsTurret:
                 StartCoroutine(LookAtPlayerAndShoot());
@@ -113,6 +110,13 @@ public class Shooting : BulletPool
             default:
                 break;
         }
+    }
+
+    public void FlipX()
+    {
+        Vector2 position = _shootPoint.localPosition;
+        position.x *= -1;
+        _shootPoint.localPosition = position;
     }
 
     private IEnumerator LookAtPlayerAndShoot()
@@ -148,27 +152,13 @@ public class Shooting : BulletPool
             {
                 yield return delayBeforeShoot;
 
-                ShootWithLookAtBullet(transform.right);
+                ShootWithTowardsBullet(transform.right);
 
                 yield break;
             }
 
             yield return wait;
         }
-    }
-
-    private void ShootWithLookAtBullet(Vector3 direction)
-    {
-        Bullet bullet = GetBulletFromPool();
-        bullet.SetDirection(direction);
-        bullet.gameObject.SetActive(true);
-    }
-
-    public void FlipX()
-    {
-        Vector2 position = _shootPoint.localPosition;
-        position.x *= -1;
-        _shootPoint.localPosition = position;
     }
 
     public void SetEnemyType(ShootingEnemyType enemyType)
@@ -187,13 +177,27 @@ public class Shooting : BulletPool
 
         bullet.SetFlip(_spriteRenderer.flipX);
         bullet.gameObject.SetActive(true);
-    }
+    }   
 
-    private void ShootWithTowardsBullet()
+    private void ShootWithTowardsBullet(bool canLookAtTarget)
     {
         Bullet bullet = GetBulletFromPool();
         bullet.SetTarget(_playerTransform);
+
         bullet.CalculateDirection();
+
+        if (canLookAtTarget)
+        {
+            bullet.LookAtTarget();
+        }
+
+        bullet.gameObject.SetActive(true);
+    }   
+    
+    private void ShootWithTowardsBullet(Vector3 direction)
+    {
+        Bullet bullet = GetBulletFromPool();
+        bullet.SetDirection(direction);
         bullet.gameObject.SetActive(true);
     }
 

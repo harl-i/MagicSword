@@ -172,7 +172,6 @@ GameObject:
   - component: {fileID: 4073647845641791309}
   - component: {fileID: 7276258945638086685}
   - component: {fileID: 7236438315058084344}
-  - component: {fileID: 431540153994367427}
   - component: {fileID: 6083558608973486173}
   - component: {fileID: 2395735614009474815}
   - component: {fileID: 3871833442436764250}
@@ -182,6 +181,7 @@ GameObject:
   - component: {fileID: 4911214298691200446}
   - component: {fileID: 7093850728372998678}
   - component: {fileID: 6458018909080853869}
+  - component: {fileID: 431540153994367427}
   - component: {fileID: 2837040927635280758}
   m_Layer: 0
   m_Name: Spider
@@ -357,26 +357,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &431540153994367427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6910390252967289087}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ed37d92b4198f42a68a46d7307fa73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _container: {fileID: 8968686843497621948}
-  _capacity: 10
-  _enemyType: 0
-  _shootPoint: {fileID: 1525337018594870181}
-  _secondsBetweenShoot: 3
-  _towardsBullet: {fileID: 0}
-  _straightBullet: {fileID: 660479779829443832, guid: 8c930718c6841294e8358772ed9d7345, type: 3}
-  _homingBullet: {fileID: 0}
 --- !u!114 &6083558608973486173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,7 +402,9 @@ MonoBehaviour:
   _waypoints:
   - {fileID: 4041361192462344024}
   - {fileID: 7975735007373049001}
+  _needUpdateWaypointPosition: 0
   _speed: 0.5
+  _colliderOffsetX: 0
 --- !u!114 &6839155469942275086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,6 +472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetState: {fileID: 6458018909080853869}
   _detectionZoneType: 1
+  _zoneMovementType: 0
   _detectionRadius: 5
   _detectReactionDelay: 0.5
   _detectionRectangleSize: {x: 1, y: 4.67}
@@ -517,6 +500,26 @@ MonoBehaviour:
   _enemyType: 0
   _shootingComponent: {fileID: 431540153994367427}
   _shootDelay: 3
+--- !u!114 &431540153994367427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910390252967289087}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ed37d92b4198f42a68a46d7307fa73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _container: {fileID: 8968686843497621948}
+  _capacity: 10
+  _enemyType: 0
+  _shootPoint: {fileID: 1525337018594870181}
+  _towardsBullet: {fileID: 0}
+  _straightBullet: {fileID: 660479779829443832, guid: 8c930718c6841294e8358772ed9d7345, type: 3}
+  _homingBullet: {fileID: 0}
+  _showTurretComponent: {fileID: 0}
 --- !u!114 &2837040927635280758
 MonoBehaviour:
   m_ObjectHideFlags: 0

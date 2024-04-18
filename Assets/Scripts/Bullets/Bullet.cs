@@ -31,6 +31,13 @@ public abstract class Bullet : MonoBehaviour
         }
     }
 
+    public void LookAtTarget()
+    {
+        float angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+    }
+
     public void SetFlip(bool isFlip)
     {
         _isFlip = isFlip;

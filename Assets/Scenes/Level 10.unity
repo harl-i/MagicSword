@@ -640,11 +640,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.47
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.73
+      value: -2.32
       objectReference: {fileID: 0}
     - target: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2085,6 +2085,8 @@ GameObject:
   - component: {fileID: 1730436549}
   - component: {fileID: 1730436551}
   - component: {fileID: 1730436550}
+  - component: {fileID: 1730436553}
+  - component: {fileID: 1730436552}
   m_Layer: 0
   m_Name: archer 2 32x32_0
   m_TagString: Untagged
@@ -2280,7 +2282,7 @@ MonoBehaviour:
   _detectionZoneType: 1
   _zoneMovementType: 1
   _detectionRadius: 5
-  _detectReactionDelay: 0
+  _detectReactionDelay: 0.3
   _detectionRectangleSize: {x: 9.53, y: 3.92}
   _playerLayer:
     serializedVersion: 2
@@ -2304,11 +2306,10 @@ MonoBehaviour:
   _capacity: 8
   _enemyType: 5
   _shootPoint: {fileID: 2125099815}
-  _towardsBullet: {fileID: 2583109053591217620, guid: a1eb93e9eebbd914c83604e2ac5660f2, type: 3}
+  _towardsBullet: {fileID: 8812371218968243853, guid: a1eb93e9eebbd914c83604e2ac5660f2, type: 3}
   _straightBullet: {fileID: 0}
   _homingBullet: {fileID: 0}
   _showTurretComponent: {fileID: 0}
-  _lookAtBullet: {fileID: 0}
 --- !u!114 &1730436551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2321,10 +2322,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ee48d82a8905140bdc8f77c4fde1b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transitions: []
+  _transitions:
+  - {fileID: 1730436553}
   _enemyType: 5
   _shootingComponent: {fileID: 1730436550}
-  _shootDelay: 0
+  _shootDelay: 5
+--- !u!114 &1730436552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730436542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c23ae1658a30f34ab5ab67a3d47b834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enableColliderDelay: 1.5
+--- !u!114 &1730436553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730436542}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfae695672a26a04484ae413cb49c21c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetState: {fileID: 1730436544}
+  _detectionZoneType: 1
+  _detectionRadius: 5
+  _detectionRectangleSize: {x: 9.53, y: 3.92}
+  _playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  _offsetY: 1.78
 --- !u!1 &1994546740
 GameObject:
   m_ObjectHideFlags: 0

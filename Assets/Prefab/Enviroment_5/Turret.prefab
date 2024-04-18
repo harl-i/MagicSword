@@ -295,13 +295,10 @@ MonoBehaviour:
   _capacity: 6
   _enemyType: 4
   _shootPoint: {fileID: 2249184076199559595}
-  _towardsBullet: {fileID: 8432005261710020095, guid: e7751c371857e8542ba3c572b3190b57, type: 3}
+  _towardsBullet: {fileID: 6274972472789415292, guid: e7751c371857e8542ba3c572b3190b57, type: 3}
   _straightBullet: {fileID: 5486989215482083676, guid: e7751c371857e8542ba3c572b3190b57, type: 3}
   _homingBullet: {fileID: 0}
   _showTurretComponent: {fileID: 5589555541728069011}
-  _lookAtBullet: {fileID: 2139354509625196740, guid: e7751c371857e8542ba3c572b3190b57, type: 3}
-  _minAngle: -45
-  _maxAngle: 45
 --- !u!114 &5589555541728069011
 MonoBehaviour:
   m_ObjectHideFlags: 0

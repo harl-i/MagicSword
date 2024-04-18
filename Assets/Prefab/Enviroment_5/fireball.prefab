@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3752487227151790075}
   - component: {fileID: 6734458573265300337}
   - component: {fileID: 385525039862722078}
-  - component: {fileID: 2139354509625196740}
   - component: {fileID: 4898502687769085332}
+  - component: {fileID: 6274972472789415292}
   m_Layer: 0
   m_Name: fireball
   m_TagString: Untagged
@@ -144,19 +144,6 @@ CircleCollider2D:
   m_Offset: {x: -0.0036340132, y: 0.0036545917}
   serializedVersion: 2
   m_Radius: 0.09411566
---- !u!114 &2139354509625196740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4141842435256478032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d979ddfc4e53ead49aa56369091cf8ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 0.5
 --- !u!114 &4898502687769085332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,3 +156,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397898cc63362f84fb1d4f57cd288b2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6274972472789415292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141842435256478032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ffe89152043fc4699325c79cbe89ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 0.5

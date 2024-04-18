@@ -673,6 +673,7 @@ MonoBehaviour:
   _waypoints:
   - {fileID: 4175819907376913524}
   - {fileID: 5145697393593537313}
+  _needUpdateWaypointPosition: 0
   _speed: 0.5
   _colliderOffsetX: -0.3
 --- !u!114 &521118548920602710
@@ -715,7 +716,7 @@ MonoBehaviour:
   - {fileID: 4923713700305839008}
   _enemyType: 3
   _shootingComponent: {fileID: 1595041957001907591}
-  _shootDelay: 0
+  _shootDelay: 5
 --- !u!114 &1595041957001907591
 MonoBehaviour:
   m_ObjectHideFlags: 0
