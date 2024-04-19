@@ -11,6 +11,7 @@ public class PlayerExitDetectionEditor : Editor
     private SerializedProperty _detectionRadius;
     private SerializedProperty _detectionRectangleSize;
     private SerializedProperty _offsetY;
+    private SerializedProperty _zoneMovementType;
 
     private void OnEnable()
     {
@@ -20,6 +21,7 @@ public class PlayerExitDetectionEditor : Editor
         _detectionRadius = serializedObject.FindProperty("_detectionRadius");
         _detectionRectangleSize = serializedObject.FindProperty("_detectionRectangleSize");
         _offsetY = serializedObject.FindProperty("_offsetY");
+        _zoneMovementType = serializedObject.FindProperty("_zoneMovementType");
     }
 
     public override void OnInspectorGUI()
@@ -31,6 +33,7 @@ public class PlayerExitDetectionEditor : Editor
 
         DrawLine();
 
+        EditorGUILayout.PropertyField(_zoneMovementType);
         EditorGUILayout.PropertyField(_detectionZoneType);
         switch (_detectionZoneType.enumValueIndex)
         {
