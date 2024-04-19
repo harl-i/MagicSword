@@ -42,8 +42,6 @@ public class NotPhysicalFallState : State
 
     private void Update()
     {
-        Debug.Log("_isFall: " + _isFall);
-        Debug.Log("_canDetectCollision: " +_canDetectCollision);
         if (_isFall)
         {
             _velocity.y -= _gravity * Time.deltaTime;
