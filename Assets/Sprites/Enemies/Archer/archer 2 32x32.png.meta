@@ -127,7 +127,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 65
         width: 31
         height: 31
       alignment: 7
@@ -148,7 +148,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 31
-        y: 32
+        y: 65
         width: 31
         height: 31
       alignment: 7
@@ -169,7 +169,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 62
-        y: 32
+        y: 65
         width: 31
         height: 31
       alignment: 7
@@ -190,7 +190,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 93
-        y: 32
+        y: 65
         width: 31
         height: 31
       alignment: 7
@@ -211,7 +211,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 33
         width: 31
         height: 31
       alignment: 7
@@ -232,7 +232,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 31
-        y: 0
+        y: 33
         width: 31
         height: 31
       alignment: 7
@@ -253,7 +253,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 62
-        y: 0
+        y: 33
         width: 31
         height: 31
       alignment: 7
@@ -265,6 +265,237 @@ TextureImporter:
       bones: []
       spriteID: 7c64852a162336648ba8b07ff06da7b7
       internalID: 1098556045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer 2 32x32_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e829e8392489f41ad7baef5520bf2f
+      internalID: 1287672588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer 2 32x32_8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5abdb8950d0f74ea7ac0cd5d4e67b0
+      internalID: 1625385647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer 2 32x32_9
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d948c8b9274794ca833537a71a3e58
+      internalID: -1592398833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer 2 32x32_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137153344049b9643aae9c5da5be27f9
+      internalID: -288848236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer 2 32x32_11
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c89aa2cd59211547a9b9a3441e46a08
+      internalID: -1759126446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer 2 32x32_12
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcdc1ab1d53eb2449864fb4cf4b6d04
+      internalID: 240616725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer 2 32x32_13
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c1c488f1c7b3c4fb1c4152a325ba68
+      internalID: 162068881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer 2 32x32_14
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4196cd3ba4fc0194882ea233ea8a4757
+      internalID: 751107272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer 2 32x32_15
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78bc44f113177548ba481a9a042f975
+      internalID: 1371147610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer 2 32x32_16
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b0f51c19350a047a07c3bb6ddc3b71
+      internalID: -1242174372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer 2 32x32_17
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6105c94e1ab2f40a0b3a038223d500
+      internalID: 89108587
       vertices: []
       indices: 
       edges: []
@@ -282,11 +513,22 @@ TextureImporter:
     nameFileIdTable:
       archer 2 32x32_0: 370541252
       archer 2 32x32_1: 269565250
+      archer 2 32x32_10: -288848236
+      archer 2 32x32_11: -1759126446
+      archer 2 32x32_12: 240616725
+      archer 2 32x32_13: 162068881
+      archer 2 32x32_14: 751107272
+      archer 2 32x32_15: 1371147610
+      archer 2 32x32_16: -1242174372
+      archer 2 32x32_17: 89108587
       archer 2 32x32_2: 1119875170
       archer 2 32x32_3: 986460288
       archer 2 32x32_4: 2058310115
       archer 2 32x32_5: -1688447107
       archer 2 32x32_6: 1098556045
+      archer 2 32x32_7: 1287672588
+      archer 2 32x32_8: 1625385647
+      archer 2 32x32_9: -1592398833
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

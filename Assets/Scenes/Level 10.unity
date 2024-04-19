@@ -2086,6 +2086,10 @@ GameObject:
   - component: {fileID: 1730436551}
   - component: {fileID: 1730436550}
   - component: {fileID: 1730436553}
+  - component: {fileID: 1730436555}
+  - component: {fileID: 1730436554}
+  - component: {fileID: 1730436557}
+  - component: {fileID: 1730436556}
   - component: {fileID: 1730436552}
   m_Layer: 0
   m_Name: archer 2 32x32_0
@@ -2123,6 +2127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions:
   - {fileID: 1730436549}
+  - {fileID: 1730436555}
   _moveDirection: 0
   _waypoints:
   - {fileID: 1511401191}
@@ -2324,6 +2329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions:
   - {fileID: 1730436553}
+  - {fileID: 1730436555}
   _enemyType: 5
   _shootingComponent: {fileID: 1730436550}
   _shootDelay: 5
@@ -2360,6 +2366,60 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   _offsetY: 1.78
+--- !u!114 &1730436554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730436542}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf3fb002358d274383ce5be272312de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transitions:
+  - {fileID: 1730436557}
+--- !u!114 &1730436555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730436542}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetState: {fileID: 1730436554}
+--- !u!114 &1730436556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730436542}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f25b5747ec753884d882dba991037159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transitions: []
+--- !u!114 &1730436557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730436542}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetState: {fileID: 1730436556}
+  _delay: 1
 --- !u!1 &1994546740
 GameObject:
   m_ObjectHideFlags: 0
