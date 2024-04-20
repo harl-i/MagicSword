@@ -476,7 +476,7 @@ MonoBehaviour:
   _detectionRadius: 5
   _detectReactionDelay: 0.5
   _detectionRectangleSize: {x: 1, y: 4.67}
-  _playerLayer:
+  _targetLayer:
     serializedVersion: 2
     m_Bits: 128
   _isCooldownActive: 0
@@ -534,6 +534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetState: {fileID: 3871833442436764250}
   _detectionZoneType: 1
+  _zoneMovementType: 0
   _detectionRadius: 5
   _detectionRectangleSize: {x: 1, y: 4.67}
   _playerLayer:

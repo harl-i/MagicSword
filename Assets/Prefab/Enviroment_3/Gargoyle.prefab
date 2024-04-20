@@ -223,10 +223,10 @@ MonoBehaviour:
   _capacity: 6
   _enemyType: 1
   _shootPoint: {fileID: 380563636561610716}
-  _secondsBetweenShoot: 3
   _towardsBullet: {fileID: 0}
   _straightBullet: {fileID: 0}
   _homingBullet: {fileID: 8895437084074286878, guid: 832615a8376fdad4a99f197d9dbb99dd, type: 3}
+  _showTurretComponent: {fileID: 0}
 --- !u!114 &5913776386184635644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,10 +268,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetState: {fileID: 218574570820676314}
   _detectionZoneType: 1
+  _zoneMovementType: 0
   _detectionRadius: 2.89
   _detectReactionDelay: 0.5
   _detectionRectangleSize: {x: 7.8, y: 4.3}
-  _playerLayer:
+  _targetLayer:
     serializedVersion: 2
     m_Bits: 128
   _isCooldownActive: 0
@@ -363,6 +364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetState: {fileID: 409419931872411737}
   _detectionZoneType: 1
+  _zoneMovementType: 0
   _detectionRadius: 5
   _detectionRectangleSize: {x: 7.8, y: 4.3}
   _playerLayer:

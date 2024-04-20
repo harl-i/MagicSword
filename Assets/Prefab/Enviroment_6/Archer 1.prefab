@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Archer 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5654429319270065997, guid: 5edebd36c0d698a4d9d8bf295b5d3851, type: 3}
+      propertyPath: _targetLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

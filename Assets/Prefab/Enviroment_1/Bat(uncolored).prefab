@@ -277,6 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c23ae1658a30f34ab5ab67a3d47b834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enableColliderDelay: 1.5
 --- !u!114 &1287390049738712354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +310,9 @@ MonoBehaviour:
   _waypoints:
   - {fileID: 2405936607693678608}
   - {fileID: 6427783562664394758}
+  _needUpdateWaypointPosition: 0
   _speed: 0.5
+  _colliderOffsetX: 0
 --- !u!114 &4726608783155134913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,11 +340,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetState: {fileID: 247272616341823111}
   _detectionZoneType: 0
+  _zoneMovementType: 0
   _detectionRadius: 3.5
+  _detectReactionDelay: 0
   _detectionRectangleSize: {x: 10, y: 5}
-  _playerLayer:
+  _targetLayer:
     serializedVersion: 2
     m_Bits: 128
+  _isCooldownActive: 0
+  _cooldown: 0
+  _offsetY: 0
 --- !u!114 &247272616341823111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,7 +380,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions:
   - {fileID: 4956047329905233072}
-  _colliderForDisable: {fileID: 2195533075859934044}
 --- !u!114 &4956047329905233072
 MonoBehaviour:
   m_ObjectHideFlags: 0

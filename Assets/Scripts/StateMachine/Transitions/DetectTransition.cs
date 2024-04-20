@@ -9,7 +9,7 @@ public class DetectTransition : Transition
     [SerializeField] private float _detectionRadius = 5f;
     [SerializeField] private float _detectReactionDelay;
     [SerializeField] private Vector2 _detectionRectangleSize = new Vector2(10f, 5f);
-    [SerializeField] private LayerMask _playerLayer;
+    [SerializeField] private LayerMask _targetLayer;
     [SerializeField] private bool _isCooldownActive;
     [SerializeField] private float _cooldown;
     [SerializeField] private float _offsetY;
@@ -47,10 +47,10 @@ public class DetectTransition : Transition
         switch (_zoneMovementType)
         {
             case DetectionZoneMovementType.Moving:
-                hit = Physics2D.OverlapCircle(_fixedDetectionPosition, _detectionRadius, _playerLayer);
+                hit = Physics2D.OverlapCircle(_fixedDetectionPosition, _detectionRadius, _targetLayer);
                 break;
             case DetectionZoneMovementType.Static:
-                hit = Physics2D.OverlapCircle(_fixedDetectionPosition, _detectionRadius, _playerLayer);
+                hit = Physics2D.OverlapCircle(_fixedDetectionPosition, _detectionRadius, _targetLayer);
                 break;
             default:
                 hit = null;
@@ -85,7 +85,7 @@ public class DetectTransition : Transition
                     break;
             }
 
-            Collider2D hit = Physics2D.OverlapBox(adjustedPosition, _detectionRectangleSize, 0f, _playerLayer);
+            Collider2D hit = Physics2D.OverlapBox(adjustedPosition, _detectionRectangleSize, 0f, _targetLayer);
             if (hit != null)
             {
                 SendPlayerTransform(hit.transform);

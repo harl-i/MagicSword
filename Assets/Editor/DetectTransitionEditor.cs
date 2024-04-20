@@ -6,7 +6,7 @@ using UnityEngine;
 public class DetectTransitionEditor : Editor
 {
     private SerializedProperty _targetState;
-    private SerializedProperty _playerLayer;
+    private SerializedProperty _targetLayer;
     private SerializedProperty _detectionZoneType;
     private SerializedProperty _zoneMovementType;
     private SerializedProperty _detectionRadius;
@@ -20,7 +20,7 @@ public class DetectTransitionEditor : Editor
     private void OnEnable()
     {
         _targetState = serializedObject.FindProperty("_targetState");
-        _playerLayer = serializedObject.FindProperty("_playerLayer");
+        _targetLayer = serializedObject.FindProperty("_targetLayer");
         _detectionZoneType = serializedObject.FindProperty("_detectionZoneType");
         _zoneMovementType = serializedObject.FindProperty("_zoneMovementType");
         _detectionRadius = serializedObject.FindProperty("_detectionRadius");
@@ -36,7 +36,7 @@ public class DetectTransitionEditor : Editor
         serializedObject.Update();
 
         EditorGUILayout.PropertyField(_targetState);
-        EditorGUILayout.PropertyField(_playerLayer);
+        EditorGUILayout.PropertyField(_targetLayer);
 
         DrawLine();
 

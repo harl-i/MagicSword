@@ -498,7 +498,9 @@ MonoBehaviour:
   _waypoints:
   - {fileID: 4914502971297523191}
   - {fileID: 588829185726138409}
+  _needUpdateWaypointPosition: 0
   _speed: 0.5
+  _colliderOffsetX: 0
 --- !u!114 &3090442509641971464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,10 +515,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetState: {fileID: 1901201545852917972}
   _detectionZoneType: 1
+  _zoneMovementType: 0
   _detectionRadius: 0
   _detectReactionDelay: 0
   _detectionRectangleSize: {x: 2.57, y: 0.44}
-  _playerLayer:
+  _targetLayer:
     serializedVersion: 2
     m_Bits: 128
   _isCooldownActive: 1

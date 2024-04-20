@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c23ae1658a30f34ab5ab67a3d47b834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enableColliderDelay: 1.5
 --- !u!114 &8238564671633631918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,10 +272,13 @@ MonoBehaviour:
   _transitions:
   - {fileID: 8565957792120023570}
   - {fileID: 3628935347785250239}
+  _moveDirection: 0
   _waypoints:
   - {fileID: 3903576500241812855}
   - {fileID: 8744697094962225028}
+  _needUpdateWaypointPosition: 0
   _speed: 0.5
+  _colliderOffsetX: 0
 --- !u!114 &8565957792120023570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,10 +305,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetState: {fileID: 4045728366334402735}
+  _detectionZoneType: 0
+  _zoneMovementType: 0
   _detectionRadius: 1.84
-  _playerLayer:
+  _detectReactionDelay: 0
+  _detectionRectangleSize: {x: 10, y: 5}
+  _targetLayer:
     serializedVersion: 2
     m_Bits: 128
+  _isCooldownActive: 0
+  _cooldown: 0
+  _offsetY: 0
 --- !u!114 &4045728366334402735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,7 +346,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions:
   - {fileID: 6131620226249913870}
-  _colliderForDisable: {fileID: 7954666673339996192}
 --- !u!114 &6131620226249913870
 MonoBehaviour:
   m_ObjectHideFlags: 0

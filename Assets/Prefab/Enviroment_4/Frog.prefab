@@ -297,6 +297,7 @@ MonoBehaviour:
   _waypoints:
   - {fileID: 1635172378527352132}
   - {fileID: 3268645490661220939}
+  _needUpdateWaypointPosition: 0
   _speed: 0.5
   _colliderOffsetX: 0.61
 --- !u!114 &3789320079797906444
@@ -313,10 +314,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetState: {fileID: 4987055707950847750}
   _detectionZoneType: 1
+  _zoneMovementType: 0
   _detectionRadius: 5
   _detectReactionDelay: 0.3
   _detectionRectangleSize: {x: 2.19, y: 0.29}
-  _playerLayer:
+  _targetLayer:
     serializedVersion: 2
     m_Bits: 128
   _isCooldownActive: 0
@@ -352,6 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetState: {fileID: 7634592048117902960}
   _detectionZoneType: 1
+  _zoneMovementType: 0
   _detectionRadius: 5
   _detectionRectangleSize: {x: 2.19, y: 0.29}
   _playerLayer:

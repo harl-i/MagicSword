@@ -694,7 +694,7 @@ MonoBehaviour:
   _detectionRadius: 5
   _detectReactionDelay: 1.5
   _detectionRectangleSize: {x: 10, y: 5}
-  _playerLayer:
+  _targetLayer:
     serializedVersion: 2
     m_Bits: 128
   _isCooldownActive: 0
@@ -969,9 +969,9 @@ MonoBehaviour:
   _detectionRadius: 5
   _detectReactionDelay: 0
   _detectionRectangleSize: {x: 9.88, y: 4.07}
-  _playerLayer:
+  _targetLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   _isCooldownActive: 0
   _cooldown: 0
   _offsetY: 0
