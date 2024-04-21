@@ -12,7 +12,6 @@ public class ShootingEditor : Editor
     private SerializedProperty _straightBullet;
     private SerializedProperty _homingBullet;
     private SerializedProperty _showTurretComponent;
-    //private SerializedProperty _lookAtBullet;
 
     private void OnEnable()
     {
@@ -23,7 +22,6 @@ public class ShootingEditor : Editor
         _straightBullet = serializedObject.FindProperty("_straightBullet");
         _homingBullet = serializedObject.FindProperty("_homingBullet");
         _showTurretComponent = serializedObject.FindProperty("_showTurretComponent");
-        //_lookAtBullet = serializedObject.FindProperty("_lookAtBullet");
     }
 
     public override void OnInspectorGUI()
