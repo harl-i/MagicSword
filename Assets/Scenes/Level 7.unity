@@ -8245,6 +8245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Frog
       objectReference: {fileID: 0}
+    - target: {fileID: 8140254020506375221, guid: 185eb6d56e96a6f419e0eaf331255063, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9105014016184179067, guid: 185eb6d56e96a6f419e0eaf331255063, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.45

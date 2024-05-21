@@ -21,6 +21,7 @@ public class MeleeAttackState : State
 
     private void OnEnable()
     {
+        SetRaycastOriginPosition();
         _animator.SetTrigger("Attack");
     }
 
@@ -29,7 +30,7 @@ public class MeleeAttackState : State
         FlipToPlayer();
 
         Vector2 raycastDirection = _spriteRenderer.flipX ? Vector2.left : Vector2.right;
-        
+
         RaycastHit2D hit = Physics2D.Raycast(_raycastOrigin.position, raycastDirection, _raycastLength);
 
         DrawRaycast(_raycastOrigin.position, raycastDirection);
@@ -46,16 +47,31 @@ public class MeleeAttackState : State
         Vector2 directionToPlayer = Player.position - transform.position;
         directionToPlayer.Normalize();
 
-        if (directionToPlayer.y > 0)
+        if (directionToPlayer.x < 0)
         {
             _spriteRenderer.flipX = true;
         }
-        else if (directionToPlayer.y < 0)
+        else if (directionToPlayer.x > 0)
         {
             _spriteRenderer.flipX = false;
         }
 
         //_collider.offset = new Vector2(_spriteRenderer.flipX ? _colliderOffset : 0, _collider.offset.y);
+    }
+
+    private void SetRaycastOriginPosition()
+    {
+        if (!_spriteRenderer.flipX && _raycastOrigin.localPosition.x <= 0 || _spriteRenderer.flipX && _raycastOrigin.localPosition.x >= 0)
+        {
+            FlipXRaycastOrigin();
+        }
+    }
+
+    private void FlipXRaycastOrigin()
+    {
+        Vector2 position = _raycastOrigin.localPosition;
+        position.x *= -1;
+        _raycastOrigin.localPosition = position;
     }
 
     private void DrawRaycast(Vector2 raycastOrigin, Vector2 raycastDirection)

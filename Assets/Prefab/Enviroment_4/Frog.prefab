@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 1510870680895828367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.276, z: 0}
+  m_LocalPosition: {x: 0.18, y: 0.276, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -317,7 +317,7 @@ MonoBehaviour:
   _zoneMovementType: 0
   _detectionRadius: 5
   _detectReactionDelay: 0.3
-  _detectionRectangleSize: {x: 2.19, y: 0.29}
+  _detectionRectangleSize: {x: 1.8, y: 0.29}
   _targetLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -356,7 +356,7 @@ MonoBehaviour:
   _detectionZoneType: 1
   _zoneMovementType: 0
   _detectionRadius: 5
-  _detectionRectangleSize: {x: 2.19, y: 0.29}
+  _detectionRectangleSize: {x: 1.8, y: 0.29}
   _playerLayer:
     serializedVersion: 2
     m_Bits: 128
