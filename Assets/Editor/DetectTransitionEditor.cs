@@ -15,6 +15,7 @@ public class DetectTransitionEditor : Editor
     private SerializedProperty _isCooldownActive;
     private SerializedProperty _cooldown;
     private SerializedProperty _offsetY;
+    private SerializedProperty _offsetX;
 
 
     private void OnEnable()
@@ -29,6 +30,7 @@ public class DetectTransitionEditor : Editor
         _isCooldownActive = serializedObject.FindProperty("_isCooldownActive");
         _cooldown = serializedObject.FindProperty("_cooldown");
         _offsetY = serializedObject.FindProperty("_offsetY");
+        _offsetX = serializedObject.FindProperty("_offsetX");
     }
 
     public override void OnInspectorGUI()
@@ -65,6 +67,7 @@ public class DetectTransitionEditor : Editor
         EditorGUILayout.PropertyField(_detectionRectangleSize);
         EditorGUILayout.PropertyField(_zoneMovementType);
         EditorGUILayout.PropertyField(_offsetY);
+        EditorGUILayout.PropertyField(_offsetX);
         EditorGUILayout.PropertyField(_isCooldownActive);
         if (_isCooldownActive.boolValue)
         {

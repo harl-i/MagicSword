@@ -13,6 +13,7 @@ public class DetectTransition : Transition
     [SerializeField] private bool _isCooldownActive;
     [SerializeField] private float _cooldown;
     [SerializeField] private float _offsetY;
+    [SerializeField] private float _offsetX;
 
     private Vector2 _fixedDetectionPosition;
     private Transform _playerTransform;
@@ -71,7 +72,7 @@ public class DetectTransition : Transition
     {
         if (_timeAfterDetect >= _cooldown)
         {
-            Vector2 offset = new Vector2(0, _offsetY);
+            Vector2 offset = new Vector2(_offsetX, _offsetY);
             Vector2 adjustedPosition;
 
             switch (_zoneMovementType)
@@ -122,7 +123,7 @@ public class DetectTransition : Transition
         }
         else if (_detectionZoneType == DetectionZoneType.Rectangle)
         {
-            Vector2 offset = new Vector2(0, _offsetY);
+            Vector2 offset = new Vector2(_offsetX, _offsetY);
             Vector2 adjustedPosition;
 
             switch (_zoneMovementType)
