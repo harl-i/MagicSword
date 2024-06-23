@@ -40,6 +40,18 @@ public class NotPhysicalFallState : State
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (_canDetectCollision)
+        {
+            if (collision.gameObject.TryGetComponent(out StopFallingPlatform stopFallingPlatform))
+            {
+                _animator.SetTrigger("EndFall");
+                _isFall = false;
+            }
+        }
+    }
+
     private void Update()
     {
         if (_isFall)

@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -40,6 +39,24 @@ public class CollisionWithPlatformsWhenFallingTransition : Transition
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out StopFallingPlatform stopFallingPlatform))
+        {
+            SwitchToKinematic();
+            NeedTransit = true;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out StopFallingPlatform stopFallingPlatform))
+        {
+            SwitchToKinematic();
+            NeedTransit = true;
+        }
+    }
+
     private void SwitchToKinematic()
     {
         _rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
@@ -47,11 +64,11 @@ public class CollisionWithPlatformsWhenFallingTransition : Transition
         _rigidbody2D.angularVelocity = 0f;
     }
 
-    private IEnumerator TransitAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
+    //private IEnumerator TransitAfterDelay(float delay)
+    //{
+    //    yield return new WaitForSeconds(delay);
 
-        SwitchToKinematic();
-        NeedTransit = true;
-    }
+    //    SwitchToKinematic();
+    //    NeedTransit = true;
+    //}
 }

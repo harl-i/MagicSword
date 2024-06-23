@@ -8,7 +8,7 @@ public class DelayTransition : Transition
 
     private void OnEnable()
     {
-        
+        NeedTransit = false;   
         StartCoroutine(Delay(_delay));
     }
 

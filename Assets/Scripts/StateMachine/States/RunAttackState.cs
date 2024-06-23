@@ -12,6 +12,11 @@ public class RunAttackState : State
         _animator = GetComponent<Animator>();
     }
 
+    private void OnEnable()
+    {
+        _animator.SetTrigger("Attack");
+    }
+
     private void Update()
     {
         Run();

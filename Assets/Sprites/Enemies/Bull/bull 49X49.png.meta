@@ -127,9 +127,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
-        width: 48
-        height: 48
+        y: 147
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: bull 49X49_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
-        width: 48
-        height: 48
+        x: 49
+        y: 147
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: bull 49X49_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 144
-        width: 48
-        height: 48
+        x: 98
+        y: 147
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,10 +189,10 @@ TextureImporter:
       name: bull 49X49_3
       rect:
         serializedVersion: 2
-        x: 144
-        y: 144
-        width: 48
-        height: 48
+        x: 147
+        y: 147
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +210,10 @@ TextureImporter:
       name: bull 49X49_4
       rect:
         serializedVersion: 2
-        x: 192
-        y: 144
-        width: 48
-        height: 48
+        x: 196
+        y: 147
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: bull 49X49_5
       rect:
         serializedVersion: 2
-        x: 240
-        y: 144
-        width: 48
-        height: 48
+        x: 245
+        y: 147
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +252,10 @@ TextureImporter:
       name: bull 49X49_6
       rect:
         serializedVersion: 2
-        x: 288
-        y: 144
-        width: 48
-        height: 48
+        x: 294
+        y: 147
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,9 +274,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 48
-        height: 48
+        y: 98
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +294,10 @@ TextureImporter:
       name: bull 49X49_8
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
-        width: 48
-        height: 48
+        x: 49
+        y: 98
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +315,10 @@ TextureImporter:
       name: bull 49X49_9
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 48
-        height: 48
+        x: 98
+        y: 98
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,10 +336,10 @@ TextureImporter:
       name: bull 49X49_10
       rect:
         serializedVersion: 2
-        x: 144
-        y: 96
-        width: 48
-        height: 48
+        x: 147
+        y: 98
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,7 +347,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3a37fd9ca83aff45894acf420c7e9f4
+      spriteID: 552fd50222476f54f846fbac0ba05388
       internalID: 2075144742
       vertices: []
       indices: 
@@ -357,10 +357,10 @@ TextureImporter:
       name: bull 49X49_11
       rect:
         serializedVersion: 2
-        x: 192
-        y: 96
-        width: 48
-        height: 48
+        x: 196
+        y: 98
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,218 +368,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14ba6cf22335c6344b326299bd3b5e8f
+      spriteID: 2b3fdefe6518b5746b9949a4c1353a58
       internalID: -165949632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull 49X49_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 48
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d149196a372934a47b89084db22bf623
-      internalID: 1468543642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull 49X49_16
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 48
-        width: 48
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 492bcfea31b7ed147a546a1d398dea45
-      internalID: 659247247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull 49X49_17
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 48
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2e155d8026451f459607fa1ddbca7df
-      internalID: -778204009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull 49X49_18
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 48
-        width: 48
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59dddb5a56f3e5d49b90293bfc1e55c6
-      internalID: 1394340598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull 49X49_19
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 48
-        width: 48
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e00e18759b6f38149b498c77652379d3
-      internalID: 818157540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull 49X49_20
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 48
-        width: 48
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f43bdd5cf3af2c9439671e71208bd081
-      internalID: -1025410031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull 49X49_21
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 48
-        width: 48
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e50cd7717a4217d4288682a25024db0f
-      internalID: 1602803622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull 49X49_22
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 48
-        width: 48
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1906c62c18000af468702db297f2eb71
-      internalID: 928799067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull 49X49_23
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 48
-        width: 48
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8dad6b124f5c07848b2e87af7c613b1d
-      internalID: 825066003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bull 49X49_24
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 48
-        width: 48
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd70fb427ec5ca846b233a651067bbda
-      internalID: 1712800689
       vertices: []
       indices: 
       edges: []
@@ -588,10 +378,10 @@ TextureImporter:
       name: bull 49X49_12
       rect:
         serializedVersion: 2
-        x: 240
-        y: 96
-        width: 48
-        height: 48
+        x: 245
+        y: 98
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -599,7 +389,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9454b709f5621dd43b4c8704595b9dd8
+      spriteID: 5e19b27e1bfa36a438e3a6edaec5a64c
       internalID: -1685677259
       vertices: []
       indices: 
@@ -609,10 +399,10 @@ TextureImporter:
       name: bull 49X49_13
       rect:
         serializedVersion: 2
-        x: 288
-        y: 96
-        width: 48
-        height: 48
+        x: 294
+        y: 98
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,8 +410,239 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66e2f3ecd71d89a4eb2b2125d4a30a38
+      spriteID: 23662b0de00a68d4ca950677d752ce71
       internalID: -465570113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6b818ee13640244ae37c1628b1eb42
+      internalID: 838371402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_15
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 49
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5567e1afc8b8044b8cb4a134cda5cc9
+      internalID: 1468543642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 49
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bad5809ea48a640befcf253f61528e
+      internalID: 659247247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_17
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 49
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f66dddf71dd0c48be47f79784ead8d
+      internalID: -778204009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 49
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8084a41c655f09145af637b594ba62d8
+      internalID: 1394340598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_19
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 49
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6eb80a314919ae4a8396f68df4ccca4
+      internalID: 818157540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_20
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 49
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecce82a495921c488c8ab26be4ed62f
+      internalID: -1025410031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_21
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 48
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6603cffeac3e94429eb3885def57ee5
+      internalID: 1602803622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_22
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 49
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36718177ca6260a47b9949df05898d5a
+      internalID: 928799067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_23
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 49
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3225e7a44141b9b4fad3c232f1e3513d
+      internalID: 825066003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c085e9063352b4cace8eca4b39b2d1
+      internalID: 1712800689
       vertices: []
       indices: 
       edges: []
@@ -630,10 +651,10 @@ TextureImporter:
       name: bull 49X49_25
       rect:
         serializedVersion: 2
-        x: 480
-        y: 48
-        width: 48
-        height: 48
+        x: 49
+        y: 0
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -641,7 +662,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b346080a7a692c24aadc0dfbfcef0f15
+      spriteID: df242bd4ca426bf4aaed6e0496975548
       internalID: 1039129573
       vertices: []
       indices: 
@@ -651,10 +672,10 @@ TextureImporter:
       name: bull 49X49_26
       rect:
         serializedVersion: 2
-        x: 4
+        x: 98
         y: 0
-        width: 48
-        height: 48
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -662,7 +683,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0407dd988a04f434aa43742dd239404c
+      spriteID: 76cfd0b5b16c44449895ac8777eadf22
       internalID: -1322374441
       vertices: []
       indices: 
@@ -672,10 +693,10 @@ TextureImporter:
       name: bull 49X49_27
       rect:
         serializedVersion: 2
-        x: 52
+        x: 147
         y: 0
-        width: 48
-        height: 48
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -683,7 +704,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f211b18ba58a0f458c3f64c77b4310d
+      spriteID: 5af749c3cd40bc14588b54e58cd1f6a4
       internalID: 960982166
       vertices: []
       indices: 
@@ -693,10 +714,10 @@ TextureImporter:
       name: bull 49X49_28
       rect:
         serializedVersion: 2
-        x: 100
+        x: 196
         y: 0
-        width: 48
-        height: 48
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -704,7 +725,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af7ae840e187e1249a6042f412295dd7
+      spriteID: fd61e50af17f66d4ca3b5ee4b6807545
       internalID: 1284928688
       vertices: []
       indices: 
@@ -714,10 +735,10 @@ TextureImporter:
       name: bull 49X49_29
       rect:
         serializedVersion: 2
-        x: 148
+        x: 245
         y: 0
-        width: 48
-        height: 48
+        width: 49
+        height: 49
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,7 +746,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 616638e8595a02042814c0b84721ac04
+      spriteID: cd14f0967731c534cbd822528c302a86
       internalID: 326867805
       vertices: []
       indices: 
@@ -735,9 +756,30 @@ TextureImporter:
       name: bull 49X49_30
       rect:
         serializedVersion: 2
-        x: 196
+        x: 294
         y: 0
-        width: 48
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225dd5fe74e543c40b149421fd821b6d
+      internalID: -457363645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_31
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 0
+        width: 49
         height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -746,8 +788,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b85dd723b1a4141498f9013ca6b75451
-      internalID: -457363645
+      spriteID: b03e97db7273e614eb21f624a12ca468
+      internalID: 1496617278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_32
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac3cef6b34f4cd4484da69fc4a14fcf
+      internalID: 910445157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bull 49X49_33
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 0
+        width: 49
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d256f49000397e34f9d895b13fb081bc
+      internalID: -2114147887
       vertices: []
       indices: 
       edges: []
@@ -789,11 +873,8 @@ TextureImporter:
       bull 49X49_3: 918066279
       bull 49X49_30: -457363645
       bull 49X49_31: 1496617278
-      bull 49X49_32: -1496542293
-      bull 49X49_33: 1198360911
-      bull 49X49_34: -343626433
-      bull 49X49_35: 1477475515
-      bull 49X49_36: -280420186
+      bull 49X49_32: 910445157
+      bull 49X49_33: -2114147887
       bull 49X49_4: 452839512
       bull 49X49_5: -2085693355
       bull 49X49_6: -189684555
