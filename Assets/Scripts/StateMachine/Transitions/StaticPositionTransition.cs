@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class StaticPositionTransition : Transition
 {
+    [SerializeField] private float _timeout = 2f;
+
     private Vector3 _lastPosition;
-    private float _timeout = 2f;
     private float _timer;
 
     void Start()
