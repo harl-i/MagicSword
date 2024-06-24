@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 9161966831376420036}
   - component: {fileID: 9056689916230099416}
   - component: {fileID: 4645353212355122308}
+  - component: {fileID: 7124859417273373479}
   - component: {fileID: 7895529287309290822}
   - component: {fileID: 1092520455256591685}
   - component: {fileID: 3779030277338178198}
@@ -23,6 +24,8 @@ GameObject:
   - component: {fileID: 4125713361079421789}
   - component: {fileID: 8185011183327248684}
   - component: {fileID: 1329236671055668869}
+  - component: {fileID: 739653399102016272}
+  - component: {fileID: 1750544067072533128}
   m_Layer: 0
   m_Name: bird 42x42_0
   m_TagString: Untagged
@@ -147,7 +150,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -213,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transitions:
+  - {fileID: 7124859417273373479}
   - {fileID: 4645353212355122308}
   - {fileID: 1770395593308001243}
   _moveDirection: 0
@@ -246,6 +250,32 @@ MonoBehaviour:
   _isCooldownActive: 0
   _cooldown: 0
   _offsetY: 0
+  _offsetX: 0
+--- !u!114 &7124859417273373479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4223291525579171617}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetState: {fileID: 7895529287309290822}
+  _detectionZoneType: 0
+  _zoneMovementType: 0
+  _detectionRadius: 4.01
+  _detectReactionDelay: 1
+  _detectionRectangleSize: {x: 10, y: 5}
+  _targetLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  _isCooldownActive: 0
+  _cooldown: 0
+  _offsetY: 0
+  _offsetX: 0
 --- !u!114 &7895529287309290822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,6 +291,7 @@ MonoBehaviour:
   _transitions:
   - {fileID: 1092520455256591685}
   - {fileID: 1770395593308001243}
+  - {fileID: 739653399102016272}
   _speed: 1
 --- !u!114 &1092520455256591685
 MonoBehaviour:
@@ -289,6 +320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions:
   - {fileID: 1770395593308001243}
+  - {fileID: 7124859417273373479}
   _moveDirection: 0
   _waypoints:
   - {fileID: 5250048819730348549}
@@ -350,6 +382,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transitions: []
+--- !u!114 &739653399102016272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4223291525579171617}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb69c20f1b141b418445449dd719de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetState: {fileID: 9056689916230099416}
+--- !u!114 &1750544067072533128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4223291525579171617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c23ae1658a30f34ab5ab67a3d47b834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enableColliderDelay: 1.5
 --- !u!1 &6036457099674521336
 GameObject:
   m_ObjectHideFlags: 0
