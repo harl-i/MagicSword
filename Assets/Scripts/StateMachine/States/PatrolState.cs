@@ -34,6 +34,11 @@ public class PatrolState : State
 
     }
 
+    private void OnDisable()
+    {
+        _animator.ResetTrigger("Patrol");
+    }
+
     private void UpdateWaypointsPositions()
     {
         float newPositionY = transform.position.y;
