@@ -11,6 +11,7 @@ public class JumpBackState : State
     private Animator _animator;
     private Vector2 _startPosition;
     private Vector2 _targetPosition;
+    private bool _isReadyToJump;
 
     private void Awake()
     {
@@ -20,11 +21,15 @@ public class JumpBackState : State
 
     private void Update()
     {
-        MoveBackward();
+        if (_isReadyToJump)
+        {
+            MoveBackward();
+        }
     }
 
     private void OnEnable()
     {
+        _isReadyToJump = false;
         _animator.SetTrigger("JumpBack");
 
         _startPosition = transform.position;
@@ -32,6 +37,16 @@ public class JumpBackState : State
         Vector2 direction = _spriteRenderer.flipX ? Vector2.left : Vector2.right;
 
         _targetPosition = _startPosition - direction.normalized * _distance;
+    }
+
+    private void OnDisable()
+    {
+        _isReadyToJump = false;
+    }
+
+    public void Jump()
+    {
+        _isReadyToJump = true;
     }
 
     public void MoveBackward()
