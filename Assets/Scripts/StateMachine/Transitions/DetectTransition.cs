@@ -45,19 +45,6 @@ public class DetectTransition : Transition
     {
         Collider2D hit;
 
-        //switch (_zoneMovementType)
-        //{
-        //    case DetectionZoneMovementType.Moving:
-        //        hit = Physics2D.OverlapCircle(transform.position, _detectionRadius, _targetLayer);
-        //        break;
-        //    case DetectionZoneMovementType.Static:
-        //        hit = Physics2D.OverlapCircle(_fixedDetectionPosition, _detectionRadius, _targetLayer);
-        //        break;
-        //    default:
-        //        hit = null;
-        //        break;
-        //}
-
         hit = Physics2D.OverlapCircle(transform.position, _detectionRadius, _targetLayer);
 
         if (hit != null)

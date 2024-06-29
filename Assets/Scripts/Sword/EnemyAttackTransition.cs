@@ -17,4 +17,9 @@ public class EnemyAttackTransition : Transition
             NeedTransit = true;
         }
     }
+
+    public void Transition()
+    {
+        NeedTransit = true;     
+    }
 }

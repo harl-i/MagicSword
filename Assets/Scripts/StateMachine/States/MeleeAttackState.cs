@@ -38,7 +38,10 @@ public class MeleeAttackState : State
         if (hit.collider != null)
         {
             if (hit.collider.gameObject.TryGetComponent(out Player player))
+            {
                 player.TakeDamage();
+                player.GetComponent<EnemyAttackTransition>().Transition();
+            }
         }
     }
     
