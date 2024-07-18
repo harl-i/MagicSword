@@ -1,28 +1,39 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-//[RequireComponent(typeof(PolygonCollider2D))]
 public class MeleeAttackState : State
 {
     [SerializeField] private Transform _raycastOrigin;
     [SerializeField] private float _raycastLength;
+    [SerializeField] private float _raycastOriginOffsetX = 0f;
 
     private SpriteRenderer _spriteRenderer;
-    //private PolygonCollider2D _collider;
     private Animator _animator;
-    private float _colliderOffset = 0.61f;
+    private Transform _raycastOriginStartPosition;
+    private Vector2 _raycastOriginOffsetXPosition;
 
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
-        //_collider = GetComponent<PolygonCollider2D>();
+    }
+
+    private void Start()
+    {
+        _raycastOriginStartPosition = _raycastOrigin;
+        _raycastOriginOffsetXPosition = new Vector2(_raycastOriginStartPosition.position.x +
+            _raycastOriginOffsetX, _raycastOriginStartPosition.position.y);
     }
 
     private void OnEnable()
     {
         SetRaycastOriginPosition();
         _animator.SetTrigger("Attack");
+    }
+
+    private void OnDisable()
+    {
+        _animator.ResetTrigger("Attack");
     }
 
     public void Attack()
@@ -38,7 +49,10 @@ public class MeleeAttackState : State
         if (hit.collider != null)
         {
             if (hit.collider.gameObject.TryGetComponent(out Player player))
+            {
                 player.TakeDamage();
+                player.GetComponent<EnemyAttackTransition>().Transition();
+            }
         }
     }
     
@@ -50,13 +64,13 @@ public class MeleeAttackState : State
         if (directionToPlayer.x < 0)
         {
             _spriteRenderer.flipX = true;
+            _raycastOrigin.position = _raycastOriginOffsetXPosition;
         }
         else if (directionToPlayer.x > 0)
         {
             _spriteRenderer.flipX = false;
+            _raycastOrigin = _raycastOriginStartPosition;
         }
-
-        //_collider.offset = new Vector2(_spriteRenderer.flipX ? _colliderOffset : 0, _collider.offset.y);
     }
 
     private void SetRaycastOriginPosition()

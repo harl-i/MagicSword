@@ -328,7 +328,7 @@ MonoBehaviour:
   _transitions:
   - {fileID: 5633136197638463440}
   _speed: 1
-  _distance: 1
+  _distance: 0.7
 --- !u!114 &5633136197638463440
 MonoBehaviour:
   m_ObjectHideFlags: 0

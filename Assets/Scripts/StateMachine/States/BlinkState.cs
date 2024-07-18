@@ -7,6 +7,7 @@ public class BlinkState : State
     private PolygonCollider2D _colliderForDisable;
 
     private Animator _animator;
+    //private bool isMeleeAttack;
 
     private void Awake()
     {
@@ -16,6 +17,10 @@ public class BlinkState : State
 
     private void OnEnable()
     {
+        //if (!isMeleeAttack)
+        //{
+
+        //}
         _colliderForDisable.enabled = false; 
         _animator.SetTrigger("Blink");
     }

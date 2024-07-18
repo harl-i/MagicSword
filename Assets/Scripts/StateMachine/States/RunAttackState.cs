@@ -8,6 +8,7 @@ public class RunAttackState : State
 
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
+    private float _moveDirection;
 
     private void Awake()
     {
@@ -28,7 +29,7 @@ public class RunAttackState : State
 
     private void Run()
     {
-        transform.Translate(Vector2.right * _speed * Time.deltaTime);
+        transform.Translate(Vector2.right * _speed * _moveDirection * Time.deltaTime);
     }
 
     private void FlipToPlayer()
@@ -38,10 +39,12 @@ public class RunAttackState : State
 
         if (directionToPlayer.x > 0)
         {
+            _moveDirection = 1;
             _spriteRenderer.flipX = false;
         }
         else if (directionToPlayer.x < 0)
         {
+            _moveDirection = -1;
             _spriteRenderer.flipX = true;
         }
     }
