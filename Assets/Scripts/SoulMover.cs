@@ -33,17 +33,17 @@ public class SoulMover : MonoBehaviour
 
     private IEnumerator MoveSoulToPortal(Soul soul)
     {
-        float speed = 0.05f; // —корость перемещени€ души
+        float speed = 0.01f; // —корость перемещени€ души
         Vector3 direction = (_portal.position - soul.transform.position).normalized; // Ќаправление движени€
         float distance = Vector3.Distance(soul.transform.position, _portal.position); // –ассто€ние до цели
 
-        while (distance > 0.3f) // ѕровер€ем, достаточно ли близко душа к цели
+        while (distance > 0.1f) // ѕровер€ем, достаточно ли близко душа к цели
         {
-            // √енерируем случайное число дл€ смещени€ в пределах [-0.01, 0.01]
-            float randomOffset = UnityEngine.Random.Range(-0.01f, 0.01f);
+            //// √енерируем случайное число дл€ смещени€ в пределах [-0.01, 0.01]
+            //float randomOffset = UnityEngine.Random.Range(-0.01f, 0.01f);
 
-            // ѕримен€ем смещение к направлению движени€
-            direction.x += randomOffset;
+            //// ѕримен€ем смещение к направлению движени€
+            //direction.x += randomOffset;
 
             // Ќормализуем направление снова, чтобы оно оставалось нормальным
             direction.Normalize();

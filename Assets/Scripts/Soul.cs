@@ -9,4 +9,12 @@ public class Soul : MonoBehaviour
     {
         SoulSpawned?.Invoke(this);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent(out Portal portal))
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }
