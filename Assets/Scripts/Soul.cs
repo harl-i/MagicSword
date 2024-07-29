@@ -3,11 +3,15 @@ using UnityEngine;
 
 public class Soul : MonoBehaviour
 {
+    [SerializeField] private Transform _enemyTransform;
+    [SerializeField] private float _offsetY;
+
     public static Action<Soul> SoulSpawned;
 
     private void OnEnable()
     {
         SoulSpawned?.Invoke(this);
+        SetEnablePosition();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -16,5 +20,10 @@ public class Soul : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+    }
+
+    private void SetEnablePosition()
+    {
+        transform.position = new Vector2(_enemyTransform.position.x, _enemyTransform.position.y + _offsetY);
     }
 }
