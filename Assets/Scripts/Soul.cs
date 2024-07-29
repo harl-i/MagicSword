@@ -5,6 +5,7 @@ public class Soul : MonoBehaviour
 {
     [SerializeField] private Transform _enemyTransform;
     [SerializeField] private float _offsetY;
+    [SerializeField] private float _offsetX;
 
     public static Action<Soul> SoulSpawned;
 
@@ -24,6 +25,7 @@ public class Soul : MonoBehaviour
 
     private void SetEnablePosition()
     {
-        transform.position = new Vector2(_enemyTransform.position.x, _enemyTransform.position.y + _offsetY);
+        transform.position = new Vector2(_enemyTransform.position.x + _offsetX, 
+            _enemyTransform.position.y + _offsetY);
     }
 }
