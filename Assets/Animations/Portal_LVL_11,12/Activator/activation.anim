@@ -21,9 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1118574605, guid: df1f0665da088f64fae1e5ba442693aa, type: 3}
+      value: {fileID: -2055298649, guid: 5ce0047ff08aeb549aa1d2bfc43049e4, type: 3}
     - time: 0.5
-      value: {fileID: 1303457979, guid: df1f0665da088f64fae1e5ba442693aa, type: 3}
+      value: {fileID: 2142399987, guid: 5ce0047ff08aeb549aa1d2bfc43049e4, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1118574605, guid: df1f0665da088f64fae1e5ba442693aa, type: 3}
-    - {fileID: 1303457979, guid: df1f0665da088f64fae1e5ba442693aa, type: 3}
+    - {fileID: -2055298649, guid: 5ce0047ff08aeb549aa1d2bfc43049e4, type: 3}
+    - {fileID: 2142399987, guid: 5ce0047ff08aeb549aa1d2bfc43049e4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -58,7 +58,7 @@ AnimationClip:
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
