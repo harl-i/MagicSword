@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,448 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "portal 40\u042540_0"
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 49
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31df5f2839a3dba48b101a309f0209d7
+      internalID: -435195707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_1"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 49
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c356995fc50053b4b90c40ad4104ae60
+      internalID: -2041294437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_2"
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 49
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488633896ccd43a4892998d81573d688
+      internalID: -1296271749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_3"
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 49
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afc1adb2c1e5674890e0e979dd4bf13
+      internalID: -487119858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_4"
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 49
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b342c00f185ea344ba028a88d306b07f
+      internalID: -586185132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_5"
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 49
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c2463a000b0184db6c99c6c17f258c
+      internalID: -1245478748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_6"
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 49
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa87047d36bd446448055575e331c01f
+      internalID: 232958858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_7"
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 49
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d83b0ab37ceb345b76769a1774c836
+      internalID: -1994922438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_8"
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 49
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6b90ac43989ad40a3e319c560b9a78
+      internalID: -120957805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_9"
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 49
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fbd5a68c4d69e40bf2a5e4335faf93
+      internalID: -931363684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_13"
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c788adae59e4de4ea755535082d5317
+      internalID: -122068381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_14"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11486a64e319e5f4c9c98333cbd6c2f4
+      internalID: 2137830499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_15"
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fbd3014ac632c4596f16efd714c894
+      internalID: -1217815225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_16"
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7834282b105025345b407a5ed9893ae3
+      internalID: 1925301478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_17"
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a25a4fa9a15e747ad6e5070ecb1ed2
+      internalID: -156801165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_18"
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2cc9a0c4ed8984b8f1c86e1f448fde
+      internalID: -1512347380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_19"
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3943c1f1e4e80f74c8b772d22ba43d27
+      internalID: -500719513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_20"
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941635b4266a6ef4aa5403b0ce4927a5
+      internalID: 648779553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_21"
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a2c688bea9d7947966d3e6a6adaae2
+      internalID: -594971556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_22"
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9cd442a0e057243a614d0f475f1109
+      internalID: -900934306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "portal 40\u042540_23"
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 0
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93959e992e1f3a54b8e7d014790d863b
+      internalID: 2036648199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +573,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "portal 40\u042540_0": -435195707
+      "portal 40\u042540_1": -2041294437
+      "portal 40\u042540_10": -43319863
+      "portal 40\u042540_11": -412654824
+      "portal 40\u042540_12": 403511649
+      "portal 40\u042540_13": -122068381
+      "portal 40\u042540_14": 2137830499
+      "portal 40\u042540_15": -1217815225
+      "portal 40\u042540_16": 1925301478
+      "portal 40\u042540_17": -156801165
+      "portal 40\u042540_18": -1512347380
+      "portal 40\u042540_19": -500719513
+      "portal 40\u042540_2": -1296271749
+      "portal 40\u042540_20": 648779553
+      "portal 40\u042540_21": -594971556
+      "portal 40\u042540_22": -900934306
+      "portal 40\u042540_23": 2036648199
+      "portal 40\u042540_24": -1562701810
+      "portal 40\u042540_25": 767983873
+      "portal 40\u042540_3": -487119858
+      "portal 40\u042540_4": -586185132
+      "portal 40\u042540_5": -1245478748
+      "portal 40\u042540_6": 232958858
+      "portal 40\u042540_7": -1994922438
+      "portal 40\u042540_8": -120957805
+      "portal 40\u042540_9": -931363684
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
