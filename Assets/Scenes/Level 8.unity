@@ -8473,9 +8473,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 567869398192414471, guid: b70f03b76e92f764c86e4b8d149f3280, type: 3}
+      propertyPath: _soulsAmountForActivation
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 2391120904886353522, guid: b70f03b76e92f764c86e4b8d149f3280, type: 3}
       propertyPath: m_Name
       value: LevelPortal_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391120904886353522, guid: b70f03b76e92f764c86e4b8d149f3280, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4339124055084130464, guid: b70f03b76e92f764c86e4b8d149f3280, type: 3}
       propertyPath: m_LocalPosition.x

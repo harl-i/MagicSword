@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 7580267945481545697}
   - component: {fileID: 8619985118720863784}
   - component: {fileID: 567869398192414471}
+  - component: {fileID: 7072856637264643106}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -152,7 +153,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020921648, y: 0.31611285}
+  m_Offset: {x: -0.020921648, y: 0.5745563}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -163,7 +164,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5897771, y: 0.74595004}
+  m_Size: {x: 0.5897771, y: 0.22906312}
   m_EdgeRadius: 0
 --- !u!50 &8619985118720863784
 Rigidbody2D:
@@ -204,6 +205,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9faf245983b60f40baef2dc2b9bbcc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _soulsAmountForActivation: 23
+  _portalActivator: {fileID: 6724150364335543077}
+--- !u!95 &7072856637264643106
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2440494312828374377}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8494435067342494224
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +240,7 @@ GameObject:
   - component: {fileID: 5949191825547400362}
   - component: {fileID: 8072545902784227758}
   - component: {fileID: 6119781247672604397}
+  - component: {fileID: 6724150364335543077}
   m_Layer: 0
   m_Name: Activator
   m_TagString: Untagged
@@ -364,3 +389,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6724150364335543077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8494435067342494224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b18853e6d4a3f4ca04bfc5ab148e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _portal: {fileID: 567869398192414471}

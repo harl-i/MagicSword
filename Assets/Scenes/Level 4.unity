@@ -5584,6 +5584,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1046619141325063712, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
+      propertyPath: _soulsAmountForActivation
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1877825576780562627, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.503

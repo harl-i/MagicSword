@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2675255876641385832}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.274, z: 0}
   m_LocalScale: {x: 1.5568, y: 1.5568, z: 1.5568}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -141,10 +141,10 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020921648, y: 0.31611285}
+  m_Offset: {x: 0, y: -0.2345616}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.6, y: 1.6}
     newSize: {x: 0.4, y: 0.4}
     adaptiveTilingThreshold: 0.5
@@ -152,7 +152,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5897771, y: 0.74595004}
+  m_Size: {x: 0.5897771, y: 0.21881369}
   m_EdgeRadius: 0
 --- !u!50 &1012847883195945838
 Rigidbody2D:
@@ -193,6 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9faf245983b60f40baef2dc2b9bbcc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _soulsAmountForActivation: 4
+  _portalActivator: {fileID: 2030185244260247654}
 --- !u!1 &6903694056158580828
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,6 +240,7 @@ GameObject:
   - component: {fileID: 3922062297640477141}
   - component: {fileID: 3079625028246157582}
   - component: {fileID: 5980934588550795629}
+  - component: {fileID: 2030185244260247654}
   m_Layer: 0
   m_Name: Activator
   m_TagString: Untagged
@@ -387,3 +390,16 @@ PolygonCollider2D:
       - {x: 0.39415196, y: -0.0011787415}
       - {x: 0.39334735, y: 0.2022545}
   m_UseDelaunayMesh: 0
+--- !u!114 &2030185244260247654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7805651713998114566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b18853e6d4a3f4ca04bfc5ab148e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _portal: {fileID: 364026558013139972}

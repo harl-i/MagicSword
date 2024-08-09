@@ -2220,6 +2220,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2905663383499860213, guid: 82df969799e2cb34783a58b910791325, type: 3}
+      propertyPath: _soulsAmountForActivation
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4271763955859882235, guid: 82df969799e2cb34783a58b910791325, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.28
@@ -9924,6 +9928,10 @@ PrefabInstance:
     - target: {fileID: 1958644615182506834, guid: 6989c2e68ffea8b4fa2f3d461cadbe00, type: 3}
       propertyPath: m_Name
       value: UI_En6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958644615182506834, guid: 6989c2e68ffea8b4fa2f3d461cadbe00, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4774784846270292654, guid: 6989c2e68ffea8b4fa2f3d461cadbe00, type: 3}
       propertyPath: m_AnchorMax.y

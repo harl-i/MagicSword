@@ -814,7 +814,7 @@ PrefabInstance:
     - target: {fileID: 7644315823265516141, guid: ed58f64e2409bfc439cdba0a9900dec5, type: 3}
       propertyPath: _portal
       value: 
-      objectReference: {fileID: 887472212}
+      objectReference: {fileID: 1323926082}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -828,6 +828,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 364026558013139972, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
+      propertyPath: _soulsAmountForActivation
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6903694056158580828, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
       propertyPath: m_Name
       value: LevelPortal
@@ -842,7 +846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9030962191125031164, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30.108
+      value: 30.086
       objectReference: {fileID: 0}
     - target: {fileID: 9030962191125031164, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1106,11 +1110,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &887472212 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9030962191125031164, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
-  m_PrefabInstance: {fileID: 754490475}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &914476804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1750,6 +1749,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!4 &1323926082 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7298397048005024015, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
+  m_PrefabInstance: {fileID: 754490475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1344734074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5372,6 +5376,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2094788549}
+  - {fileID: 754490475}
+  - {fileID: 689151526}
   - {fileID: 26102750}
   - {fileID: 519420032}
   - {fileID: 1124948722}
@@ -5394,5 +5400,3 @@ SceneRoots:
   - {fileID: 1414838800}
   - {fileID: 1704283508}
   - {fileID: 462047362}
-  - {fileID: 689151526}
-  - {fileID: 754490475}

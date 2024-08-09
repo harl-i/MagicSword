@@ -1250,6 +1250,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3322632587749362089, guid: 12b55ea27c34e6a429eef201fd7dd605, type: 3}
+      propertyPath: _soulsAmountForActivation
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5621227611536470158, guid: 12b55ea27c34e6a429eef201fd7dd605, type: 3}
       propertyPath: m_Name
       value: LevelPortal_3

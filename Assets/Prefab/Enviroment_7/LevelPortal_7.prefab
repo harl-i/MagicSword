@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5255314024356949503}
   - component: {fileID: 5307754708945824596}
   - component: {fileID: 22007917105178294}
+  - component: {fileID: 211564686954671930}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -119,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020921648, y: 0.31611285}
+  m_Offset: {x: -0.020921648, y: 0.5700182}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -130,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5897771, y: 0.74595004}
+  m_Size: {x: 0.5897771, y: 0.23813945}
   m_EdgeRadius: 0
 --- !u!50 &5307754708945824596
 Rigidbody2D:
@@ -171,6 +172,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9faf245983b60f40baef2dc2b9bbcc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _soulsAmountForActivation: 5
+  _portalActivator: {fileID: 589762739293430283}
+--- !u!95 &211564686954671930
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4683625468567869449}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5491910256836579466
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,6 +206,8 @@ GameObject:
   - component: {fileID: 2213923217151559123}
   - component: {fileID: 6050387406166889598}
   - component: {fileID: 8576196486968846314}
+  - component: {fileID: 6778151060428125339}
+  - component: {fileID: 589762739293430283}
   m_Layer: 0
   m_Name: Activator
   m_TagString: Untagged
@@ -309,6 +335,40 @@ PolygonCollider2D:
       - {x: 0.3625, y: -0.3625}
       - {x: 0.3625, y: 0.0875}
   m_UseDelaunayMesh: 0
+--- !u!95 &6778151060428125339
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5491910256836579466}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &589762739293430283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5491910256836579466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b18853e6d4a3f4ca04bfc5ab148e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _portal: {fileID: 22007917105178294}
 --- !u!1 &8296939187234173290
 GameObject:
   m_ObjectHideFlags: 0
