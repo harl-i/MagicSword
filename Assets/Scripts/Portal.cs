@@ -13,6 +13,9 @@ public class Portal : MonoBehaviour
     private int _currentSoulsAmountForActivation;
 
     public Action SoulsCollected;
+    public Action<int> SoulsChanged;
+
+    public int SoulsAmountForActivation => _soulsAmountForActivation;
 
     private void Awake()
     {
@@ -39,6 +42,7 @@ public class Portal : MonoBehaviour
         if (collision.TryGetComponent(out Soul soul))
         {
             _currentSoulsAmountForActivation++;
+            SoulsChanged?.Invoke(_currentSoulsAmountForActivation);
 
             if (_currentSoulsAmountForActivation == _soulsAmountForActivation)
             {
