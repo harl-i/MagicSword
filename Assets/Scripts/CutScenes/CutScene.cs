@@ -3,11 +3,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CutScene1 : MonoBehaviour
+public class CutScene : MonoBehaviour
 {
+    [SerializeField] private bool _needFlashEffect;
+    [SerializeField] private int _sceneForFlashEffect;
     [SerializeField] private FlashBangEffect _flashBangEffect;
-    [SerializeField] private TextMeshProUGUI _textDisplay;
+
     [SerializeField] private GameObject[] _images;
+    
+    [SerializeField] private TextMeshProUGUI _textDisplay;
     [SerializeField] private string[] _texts;
     [SerializeField] private float _typingSpeed = 0.05f;
 
@@ -36,7 +40,7 @@ public class CutScene1 : MonoBehaviour
                 _images[_currentIndex - 1].SetActive(false);
             }
 
-            if (_currentIndex == 4)
+            if (_currentIndex == _sceneForFlashEffect && _needFlashEffect)
             {
                 _flashBangEffect.FlashBanged();
             }
