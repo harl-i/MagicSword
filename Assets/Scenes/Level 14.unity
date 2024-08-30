@@ -11830,63 +11830,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &447688481
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.2214226
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 77.71115
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3351222644046244998, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_Name
-      value: Snowman (9)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
 --- !u!1 &469333673
 GameObject:
   m_ObjectHideFlags: 0
@@ -12770,63 +12713,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &587449447
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.4073994
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 67.88828
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3351222644046244998, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_Name
-      value: Snowman (8)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
 --- !u!1 &622398091
 GameObject:
   m_ObjectHideFlags: 0
@@ -13292,6 +13178,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &690639731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4616097
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194347725560416596, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_Name
+      value: Snowman Variant (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 153a0155729587a40a8d3af260407e23, type: 3}
 --- !u!1 &727923516
 GameObject:
   m_ObjectHideFlags: 0
@@ -13869,6 +13812,120 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &844137075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.493139
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.611453
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194347725560416596, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_Name
+      value: Snowman Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+--- !u!1001 &863820345
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.67685485
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 26.615875
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194347725560416596, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_Name
+      value: Snowman Variant (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 153a0155729587a40a8d3af260407e23, type: 3}
 --- !u!1001 &948430588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14193,6 +14250,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79524da97425fe408961239731ec081, type: 3}
+--- !u!1001 &1033647196
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.451189
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 67.90663
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194347725560416596, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_Name
+      value: Snowman Variant (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 153a0155729587a40a8d3af260407e23, type: 3}
 --- !u!4 &1057136363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
@@ -18051,7 +18165,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 20
-      m_TileSpriteIndex: 33
+      m_TileSpriteIndex: 34
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -20300,10 +20414,10 @@ Tilemap:
     m_Data: {fileID: -822364489, guid: 24b2b9fef5730774293cf2578cb941b0, type: 3}
   - m_RefCount: 79
     m_Data: {fileID: -1517794623, guid: 24b2b9fef5730774293cf2578cb941b0, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -675966130, guid: 24b2b9fef5730774293cf2578cb941b0, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -675966130, guid: 24b2b9fef5730774293cf2578cb941b0, type: 3}
   - m_RefCount: 37
     m_Data: {fileID: -862926570, guid: 24b2b9fef5730774293cf2578cb941b0, type: 3}
   - m_RefCount: 10
@@ -25060,63 +25174,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1656848552
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.4412602
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.602806
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3351222644046244998, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_Name
-      value: Snowman (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
 --- !u!1 &1665586472
 GameObject:
   m_ObjectHideFlags: 0
@@ -25201,63 +25258,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1667693689
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.55381346
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 26.618406
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3351222644046244998, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_Name
-      value: Snowman (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
 --- !u!114 &1677612353 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8864877141974162799, guid: 57602e1c91bfea14db3424bb7e39c02e, type: 3}
@@ -30638,63 +30638,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1811636952
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.424326
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 19.601957
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3351222644046244998, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
-      propertyPath: m_Name
-      value: Snowman (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
 --- !u!1001 &1819883967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30709,7 +30652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.66973126
+      value: -0.702
       objectReference: {fileID: 0}
     - target: {fileID: 1380934318540316182, guid: 007e6ab82491b374c95b7d55d0b56035, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36192,6 +36135,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c7065135724cb343a4f64c74d9e0340, type: 3}
+--- !u!1001 &1984800128
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2654935
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 77.71108
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481958921867230148, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194347725560416596, guid: 153a0155729587a40a8d3af260407e23, type: 3}
+      propertyPath: m_Name
+      value: Snowman Variant (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 153a0155729587a40a8d3af260407e23, type: 3}
 --- !u!1001 &1986570746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36703,14 +36703,11 @@ SceneRoots:
   - {fileID: 1819883967}
   - {fileID: 948430588}
   - {fileID: 1922282089}
-  - {fileID: 1656848552}
   - {fileID: 738196129}
   - {fileID: 179838147}
   - {fileID: 988108005}
   - {fileID: 1857353854}
   - {fileID: 1483682084}
-  - {fileID: 1811636952}
-  - {fileID: 1667693689}
   - {fileID: 85360488}
   - {fileID: 1986570746}
   - {fileID: 1915701082}
@@ -36722,10 +36719,8 @@ SceneRoots:
   - {fileID: 1284470791}
   - {fileID: 1114756917}
   - {fileID: 1077289217}
-  - {fileID: 587449447}
   - {fileID: 1107926843}
   - {fileID: 1767731977}
-  - {fileID: 447688481}
   - {fileID: 359567525}
   - {fileID: 1984669319}
   - {fileID: 440661729}
@@ -36742,3 +36737,8 @@ SceneRoots:
   - {fileID: 2106949357}
   - {fileID: 429366122}
   - {fileID: 284833140}
+  - {fileID: 844137075}
+  - {fileID: 690639731}
+  - {fileID: 863820345}
+  - {fileID: 1033647196}
+  - {fileID: 1984800128}
