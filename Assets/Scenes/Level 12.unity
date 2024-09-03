@@ -2222,7 +2222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774775439919354376, guid: 82df969799e2cb34783a58b910791325, type: 3}
       propertyPath: _delay
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2774775439919354376, guid: 82df969799e2cb34783a58b910791325, type: 3}
       propertyPath: _sceneIndex

@@ -9604,7 +9604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 2
-  _delay: 0.5
+  _delay: 0
 --- !u!1 &2011104252
 GameObject:
   m_ObjectHideFlags: 0

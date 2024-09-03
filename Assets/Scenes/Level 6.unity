@@ -1285,6 +1285,10 @@ PrefabInstance:
       propertyPath: _soulsAmountForActivation
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 4071313170966758476, guid: 12b55ea27c34e6a429eef201fd7dd605, type: 3}
+      propertyPath: _delay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5621227611536470158, guid: 12b55ea27c34e6a429eef201fd7dd605, type: 3}
       propertyPath: m_Name
       value: LevelPortal_3

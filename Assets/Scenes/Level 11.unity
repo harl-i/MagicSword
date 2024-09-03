@@ -10224,6 +10224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelPortal_6
       objectReference: {fileID: 0}
+    - target: {fileID: 6407760476315100687, guid: 82df969799e2cb34783a58b910791325, type: 3}
+      propertyPath: _delay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8712603446289039933, guid: 82df969799e2cb34783a58b910791325, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.263

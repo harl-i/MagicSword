@@ -8003,6 +8003,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.21849659
       objectReference: {fileID: 0}
+    - target: {fileID: 690745026076524864, guid: ff0c065ce9dbeaa4f8869091e4ad949b, type: 3}
+      propertyPath: _delay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1751312296196908818, guid: ff0c065ce9dbeaa4f8869091e4ad949b, type: 3}
       propertyPath: m_Name
       value: LevelPortal_5

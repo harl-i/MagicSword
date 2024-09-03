@@ -809,6 +809,10 @@ PrefabInstance:
       value: -0.22480959
       objectReference: {fileID: 0}
     - target: {fileID: 690745026076524864, guid: ff0c065ce9dbeaa4f8869091e4ad949b, type: 3}
+      propertyPath: _delay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690745026076524864, guid: ff0c065ce9dbeaa4f8869091e4ad949b, type: 3}
       propertyPath: _sceneIndex
       value: 29
       objectReference: {fileID: 0}

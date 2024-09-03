@@ -1806,7 +1806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 5
-  _delay: 0.5
+  _delay: 0
 --- !u!1001 &1344734074
 PrefabInstance:
   m_ObjectHideFlags: 0

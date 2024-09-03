@@ -5619,6 +5619,10 @@ PrefabInstance:
       propertyPath: _soulsAmountForActivation
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 3427267001223835150, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
+      propertyPath: _delay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7196383213712940701, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.828

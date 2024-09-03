@@ -16822,7 +16822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 8
-  _delay: 0.5
+  _delay: 0
 --- !u!4 &3936290543974013223
 Transform:
   m_ObjectHideFlags: 0

@@ -53,9 +53,9 @@ public class Portal : MonoBehaviour
             }
         }
 
-        if (collision.TryGetComponent(out Player player) && _isActive)
+        if (collision.gameObject.GetComponentInChildren<Player>() != null && _isActive)
         {
-            _loadSceneByIndex.LoadScene();
+            StartCoroutine(_loadSceneByIndex.LoadScene());
         }
     }
 }
