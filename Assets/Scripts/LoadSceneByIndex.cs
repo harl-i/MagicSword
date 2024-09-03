@@ -1,12 +1,17 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LoadSceneByIndex : MonoBehaviour
 {
-    [SerializeField] private int sceneIndex;
+    [SerializeField] private int _sceneIndex;
+    [SerializeField] private float _delay = 0f;
 
-    public void LoadScene()
+
+    public IEnumerator LoadScene()
     {
-        SceneManager.LoadScene(sceneIndex);
+        yield return new WaitForSeconds(_delay);
+
+        SceneManager.LoadScene(_sceneIndex);
     }
 }

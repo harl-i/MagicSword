@@ -1061,6 +1061,7 @@ MonoBehaviour:
   - 
   - 
   _typingSpeed: 0.05
+  _nextScene: 1
 --- !u!4 &1780910127
 Transform:
   m_ObjectHideFlags: 0

@@ -8,9 +8,11 @@ public class Portal : MonoBehaviour
 {
     [SerializeField] private int _soulsAmountForActivation;
     [SerializeField] private PortalActivator _portalActivator;
+    [SerializeField] private LoadSceneByIndex _loadSceneByIndex;
 
     private Animator _animator;
     private int _currentSoulsAmountForActivation;
+    private bool _isActive;
 
     public Action SoulsCollected;
     public Action<int> SoulsChanged;
@@ -34,7 +36,8 @@ public class Portal : MonoBehaviour
 
     private void OnPortalActivatorActivated()
     {
-        _animator.SetTrigger("Activation"); 
+        _animator.SetTrigger("Activation");
+        _isActive = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -48,6 +51,11 @@ public class Portal : MonoBehaviour
             {
                 SoulsCollected?.Invoke();
             }
+        }
+
+        if (collision.TryGetComponent(out Player player) && _isActive)
+        {
+            _loadSceneByIndex.LoadScene();
         }
     }
 }

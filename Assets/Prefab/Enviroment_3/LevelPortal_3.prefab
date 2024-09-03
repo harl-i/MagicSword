@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 2161069625111783188}
   - component: {fileID: 3322632587749362089}
   - component: {fileID: 8626626778285040316}
+  - component: {fileID: 4071313170966758476}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -381,6 +382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soulsAmountForActivation: 9
   _portalActivator: {fileID: 7733026426631454774}
+  _loadSceneByIndex: {fileID: 0}
 --- !u!95 &8626626778285040316
 Animator:
   serializedVersion: 5
@@ -402,3 +404,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4071313170966758476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5891747290940879084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2557d8ae2dffea84ba98ed283b8ce42f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneIndex: 17
+  _delay: 0.5

@@ -737,6 +737,7 @@ MonoBehaviour:
     \u0442\u044B \u0441\u043C\u043E\u0436\u0435\u0448\u044C \u043D\u0430\u0439\u0442\u0438
     \u0441\u0432\u043E\u0438\u0445 \u0431\u043B\u0438\u0437\u043A\u0438\u0445"
   _typingSpeed: 0.05
+  _nextScene: 34
 --- !u!4 &1780910127
 Transform:
   m_ObjectHideFlags: 0
