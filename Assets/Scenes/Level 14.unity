@@ -14936,6 +14936,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 13588108566210113, guid: 1df36c464e0ef334e8a187a50d17d6ba, type: 3}
+      propertyPath: _delay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 22007917105178294, guid: 1df36c464e0ef334e8a187a50d17d6ba, type: 3}
       propertyPath: _loadSceneByIndex
       value: 
