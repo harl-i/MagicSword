@@ -14,7 +14,7 @@ public class CutSceneEditor : Editor
     private SerializedProperty _textDisplay;
     private SerializedProperty _texts;
     private SerializedProperty _typingSpeed;
-    private SerializedProperty _nextScene;
+    private SerializedProperty _nextSceneLoader;
 
     private void OnEnable()
     {
@@ -25,7 +25,7 @@ public class CutSceneEditor : Editor
         _textDisplay = serializedObject.FindProperty("_textDisplay");
         _texts = serializedObject.FindProperty("_texts");
         _typingSpeed = serializedObject.FindProperty("_typingSpeed");
-        _nextScene = serializedObject.FindProperty("_nextScene");
+        _nextSceneLoader = serializedObject.FindProperty("_nextSceneLoader");
     }
 
     public override void OnInspectorGUI()
@@ -54,7 +54,7 @@ public class CutSceneEditor : Editor
 
         DrawLine();
 
-        EditorGUILayout.PropertyField(_nextScene);
+        EditorGUILayout.PropertyField(_nextSceneLoader);
 
         serializedObject.ApplyModifiedProperties();
     }

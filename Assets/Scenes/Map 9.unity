@@ -682,7 +682,7 @@ GameObject:
   - component: {fileID: 1892839505}
   - component: {fileID: 1892839504}
   - component: {fileID: 1892839507}
-  - component: {fileID: 1892839506}
+  - component: {fileID: 1892839508}
   m_Layer: 0
   m_Name: map
   m_TagString: Untagged
@@ -757,20 +757,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1892839506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892839503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2557d8ae2dffea84ba98ed283b8ce42f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sceneIndex: 27
-  _delay: 1
 --- !u!114 &1892839507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,7 +770,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _swordIconAnimMover: {fileID: 1989296635}
-  _loadSceneByIndex: {fileID: 1892839506}
+  _nextSceneLoader: {fileID: 1892839508}
+--- !u!114 &1892839508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892839503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58307d47204c37f43aea2837d3ec0efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isDelayNeeded: 1
+  _delay: 1
 --- !u!1 &1989296634
 GameObject:
   m_ObjectHideFlags: 0

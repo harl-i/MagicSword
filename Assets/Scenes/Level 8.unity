@@ -8596,9 +8596,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 567869398192414471, guid: b70f03b76e92f764c86e4b8d149f3280, type: 3}
-      propertyPath: _loadSceneByIndex
+      propertyPath: _nextSceneLoader
       value: 
       objectReference: {fileID: 1534691835}
+    - target: {fileID: 567869398192414471, guid: b70f03b76e92f764c86e4b8d149f3280, type: 3}
+      propertyPath: _loadSceneByIndex
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 567869398192414471, guid: b70f03b76e92f764c86e4b8d149f3280, type: 3}
       propertyPath: _soulsAmountForActivation
       value: 26
@@ -8672,7 +8676,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2440494312828374377, guid: b70f03b76e92f764c86e4b8d149f3280, type: 3}
-      insertIndex: -1
+      insertIndex: 5
       addedObject: {fileID: 1534691835}
   m_SourcePrefab: {fileID: 100100000, guid: b70f03b76e92f764c86e4b8d149f3280, type: 3}
 --- !u!1 &1534691834 stripped
@@ -8689,11 +8693,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1534691834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2557d8ae2dffea84ba98ed283b8ce42f, type: 3}
+  m_Script: {fileID: 11500000, guid: 58307d47204c37f43aea2837d3ec0efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneIndex: 23
-  _delay: 0
 --- !u!1001 &1553853033
 PrefabInstance:
   m_ObjectHideFlags: 0

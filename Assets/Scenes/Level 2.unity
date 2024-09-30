@@ -829,9 +829,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 364026558013139972, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
-      propertyPath: _loadSceneByIndex
+      propertyPath: _nextSceneLoader
       value: 
       objectReference: {fileID: 1323926084}
+    - target: {fileID: 364026558013139972, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
+      propertyPath: _loadSceneByIndex
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 364026558013139972, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
       propertyPath: _soulsAmountForActivation
       value: 7
@@ -1802,11 +1806,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 754490476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2557d8ae2dffea84ba98ed283b8ce42f, type: 3}
+  m_Script: {fileID: 11500000, guid: 58307d47204c37f43aea2837d3ec0efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneIndex: 5
-  _delay: 0
 --- !u!1001 &1344734074
 PrefabInstance:
   m_ObjectHideFlags: 0

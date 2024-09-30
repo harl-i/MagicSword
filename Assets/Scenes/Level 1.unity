@@ -10330,7 +10330,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2675255876641385832, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
   m_PrefabInstance: {fileID: 8360046053101642447}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1943897137
+--- !u!114 &1943897142
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10339,11 +10339,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1943897136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2557d8ae2dffea84ba98ed283b8ce42f, type: 3}
+  m_Script: {fileID: 11500000, guid: 58307d47204c37f43aea2837d3ec0efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneIndex: 2
-  _delay: 0
 --- !u!1 &1951366717
 GameObject:
   m_ObjectHideFlags: 0
@@ -10985,9 +10983,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 364026558013139972, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
+      propertyPath: _nextSceneLoader
+      value: 
+      objectReference: {fileID: 1943897142}
+    - target: {fileID: 364026558013139972, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
       propertyPath: _loadSceneByIndex
       value: 
-      objectReference: {fileID: 1943897137}
+      objectReference: {fileID: 0}
     - target: {fileID: 6523990509164647873, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
       propertyPath: m_Size.x
       value: 0.46626472
@@ -11058,7 +11060,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2675255876641385832, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1943897137}
+      addedObject: {fileID: 1943897142}
   m_SourcePrefab: {fileID: 100100000, guid: 6ebd460380c128341958a7a17dec6c22, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

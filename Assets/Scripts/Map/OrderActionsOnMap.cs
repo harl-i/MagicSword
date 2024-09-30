@@ -1,11 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class OrderActionsOnMap : MonoBehaviour
 {
     [SerializeField] private SwordIconAnimMover _swordIconAnimMover;
-    [SerializeField] private LoadSceneByIndex _loadSceneByIndex;
+    [SerializeField] private NextSceneLoader _nextSceneLoader;
 
     private void Start()
     {
@@ -21,6 +20,6 @@ public class OrderActionsOnMap : MonoBehaviour
             yield return null;
         }
 
-        yield return StartCoroutine(_loadSceneByIndex.LoadScene());
+        _nextSceneLoader.LoadScene();
     }
 }

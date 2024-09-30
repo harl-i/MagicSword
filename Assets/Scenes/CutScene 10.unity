@@ -682,6 +682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1780910127}
   - component: {fileID: 1780910126}
+  - component: {fileID: 1780910129}
   - component: {fileID: 1780910128}
   m_Layer: 0
   m_Name: CutScene
@@ -758,7 +759,7 @@ MonoBehaviour:
     \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u0448\u044C\u0441\u044F \u0432
     \u043E\u0434\u043D\u0443 \u0438\u0437 \u044D\u0442\u0438\u0445 \u0434\u0443\u0448."
   _typingSpeed: 0.05
-  _nextScene: 28
+  _nextSceneLoader: {fileID: 1780910129}
 --- !u!4 &1780910127
 Transform:
   m_ObjectHideFlags: 0
@@ -789,6 +790,18 @@ MonoBehaviour:
   _flasImage: {fileID: 1323199033}
   flashDuration: 1
   fadeDuration: 1
+--- !u!114 &1780910129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780910125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58307d47204c37f43aea2837d3ec0efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1907219121
 GameObject:
   m_ObjectHideFlags: 0

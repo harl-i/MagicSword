@@ -8,7 +8,7 @@ public class Portal : MonoBehaviour
 {
     [SerializeField] private int _soulsAmountForActivation;
     [SerializeField] private PortalActivator _portalActivator;
-    [SerializeField] private LoadSceneByIndex _loadSceneByIndex;
+    [SerializeField] private NextSceneLoader _nextSceneLoader;
 
     private Animator _animator;
     private int _currentSoulsAmountForActivation;
@@ -55,7 +55,7 @@ public class Portal : MonoBehaviour
 
         if (collision.gameObject.GetComponentInChildren<Player>() != null && _isActive)
         {
-            StartCoroutine(_loadSceneByIndex.LoadScene());
+            _nextSceneLoader.LoadScene();
         }
     }
 }

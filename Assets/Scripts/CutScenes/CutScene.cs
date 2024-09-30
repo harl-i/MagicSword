@@ -15,7 +15,7 @@ public class CutScene : MonoBehaviour
     [SerializeField] private string[] _texts;
     [SerializeField] private float _typingSpeed = 0.05f;
 
-    [SerializeField] private int _nextScene;
+    [SerializeField] private NextSceneLoader _nextSceneLoader;
 
     private int _currentIndex = 0;
     private bool _isTyping = false;
@@ -70,7 +70,8 @@ public class CutScene : MonoBehaviour
     private void EndCutscene()
     {
         Debug.Log("Cutscene ended");
-        SceneManager.LoadScene(_nextScene);
+
+        _nextSceneLoader.LoadScene();
     }
 
     private IEnumerator TypeText(string text)

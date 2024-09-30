@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5255314024356949503}
   - component: {fileID: 5307754708945824596}
   - component: {fileID: 22007917105178294}
+  - component: {fileID: 2154867661442013618}
   - component: {fileID: 211564686954671930}
-  - component: {fileID: 13588108566210113}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -173,9 +173,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9faf245983b60f40baef2dc2b9bbcc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soulsAmountForActivation: 5
+  _soulsAmountForActivation: 21
   _portalActivator: {fileID: 589762739293430283}
-  _loadSceneByIndex: {fileID: 0}
+  _nextSceneLoader: {fileID: 2154867661442013618}
+--- !u!114 &2154867661442013618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4683625468567869449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58307d47204c37f43aea2837d3ec0efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &211564686954671930
 Animator:
   serializedVersion: 5
@@ -197,20 +209,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &13588108566210113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4683625468567869449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2557d8ae2dffea84ba98ed283b8ce42f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sceneIndex: 41
-  _delay: 0.5
 --- !u!1 &5491910256836579466
 GameObject:
   m_ObjectHideFlags: 0

@@ -5612,9 +5612,13 @@ PrefabInstance:
       value: -0.19977485
       objectReference: {fileID: 0}
     - target: {fileID: 1046619141325063712, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
-      propertyPath: _loadSceneByIndex
+      propertyPath: _nextSceneLoader
       value: 
       objectReference: {fileID: 993884917}
+    - target: {fileID: 1046619141325063712, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
+      propertyPath: _loadSceneByIndex
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1046619141325063712, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
       propertyPath: _soulsAmountForActivation
       value: 20
@@ -5667,11 +5671,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelPortal_2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3427267001223835150, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9089236299311838722, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 993884917}
   m_SourcePrefab: {fileID: 100100000, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
+--- !u!1 &274781245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9089236299311838722, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
+  m_PrefabInstance: {fileID: 274781244}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &278583658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21954,21 +21967,22 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1046619141325063712, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
   m_PrefabInstance: {fileID: 274781244}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 274781245}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9faf245983b60f40baef2dc2b9bbcc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &993884917 stripped
+--- !u!114 &993884917
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3427267001223835150, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
-  m_PrefabInstance: {fileID: 274781244}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 274781245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2557d8ae2dffea84ba98ed283b8ce42f, type: 3}
+  m_Script: {fileID: 11500000, guid: 58307d47204c37f43aea2837d3ec0efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1002315076

@@ -66267,10 +66267,6 @@ PrefabInstance:
     - target: {fileID: 22007917105178294, guid: 1df36c464e0ef334e8a187a50d17d6ba, type: 3}
       propertyPath: _loadSceneByIndex
       value: 
-      objectReference: {fileID: 3523221640527901628}
-    - target: {fileID: 22007917105178294, guid: 1df36c464e0ef334e8a187a50d17d6ba, type: 3}
-      propertyPath: _soulsAmountForActivation
-      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4977827703067789132, guid: 1df36c464e0ef334e8a187a50d17d6ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66355,17 +66351,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9faf245983b60f40baef2dc2b9bbcc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3523221640527901628 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 13588108566210113, guid: 1df36c464e0ef334e8a187a50d17d6ba, type: 3}
-  m_PrefabInstance: {fileID: 3523221640527901625}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2557d8ae2dffea84ba98ed283b8ce42f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &5358325775758912115
