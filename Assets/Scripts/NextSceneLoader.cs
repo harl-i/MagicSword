@@ -13,7 +13,7 @@ public class NextSceneLoader : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int totalScenes = SceneManager.sceneCountInBuildSettings;
-        _nextSceneIndex = currentSceneIndex++;
+        _nextSceneIndex = currentSceneIndex + 1;
 
         if (_nextSceneIndex < totalScenes && !_isDelayNeeded)
         {
