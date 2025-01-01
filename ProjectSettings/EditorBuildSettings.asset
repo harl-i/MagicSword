@@ -105,14 +105,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Map 11.unity
     guid: d98e37794cf389f4a914ea8402b9260d
   - enabled: 1
-    path: Assets/Scenes/CutScene 12.unity
-    guid: 5ae4f59d477adc840b3fc292c0b9aa39
-  - enabled: 1
     path: Assets/Scenes/Level 12.unity
     guid: 57658e242925fdd48926cbf802c8d6f3
   - enabled: 1
     path: Assets/Scenes/Map 12.unity
     guid: 5a70d2c886800f54dab3f5e3e6f6c184
+  - enabled: 1
+    path: Assets/Scenes/CutScene 12.unity
+    guid: 5ae4f59d477adc840b3fc292c0b9aa39
   - enabled: 1
     path: Assets/Scenes/Level 13.unity
     guid: a21bb4c72d5acd24e9ede115cc5cab84
@@ -120,9 +120,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Map 13.unity
     guid: 910732bb342bdc54ba011a3747a05072
   - enabled: 1
+    path: Assets/Scenes/CutScene 13.unity
+    guid: 31b5854bc3880c943ac162ccb4d8aca2
+  - enabled: 1
     path: Assets/Scenes/Level 14.unity
     guid: badc38fe50a9f474ea62c2694577da04
   - enabled: 1
     path: Assets/Scenes/Map 14.unity
     guid: e453f535d39ee5f4a86632136ba09db0
+  - enabled: 1
+    path: Assets/Scenes/CutScene 14.unity
+    guid: 7c28b4ce6a0f8b148aac040779751969
   m_configObjects: {}
