@@ -1,7 +1,6 @@
 using System;
-using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
+using YG;
 
 [RequireComponent(typeof(SwordMovingState))]
 [RequireComponent(typeof(ShieldActivator))]
@@ -21,6 +20,8 @@ public class Player : MonoBehaviour, IDamageable
     public bool IsShieldActivated => _isShieldActivated;
 
     public static Action<int> HealthHasChanged;
+
+    public int Health => _healthCount;
 
     private void Awake()
     {
@@ -48,6 +49,11 @@ public class Player : MonoBehaviour, IDamageable
 
     public void TakeDamage()
     {
+        if (YG2.saves.godMode == 1)
+        {
+            return;
+        }
+
         if (_healthCount > 0 && !_isShieldActivated)
         {
             _healthCount--;
@@ -65,3 +71,5 @@ public class Player : MonoBehaviour, IDamageable
         _isShieldActivated = isActivated;
     }
 }
+
+

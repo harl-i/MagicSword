@@ -1,9 +1,11 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class NextSceneLoader : MonoBehaviour
 {
+    [SerializeField] private Player _player;
     [SerializeField] private bool _isDelayNeeded;
     [SerializeField] private float _delay;
 
@@ -14,6 +16,8 @@ public class NextSceneLoader : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int totalScenes = SceneManager.sceneCountInBuildSettings;
         _nextSceneIndex = currentSceneIndex + 1;
+
+        SavePlayerData();
 
         if (_nextSceneIndex < totalScenes && !_isDelayNeeded)
         {
@@ -34,5 +38,14 @@ public class NextSceneLoader : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         SceneManager.LoadScene(_nextSceneIndex);
+    }
+
+    private void SavePlayerData()
+    {
+        if (_player)
+        {
+            YG2.saves.health = _player.Health;
+            YG2.saves.sceneForContinue = _nextSceneIndex;
+        }
     }
 }
