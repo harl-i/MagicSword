@@ -31,7 +31,8 @@ public class IntroductionLevel1 : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !_isTyping)
+        if (!_isTyping)
+        //if (Input.GetMouseButtonDown(0) && !_isTyping)
         {
             AdvanceCutscene();
         }
@@ -82,6 +83,7 @@ public class IntroductionLevel1 : MonoBehaviour
             yield return new WaitForSeconds(_typingSpeed);
         }
 
+        yield return new WaitForSeconds(1);
         _isTyping = false;
     }
 

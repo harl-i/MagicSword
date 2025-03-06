@@ -27,7 +27,8 @@ public class CutScene : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !_isTyping)
+        if (!_isTyping)
+            //if (Input.GetMouseButtonDown(0) && !_isTyping)
         {
             AdvanceCutscene();
         }
@@ -69,8 +70,6 @@ public class CutScene : MonoBehaviour
 
     private void EndCutscene()
     {
-        Debug.Log("Cutscene ended");
-
         _nextSceneLoader.LoadScene();
     }
 
@@ -85,6 +84,8 @@ public class CutScene : MonoBehaviour
             yield return new WaitForSeconds(_typingSpeed);
         }
 
-        _isTyping = false; 
+        yield return new WaitForSeconds(1);
+        _isTyping = false;
+       
     }
 }

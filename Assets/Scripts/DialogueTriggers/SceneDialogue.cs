@@ -13,6 +13,7 @@ public class SceneDialogue : MonoBehaviour
     [SerializeField] private bool _needPermanentDisableTrigger;
     [SerializeField] private Collider2D _trigger;
     [SerializeField] private float _timeForTemporaryDisable;
+    [SerializeField] private GameObject[] _auxiliaryObjects;
 
     private int _currentIndex = 0;
     private bool _isTyping = false;
@@ -46,6 +47,8 @@ public class SceneDialogue : MonoBehaviour
     public void StartDialogue()
     {
         StartCoroutine(TypeText(_text[_currentIndex]));
+
+        EnableAuxularyObjects();
     }
 
     private void OnDialogueWindowShown()
@@ -78,6 +81,7 @@ public class SceneDialogue : MonoBehaviour
 
     private void EndDialogue()
     {
+        DisableAuxularyObjects();
         ResumeGame();
     }
 
@@ -137,5 +141,27 @@ public class SceneDialogue : MonoBehaviour
         yield return new WaitForSeconds(_timeForTemporaryDisable);
 
         _trigger.enabled = true;
+    }
+
+    private void EnableAuxularyObjects()
+    {
+        if (_auxiliaryObjects != null)
+        {
+            foreach (var item in _auxiliaryObjects)
+            {
+                item.SetActive(true);
+            }
+        }
+    }
+
+    private void DisableAuxularyObjects()
+    {
+        if (_auxiliaryObjects != null)
+        {
+            foreach (var item in _auxiliaryObjects)
+            {
+                item.SetActive(false);
+            }
+        }
     }
 }
