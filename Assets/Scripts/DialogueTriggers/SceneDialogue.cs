@@ -30,9 +30,16 @@ public class SceneDialogue : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !_isTyping && _dialogueWindow.gameObject.activeSelf)
+        if (Input.GetMouseButtonDown(0) && _dialogueWindow.gameObject.activeSelf)
         {
-            AdvanceDialogue();
+            if (_isTyping)
+            {
+                ShowFullText();
+            }
+            else
+            {
+                AdvanceDialogue();
+            }
         }
     }
 
@@ -141,6 +148,13 @@ public class SceneDialogue : MonoBehaviour
         yield return new WaitForSeconds(_timeForTemporaryDisable);
 
         _trigger.enabled = true;
+    }
+
+    private void ShowFullText()
+    {
+        StopAllCoroutines();
+        _dialogueTextField.text = _text[_currentIndex];
+        _isTyping = false;
     }
 
     private void EnableAuxularyObjects()
