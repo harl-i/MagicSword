@@ -14,6 +14,7 @@ public class NextSceneLoader : MonoBehaviour
     public void LoadScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
         int totalScenes = SceneManager.sceneCountInBuildSettings;
         _nextSceneIndex = currentSceneIndex + 1;
 
@@ -47,5 +48,6 @@ public class NextSceneLoader : MonoBehaviour
             YG2.saves.health = _player.Health;
             YG2.saves.sceneForContinue = _nextSceneIndex;
         }
+        YG2.SaveProgress();
     }
 }

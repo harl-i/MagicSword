@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using YG;
 
 public class IntroductionLevel1 : MonoBehaviour
 {
     [SerializeField] private GameObject _startDialogueCanvas;
     [SerializeField] private GameObject _ui;
     [SerializeField] private FlashBangEffect _flashBangEffect;
-    
+
     [Space]
     [Header("Curtain")]
     [SerializeField] private SpriteRenderer _curtain;
@@ -27,12 +28,9 @@ public class IntroductionLevel1 : MonoBehaviour
         UpdateCutscene();
     }
 
-    
-
     private void Update()
     {
         if (!_isTyping)
-        //if (Input.GetMouseButtonDown(0) && !_isTyping)
         {
             AdvanceCutscene();
         }
@@ -40,6 +38,8 @@ public class IntroductionLevel1 : MonoBehaviour
 
     private void UpdateCutscene()
     {
+        if (YG2.saves.skipFirstCutscene == 1) return;
+
         if (_currentIndex < _texts.Length)
         {
             if (_currentIndex == 0)
@@ -59,7 +59,7 @@ public class IntroductionLevel1 : MonoBehaviour
         {
             UpdateCutscene();
         }
-        else if(_currentIndex == _texts.Length)
+        else if (_currentIndex == _texts.Length)
         {
             EndCutscene();
         }
@@ -67,7 +67,6 @@ public class IntroductionLevel1 : MonoBehaviour
 
     private void EndCutscene()
     {
-        Debug.Log("Cutscene ended");
         _startDialogueCanvas.gameObject.SetActive(false);
         StartCoroutine(FadeOut());
     }
