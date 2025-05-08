@@ -1,7 +1,7 @@
 {
     "redirection": "",
-    "documentation": "https://max-games.ru/plugin-yg/",
-    "chat": "https://t.me/pluginYG",
+    "documentation": "https://max-games.ru/plugin-yg/doc",
+    "chat": "https://t.me/pluginYG2",
     "video": "https://www.youtube.com/playlist?list=PLjS5DHdpBH0Q9qKLenTNbYwaB5IIIsCya",
     "playerImage": "https://max-games.ru/public/pluginYG2/images/player.png",
     "purchaseImage": "https://max-games.ru/public/pluginYG2/images/purchase.png",
@@ -16,7 +16,7 @@
             "name": "YandexGames",
             "version": "1.003",
             "download": "https://max-games.ru/public/pluginYG2/platforms/YandexGames.unitypackage",
-            "doc": "https://max-games.ru/plugin-yg/doc/",
+            "doc": "https://max-games.ru/plugin-yg/yandexgames/",
             "platform": true
         },
         {
@@ -101,7 +101,7 @@
         },
         {
             "name": "Payments",
-            "version": "1.0",
+            "version": "1.01",
             "download": "https://max-games.ru/public/pluginYG2/modules/Payments.unitypackage",
             "doc": "https://max-games.ru/plugin-yg/doc/pay/"
         },
@@ -115,19 +115,19 @@
             "name": "Review",
             "version": "1.0",
             "download": "https://max-games.ru/public/pluginYG2/modules/Review.unitypackage",
-            "doc": "https://max-games.ru/other/"
+            "doc": "https://max-games.ru/review/"
         },
         {
             "name": "StickyAdv",
             "version": "1.0",
             "download": "https://max-games.ru/public/pluginYG2/modules/StickyAdv.unitypackage",
-            "doc": "https://max-games.ru/other/"
+            "doc": "https://max-games.ru/sticky-ad/"
         },
         {
             "name": "ServerTime",
-            "version": "1.0",
+            "version": "1.01",
             "download": "https://max-games.ru/public/pluginYG2/modules/ServerTime.unitypackage",
-            "doc": "https://max-games.ru/other/"
+            "doc": "https://max-games.ru/server-time/"
         },
         {
             "name": "Fullscreen",
@@ -159,7 +159,7 @@
             "name": "GameLabel",
             "version": "1.0",
             "download": "https://max-games.ru/public/pluginYG2/modules/GameLabel.unitypackage",
-            "doc": "https://max-games.ru/other/"
+            "doc": "https://max-games.ru/game-label/"
         },
         {
             "name": "QuitGameEvent",
