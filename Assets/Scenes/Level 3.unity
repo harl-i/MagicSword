@@ -2348,6 +2348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spider (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4541348985057471440, guid: bd7aa3b0fb66da94da3d536c782d1a5a, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8409489185854023643, guid: bd7aa3b0fb66da94da3d536c782d1a5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.160273
@@ -12688,17 +12692,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spider
       objectReference: {fileID: 0}
-    - target: {fileID: 3871833442436764250, guid: bd7aa3b0fb66da94da3d536c782d1a5a, type: 3}
-      propertyPath: _colliderOffsetX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3871833442436764250, guid: bd7aa3b0fb66da94da3d536c782d1a5a, type: 3}
-      propertyPath: _colliderOffsetY
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4541348985057471440, guid: bd7aa3b0fb66da94da3d536c782d1a5a, type: 3}
-      propertyPath: m_FlipX
-      value: 1
+    - target: {fileID: 4073647845641791309, guid: bd7aa3b0fb66da94da3d536c782d1a5a, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.675
       objectReference: {fileID: 0}
     - target: {fileID: 8409489185854023643, guid: bd7aa3b0fb66da94da3d536c782d1a5a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17660,6 +17656,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.1971378
       objectReference: {fileID: 0}
+    - target: {fileID: 156381628791411234, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1046619141325063712, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
       propertyPath: _nextSceneLoader
       value: 
@@ -17671,6 +17671,10 @@ PrefabInstance:
     - target: {fileID: 1046619141325063712, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
       propertyPath: _soulsAmountForActivation
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550555806095381221, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7196383213712940701, guid: 8de436de19f0df649b206b73aae66bc6, type: 3}
       propertyPath: m_LocalPosition.x
