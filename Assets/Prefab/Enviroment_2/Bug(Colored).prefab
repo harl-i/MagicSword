@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 3280231507076138224}
   - component: {fileID: 3944282426520127002}
   - component: {fileID: 2216008750422845915}
+  - component: {fileID: 8291855055955474363}
   m_Layer: 0
   m_Name: Bug
   m_TagString: Untagged
@@ -389,8 +390,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e353753d182804f87efa5a5f67445c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transitions: []
+  _transitions:
+  - {fileID: 8291855055955474363}
   _colliderForDisable: {fileID: 2317680064022017103}
+--- !u!114 &8291855055955474363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5527263335727473644}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetState: {fileID: 6998779756537067754}
+  _delay: 0.7
 --- !u!1 &6115034562858873471
 GameObject:
   m_ObjectHideFlags: 0

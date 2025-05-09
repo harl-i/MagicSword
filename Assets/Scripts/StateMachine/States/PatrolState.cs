@@ -80,7 +80,7 @@ public class PatrolState : State
                 break;
             case MoveDirection.Vertical:
                 _spriteRenderer.flipX = direction.y > 0;
-                _collider.offset = new Vector2(_spriteRenderer.flipX ? _colliderOffsetX : 0, _collider.offset.y);
+                _collider.offset = new Vector2(_spriteRenderer.flipX ? 0 : _colliderOffsetX, _collider.offset.y);
                 break;
             default:
                 break;
