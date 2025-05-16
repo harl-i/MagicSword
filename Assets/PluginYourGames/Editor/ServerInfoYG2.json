@@ -38,7 +38,7 @@
         },
         {
             "name": "InterstitialAdv",
-            "version": "1.001",
+            "version": "1.002",
             "download": "https://max-games.ru/public/pluginYG2/modules/InterstitialAdv.unitypackage",
             "doc": "https://max-games.ru/plugin-yg/doc/inter-ad/"
         },
@@ -56,7 +56,7 @@
         },
         {
             "name": "Authorization",
-            "version": "1.0",
+            "version": "1.01",
             "download": "https://max-games.ru/public/pluginYG2/modules/Authorization.unitypackage",
             "doc": "https://max-games.ru/plugin-yg/doc/auth/"
         },
@@ -94,7 +94,7 @@
         },
         {
             "name": "AutoTranslateLangs",
-            "version": "1.001",
+            "version": "1.002",
             "download": "https://max-games.ru/public/pluginYG2/modules/AutoTranslateLangs.unitypackage",
             "doc": "https://max-games.ru/plugin-yg/doc/lang/",
             "dependencies": "Localization"
