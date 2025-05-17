@@ -26,10 +26,15 @@ public class FlashBangEffect : MonoBehaviour
 
     public void FlashBanged()
     {
-        isFlashBangActive = true;
+        int randomValue = Random.Range(0, 2);
+        
+        if(randomValue > 0)
+        {
+            isFlashBangActive = true;
 
-        Color color = _flasImage.color;
-        color.a = 1;
-        _flasImage.color = color;
+            Color color = _flasImage.color;
+            color.a = 1;
+            _flasImage.color = color;
+        }
     }
 }
