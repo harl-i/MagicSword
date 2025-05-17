@@ -251,6 +251,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5831569241251082425, guid: 795079e7b07cdf448aa8d27c743a80d5, type: 3}
+      propertyPath: _swordIconAnimMover
+      value: 
+      objectReference: {fileID: 90543381}
     - target: {fileID: 7467468548808304027, guid: 795079e7b07cdf448aa8d27c743a80d5, type: 3}
       propertyPath: m_Name
       value: map

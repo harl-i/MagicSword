@@ -6137,7 +6137,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 17
+      m_TileSpriteIndex: 25
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6147,7 +6147,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 18
-      m_TileSpriteIndex: 16
+      m_TileSpriteIndex: 24
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6157,7 +6157,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 17
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 23
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6177,7 +6177,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 21
-      m_TileSpriteIndex: 19
+      m_TileSpriteIndex: 22
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6310,28 +6310,28 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: 1101505362, guid: e851f2ab7316c1b47954b39bd889a860, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: -1662708985, guid: e851f2ab7316c1b47954b39bd889a860, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 1203996336, guid: e851f2ab7316c1b47954b39bd889a860, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 807050318, guid: e851f2ab7316c1b47954b39bd889a860, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 2080525438, guid: e851f2ab7316c1b47954b39bd889a860, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1060758582, guid: e851f2ab7316c1b47954b39bd889a860, type: 3}
-  - m_RefCount: 2
-    m_Data: {fileID: -1662708985, guid: e851f2ab7316c1b47954b39bd889a860, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1203996336, guid: e851f2ab7316c1b47954b39bd889a860, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 462817366, guid: e851f2ab7316c1b47954b39bd889a860, type: 3}
   - m_RefCount: 1
@@ -8409,6 +8409,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.20600921
       objectReference: {fileID: 0}
+    - target: {fileID: 1328253384010992963, guid: 12b55ea27c34e6a429eef201fd7dd605, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3322632587749362089, guid: 12b55ea27c34e6a429eef201fd7dd605, type: 3}
       propertyPath: _nextSceneLoader
       value: 
@@ -8563,6 +8567,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4324965058639704325, guid: 2b505a16dbbd4924cb85f71d3969b506, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324965058639704325, guid: 2b505a16dbbd4924cb85f71d3969b506, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6024938389446765512, guid: 2b505a16dbbd4924cb85f71d3969b506, type: 3}
       propertyPath: m_Name
       value: Snake(Color)
