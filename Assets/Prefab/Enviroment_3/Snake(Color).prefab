@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c23ae1658a30f34ab5ab67a3d47b834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enableColliderDelay: 0.5
+  _enableColliderDelay: 3
 --- !u!1 &7878941886336029910
 GameObject:
   m_ObjectHideFlags: 0

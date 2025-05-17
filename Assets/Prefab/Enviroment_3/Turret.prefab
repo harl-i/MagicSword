@@ -198,7 +198,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   _isCooldownActive: 1
-  _cooldown: 2
+  _cooldown: 1.5
   _offsetY: 0.37
   _offsetX: 0
 --- !u!114 &6073085318330844805
