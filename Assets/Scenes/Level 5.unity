@@ -8098,7 +8098,7 @@ GameObject:
   - component: {fileID: 1721798739}
   - component: {fileID: 1721798738}
   m_Layer: 0
-  m_Name: First time see desctructable platform
+  m_Name: First time see turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
