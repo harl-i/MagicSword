@@ -1461,7 +1461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 1057136363}
   _dampTime: 0.4
-  _maxY: 62.7
+  _maxY: 77.07
   _minY: -1
 --- !u!114 &519420034
 MonoBehaviour:
