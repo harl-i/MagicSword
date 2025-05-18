@@ -7,12 +7,18 @@ public class Soul : MonoBehaviour
     [SerializeField] private float _offsetY;
     [SerializeField] private float _offsetX;
 
-    public static Action<Soul> SoulSpawned;
+    public static Action<Soul> OnSoulSpawned;
+    public Action OnSoulDisabled;
 
     private void OnEnable()
     {
-        SoulSpawned?.Invoke(this);
+        OnSoulSpawned?.Invoke(this);
         SetEnablePosition();
+    }
+
+    private void OnDisable()
+    {
+        OnSoulDisabled?.Invoke();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
