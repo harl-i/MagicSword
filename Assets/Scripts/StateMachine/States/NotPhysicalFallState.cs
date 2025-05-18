@@ -62,6 +62,12 @@ public class NotPhysicalFallState : State
         }
     }
 
+    private void OnDisable()
+    {
+        _animator.ResetTrigger("StartFall");
+        _animator.ResetTrigger("EndFall");
+    }
+
     private IEnumerator DelayBeforeDetectCollision(float delay)
     {
         yield return new WaitForSeconds(delay);

@@ -647,6 +647,10 @@ PrefabInstance:
       propertyPath: _offsetY
       value: 0.393
       objectReference: {fileID: 0}
+    - target: {fileID: 5864252892085390641, guid: e03259f7433302545b28c5582e361b56, type: 3}
+      propertyPath: _enemyTransform
+      value: 
+      objectReference: {fileID: 7257716675738501492}
     - target: {fileID: 6780108208417865077, guid: e03259f7433302545b28c5582e361b56, type: 3}
       propertyPath: m_Name
       value: Soul

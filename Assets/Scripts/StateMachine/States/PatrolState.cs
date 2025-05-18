@@ -10,6 +10,8 @@ public class PatrolState : State
     [SerializeField] private bool _needUpdateWaypointPosition;
     [SerializeField] private float _speed = 2f;
     [SerializeField] private float _colliderOffsetX;
+    [SerializeField] private Transform _transformForUpdate;
+    [SerializeField] private float _lengthPatrolRoute = 1.7f;
 
     private int waypointIndex = 0;
     private SpriteRenderer _spriteRenderer;
@@ -41,11 +43,22 @@ public class PatrolState : State
 
     private void UpdateWaypointsPositions()
     {
-        float newPositionY = transform.position.y;
-        foreach (var waypoint in _waypoints)
+        //float newPositionY = transform.position.y;
+        //foreach (var waypoint in _waypoints)
+        //{
+        //    Vector2 newPosition = new Vector2(waypoint.position.x, newPositionY);
+        //    waypoint.position = newPosition;
+        //}
+
+
+        for (int i = 0; i < _waypoints.Length; i++)
         {
-            Vector2 newPosition = new Vector2(waypoint.position.x, newPositionY);
-            waypoint.position = newPosition;
+            int directionCoefficient = _transformForUpdate.position.x > 0 ? -1 : 1;
+
+            Vector2 newPosition = new Vector2(
+                _transformForUpdate.position.x + i * directionCoefficient * _lengthPatrolRoute, 
+                _transformForUpdate.position.y);
+            _waypoints[i].position = newPosition;
         }
     }
 

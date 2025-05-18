@@ -27,6 +27,11 @@ public class RunAttackState : State
         Run();
     }
 
+    private void OnDisable()
+    {
+        _animator.ResetTrigger("Attack");
+    }
+
     private void Run()
     {
         transform.Translate(Vector2.right * _speed * _moveDirection * Time.deltaTime);
