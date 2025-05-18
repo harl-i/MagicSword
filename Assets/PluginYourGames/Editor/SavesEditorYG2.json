@@ -13,7 +13,7 @@
         false,
         false
     ],
-    "idSave": 41,
+    "idSave": 43,
     "CutScene1Watched": 1,
     "CutScene2Watched": 1,
     "CutScene3Watched": 1,
@@ -30,6 +30,6 @@
     "CutScene14Watched": 0,
     "skipFirstCutscene": 0,
     "health": 1,
-    "sceneForContinue": 21,
+    "sceneForContinue": 24,
     "godMode": 0
 }

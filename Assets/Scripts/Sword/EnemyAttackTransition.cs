@@ -12,6 +12,11 @@ public class EnemyAttackTransition : Transition
             NeedTransit = true;
         }
 
+        if (!_player.IsLaunched && !_player.IsShieldActivated && collision.gameObject.TryGetComponent(out TrolleyDamager trolley))
+        {
+            NeedTransit = true;
+        }
+
         if (!_player.IsShieldActivated && collision.gameObject.TryGetComponent(out Thorn thorn))
         {
             NeedTransit = true;
