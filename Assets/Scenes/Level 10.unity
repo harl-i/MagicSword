@@ -2033,6 +2033,10 @@ PrefabInstance:
       propertyPath: _soulsAmountForActivation
       value: 
       objectReference: {fileID: 221458830}
+    - target: {fileID: 7045482140537328144, guid: 5850cd25c8135274d9ed6b1390e8cdbb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7302923101787677556, guid: 5850cd25c8135274d9ed6b1390e8cdbb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

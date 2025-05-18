@@ -1080,6 +1080,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9187733721668363724, guid: e25de6526c9b20942b6860444b9fb981, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8703,6 +8707,8 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 1
   _speed: 0.2
   _colliderOffsetX: 0
+  _transformForUpdate: {fileID: 0}
+  _lengthPatrolRoute: 1.7
 --- !u!114 &1756814128
 MonoBehaviour:
   m_ObjectHideFlags: 0

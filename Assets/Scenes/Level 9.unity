@@ -7733,6 +7733,10 @@ PrefabInstance:
       propertyPath: _soulsAmountForActivation
       value: 
       objectReference: {fileID: 135502328}
+    - target: {fileID: 7045482140537328144, guid: 5850cd25c8135274d9ed6b1390e8cdbb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7302923101787677556, guid: 5850cd25c8135274d9ed6b1390e8cdbb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7844,7 +7848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4743296639503383917, guid: ff0c065ce9dbeaa4f8869091e4ad949b, type: 3}
       propertyPath: _soulsAmountForActivation
-      value: 1
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 690745026076524864, guid: ff0c065ce9dbeaa4f8869091e4ad949b, type: 3}
