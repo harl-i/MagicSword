@@ -116,7 +116,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -3
   m_Sprite: {fileID: 1490074578, guid: b42f76045d4a34046929d034de25629e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -193,8 +193,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.19999999, y: 0.79999995}
-      - {x: -0.14, y: 0.79999995}
+    - - {x: 0.13859506, y: 0.9796663}
+      - {x: -0.15364555, y: 0.97056925}
       - {x: -0.29999998, y: 0.74}
       - {x: -0.38, y: 0.29999998}
       - {x: -0.38, y: 0}
@@ -305,7 +305,7 @@ MonoBehaviour:
   - {fileID: 3125237790957833676}
   _enemyType: 1
   _shootingComponent: {fileID: 29579075375120047}
-  _shootDelay: 3
+  _shootDelay: 4.5
 --- !u!114 &29579075375120047
 MonoBehaviour:
   m_ObjectHideFlags: 0
