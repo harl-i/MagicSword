@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turret(right) Black Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5884997553886462326, guid: 92ab03141a58eb94da10bfb6b54002a1, type: 3}
+      propertyPath: m_Name
+      value: turret(black)
+      objectReference: {fileID: 0}
     - target: {fileID: 6015335856594204148, guid: 92ab03141a58eb94da10bfb6b54002a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -64,6 +68,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.213
       objectReference: {fileID: 0}
+    - target: {fileID: 6372827220030894611, guid: 92ab03141a58eb94da10bfb6b54002a1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ca4a4500044d40044abdcdc7a615346d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

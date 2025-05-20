@@ -23,6 +23,14 @@ public class EnemyAttackTransition : Transition
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!_player.IsShieldActivated && collision.gameObject.TryGetComponent(out Bullet bullet))
+        {
+            NeedTransit = true;
+        }
+    }
+
     public void Transition()
     {
         NeedTransit = true;     

@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(PolygonCollider2D))]
+[RequireComponent(typeof(Transform))]
 public class PatrolState : State
 {
     [SerializeField] private MoveDirection _moveDirection;
@@ -10,19 +11,20 @@ public class PatrolState : State
     [SerializeField] private bool _needUpdateWaypointPosition;
     [SerializeField] private float _speed = 2f;
     [SerializeField] private float _colliderOffsetX;
-    [SerializeField] private Transform _transformForUpdate;
     [SerializeField] private float _lengthPatrolRoute = 1.7f;
 
     private int waypointIndex = 0;
     private SpriteRenderer _spriteRenderer;
     private PolygonCollider2D _collider;
     private Animator _animator;
+    private Transform _transformForUpdate;
 
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _collider = GetComponent<PolygonCollider2D>();
         _animator = GetComponent<Animator>();
+        _transformForUpdate = GetComponent<Transform>();
     }
 
     private void OnEnable()
