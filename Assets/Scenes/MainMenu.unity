@@ -534,7 +534,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 0
-  _delay: 0
 --- !u!1 &151568803
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +587,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 5
-  _delay: 1
 --- !u!114 &151568806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,7 +633,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 151568805}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1233,7 +1231,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 294711037}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1294,7 +1292,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 8
-  _delay: 1
 --- !u!1 &310000727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,7 +1587,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 341215025}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1651,7 +1648,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 40
-  _delay: 1
 --- !u!1 &401954758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,7 +2688,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 871980332}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2753,7 +2749,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 37
-  _delay: 1
 --- !u!1 &888538870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2840,7 +2835,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 888538875}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2901,7 +2896,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 32
-  _delay: 1
 --- !u!1 &897544552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,7 +2982,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 897544557}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3049,7 +3043,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 17
-  _delay: 1
 --- !u!1 &907927023
 GameObject:
   m_ObjectHideFlags: 0
@@ -4710,7 +4703,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1374506147}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4771,7 +4764,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 23
-  _delay: 1
 --- !u!1 &1408650189
 GameObject:
   m_ObjectHideFlags: 0
@@ -5010,7 +5002,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1524454502}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5071,7 +5063,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 26
-  _delay: 1
 --- !u!1 &1537840094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5158,7 +5149,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1537840099}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5219,7 +5210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 1
-  _delay: 0
 --- !u!1 &1561822241
 GameObject:
   m_ObjectHideFlags: 0
@@ -5419,7 +5409,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 2
-  _delay: 1
 --- !u!114 &1561863844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5466,7 +5455,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1561863843}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5600,7 +5589,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1586559505}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5661,7 +5650,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 11
-  _delay: 1
 --- !u!1 &1587030258
 GameObject:
   m_ObjectHideFlags: 0
@@ -5882,7 +5870,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1650615182}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5943,7 +5931,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 34
-  _delay: 1
 --- !u!1 &1738208464
 GameObject:
   m_ObjectHideFlags: 0
@@ -6106,7 +6093,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1751201984}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6167,7 +6154,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 29
-  _delay: 1
 --- !u!1 &1768043820
 GameObject:
   m_ObjectHideFlags: 0
@@ -6338,7 +6324,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1949241104}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6399,7 +6385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 14
-  _delay: 1
 --- !u!1 &1959974163
 GameObject:
   m_ObjectHideFlags: 0
@@ -6834,7 +6819,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2128812550}
         m_TargetAssemblyTypeName: SceneByIndexLoader, Assembly-CSharp
-        m_MethodName: LoadSceneByIndex
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6895,7 +6880,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneIndex: 20
-  _delay: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

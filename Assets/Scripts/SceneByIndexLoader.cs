@@ -5,17 +5,11 @@ using UnityEngine.SceneManagement;
 public class SceneByIndexLoader : MonoBehaviour
 {
     [SerializeField] private int _sceneIndex;
-    [SerializeField] private float _delay = 0f;
 
-    public IEnumerator LoadScene()
+    public void LoadScene()
     {
-        yield return new WaitForSeconds(_delay);
-
+        Time.timeScale = 1;
         SceneManager.LoadScene(_sceneIndex);
     }
 
-    public void LoadSceneByIndex() 
-    {
-        StartCoroutine(LoadScene());
-    }
 }
