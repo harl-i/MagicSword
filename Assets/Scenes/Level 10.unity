@@ -3041,6 +3041,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8320959982135249926, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8320959982135249926, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a3b6662c556ebd43bc92e95f8a4ebf4, type: 3}
+    - target: {fileID: 8320959982135249926, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.72

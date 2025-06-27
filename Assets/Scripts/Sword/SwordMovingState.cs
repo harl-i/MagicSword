@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(PolygonCollider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(VectorCreator))]
+[RequireComponent(typeof(AudioSource))]
 public class SwordMovingState : State
 {
     [SerializeField] private Arrow _arrow;
@@ -14,11 +15,13 @@ public class SwordMovingState : State
     [SerializeField] private float _raycastDistance;
 
     private PolygonCollider2D _swordCollider;
+    private AudioSource _audioSource;
     private Rigidbody2D _rigidbody2D;
     private VectorCreator _vectorCreator;
     private Vector3 _direction;
 
     private bool _canMove;
+    private bool _canPlayStuckInWallEffect;
     private bool _isFirstThrow;
 
     private float _angle;
@@ -35,6 +38,7 @@ public class SwordMovingState : State
     private void Awake()
     {
         _vectorCreator = GetComponent<VectorCreator>();
+        _audioSource = GetComponent<AudioSource>();
         _swordCollider = GetComponent<PolygonCollider2D>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
@@ -42,6 +46,7 @@ public class SwordMovingState : State
     private void Start()
     {
         _canMove = false;
+        _canPlayStuckInWallEffect = false;
         _isFirstThrow = true;
         _arrow.gameObject.SetActive(false);
     }
@@ -85,6 +90,11 @@ public class SwordMovingState : State
             _vectorCreator.enabled = true;
 
             ÑorrectSwordWallAngle(collision);
+
+            if (_canPlayStuckInWallEffect)
+            {
+                _audioSource.Play();
+            } 
         }
     }
 
@@ -127,6 +137,7 @@ public class SwordMovingState : State
         if (_isFirstThrow)
         {
             StuckInWall?.Invoke(false);
+            _canPlayStuckInWallEffect = true;
         }
         else
         {
