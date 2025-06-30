@@ -17,6 +17,8 @@ public class SceneDialogue : MonoBehaviour
 
     private int _currentIndex = 0;
     private bool _isTyping = false;
+    private int _typedCharCount = 0;
+    private int _charCountToUnlockSkip = 5;
 
     private void OnEnable()
     {
@@ -34,7 +36,10 @@ public class SceneDialogue : MonoBehaviour
         {
             if (_isTyping)
             {
-                ShowFullText();
+                if (_typedCharCount > _charCountToUnlockSkip)
+                {
+                    ShowFullText();
+                }
             }
             else
             {
@@ -105,10 +110,13 @@ public class SceneDialogue : MonoBehaviour
     {
         ClearDialogueField();
         _isTyping = true;
+        _typedCharCount = 0;
 
         foreach (char letter in dialogue.ToCharArray())
         {
             _dialogueTextField.text += letter;
+            _typedCharCount++;
+
             yield return new WaitForSecondsRealtime(_typingSpeed);
         }
 
@@ -155,6 +163,7 @@ public class SceneDialogue : MonoBehaviour
         StopAllCoroutines();
         _dialogueTextField.text = _text[_currentIndex];
         _isTyping = false;
+        _typedCharCount = 0;
     }
 
     private void EnableAuxularyObjects()
