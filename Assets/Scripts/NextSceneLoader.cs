@@ -10,6 +10,7 @@ public class NextSceneLoader : MonoBehaviour
     [SerializeField] private float _delay;
 
     private int _nextSceneIndex;
+    private int _mainMenuSceneIndex = 0;
 
     public void LoadScene()
     {
@@ -26,19 +27,19 @@ public class NextSceneLoader : MonoBehaviour
         }
         else if (_nextSceneIndex < totalScenes && _isDelayNeeded)
         {
-            StartCoroutine(LoadSceneWithDelay(_delay));
+            StartCoroutine(LoadSceneWithDelay(_delay, _nextSceneIndex));
         }
         else
         {
-            Debug.Log("Следующей сцены не существует!");
+            StartCoroutine(LoadSceneWithDelay(_delay, _mainMenuSceneIndex));
         }
     }
 
-    public IEnumerator LoadSceneWithDelay(float delay)
+    public IEnumerator LoadSceneWithDelay(float delay, int sceneIndex)
     {
         yield return new WaitForSeconds(delay);
 
-        SceneManager.LoadScene(_nextSceneIndex);
+        SceneManager.LoadScene(sceneIndex);
     }
 
     private void SavePlayerData()
