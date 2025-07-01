@@ -2290,6 +2290,14 @@ PrefabInstance:
       propertyPath: _platformDestroyerActivator
       value: 
       objectReference: {fileID: 1057136369}
+    - target: {fileID: 2627369175790470230, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_SortingOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721874688156449524, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: _spriteRenderer
+      value: 
+      objectReference: {fileID: 1024874657}
     - target: {fileID: 3145041935945990608, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_Name
       value: Player (Colored)
@@ -2398,6 +2406,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 309764def3e9c6047a683ac081d9ee0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &1024874657 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2627369175790470230, guid: a79524da97425fe408961239731ec081, type: 3}
+  m_PrefabInstance: {fileID: 1024874655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1057136363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}

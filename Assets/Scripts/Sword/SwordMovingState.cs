@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(PolygonCollider2D))]
-[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(VectorCreator))]
 [RequireComponent(typeof(AudioSource))]
 public class SwordMovingState : State
@@ -16,7 +15,6 @@ public class SwordMovingState : State
 
     private PolygonCollider2D _swordCollider;
     private AudioSource _audioSource;
-    private Rigidbody2D _rigidbody2D;
     private VectorCreator _vectorCreator;
     private Vector3 _direction;
 
@@ -25,7 +23,7 @@ public class SwordMovingState : State
     private bool _isFirstThrow;
 
     private float _angle;
-    private float _throwDistance = 1f;
+    private float _throwDistance = 0.3f;
     private float _minimumAngleThreshold = 130f;
     private float _angleCoefficient = 15f;
     private float _inversion = -1f;
@@ -40,7 +38,6 @@ public class SwordMovingState : State
         _vectorCreator = GetComponent<VectorCreator>();
         _audioSource = GetComponent<AudioSource>();
         _swordCollider = GetComponent<PolygonCollider2D>();
-        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     private void Start()
@@ -69,6 +66,7 @@ public class SwordMovingState : State
 
     private void Update()
     {
+        CheckPlatformInMovementDirection();
         if (_canMove)
         {
             Throw();
@@ -213,6 +211,15 @@ public class SwordMovingState : State
         RaycastHit2D raycastHit = Physics2D.Raycast(transform.position, _direction, _raycastDistance, _obstacleLayer);
 
         Debug.DrawLine(transform.position, transform.position + _direction * _raycastDistance, Color.cyan);
+
+        if (raycastHit)
+        {
+            _arrow.FillWithRed();
+        } else
+        {
+            _arrow.RemoveRedFill();
+        }
+
         return !raycastHit;
     }
 

@@ -5909,6 +5909,14 @@ PrefabInstance:
       propertyPath: _platformDestroyerActivator
       value: 
       objectReference: {fileID: 305283032}
+    - target: {fileID: 872727575194748836, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
+      propertyPath: _spriteRenderer
+      value: 
+      objectReference: {fileID: 1038677241}
+    - target: {fileID: 985388749696776454, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
+      propertyPath: m_SortingOrder
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1222559334842982884, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -8375,6 +8383,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8656398c784fca847af3b2a0674b4f78, type: 3}
+--- !u!212 &1038677241 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 985388749696776454, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
+  m_PrefabInstance: {fileID: 305283030}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1049013690 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6717768337479610223, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}

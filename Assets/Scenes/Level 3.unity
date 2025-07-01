@@ -257,6 +257,11 @@ RectTransform:
   m_AnchoredPosition: {x: -1.6523438, y: 89.86473}
   m_SizeDelta: {x: 451.1958, y: 179.7295}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &41124129 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2627369175790470230, guid: a79524da97425fe408961239731ec081, type: 3}
+  m_PrefabInstance: {fileID: 6014111769174146577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &50710556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20295,6 +20300,14 @@ PrefabInstance:
       propertyPath: _platformDestroyerActivator
       value: 
       objectReference: {fileID: 1657803461}
+    - target: {fileID: 2627369175790470230, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_SortingOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721874688156449524, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: _spriteRenderer
+      value: 
+      objectReference: {fileID: 41124129}
     - target: {fileID: 4341529491087822833, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_Name
       value: Player (Colored)

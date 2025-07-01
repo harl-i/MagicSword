@@ -751,6 +751,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 276f13f2a8876804e907fcbacbbd32c5, type: 3}
+--- !u!212 &209159495 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2627369175790470230, guid: a79524da97425fe408961239731ec081, type: 3}
+  m_PrefabInstance: {fileID: 1024874655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &243479602 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5144052686812032752, guid: 29bede44d4fa40a449393a1e3453f732, type: 3}
@@ -3059,6 +3064,14 @@ PrefabInstance:
       propertyPath: _platformDestroyerActivator
       value: 
       objectReference: {fileID: 1024874658}
+    - target: {fileID: 2627369175790470230, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_SortingOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721874688156449524, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: _spriteRenderer
+      value: 
+      objectReference: {fileID: 209159495}
     - target: {fileID: 3145041935945990608, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_Name
       value: Player (Colored)

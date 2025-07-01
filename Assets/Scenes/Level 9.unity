@@ -2069,6 +2069,14 @@ PrefabInstance:
       propertyPath: _platformDestroyerActivator
       value: 
       objectReference: {fileID: 1057136392}
+    - target: {fileID: 2627369175790470230, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_SortingOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721874688156449524, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: _spriteRenderer
+      value: 
+      objectReference: {fileID: 1024874656}
     - target: {fileID: 3145041935945990608, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_Name
       value: Player (Colored)
@@ -2191,6 +2199,11 @@ PrefabInstance:
       insertIndex: 19
       addedObject: {fileID: 1057136385}
   m_SourcePrefab: {fileID: 100100000, guid: a79524da97425fe408961239731ec081, type: 3}
+--- !u!212 &1024874656 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2627369175790470230, guid: a79524da97425fe408961239731ec081, type: 3}
+  m_PrefabInstance: {fileID: 1024874655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1057136363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8421952534419886655, guid: a79524da97425fe408961239731ec081, type: 3}
@@ -3337,6 +3350,10 @@ PrefabInstance:
     - target: {fileID: 2618243674897741257, guid: 3b778a1db91ee314db87a2e19c9e7d6b, type: 3}
       propertyPath: m_Name
       value: Turret Black Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618243674897741257, guid: 3b778a1db91ee314db87a2e19c9e7d6b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5808883569054822071, guid: 3b778a1db91ee314db87a2e19c9e7d6b, type: 3}
       propertyPath: _detectionRectangleSize.x
