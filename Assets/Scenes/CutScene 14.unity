@@ -896,8 +896,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
-  _isDelayNeeded: 0
-  _delay: 0
+  _isDelayNeeded: 1
+  _delay: 2
 --- !u!1 &1907219121
 GameObject:
   m_ObjectHideFlags: 0
