@@ -14,21 +14,30 @@ public class CutScene : MonoBehaviour
     [SerializeField] private GameObject[] _images;
 
     [SerializeField] private TextMeshProUGUI _textDisplay;
-    [SerializeField] private string[] _texts;
+    [SerializeField] private string[] _textsRu;
+    [SerializeField] private string[] _textsEn;
+    [SerializeField] private string[] _textsTr;
     [SerializeField] private float _typingSpeed = 0.05f;
 
     [SerializeField] private NextSceneLoader _nextSceneLoader;
     [SerializeField] private GameObject _skipCutscene;
 
+    private const string RU = "ru";
+    private const string EN = "en";
+    private const string TR = "tr";
+
     private int _currentIndex = 0;
     private int _firstCutscene = 2;
     private bool _isTyping = false;
     private bool _isResume = false;
+    private string _lang;
 
     private Dictionary<string, System.Action> _cutsceneFlags;
 
     private void Start()
     {
+        _lang = YG2.lang;
+
         _cutsceneFlags = new Dictionary<string, System.Action>
         {
             { "CutScene 1", () => YG2.saves.CutScene1Watched = 1 },
@@ -75,7 +84,7 @@ public class CutScene : MonoBehaviour
 
     private void UpdateCutscene()
     {
-        if (_currentIndex < _images.Length && _currentIndex < _texts.Length)
+        if (_currentIndex < _images.Length)
         {
             if (_currentIndex != 0)
             {
@@ -88,8 +97,35 @@ public class CutScene : MonoBehaviour
             }
 
             _images[_currentIndex].SetActive(true);
+            
+            PrintLocalizedText(_currentIndex);
+        }
+    }
 
-            StartCoroutine(TypeText(_texts[_currentIndex]));
+    private void PrintLocalizedText(int currentIndex)
+    {
+        if (_lang == RU)
+        {
+            if (currentIndex < _textsRu.Length)
+            {
+                StartCoroutine(TypeText(_textsRu[currentIndex]));
+            }
+        }
+
+        if (_lang == EN)
+        {
+            if (currentIndex < _textsEn.Length)
+            {
+                StartCoroutine(TypeText(_textsEn[currentIndex]));
+            }
+        }
+
+        if (_lang == TR)
+        {
+            if (currentIndex < _textsTr.Length)
+            {
+                StartCoroutine(TypeText(_textsTr[currentIndex]));
+            }
         }
     }
 
@@ -97,7 +133,7 @@ public class CutScene : MonoBehaviour
     {
         _currentIndex++;
 
-        if (_currentIndex < _images.Length && _currentIndex < _texts.Length)
+        if (_currentIndex < _images.Length)
         {
             UpdateCutscene();
         }

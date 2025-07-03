@@ -804,7 +804,7 @@ MonoBehaviour:
   - {fileID: 272874581}
   - {fileID: 272874581}
   _textDisplay: {fileID: 1907219123}
-  _texts:
+  _textsRu:
   - "\u041E\u0434\u043D\u0430\u043A\u043E \u043F\u0440\u043E\u0431\u0438\u0440\u0430\u044F\u0441\u044C
     \u0447\u0435\u0440\u0435\u0437 \u043E\u0447\u0435\u0440\u0435\u0434\u043D\u0443\u044E
     \u0442\u043E\u043B\u043F\u0443 \u0434\u0435\u0440\u0435\u0432\u044C\u0435\u0432
@@ -822,7 +822,7 @@ MonoBehaviour:
     \u0437\u043D\u0430\u043A\u043E\u043C\u044B\u0435 \u0444\u0438\u0433\u0443\u0440\u044B
     \u0443 \u043A\u043E\u0441\u0442\u0440\u0430, \u043C\u043E\u0435\u043C\u0443 \u0441\u0447\u0430\u0441\u0442\u044C\u044E
     \u043D\u0435 \u0431\u044B\u043B\u043E \u043F\u0440\u0435\u0434\u0435\u043B\u0430."
-  - "-\u042F \u043D\u0430\u0448\u0435\u043B \u0432\u0430\u0441...\u044F \u0441\u043C\u043E\u0433! "
+  - "-\u042F \u043D\u0430\u0448\u0435\u043B \u0432\u0430\u0441...\u044F \u0441\u043C\u043E\u0433!"
   - "-\u041F\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u043D\u0435 \u043C\u043E\u0433\u0443!
     \u041C\u043E\u0439 \u043C\u0435\u0447 \u0432\u0435\u0440\u043D\u0443\u043B\u0441\u044F!"
   - "\u0425\u043E\u0437\u044F\u0438\u043D \u043F\u043E\u0434\u0431\u0435\u0436\u0430\u043B
@@ -836,11 +836,11 @@ MonoBehaviour:
     \u0443 \u043A\u043E\u0441\u0442\u0440\u0430 \u0438 \u043E\u0431\u0441\u0443\u0434\u0438\u043B\u0438
     \u0432\u0441\u0435 \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F,
     \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043D\u0430\u043C \u043F\u0440\u0438\u0448\u043B\u043E\u0441\u044C
-    \u043F\u0435\u0440\u0435\u0436\u0438\u0442\u044C. "
+    \u043F\u0435\u0440\u0435\u0436\u0438\u0442\u044C."
   - "\u041D\u0435 \u0431\u044B\u043B\u043E \u043D\u0438 \u0442\u0435\u043D\u0438
     \u0441\u043E\u043C\u043D\u0435\u043D\u0438\u0439 \u0432 \u0442\u043E\u043C, \u0447\u0442\u043E
     \u043C\u044B \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0431\u0443\u0434\u0435\u043C
-    \u0440\u0430\u0437\u043B\u0443\u0447\u0435\u043D\u044B. "
+    \u0440\u0430\u0437\u043B\u0443\u0447\u0435\u043D\u044B."
   - "\u0418 \u0442\u043E\u0433\u0434\u0430 \u044F \u043F\u043E\u043D\u044F\u043B
     - \u0438\u043C\u0435\u043D\u043D\u043E \u0432\u043C\u0435\u0441\u0442\u0435 \u043C\u044B
     \u0441\u0438\u043B\u0430, \u0438 \u0432\u043C\u0435\u0441\u0442\u0435 \u043C\u044B
@@ -850,6 +850,41 @@ MonoBehaviour:
     \u043D\u0435\u0440\u0430\u0437\u0440\u044B\u0432\u043D\u0430\u044F \u0441\u0432\u044F\u0437\u044C,
     \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0435\u0442
     \u0432\u0441\u0435 \u0442\u0440\u0443\u0434\u043D\u043E\u0441\u0442\u0438."
+  _textsEn:
+  - Yet as I pushed through yet another cluster of trees, I caught a glimmer of firelight.
+  - I rushed toward it, desperate to see familiar figures.
+  - Time seemed to slow; that bright point crept toward me with agonizing slowness.
+  - "At last, I saw them \u2013 figures huddled by the fire. My joy knew no bounds."
+  - '"I found you... I made it!"'
+  - '"I can''t believe it! My sword has returned!"'
+  - My master darted to me, and my blade soared skyward once more, just like in the
+    glorious battles of old.
+  - Finally reunited with my master, we gathered by the fire and shared tales of
+    the trials we'd endured.
+  - Not a shadow of doubt remained that we would never be parted again.
+  - 'And in that moment, I understood: together we are strength, and together we
+    can overcome any obstacle.'
+  - "We were a team \u2013 an unbreakable bond that weathers all hardships."
+  _textsTr:
+  - "Ama a\u011Fa\xE7 k\xFCmelerinden birini daha ge\xE7erken, ince bir ate\u015F
+    \u0131\u015F\u0131\u011F\u0131 g\xF6rd\xFCm."
+  - "Tan\u0131d\u0131k sil\xFCetleri g\xF6rebilme umuduyla oraya ko\u015Ftum."
+  - "Zaman yava\u015Flam\u0131\u015F gibiydi; o parlak nokta bana ac\u0131 verici
+    bir yava\u015Fl\u0131kla yakla\u015F\u0131yordu."
+  - "Sonunda ate\u015Fin ba\u015F\u0131ndaki tan\u0131d\u0131k fig\xFCrleri g\xF6rd\xFCm.
+    Mutlulu\u011Fumun s\u0131n\u0131r\u0131 yoktu."
+  - "\"Sizi buldum... Ba\u015Fard\u0131m!\""
+  - "\"\u0130nanam\u0131yorum! K\u0131l\u0131c\u0131m geri d\xF6nd\xFC!\""
+  - "Efendim bana do\u011Fru ko\u015Ftu ve benim a\u011Fz\u0131m, eski sava\u015Flar\u0131n
+    o iyi g\xFCnlerindeki gibi, yeniden g\xF6ky\xFCz\xFCne y\xFCkseldi."
+  - "Nihayet efendimin yan\u0131na d\xF6nm\xFC\u015Ft\xFCm. Ate\u015Fin etraf\u0131nda
+    topland\u0131k ve katland\u0131\u011F\u0131m\u0131z maceralar\u0131 payla\u015Ft\u0131k."
+  - "Art\u0131k ayr\u0131lmayaca\u011F\u0131m\u0131za dair en ufak bir ku\u015Fku
+    bile kalmam\u0131\u015Ft\u0131."
+  - "\u0130\u015Fte o an anlad\u0131m: birlikte g\xFCc\xFCz ve birlikte her engeli
+    a\u015Fabiliriz."
+  - "Biz bir tak\u0131md\u0131k \u2013 t\xFCm zorluklar\u0131 a\u015Fan kopmaz bir
+    ba\u011F."
   _typingSpeed: 0.05
   _nextSceneLoader: {fileID: 1780910129}
   _skipCutscene: {fileID: 2018240606}
@@ -958,7 +993,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d746bcb952120429c957d22228d31c, type: 2}
-  m_sharedMaterial: {fileID: -5467802243673589186, guid: 77d746bcb952120429c957d22228d31c, type: 2}
+  m_sharedMaterial: {fileID: 3319613284895594336, guid: 77d746bcb952120429c957d22228d31c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

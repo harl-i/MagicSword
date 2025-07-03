@@ -882,9 +882,9 @@ MonoBehaviour:
   - {fileID: 1156864204}
   - {fileID: 1156864204}
   _textDisplay: {fileID: 1907219123}
-  _texts:
+  _textsRu:
   - "\u042D\u0442\u043E \u043C\u0435\u0441\u0442\u043E..."
-  - "\u043D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u0435\u0442 \u043C\u043D\u0435
+  - "...\u043D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u0435\u0442 \u043C\u043D\u0435
     \u043E\u0434\u043D\u043E \u043D\u0430\u0448\u0435 \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435."
   - "\u0411\u044B\u043B\u043E \u0442\u044F\u0436\u0435\u043B\u043E, \u043D\u0430\u0448\u0430
     \u043A\u043E\u043C\u0430\u043D\u0434\u0430 \u0431\u044B\u043B\u0430 \u0438\u0441\u0442\u043E\u0449\u0435\u043D\u0430
@@ -905,6 +905,25 @@ MonoBehaviour:
     \u0442\u0440\u0443\u0434\u043D\u044B\u0439 \u043C\u043E\u043C\u0435\u043D\u0442
     \u042D\u043D\u043E\u0440 \u0432\u0434\u043E\u0445\u043D\u043E\u0432\u0438\u043B
     \u043D\u0430\u0441."
+  _textsEn:
+  - This place...
+  - ...reminds me of one of our adventures.
+  - It was tough, we were battle-worn and our supplies were running dangerously low.
+  - 'Opinions were divided: some urged us to turn back and take the safer path home.'
+  - Others insisted we press on, sensing that our goal was almost within reach.
+  - It seemed we were on the verge of splitting up, but right at that critical moment,
+    Enor kindled our resolve.
+  _textsTr:
+  - "Buras\u0131..."
+  - "...bana \u015Fu maceralar\u0131m\u0131zdan birini hat\u0131rlat\u0131yor."
+  - "Zorluydu, tak\u0131m\u0131m\u0131z sava\u015Flarda t\xFCkenmi\u015Fti ve erzak\u0131m\u0131z
+    neredeyse hi\xE7 kalmam\u0131\u015Ft\u0131."
+  - "G\xF6r\xFC\u015Fler ayr\u0131yd\u0131: baz\u0131lar\u0131 geri d\xF6n\xFCp g\xFCvenli
+    yoldan eve gitmeyi \xF6neriyordu."
+  - "Di\u011Ferleri ise, hedefe neredeyse ula\u015Ft\u0131\u011F\u0131m\u0131z\u0131
+    hissederek, yola devam etmekte \u0131srar ediyordu."
+  - "Neredeyse da\u011F\u0131lman\u0131n e\u015Fi\u011Findeydik, ama tam o zor an\u0131nda
+    Enor azmimizi alevlendirdi."
   _typingSpeed: 0.05
   _nextSceneLoader: {fileID: 1780910129}
   _skipCutscene: {fileID: 1654984685}
@@ -1013,7 +1032,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d746bcb952120429c957d22228d31c, type: 2}
-  m_sharedMaterial: {fileID: -5467802243673589186, guid: 77d746bcb952120429c957d22228d31c, type: 2}
+  m_sharedMaterial: {fileID: 3319613284895594336, guid: 77d746bcb952120429c957d22228d31c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

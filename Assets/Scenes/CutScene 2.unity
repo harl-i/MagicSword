@@ -1048,7 +1048,7 @@ MonoBehaviour:
   - {fileID: 88982436}
   - {fileID: 84150875}
   _textDisplay: {fileID: 1907219123}
-  _texts:
+  _textsRu:
   - "\u042F \u0431\u044B\u043B \u0437\u0430\u0431\u043E\u0442\u043B\u0438\u0432\u043E
     \u0432\u044B\u043A\u043E\u0432\u0430\u043D \u043C\u043E\u0438\u043C \u0445\u043E\u0437\u044F\u0438\u043D\u043E\u043C"
   - "\u041C\u043D\u043E\u0436\u0435\u0441\u0442\u0432\u043E \u043C\u0435\u0447\u0435\u0439
@@ -1059,6 +1059,17 @@ MonoBehaviour:
     \u043E\u0442 \u0434\u0440\u0443\u0433\u0438\u0445 \u043C\u0435\u0447\u0435\u0439"
   - "\u041C\u044B \u0431\u044B\u043B\u0438 \u043E\u0442\u043B\u0438\u0447\u043D\u043E\u0439
     \u043A\u043E\u043C\u0430\u043D\u0434\u043E\u0439"
+  _textsEn:
+  - I was lovingly forged by my master
+  - Many a sword emerged from under his hammer
+  - I had the honor of hearing valiant tales from other swords
+  - We were a great band of blades
+  _textsTr:
+  - "Ben, ustam taraf\u0131ndan \xF6zenle d\xF6v\xFClm\xFC\u015Ft\xFCm"
+  - "Onun \xE7eki\xE7 alt\u0131ndan say\u0131s\u0131z k\u0131l\u0131\xE7 \xE7\u0131km\u0131\u015Ft\u0131"
+  - "Di\u011Fer k\u0131l\u0131\xE7lardan yi\u011Fitlik hikayeleri duyma \u015Ferefine
+    nail oldum"
+  - "Biz harika bir k\u0131l\u0131\xE7 tak\u0131m\u0131yd\u0131k"
   _typingSpeed: 0.05
   _nextSceneLoader: {fileID: 1780910129}
   _skipCutscene: {fileID: 938411701}

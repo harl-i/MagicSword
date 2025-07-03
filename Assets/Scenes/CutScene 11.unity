@@ -423,6 +423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkipCutscene
       objectReference: {fileID: 0}
+    - target: {fileID: 7988520331270915586, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -962,7 +966,7 @@ MonoBehaviour:
   - {fileID: 702355673}
   - {fileID: 702355673}
   _textDisplay: {fileID: 1907219123}
-  _texts:
+  _textsRu:
   - "\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u0447\u0442\u043E \u0434\u0430\u043B
     \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0432\u044B\u0439\u0442\u0438
     \u043D\u0430 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C."
@@ -985,6 +989,26 @@ MonoBehaviour:
   - "\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u043D\u0430\u0434\u0435\u044E\u0441\u044C
     \u0442\u044B \u0441\u043C\u043E\u0436\u0435\u0448\u044C \u043D\u0430\u0439\u0442\u0438
     \u0441\u0432\u043E\u0438\u0445 \u0431\u043B\u0438\u0437\u043A\u0438\u0445"
+  _textsEn:
+  - Thank you for giving me the chance to reach the surface.
+  - "Yet you haven\u2019t become what you once were."
+  - "Alas, no. But perhaps there\u2019s still a chance to restore my true form."
+  - "I\u2019ll keep searching for familiar faces. I don\u2019t know how long I spent
+    underground\u2014time flows differently there."
+  - Good luck on your quest. Our paths diverge here, I think. I must seek my master
+    now.
+  - Thank you. I hope you find your loved ones.
+  _textsTr:
+  - "Y\xFCzeye \xE7\u0131kma f\u0131rsat\u0131 verdi\u011Fin i\xE7in te\u015Fekk\xFCr
+    ederim."
+  - "Ama sen yine de eskisi gibi olmad\u0131n ki."
+  - "Ne yaz\u0131k ki hay\u0131r. Ama belki de ger\xE7ek halime d\xF6nme \u015Fans\u0131m
+    vard\u0131r."
+  - "Tan\u0131d\u0131k y\xFCzleri aramaya devam edece\u011Fim. Yer alt\u0131nda ne
+    kadar kald\u0131\u011F\u0131m\u0131 bilmiyorum, orada zaman farkl\u0131 ak\u0131yor."
+  - "Aray\u0131\u015F\u0131nda sana bol \u015Fans. San\u0131r\u0131m yollar\u0131m\u0131z
+    burada ayr\u0131l\u0131yor, art\u0131k efendimi aramam gerek."
+  - "Te\u015Fekk\xFCr ederim. Umar\u0131m sevdiklerini bulursun"
   _typingSpeed: 0.05
   _nextSceneLoader: {fileID: 1780910129}
   _skipCutscene: {fileID: 463543931}
@@ -1093,7 +1117,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d746bcb952120429c957d22228d31c, type: 2}
-  m_sharedMaterial: {fileID: -5467802243673589186, guid: 77d746bcb952120429c957d22228d31c, type: 2}
+  m_sharedMaterial: {fileID: 3319613284895594336, guid: 77d746bcb952120429c957d22228d31c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

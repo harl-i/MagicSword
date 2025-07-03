@@ -882,7 +882,7 @@ MonoBehaviour:
   - {fileID: 105509643}
   - {fileID: 105509643}
   _textDisplay: {fileID: 1907219123}
-  _texts:
+  _textsRu:
   - "\u042D\u0442\u043E \u043C\u0435\u0441\u0442\u043E \u043D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u0435\u0442
     \u043C\u043D\u0435 \u0435\u0449\u0451 \u043E\u0434\u043D\u043E \u043D\u0430\u0448\u0435
     \u0441\u043B\u0430\u0432\u043D\u043E\u0435 \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435."
@@ -905,6 +905,27 @@ MonoBehaviour:
     \u0441\u043E\u043C\u043D\u0435\u043D\u044C\u0435 \u0438 \u0434\u0430\u0436\u0435
     \u0431\u0440\u0430\u0442 \u0441 \u0441\u0435\u0441\u0442\u0440\u043E\u0439 \u0437\u0430\u0431\u044B\u043B\u0438
     \u043F\u0440\u043E \u0440\u043E\u0434\u043D\u0443\u044E \u0441\u0432\u044F\u0437\u044C."
+  _textsEn:
+  - This place stirs memories of another glorious adventure of ours.
+  - An adventure that taught us about trust.
+  - The crystals weave illusions, bending light and distorting reality itself.
+  - One night, Enor gathered us around the campfire and declared that an impostor
+    walked among us.
+  - But who it was, he claimed not to know, leaving it to us to uncover the deceiver.
+  - Distrust poisoned every heart. Everything became suspect, and even the closest
+    kin forgot the bonds of blood.
+  _textsTr:
+  - "Buras\u0131 bana yine \u015Fanl\u0131 maceralar\u0131m\u0131zdan birini hat\u0131rlat\u0131yor."
+  - "Bize g\xFCveni \xF6\u011Freten bir macera."
+  - "Kristaller ill\xFCzyonlar yarat\u0131r, \u0131\u015F\u0131\u011F\u0131 b\xFCker
+    ve ger\xE7ekli\u011Fin ta kendisini \xE7arp\u0131t\u0131r."
+  - "Bir gece, Enor hepimizi kamp ate\u015Fi etraf\u0131nda toplad\u0131 ve aram\u0131zda
+    bir d\xFCzenbaz\u0131n dola\u015Ft\u0131\u011F\u0131n\u0131 iddia etti."
+  - "Ama kim oldu\u011Funu bilmedi\u011Fini s\xF6yledi ve aldat\u0131c\u0131y\u0131
+    ortaya \xE7\u0131karmak bize d\xFC\u015Ft\xFC."
+  - "Ekipteki herkesin y\xFCre\u011Fine ku\u015Fku d\xFC\u015Ft\xFC. Her \u015Fey
+    \u015F\xFCphe alt\u0131ndayd\u0131, hatta en yak\u0131n akrabalar bile kan ba\u011Flar\u0131n\u0131
+    unuttu."
   _typingSpeed: 0.05
   _nextSceneLoader: {fileID: 1780910129}
   _skipCutscene: {fileID: 402707193}
@@ -1013,7 +1034,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d746bcb952120429c957d22228d31c, type: 2}
-  m_sharedMaterial: {fileID: -5467802243673589186, guid: 77d746bcb952120429c957d22228d31c, type: 2}
+  m_sharedMaterial: {fileID: 3319613284895594336, guid: 77d746bcb952120429c957d22228d31c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

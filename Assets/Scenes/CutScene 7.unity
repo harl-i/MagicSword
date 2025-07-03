@@ -1050,7 +1050,7 @@ MonoBehaviour:
   - {fileID: 328360250}
   - {fileID: 328360250}
   _textDisplay: {fileID: 1907219123}
-  _texts:
+  _textsRu:
   - "\u042D\u0442\u043E \u0431\u044B\u043B \u0443\u0440\u043E\u043A \u043D\u0435
     \u0442\u043E\u043B\u044C\u043A\u043E \u0432\u044B\u0436\u0438\u0432\u0430\u043D\u0438\u044F,
     \u043D\u043E \u0438 \u0443\u0440\u043E\u043A \u0441\u043F\u043B\u043E\u0447\u0435\u043D\u0438\u044F."
@@ -1075,6 +1075,27 @@ MonoBehaviour:
     \u0438 \u0443\u0441\u0442\u0430\u0432\u0448\u0438\u043C \u043F\u0443\u0442\u043D\u0438\u043A\u0430\u043C
     \u0432 \u044D\u0442\u043E\u043C \u0436\u0435\u0441\u0442\u043E\u043A\u043E\u043C
     \u043B\u0435\u0441\u0443."
+  _textsEn:
+  - It was a lesson not just in survival, but in forging an enduring bond.
+  - The mage and the swordsman learned together to tap tree sap, and gathered medicinal
+    and edible herbs and roots.
+  - The archers jointly procured provisions.
+  - Together, we built a temporary outpost, each contributing to the common cause.
+  - Years later, the party revisited that place.
+  - Their humble camp had grown into a haven, a refuge for lost and weary travelers
+    in that brutal forest.
+  _textsTr:
+  - "Bu, sadece hayatta kalman\u0131n de\u011Fil, ayn\u0131 zamanda kenetlenmenin
+    de bir dersiydi."
+  - "B\xFCy\xFCc\xFC ile k\u0131l\u0131\xE7 ustas\u0131 birlikte a\u011Fa\xE7lardan
+    \xF6zsu \xE7\u0131karmay\u0131 \xF6\u011Frendiler ve \u015Fifal\u0131 ile yenilebilir
+    otlar\u0131 ve k\xF6kleri toplad\u0131lar."
+  - "Ok\xE7ular erzak\u0131 birlikte temin ettiler."
+  - "Hep birlikte ge\xE7ici bir karakol in\u015Fa ettik, herkes ortak dava i\xE7in
+    katk\u0131da bulundu."
+  - "Y\u0131llar sonra, ekip o yeri tekrar ziyaret etti."
+  - "Onlar\u0131n m\xFCtevaz\u0131 konaklama noktas\u0131, o vah\u015Fi ormanda kaybolmu\u015F
+    ve yorgun yolcular i\xE7in bir s\u0131\u011F\u0131nak haline gelip b\xFCy\xFCm\xFC\u015Ft\xFC."
   _typingSpeed: 0.05
   _nextSceneLoader: {fileID: 1780910129}
   _skipCutscene: {fileID: 1204216561}
@@ -1183,7 +1204,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d746bcb952120429c957d22228d31c, type: 2}
-  m_sharedMaterial: {fileID: -5467802243673589186, guid: 77d746bcb952120429c957d22228d31c, type: 2}
+  m_sharedMaterial: {fileID: 3319613284895594336, guid: 77d746bcb952120429c957d22228d31c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

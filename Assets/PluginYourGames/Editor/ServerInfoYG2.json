@@ -55,10 +55,9 @@
         },
         {
             "name": "Authorization",
-            "version": "1.021",
+            "version": "1.022",
             "download": "https://max-games.ru/public/pluginYG2/modules/Authorization.unitypackage",
-            "doc": "https://max-games.ru/plugin-yg/doc/auth/",
-            "critical": true
+            "doc": "https://max-games.ru/plugin-yg/doc/auth/"
         },
         {
             "name": "Storage",

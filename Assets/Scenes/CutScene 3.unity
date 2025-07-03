@@ -963,12 +963,20 @@ MonoBehaviour:
   - {fileID: 88982436}
   - {fileID: 88982436}
   _textDisplay: {fileID: 1907219123}
-  _texts:
+  _textsRu:
   - "\u041C\u044B \u0431\u044B\u043B\u0438 \u043E\u0442\u043B\u0438\u0447\u043D\u043E\u0439
-    \u043A\u043E\u043C\u0430\u043D\u0434\u043E\u0439. "
+    \u043A\u043E\u043C\u0430\u043D\u0434\u043E\u0439."
   - "\u041F\u044F\u0442\u044C \u043B\u0443\u0447\u0448\u0438\u0445 \u0432\u043E\u0438\u043D\u043E\u0432."
   - "\u041C\u0435\u0447\u043D\u0438\u043A, \u0434\u0432\u0430 \u043C\u0430\u0433\u0430
     \u0438 \u0434\u0432\u0430 \u043B\u0443\u0447\u043D\u0438\u043A\u0430."
+  _textsEn:
+  - We were a tight-knit band.
+  - Five elite warriors.
+  - Comprising a swordsman, two mages, and two archers.
+  _textsTr:
+  - "Biz se\xE7kin bir timdik."
+  - "Be\u015F \xFCst\xFCn muharip."
+  - "Bir k\u0131l\u0131\xE7 ustas\u0131, iki b\xFCy\xFCc\xFC ve iki ok\xE7u."
   _typingSpeed: 0.05
   _nextSceneLoader: {fileID: 1780910129}
   _skipCutscene: {fileID: 1571998283}
@@ -1077,7 +1085,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d746bcb952120429c957d22228d31c, type: 2}
-  m_sharedMaterial: {fileID: -5467802243673589186, guid: 77d746bcb952120429c957d22228d31c, type: 2}
+  m_sharedMaterial: {fileID: 3319613284895594336, guid: 77d746bcb952120429c957d22228d31c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

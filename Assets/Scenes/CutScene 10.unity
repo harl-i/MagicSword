@@ -984,7 +984,7 @@ MonoBehaviour:
   - {fileID: 197053356}
   - {fileID: 197053356}
   _textDisplay: {fileID: 1907219123}
-  _texts:
+  _textsRu:
   - "\u0421\u0442\u043E\u0439! \u041F\u043E\u0434\u043E\u0436\u0434\u0438, \u044F
     \u043D\u0435 \u0442\u0430\u043A\u043E\u0439 \u0443\u0436 \u043F\u043B\u043E\u0445\u043E\u0439."
   - "\u041A\u0442\u043E \u0442\u044B?"
@@ -1048,6 +1048,66 @@ MonoBehaviour:
   - "\u0410 \u044F \u0438 \u043D\u0435 \u0437\u0430\u043C\u0435\u0442\u0438\u043B,
     \u043A\u0430\u043A \u0441\u0442\u0430\u043B \u043E\u0434\u043D\u0438\u043C \u0438\u0437
     \u043D\u0438\u0445."
+  _textsEn:
+  - Halt! Wait, I'm not that bad.
+  - Who are you?
+  - Just a humble firefly, but I heard you talking to yourself.
+  - Perhaps. What do you need?
+  - Nothing specific. I merely wish to help you... for a favor in return.
+  - Go on.
+  - I know you want to reach the surface and find your master. I have information
+    about the way.
+  - What do you want in return?
+  - I need to get out of here too. But you're the only being among all creatures
+    who can activate that portal.
+  - Why should I trust you won't betray me?
+  - Don't trust me, then. But without me, you could wander lost forever in the endless
+    corridors of this dungeon.
+  - Alright...
+  - But why do you need the surface? Aren't you a creature of this world?
+  - No.
+  - I was different once.
+  - I was a valiant hero who fought for justice.
+  - Nothing was impossible for me. A young lad, always eager for battle.
+  - Then came the day I undertook the most desperate and fateful deed.
+  - For glory, I vowed to delve into the caves alone and bring back proof of my valor.
+  - But the cave consumed me.
+  - I got lost.
+  - Slowly, the creatures around began to accept me as one of their own.
+  - I didn't even notice when I became one of them.
+  _textsTr:
+  - "Dur! Bekle, o kadar da k\xF6t\xFC biri de\u011Filim."
+  - Sen de kimsin?
+  - "S\u0131radan bir ate\u015F b\xF6ce\u011Fiyim, ama kendi kendine konu\u015Ftu\u011Funu
+    duydum."
+  - Belki. Ne istiyorsun?
+  - "\xD6zel bir \u015Fey de\u011Fil. Sadece sana yard\u0131m etmek istiyorum...
+    kar\u015F\u0131l\u0131\u011F\u0131nda bir iyilik kar\u015F\u0131l\u0131\u011F\u0131nda."
+  - Anlat.
+  - "Y\xFCzeye \xE7\u0131k\u0131p efendini bulmak istedi\u011Fini biliyorum. Yol
+    hakk\u0131nda bilgim var."
+  - "Kar\u015F\u0131l\u0131\u011F\u0131nda ne istiyorsun?"
+  - "Benim de buradan \xE7\u0131kmam gerekiyor. Ama t\xFCm yarat\u0131klar aras\u0131nda
+    o portal\u0131 etkinle\u015Ftirebilecek tek varl\u0131k sensin."
+  - "Sana ihanet etmeyece\u011Fine neden g\xFCveneyim?"
+  - "G\xFCvenme \xF6yleyse. Ama bensiz, bu zindan\u0131n sonsuz koridorlar\u0131nda
+    sonsuza kadar kaybolabilirsin."
+  - Pekala...
+  - "Ama senin neden y\xFCzeye ihtiyac\u0131n var? Bu d\xFCnyan\u0131n bir yarat\u0131\u011F\u0131
+    de\u011Fil misin sen?"
+  - "Hay\u0131r."
+  - "Bir zamanlar farkl\u0131yd\u0131m."
+  - "Adalet i\xE7in sava\u015Fan cesur bir kahramand\u0131m."
+  - "Benim i\xE7in imkans\u0131z diye bir \u015Fey yoktu. Her zaman sava\u015Fmaya
+    hevesli gen\xE7 bir delikanl\u0131."
+  - "Bir g\xFCn, en umutsuz ve kaderimi belirleyen eyleme giri\u015Ftim."
+  - "\u015Ean i\xE7in, ma\u011Faralara tek ba\u015F\u0131ma inip cesaretimin kan\u0131t\u0131n\u0131
+    getirece\u011Fime ant i\xE7tim."
+  - "Ama ma\u011Fara beni yuttu."
+  - Kayboldum.
+  - "Zamanla, etraftaki yarat\u0131klar beni kendilerinden biri olarak kabul etmeye
+    ba\u015Flad\u0131."
+  - "Ben de ne zaman onlardan biri oldu\u011Fumu fark etmedim bile."
   _typingSpeed: 0.05
   _nextSceneLoader: {fileID: 1780910129}
   _skipCutscene: {fileID: 1998547774}
@@ -1156,7 +1216,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d746bcb952120429c957d22228d31c, type: 2}
-  m_sharedMaterial: {fileID: -5467802243673589186, guid: 77d746bcb952120429c957d22228d31c, type: 2}
+  m_sharedMaterial: {fileID: 3319613284895594336, guid: 77d746bcb952120429c957d22228d31c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

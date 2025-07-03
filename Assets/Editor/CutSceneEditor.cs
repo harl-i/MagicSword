@@ -12,7 +12,9 @@ public class CutSceneEditor : Editor
     private SerializedProperty _flashBangEffect;
     private SerializedProperty _images;
     private SerializedProperty _textDisplay;
-    private SerializedProperty _texts;
+    private SerializedProperty _textsRu;
+    private SerializedProperty _textsEn;
+    private SerializedProperty _textsTr;
     private SerializedProperty _typingSpeed;
     private SerializedProperty _nextSceneLoader;
     private SerializedProperty _skipCutscene;
@@ -24,7 +26,9 @@ public class CutSceneEditor : Editor
         _flashBangEffect = serializedObject.FindProperty("_flashBangEffect");
         _images = serializedObject.FindProperty("_images");
         _textDisplay = serializedObject.FindProperty("_textDisplay");
-        _texts = serializedObject.FindProperty("_texts");
+        _textsRu = serializedObject.FindProperty("_textsRu");
+        _textsEn = serializedObject.FindProperty("_textsEn");
+        _textsTr = serializedObject.FindProperty("_textsTr");
         _typingSpeed = serializedObject.FindProperty("_typingSpeed");
         _nextSceneLoader = serializedObject.FindProperty("_nextSceneLoader");
         _nextSceneLoader = serializedObject.FindProperty("_nextSceneLoader");
@@ -53,7 +57,9 @@ public class CutSceneEditor : Editor
         EditorGUILayout.LabelField("Dialogue", EditorStyles.boldLabel);
         EditorGUILayout.PropertyField(_textDisplay);
         EditorGUILayout.PropertyField(_typingSpeed);
-        EditorGUILayout.PropertyField(_texts);
+        EditorGUILayout.PropertyField(_textsRu);
+        EditorGUILayout.PropertyField(_textsEn);
+        EditorGUILayout.PropertyField(_textsTr);
 
         DrawLine();
 
