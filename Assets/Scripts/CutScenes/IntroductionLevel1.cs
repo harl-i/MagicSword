@@ -18,13 +18,23 @@ public class IntroductionLevel1 : MonoBehaviour
     [Header("Dialogue")]
     [SerializeField] private TextMeshProUGUI _textDisplay;
     [SerializeField] private float _typingSpeed = 0.05f;
-    [SerializeField] private string[] _texts;
+    [SerializeField] private string[] _textsRu;
+    [SerializeField] private string[] _textsEn;
+    [SerializeField] private string[] _textsTr;
+
+    private const string RU = "ru";
+    private const string EN = "en";
+    private const string TR = "tr";
 
     private int _currentIndex = 0;
     private bool _isTyping = false;
+    private string _lang;
 
     private void Start()
     {
+        //_lang = YG2.lang;
+        _lang = EN;
+
         UpdateCutscene();
     }
 
@@ -40,14 +50,43 @@ public class IntroductionLevel1 : MonoBehaviour
     {
         if (YG2.saves.skipFirstCutscene == 1) return;
 
-        if (_currentIndex < _texts.Length)
+        if (_lang == RU)
         {
-            if (_currentIndex == 0)
+            if (_currentIndex < _textsRu.Length)
             {
-                _flashBangEffect.FlashBanged();
-            }
+                if (_currentIndex == 0)
+                {
+                    _flashBangEffect.FlashBanged();
+                }
 
-            StartCoroutine(TypeText(_texts[_currentIndex]));
+                StartCoroutine(TypeText(_textsRu[_currentIndex]));
+            }
+        }
+
+        if (_lang == EN)
+        {
+            if (_currentIndex < _textsEn.Length)
+            {
+                if (_currentIndex == 0)
+                {
+                    _flashBangEffect.FlashBanged();
+                }
+
+                StartCoroutine(TypeText(_textsEn[_currentIndex]));
+            }
+        }
+
+        if (_lang == TR)
+        {
+            if (_currentIndex < _textsTr.Length)
+            {
+                if (_currentIndex == 0)
+                {
+                    _flashBangEffect.FlashBanged();
+                }
+
+                StartCoroutine(TypeText(_textsTr[_currentIndex]));
+            }
         }
     }
 
@@ -55,11 +94,11 @@ public class IntroductionLevel1 : MonoBehaviour
     {
         _currentIndex++;
 
-        if (_currentIndex < _texts.Length)
+        if (_currentIndex < _textsRu.Length)
         {
             UpdateCutscene();
         }
-        else if (_currentIndex == _texts.Length)
+        else if (_currentIndex == _textsRu.Length)
         {
             EndCutscene();
         }
