@@ -1936,8 +1936,8 @@ MonoBehaviour:
   _animator: {fileID: 1713034237}
   _dialogueWindow: {fileID: 1713034238}
   _dialogueTextField: {fileID: 30905106}
-  _text:
-  - "\u042D\u0442\u043E \u0421\u043A\u043E\u0440\u043D\u0430\u043A\u0441! "
+  _textRu:
+  - "\u042D\u0442\u043E \u0421\u043A\u043E\u0440\u043D\u0430\u043A\u0441!"
   - "\u041E\u043D\u0438 \u043C\u043E\u0433\u0443\u0442 \u0432\u044B\u0440\u0430\u0449\u0438\u0432\u0430\u0442\u044C
     \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u044B \u0438..."
   - "...\u0438 \u0442\u0430\u043A\u0438\u043C \u043E\u0431\u0440\u0430\u0437\u043E\u043C 
@@ -1946,6 +1946,16 @@ MonoBehaviour:
   - "\u0415\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439 \u0441\u043F\u043E\u0441\u043E\u0431
     \u0432\u044B\u0431\u0440\u0430\u0442\u044C\u0441\u044F \u0438\u0437 \u043D\u0435\u0435
     - \u044D\u0442\u043E \u043E\u0434\u043E\u043B\u0435\u0442\u044C \u0421\u043A\u043E\u0440\u043D\u0430\u043A\u0441\u0430!"
+  _textEn:
+  - A Scornax!
+  - They can manifest crystals from thin air and...
+  - ...ensnare prey in crystalline prisons!
+  - The only escape? Shatter the Scornax itself!
+  _textTr:
+  - Bir Scornax!
+  - "Aniden kristal olu\u015Fturabilirler ve..."
+  - "...kurbanlar\u0131n\u0131 kristal kafeslere hapsederler!"
+  - "Kurtulman\u0131n tek yolu? Scornax'\u0131n ta kendisini par\xE7alamak!"
   _typingSpeed: 0.05
   _needPermanentDisableTrigger: 1
   _trigger: {fileID: 932659712}
