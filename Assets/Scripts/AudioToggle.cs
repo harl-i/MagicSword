@@ -10,7 +10,7 @@ public class AudioToggle : MonoBehaviour
     [SerializeField] private Sprite _volumeOn;
     [SerializeField] private Sprite _volumeOff;
 
-    private bool _isMuted;
+    private bool _isMuted = false;
 
     private void Start()
     {

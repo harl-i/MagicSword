@@ -68,8 +68,6 @@ public class SceneDialogue : MonoBehaviour
 
     public void StartDialogue()
     {
-        //StartCoroutine(TypeText(_textRu[_currentIndex]));
-
         if (_lang == RU)
         {
             StartCoroutine(TypeText(_textRu[_currentIndex]));
@@ -97,15 +95,6 @@ public class SceneDialogue : MonoBehaviour
     private void AdvanceDialogue()
     {
         _currentIndex++;
-
-        //if (_currentIndex < _textRu.Length)
-        //{
-        //    UpdateDialogue();
-        //}
-        //else if (_currentIndex == _textRu.Length)
-        //{
-        //    EndDialogue();
-        //}
 
         if (_lang == RU)
         {
@@ -146,11 +135,6 @@ public class SceneDialogue : MonoBehaviour
 
     private void UpdateDialogue()
     {
-        //if (_currentIndex < _textRu.Length)
-        //{
-        //    StartCoroutine(TypeText(_textRu[_currentIndex]));
-        //}
-
         if (_lang == RU)
         {
             if (_currentIndex < _textRu.Length)
@@ -246,7 +230,22 @@ public class SceneDialogue : MonoBehaviour
     private void ShowFullText()
     {
         StopAllCoroutines();
-        _dialogueTextField.text = _textRu[_currentIndex];
+
+        if (_lang == RU)
+        {
+            _dialogueTextField.text = _textRu[_currentIndex];
+        }
+
+        if (_lang == EN)
+        {
+            _dialogueTextField.text = _textEn[_currentIndex];
+        }
+
+        if (_lang == TR)
+        {
+            _dialogueTextField.text = _textTr[_currentIndex];
+        }
+
         _isTyping = false;
         _typedCharCount = 0;
     }

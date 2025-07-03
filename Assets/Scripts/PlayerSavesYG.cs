@@ -5,6 +5,6 @@ namespace YG
         public int health;
         public int sceneForContinue;
         public int godMode;
-        public int volume;
+        public int volume = 1;
     }
 }
