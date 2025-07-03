@@ -2933,7 +2933,7 @@ MonoBehaviour:
   _animator: {fileID: 124287059}
   _dialogueWindow: {fileID: 124287058}
   _dialogueTextField: {fileID: 26306860}
-  _text:
+  _textRu:
   - "\u042D\u0442\u0430 \u0441\u0442\u0435\u043D\u0430 \u0432\u0441\u044F \u0432
     \u0442\u0440\u0435\u0449\u0438\u043D\u0430\u0445"
   - "\u041E\u0434\u043D\u0430 \u0438\u0437 \u043C\u043E\u0438\u0445 \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0435\u0439
@@ -2942,6 +2942,14 @@ MonoBehaviour:
   - "\u0411\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u044D\u0442\u043E\u043C\u0443
     \u044F \u043C\u043E\u0433\u0443 \u043F\u0440\u043E\u043B\u043E\u043C\u0438\u0442\u044C
     \u0442\u0430\u043A\u0443\u044E \u0441\u0442\u0435\u043D\u0443"
+  _textEn:
+  - This wall is riddled with cracks!
+  - One of my abilities lets me sheath the blade in mana.
+  - That's how I shatter walls like this!
+  _textTr:
+  - "Bu duvar \xE7atlaklarla dolu!"
+  - "Yeteneklerimden biri a\u011Fz\u0131 manayla ku\u015Fatmam\u0131 sa\u011Flar."
+  - "\u0130\u015Fte b\xF6yle duvarlar\u0131 par\xE7alayabilirim!"
   _typingSpeed: 0.05
   _needPermanentDisableTrigger: 1
   _trigger: {fileID: 1000728531}
