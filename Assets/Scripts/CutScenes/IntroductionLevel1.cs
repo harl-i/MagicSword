@@ -32,8 +32,7 @@ public class IntroductionLevel1 : MonoBehaviour
 
     private void Start()
     {
-        //_lang = YG2.lang;
-        _lang = EN;
+        _lang = YG2.lang;
 
         UpdateCutscene();
     }

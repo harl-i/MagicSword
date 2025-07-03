@@ -1,13 +1,16 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using YG;
 
 public class SceneDialogue : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
     [SerializeField] private DialogueWindow _dialogueWindow;
     [SerializeField] private TextMeshProUGUI _dialogueTextField;
-    [SerializeField] private string[] _text;
+    [SerializeField] private string[] _textRu;
+    [SerializeField] private string[] _textEn;
+    [SerializeField] private string[] _textTr;
     [SerializeField] private float _typingSpeed = 0.05f;
 
     [SerializeField] private bool _needPermanentDisableTrigger;
@@ -15,13 +18,20 @@ public class SceneDialogue : MonoBehaviour
     [SerializeField] private float _timeForTemporaryDisable;
     [SerializeField] private GameObject[] _auxiliaryObjects;
 
+    private const string RU = "ru";
+    private const string EN = "en";
+    private const string TR = "tr";
+
     private int _currentIndex = 0;
     private bool _isTyping = false;
     private int _typedCharCount = 0;
     private int _charCountToUnlockSkip = 5;
+    private string _lang;
 
     private void OnEnable()
     {
+        _lang = YG2.lang;
+
         _dialogueWindow.WindowShown += OnDialogueWindowShown;
     }
 
@@ -58,7 +68,22 @@ public class SceneDialogue : MonoBehaviour
 
     public void StartDialogue()
     {
-        StartCoroutine(TypeText(_text[_currentIndex]));
+        //StartCoroutine(TypeText(_textRu[_currentIndex]));
+
+        if (_lang == RU)
+        {
+            StartCoroutine(TypeText(_textRu[_currentIndex]));
+        }
+
+        if (_lang == EN)
+        {
+            StartCoroutine(TypeText(_textEn[_currentIndex]));
+        }
+
+        if (_lang == TR)
+        {
+            StartCoroutine(TypeText(_textTr[_currentIndex]));
+        }
 
         EnableAuxularyObjects();
     }
@@ -73,21 +98,81 @@ public class SceneDialogue : MonoBehaviour
     {
         _currentIndex++;
 
-        if (_currentIndex < _text.Length)
+        //if (_currentIndex < _textRu.Length)
+        //{
+        //    UpdateDialogue();
+        //}
+        //else if (_currentIndex == _textRu.Length)
+        //{
+        //    EndDialogue();
+        //}
+
+        if (_lang == RU)
         {
-            UpdateDialogue();
+            if (_currentIndex < _textRu.Length)
+            {
+                UpdateDialogue();
+            }
+            else if (_currentIndex == _textRu.Length)
+            {
+                EndDialogue();
+            }
         }
-        else if (_currentIndex == _text.Length)
+
+        if (_lang == EN)
         {
-            EndDialogue();
+            if (_currentIndex < _textEn.Length)
+            {
+                UpdateDialogue();
+            }
+            else if (_currentIndex == _textEn.Length)
+            {
+                EndDialogue();
+            }
+        }
+
+        if (_lang == TR)
+        {
+            if (_currentIndex < _textTr.Length)
+            {
+                UpdateDialogue();
+            }
+            else if (_currentIndex == _textTr.Length)
+            {
+                EndDialogue();
+            }
         }
     }
 
     private void UpdateDialogue()
     {
-        if (_currentIndex < _text.Length)
+        //if (_currentIndex < _textRu.Length)
+        //{
+        //    StartCoroutine(TypeText(_textRu[_currentIndex]));
+        //}
+
+        if (_lang == RU)
         {
-            StartCoroutine(TypeText(_text[_currentIndex]));
+            if (_currentIndex < _textRu.Length)
+            {
+                StartCoroutine(TypeText(_textRu[_currentIndex]));
+            }
+        }
+
+        if (_lang == EN)
+        {
+            if (_currentIndex < _textEn.Length)
+            {
+                StartCoroutine(TypeText(_textEn[_currentIndex]));
+            }
+        }
+
+        if (_lang == TR)
+        {
+            if (_currentIndex < _textRu.Length)
+            {
+                StartCoroutine(TypeText(_textTr[_currentIndex]));
+            }
         }
     }
 
@@ -161,7 +246,7 @@ public class SceneDialogue : MonoBehaviour
     private void ShowFullText()
     {
         StopAllCoroutines();
-        _dialogueTextField.text = _text[_currentIndex];
+        _dialogueTextField.text = _textRu[_currentIndex];
         _isTyping = false;
         _typedCharCount = 0;
     }

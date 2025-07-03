@@ -7449,10 +7449,14 @@ MonoBehaviour:
   _animator: {fileID: 742607793}
   _dialogueWindow: {fileID: 742607792}
   _dialogueTextField: {fileID: 59550805}
-  _text:
+  _textRu:
   - "\u041A\u0430\u0436\u0435\u0442\u0441\u044F \u043D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043E\u0447\u043D\u043E
     \u0434\u0443\u0448 \u0434\u043B\u044F \u0430\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u0438
     \u043F\u043E\u0440\u0442\u0430\u043B\u0430"
+  _textEn:
+  - Not enough souls to awaken the portal!
+  _textTr:
+  - "Portali uyand\u0131rmak i\xE7in yeterli ruh yok!"
   _typingSpeed: 0.05
   _needPermanentDisableTrigger: 0
   _trigger: {fileID: 831436180}
@@ -8595,9 +8599,13 @@ MonoBehaviour:
   _animator: {fileID: 1407730055}
   _dialogueWindow: {fileID: 1407730054}
   _dialogueTextField: {fileID: 873123852}
-  _text:
+  _textRu:
   - "\u041E\u0442 \u0442\u0430\u043A\u0438\u0445 \u0448\u0438\u043F\u043E\u0432 \u043B\u0443\u0447\u0448\u0435
-    \u0434\u0435\u0440\u0436\u0430\u0442\u044C\u0441\u044F \u043F\u043E\u0434\u0430\u043B\u044C\u0448\u0435"
+    \u0434\u0435\u0440\u0436\u0430\u0442\u044C\u0441\u044F \u043F\u043E\u0434\u0430\u043B\u044C\u0448\u0435..."
+  _textEn:
+  - Keep your distance from those razor-sharp spikes...
+  _textTr:
+  - Jilet gibi dikenlerden uzak dur...
   _typingSpeed: 0.05
   _needPermanentDisableTrigger: 1
   _trigger: {fileID: 1201646178}
@@ -12415,7 +12423,7 @@ MonoBehaviour:
   _animator: {fileID: 1951366721}
   _dialogueWindow: {fileID: 1951366722}
   _dialogueTextField: {fileID: 354010123}
-  _text:
+  _textRu:
   - "\u042D\u0442\u043E \u043F\u043E\u0440\u0442\u0430\u043B!"
   - "\u042F \u0443\u0436\u0435 \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u043B \u0442\u0430\u043A\u0438\u0435
     \u043F\u043E\u0440\u0442\u0430\u043B\u044B."
@@ -12431,6 +12439,20 @@ MonoBehaviour:
     \u0441\u0432\u043E\u044E \u043C\u0430\u043D\u0443..."
   - "... \u0438 \u043F\u043E\u0440\u0442\u0430\u043B \u0434\u043E\u043B\u0436\u0435\u043D
     \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F!"
+  _textEn:
+  - That's a portal!
+  - I've seen portals like this before.
+  - To activate it, I need souls of nearby creatures.
+  - When enough souls are gathered, the runes flicker with light.
+  - Then I must touch the runes to infuse my mana...
+  - ...and the portal should roar to life!
+  _textTr:
+  - Bu bir portal!
+  - "B\xF6yle portallar\u0131 daha \xF6nce g\xF6rm\xFC\u015Ft\xFCm."
+  - "Aktifle\u015Ftirmek i\xE7in etraftaki yarat\u0131klar\u0131n ruhlar\u0131 gerekli."
+  - "Yeterli ruh toplan\u0131nca runeler \u0131\u015F\u0131kla alevlenir."
+  - "O zaman manam\u0131 ak\u0131tmak i\xE7in runelere dokunmam gerek..."
+  - "...ve portal k\xFCkremeye ba\u015Flar!"
   _typingSpeed: 0.05
   _needPermanentDisableTrigger: 1
   _trigger: {fileID: 1717843485}
