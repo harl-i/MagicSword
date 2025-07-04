@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,6 +16,8 @@ public class NextSceneLoader : MonoBehaviour
     public void LoadScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        
+        ShowAdvertisment(currentSceneIndex);
 
         int totalScenes = SceneManager.sceneCountInBuildSettings;
         _nextSceneIndex = currentSceneIndex + 1;
@@ -32,6 +35,14 @@ public class NextSceneLoader : MonoBehaviour
         else
         {
             StartCoroutine(LoadSceneWithDelay(_delay, _mainMenuSceneIndex));
+        }
+    }
+
+    private void ShowAdvertisment(int sceneIndex)
+    {
+        if (sceneIndex % 4 == 0)
+        {
+            YG2.InterstitialAdvShow();
         }
     }
 
