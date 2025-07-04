@@ -490,16 +490,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557017415098563190, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557017415098563190, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557017415098563190, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4557017415098563190, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557017415098563190, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
       objectReference: {fileID: 0}
     - target: {fileID: 4557017415098563190, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -650.483
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557017415098563190, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557017415098563190, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4557017415098563190, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -507,7 +527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4557017415098563190, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884815421038245622, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
       propertyPath: m_IsActive
@@ -646,7 +666,193 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5732468374475889446, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
       insertIndex: -1
       addedObject: {fileID: 200872800}
+    - targetCorrespondingSourceObject: {fileID: 4384612391538245699, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4206539}
   m_SourcePrefab: {fileID: 100100000, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
+--- !u!1 &4206537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4384612391538245699, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
+  m_PrefabInstance: {fileID: 4206536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4206538 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3063648856988633542, guid: fc2571f51587d8443a615a5e39ae6870, type: 3}
+  m_PrefabInstance: {fileID: 4206536}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4206537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4206539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4206537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMPComponent: {fileID: 4206538}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  info:
+    domainAutoLocalization: com
+    languages:
+      ru: 1
+      en: 1
+      tr: 1
+      az: 0
+      be: 0
+      he: 0
+      hy: 0
+      ka: 0
+      et: 0
+      fr: 0
+      kk: 0
+      ky: 0
+      lt: 0
+      lv: 0
+      ro: 0
+      tg: 0
+      tk: 0
+      uk: 0
+      uz: 0
+      es: 0
+      pt: 0
+      ar: 0
+      id: 0
+      ja: 0
+      it: 0
+      de: 0
+      hi: 0
+    fonts:
+      defaultFont: []
+      ru: []
+      en: []
+      tr: []
+      az: []
+      be: []
+      he: []
+      hy: []
+      ka: []
+      et: []
+      fr: []
+      kk: []
+      ky: []
+      lt: []
+      lv: []
+      ro: []
+      tg: []
+      tk: []
+      uk: []
+      uz: []
+      es: []
+      pt: []
+      ar: []
+      id: []
+      ja: []
+      it: []
+      de: []
+      hi: []
+    fontsTMP:
+      defaultFont: []
+      ru: []
+      en: []
+      tr: []
+      az: []
+      be: []
+      he: []
+      hy: []
+      ka: []
+      et: []
+      fr: []
+      kk: []
+      ky: []
+      lt: []
+      lv: []
+      ro: []
+      tg: []
+      tk: []
+      uk: []
+      uz: []
+      es: []
+      pt: []
+      ar: []
+      id: []
+      ja: []
+      it: []
+      de: []
+      hi: []
+    fontsSizeCorrect:
+      ru: 
+      en: 
+      tr: 
+      az: 
+      be: 
+      he: 
+      hy: 
+      ka: 
+      et: 
+      fr: 
+      kk: 
+      ky: 
+      lt: 
+      lv: 
+      ro: 
+      tg: 
+      tk: 
+      uk: 
+      uz: 
+      es: 
+      pt: 
+      ar: 
+      id: 
+      ja: 
+      it: 
+      de: 
+      hi: 
+  text: 
+  ru: "\u0418\u0413\u0420\u0410 \u041E\u041A\u041E\u041D\u0427\u0415\u041D\u0410"
+  en: GAME OVER
+  tr: "OYUN B\u0130TT\u0130"
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: 
+  uz: 
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: 
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 3/3 completed
+  componentTextField: 1
+  countLang: 3
 --- !u!1 &5169912
 GameObject:
   m_ObjectHideFlags: 0
