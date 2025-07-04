@@ -158,6 +158,7 @@ public class SwordMovingState : State
             _vectorCreator.enabled = false;
         }
         StuckInWall?.Invoke(false);
+        _arrow.RemoveRedFill();
         _arrow.gameObject.SetActive(false);
     }
 

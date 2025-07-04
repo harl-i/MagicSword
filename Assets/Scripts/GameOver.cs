@@ -27,15 +27,18 @@ public class GameOver : MonoBehaviour
     private void OnDisable()
     {
         Player.HealthHasChanged -= CheckPlayerHealth;
-        //_blackBackground.SetActive(false);
-        //_gameoverImage.enabled = false;
     }
 
     private void CheckPlayerHealth(int count)
     {
         if (count == 0)
         {
-            StartCoroutine(ShowGameOverScreenAndExit(_delay));
+            YG2.saves.continues--;
+            Debug.Log(YG2.saves.continues);
+            if (YG2.saves.continues == 0)
+            {
+                StartCoroutine(ShowGameOverScreenAndExit(_delay));
+            }
         }
     }
 

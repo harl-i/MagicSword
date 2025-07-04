@@ -61,6 +61,12 @@ public class Player : MonoBehaviour, IDamageable
         }
     }
 
+    public void FullHealing()
+    {
+        _healthCount = 3;
+        HealthHasChanged?.Invoke(_healthCount);
+    }
+
     private void OnSwordLaunched(bool isLaunched)
     {
         _isLaunched = isLaunched;
