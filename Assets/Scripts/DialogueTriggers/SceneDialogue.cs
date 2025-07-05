@@ -18,6 +18,8 @@ public class SceneDialogue : MonoBehaviour
     [SerializeField] private float _timeForTemporaryDisable;
     [SerializeField] private GameObject[] _auxiliaryObjects;
 
+    [SerializeField] private GameObject _pauseButton;
+
     private const string RU = "ru";
     private const string EN = "en";
     private const string TR = "tr";
@@ -168,6 +170,7 @@ public class SceneDialogue : MonoBehaviour
 
     private void PauseGame()
     {
+        _pauseButton.SetActive(false);
         Time.timeScale = 0f;
         _dialogueWindow.gameObject.SetActive(true);
 
@@ -199,7 +202,7 @@ public class SceneDialogue : MonoBehaviour
 
     private void ResumeGame()
     {
-
+        _pauseButton.SetActive(true);
         _animator.updateMode = AnimatorUpdateMode.Normal;
         _dialogueWindow.gameObject.SetActive(false);
 

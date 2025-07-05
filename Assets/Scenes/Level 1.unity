@@ -8014,6 +8014,7 @@ MonoBehaviour:
   _trigger: {fileID: 831436180}
   _timeForTemporaryDisable: 5
   _auxiliaryObjects: []
+  _pauseButton: {fileID: 851763728}
 --- !u!4 &831436182
 Transform:
   m_ObjectHideFlags: 0
@@ -9345,6 +9346,7 @@ MonoBehaviour:
   _auxiliaryObjects:
   - {fileID: 833106119}
   - {fileID: 2130575624}
+  _pauseButton: {fileID: 851763728}
 --- !u!61 &1201646178
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13358,6 +13360,7 @@ MonoBehaviour:
   _trigger: {fileID: 1717843485}
   _timeForTemporaryDisable: 0
   _auxiliaryObjects: []
+  _pauseButton: {fileID: 851763728}
 --- !u!1 &1729317935
 GameObject:
   m_ObjectHideFlags: 0

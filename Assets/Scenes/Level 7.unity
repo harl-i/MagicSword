@@ -2339,6 +2339,7 @@ MonoBehaviour:
   _trigger: {fileID: 932659712}
   _timeForTemporaryDisable: 0
   _auxiliaryObjects: []
+  _pauseButton: {fileID: 1288140738}
 --- !u!61 &932659712
 BoxCollider2D:
   m_ObjectHideFlags: 0

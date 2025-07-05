@@ -10063,6 +10063,7 @@ MonoBehaviour:
   _timeForTemporaryDisable: 0
   _auxiliaryObjects:
   - {fileID: 502545042}
+  _pauseButton: {fileID: 2057404635}
 --- !u!61 &1721798739
 BoxCollider2D:
   m_ObjectHideFlags: 0
