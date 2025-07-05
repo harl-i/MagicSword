@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using YG;
 
 public class ContinueButton : MonoBehaviour
 {
-    public void LoadContinueLevel() 
+    [SerializeField] private GameObject _continueMenu;
+
+    public void OpenMenu() 
     {
-        SceneManager.LoadScene(YG2.saves.sceneForContinue);
+        _continueMenu.SetActive(true);
     }
 }

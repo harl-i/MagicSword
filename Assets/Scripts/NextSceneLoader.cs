@@ -22,6 +22,7 @@ public class NextSceneLoader : MonoBehaviour
         int totalScenes = SceneManager.sceneCountInBuildSettings;
         _nextSceneIndex = currentSceneIndex + 1;
 
+        UpdateLeaderboard();
         SavePlayerData();
 
         if (_nextSceneIndex < totalScenes && !_isDelayNeeded)
@@ -40,7 +41,7 @@ public class NextSceneLoader : MonoBehaviour
 
     private void ShowAdvertisment(int sceneIndex)
     {
-        if (sceneIndex % 4 == 0)
+        if (sceneIndex % 3 == 0)
         {
             YG2.InterstitialAdvShow();
         }
@@ -61,5 +62,10 @@ public class NextSceneLoader : MonoBehaviour
             YG2.saves.sceneForContinue = _nextSceneIndex;
         }
         YG2.SaveProgress();
+    }
+
+    private void UpdateLeaderboard()
+    {
+        YG2.SetLeaderboard("soulsCountLeaderboard", YG2.saves.soulsCount);
     }
 }

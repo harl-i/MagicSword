@@ -7,5 +7,6 @@ namespace YG
         public int godMode;
         public int volume = 1;
         public int continues = 3;
+        public int soulsCount = 0;
     }
 }

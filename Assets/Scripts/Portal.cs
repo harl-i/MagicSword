@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YG;
 
 [RequireComponent(typeof(Animator))]
 public class Portal : MonoBehaviour
@@ -44,6 +45,7 @@ public class Portal : MonoBehaviour
     {
         if (collision.TryGetComponent(out Soul soul))
         {
+            AddSoulToPlayerSaves();
             _currentSoulsAmountForActivation++;
             SoulsChanged?.Invoke(_currentSoulsAmountForActivation);
 
@@ -57,5 +59,10 @@ public class Portal : MonoBehaviour
         {
             _nextSceneLoader.LoadScene();
         }
+    }
+
+    private void AddSoulToPlayerSaves()
+    {
+        YG2.saves.soulsCount++;
     }
 }
