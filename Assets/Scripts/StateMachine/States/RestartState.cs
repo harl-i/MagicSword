@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using YG;
 
 public class RestartState : State
 {
@@ -14,17 +13,20 @@ public class RestartState : State
     private void OnEnable()
     {
         _UIContinueScreen.SetActive(true);
-        _player.FullHealing();
 
-        _playerAnimator.Rebind();
-        _playerAnimator.Update(0f);
+        if (YG2.saves.continues > 0)
+        {
+            _playerAnimator.Rebind();
+            _playerAnimator.Update(0f);
 
-        _playerObject.transform.localPosition = Vector3.zero;
-        _playerObject.transform.rotation = _startRotation;
-        _playerObject.transform.localScale = Vector3.one;
+            _player.FullHealing();
+            _playerObject.transform.localPosition = Vector3.zero;
+            _playerObject.transform.rotation = _startRotation;
+            _playerObject.transform.localScale = Vector3.one;
 
-        Color newColor = _swordSprite.color;
-        newColor.a = 1;
-        _swordSprite.color = newColor;
+            Color newColor = _swordSprite.color;
+            newColor.a = 1;
+            _swordSprite.color = newColor;
+        }
     }
 }

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlinkSword
+  m_Name: BlinkSword (Uncolored)
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -393,9 +393,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: b8de359189655214d901183b750f10bd, type: 3}
+      value: {fileID: 21300000, guid: 973aad380de3a1146933f80a962a4527, type: 3}
     - time: 1
-      value: {fileID: 21300000, guid: b8de359189655214d901183b750f10bd, type: 3}
+      value: {fileID: 21300000, guid: 973aad380de3a1146933f80a962a4527, type: 3}
     attribute: m_Sprite
     path: MagicSword
     classID: 212
@@ -454,8 +454,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: b8de359189655214d901183b750f10bd, type: 3}
-    - {fileID: 21300000, guid: b8de359189655214d901183b750f10bd, type: 3}
+    - {fileID: 21300000, guid: 973aad380de3a1146933f80a962a4527, type: 3}
+    - {fileID: 21300000, guid: 973aad380de3a1146933f80a962a4527, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

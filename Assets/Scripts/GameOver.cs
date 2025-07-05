@@ -9,10 +9,11 @@ public class GameOver : MonoBehaviour
 {
     [SerializeField] private GameObject _gameOverMessage;
     [SerializeField] private GameObject _blackBackground;
+    [SerializeField] private GameObject _continueScreen;
 
     private Image _gameoverImage;
 
-    private float _delay = 5f;
+    private float _delay = 3.4f;
 
     private void Awake()
     {
@@ -44,12 +45,15 @@ public class GameOver : MonoBehaviour
 
     private IEnumerator ShowGameOverScreenAndExit(float delay)
     {
+        yield return new WaitForSecondsRealtime(delay);
+
         Time.timeScale = 0;
+        _continueScreen.SetActive(false);
         _gameOverMessage.SetActive(true);
         _blackBackground.SetActive(true);
         _gameoverImage.enabled = true;
 
-        yield return new WaitForSecondsRealtime(delay);
+        yield return new WaitForSecondsRealtime(delay - 2);
 
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
