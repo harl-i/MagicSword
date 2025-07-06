@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using YG;
 
@@ -21,5 +19,10 @@ public class ReseterLevelsFlags : MonoBehaviour
         YG2.saves.CutScene12Watched = 0;
         YG2.saves.CutScene13Watched = 0;
         YG2.saves.CutScene14Watched = 0;
+
+        YG2.saves.fifthLevelDialogueWatch = 0;
+        YG2.saves.thirdLevelDialogueWatch = 0;
+        YG2.saves.fifthLevelDialogueWatch = 0;
+        YG2.saves.seventhLevelDialogueWatch = 0;
     }
 }

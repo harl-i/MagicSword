@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using YG;
 
 public class SceneDialogue : MonoBehaviour
@@ -26,8 +27,8 @@ public class SceneDialogue : MonoBehaviour
 
     private int _currentIndex = 0;
     private bool _isTyping = false;
-    private int _typedCharCount = 0;
-    private int _charCountToUnlockSkip = 5;
+    //private int _typedCharCount = 0;
+    //private int _charCountToUnlockSkip = 5;
     private string _lang;
 
     private void OnEnable()
@@ -67,7 +68,7 @@ public class SceneDialogue : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (YG2.saves.newGamePlus == 1) return;
+        if (SkipIfSeenBefore()) return;
 
         if (collision.TryGetComponent(out Player player))
         {
@@ -189,12 +190,12 @@ public class SceneDialogue : MonoBehaviour
     {
         ClearDialogueField();
         _isTyping = true;
-        _typedCharCount = 0;
+        //_typedCharCount = 0;
 
         foreach (char letter in dialogue.ToCharArray())
         {
             _dialogueTextField.text += letter;
-            _typedCharCount++;
+            //_typedCharCount++;
 
             yield return new WaitForSecondsRealtime(_typingSpeed);
         }
@@ -257,7 +258,7 @@ public class SceneDialogue : MonoBehaviour
         }
 
         _isTyping = false;
-        _typedCharCount = 0;
+        //_typedCharCount = 0;
     }
 
     private void EnableAuxularyObjects()
@@ -281,4 +282,31 @@ public class SceneDialogue : MonoBehaviour
             }
         }
     }
+
+    private bool SkipIfSeenBefore()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        switch (currentSceneIndex)
+        {
+            case (int)level.firstLevel:
+                return YG2.saves.firstLevelDialogueWatch == 1;
+            case (int)level.thirdLevel:
+                return YG2.saves.thirdLevelDialogueWatch == 1;
+            case (int)level.fifthLevel:
+                return YG2.saves.fifthLevelDialogueWatch == 1;
+            case (int)level.seventhLevel:
+                return YG2.saves.seventhLevelDialogueWatch == 1;
+            default:
+                return false;
+        }
+    }
+}
+
+public enum level
+{
+    firstLevel = 2,
+    thirdLevel = 8,
+    fifthLevel = 14,
+    seventhLevel = 20
 }

@@ -16,6 +16,7 @@ public class NextSceneLoader : MonoBehaviour
     public void LoadScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SetSeenDialogueTrigger(currentSceneIndex);
         
         ShowAdvertisment(currentSceneIndex);
 
@@ -67,5 +68,26 @@ public class NextSceneLoader : MonoBehaviour
     private void UpdateLeaderboard()
     {
         YG2.SetLeaderboard("soulsCountLeaderboard", YG2.saves.soulsCount);
+    }
+
+    private void SetSeenDialogueTrigger(int sceneIndex)
+    {
+        switch (sceneIndex)
+        {
+            case (int)level.firstLevel:
+                if (YG2.saves.firstLevelDialogueWatch == 0) YG2.saves.firstLevelDialogueWatch = 1;
+                break;
+            case (int)level.thirdLevel:
+                if (YG2.saves.thirdLevelDialogueWatch == 0) YG2.saves.thirdLevelDialogueWatch = 1;
+                break;
+            case (int)level.fifthLevel:
+                if (YG2.saves.fifthLevelDialogueWatch == 0) YG2.saves.fifthLevelDialogueWatch = 1;
+                break;
+            case (int)level.seventhLevel:
+                if (YG2.saves.seventhLevelDialogueWatch == 0) YG2.saves.seventhLevelDialogueWatch = 1;
+                break;
+            default:
+                break;
+        }
     }
 }
