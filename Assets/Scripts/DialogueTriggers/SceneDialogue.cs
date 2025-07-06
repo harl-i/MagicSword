@@ -46,14 +46,19 @@ public class SceneDialogue : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && _dialogueWindow.gameObject.activeSelf)
         {
-            if (_isTyping)
-            {
-                if (_typedCharCount > _charCountToUnlockSkip)
-                {
-                    ShowFullText();
-                }
-            }
-            else
+            //if (_isTyping)
+            //{
+            //    if (_typedCharCount > _charCountToUnlockSkip)
+            //    {
+            //        ShowFullText();
+            //    }
+            //}
+            //else
+            //{
+            //    AdvanceDialogue();
+            //}
+
+            if(!_isTyping)
             {
                 AdvanceDialogue();
             }
@@ -62,6 +67,8 @@ public class SceneDialogue : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (YG2.saves.newGamePlus == 1) return;
+
         if (collision.TryGetComponent(out Player player))
         {
             PauseGame();

@@ -8,5 +8,6 @@ namespace YG
         public int volume = 1;
         public int continues = 3;
         public int soulsCount = 0;
+        public int newGamePlus = 0;
     }
 }
