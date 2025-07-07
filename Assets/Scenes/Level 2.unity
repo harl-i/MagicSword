@@ -9015,7 +9015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5345503928587898359, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
       propertyPath: m_Size.y
-      value: 0.9668559
+      value: 0.65755045
       objectReference: {fileID: 0}
     - target: {fileID: 5345503928587898359, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
       propertyPath: m_Offset.x
@@ -9023,7 +9023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5345503928587898359, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
       propertyPath: m_Offset.y
-      value: 0.554514
+      value: 0.39986122
       objectReference: {fileID: 0}
     - target: {fileID: 6533092795441603928, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9069,6 +9069,10 @@ PrefabInstance:
       propertyPath: _UIContinueScreen
       value: 
       objectReference: {fileID: 2034114353}
+    - target: {fileID: 9133914983859560287, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
+      propertyPath: _distance
+      value: 0.35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

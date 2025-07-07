@@ -6269,7 +6269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5345503928587898359, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
       propertyPath: m_Size.y
-      value: 0.9668559
+      value: 0.65755045
       objectReference: {fileID: 0}
     - target: {fileID: 5345503928587898359, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
       propertyPath: m_Offset.x
@@ -6277,7 +6277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5345503928587898359, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
       propertyPath: m_Offset.y
-      value: 0.554514
+      value: 0.39986122
       objectReference: {fileID: 0}
     - target: {fileID: 6533092795441603928, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13741,7 +13741,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d746bcb952120429c957d22228d31c, type: 2}
-  m_sharedMaterial: {fileID: 3319613284895594336, guid: 77d746bcb952120429c957d22228d31c, type: 2}
+  m_sharedMaterial: {fileID: 1742305317460579261, guid: 77d746bcb952120429c957d22228d31c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

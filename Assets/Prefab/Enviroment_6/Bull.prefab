@@ -358,6 +358,7 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 1
   _speed: 0.4
   _colliderOffsetX: 0
+  _lengthPatrolRoute: 1.7
 --- !u!114 &2438276752340420629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,7 +594,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

@@ -2875,6 +2875,10 @@ PrefabInstance:
       propertyPath: _UIContinueScreen
       value: 
       objectReference: {fileID: 1725446521}
+    - target: {fileID: 6275951658795786767, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: _distance
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 6813143625485094453, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: _transitions.Array.size
       value: 5
@@ -2889,7 +2893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7202817114425864359, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_Size.y
-      value: 0.9668559
+      value: 0.65755045
       objectReference: {fileID: 0}
     - target: {fileID: 7202817114425864359, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_Offset.x
@@ -2897,7 +2901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7202817114425864359, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_Offset.y
-      value: 0.554514
+      value: 0.39986122
       objectReference: {fileID: 0}
     - target: {fileID: 8318345084276774920, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalPosition.x
