@@ -9,4 +9,9 @@ public class ExitSnowdriftTransition : Transition
             NeedTransit = true;
         }
     }
+
+    private void OnDisable()
+    {
+        NeedTransit = false;
+    }
 }

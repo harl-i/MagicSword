@@ -26,9 +26,9 @@ public class FlashBangEffect : MonoBehaviour
 
     public void FlashBanged()
     {
-        int randomValue = Random.Range(0, 2);
+        int randomValue = Random.Range(0, 20);
         
-        if(randomValue > 0)
+        if(randomValue < 6)
         {
             isFlashBangActive = true;
 

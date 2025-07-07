@@ -15199,22 +15199,6 @@ PrefabInstance:
       propertyPath: _transitions.Array.data[4]
       value: 
       objectReference: {fileID: 1057136415}
-    - target: {fileID: 7202817114425864359, guid: a79524da97425fe408961239731ec081, type: 3}
-      propertyPath: m_Size.x
-      value: 0.23117277
-      objectReference: {fileID: 0}
-    - target: {fileID: 7202817114425864359, guid: a79524da97425fe408961239731ec081, type: 3}
-      propertyPath: m_Size.y
-      value: 1.2039561
-      objectReference: {fileID: 0}
-    - target: {fileID: 7202817114425864359, guid: a79524da97425fe408961239731ec081, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.026360705
-      objectReference: {fileID: 0}
-    - target: {fileID: 7202817114425864359, guid: a79524da97425fe408961239731ec081, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.54275525
-      objectReference: {fileID: 0}
     - target: {fileID: 7353290544314523384, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: _offsetY
       value: 0.72
@@ -15227,6 +15211,10 @@ PrefabInstance:
       propertyPath: _transitions.Array.data[0]
       value: 
       objectReference: {fileID: 1057136383}
+    - target: {fileID: 7880647132002347253, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: _distance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8318345084276774920, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.057
