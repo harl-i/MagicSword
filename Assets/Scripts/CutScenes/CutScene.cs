@@ -31,7 +31,6 @@ public class CutScene : MonoBehaviour
     private int _currentIndex = 0;
     private int _firstCutscene = 2;
     private bool _isTyping = false;
-    private bool _isResume = false;
     private string _lang;
 
     private Dictionary<string, System.Action> _cutsceneFlags;
@@ -62,26 +61,17 @@ public class CutScene : MonoBehaviour
         if (_cutsceneFlags.ContainsKey(sceneName) && IsCutsceneWatched(sceneName))
         {
             _skipCutscene.gameObject.SetActive(true);
+            Time.timeScale = 0;
         }
         else
         {
             YG2.saves.skipFirstCutscene = 0;
             UpdateCutscene();
-            _isResume = true;
         }
     }
 
     private void Update()
     {
-
-        //if (_isResume)
-        //{
-        //    if (!_isTyping)
-        //    {
-        //        AdvanceCutscene();
-        //    }
-        //}
-
         if (Input.GetMouseButtonDown(0))
         {
             if (!_isTyping)
@@ -107,7 +97,7 @@ public class CutScene : MonoBehaviour
 
             _images[_currentIndex].SetActive(true);
             
-            PrintLocalizedText(_currentIndex);
+            PrintLocalizedText(_currentIndex - 1);
         }
     }
 
@@ -206,7 +196,7 @@ public class CutScene : MonoBehaviour
     public void ResumeCutscene()
     {
         _skipCutscene.gameObject.SetActive(false);
-        _isResume = true;
+        Time.timeScale = 1;
     }
 
     public void SkipCutscene()

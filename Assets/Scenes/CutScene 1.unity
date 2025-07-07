@@ -1565,14 +1565,12 @@ MonoBehaviour:
   - {fileID: 152833759}
   - {fileID: 152833759}
   - {fileID: 152833759}
-  - {fileID: 152833759}
   - {fileID: 88982436}
   - {fileID: 84150875}
   - {fileID: 637475851}
   - {fileID: 1423638722}
   _textDisplay: {fileID: 1907219123}
   _textsRu:
-  - 
   - "\u0422\u0435\u043C\u043D\u043E..."
   - "\u0421\u044B\u0440\u043E...."
   - "\u0425\u043E\u043B\u043E\u0434\u043D\u043E..."
@@ -1582,7 +1580,6 @@ MonoBehaviour:
   - 
   - 
   _textsEn:
-  - 
   - It's dark...
   - It's damp...
   - It's cold...
@@ -1590,12 +1587,13 @@ MonoBehaviour:
   - 
   - 
   - 
-  _textsTr:
   - 
+  _textsTr:
   - "Karanl\u0131k..."
   - Nemli...
   - "So\u011Fuk..."
   - Neredeyim?
+  - 
   - 
   - 
   - 
