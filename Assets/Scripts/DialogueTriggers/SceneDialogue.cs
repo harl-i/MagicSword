@@ -26,13 +26,12 @@ public class SceneDialogue : MonoBehaviour
     private const string TR = "tr";
 
     private int _currentIndex = 0;
-    private bool _isTyping = false;
-    //private int _typedCharCount = 0;
-    //private int _charCountToUnlockSkip = 5;
+    private bool _isTyping = true;
     private string _lang;
 
     private void OnEnable()
     {
+        _isTyping = true;
         _lang = YG2.lang;
 
         _dialogueWindow.WindowShown += OnDialogueWindowShown;
@@ -47,18 +46,6 @@ public class SceneDialogue : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && _dialogueWindow.gameObject.activeSelf)
         {
-            //if (_isTyping)
-            //{
-            //    if (_typedCharCount > _charCountToUnlockSkip)
-            //    {
-            //        ShowFullText();
-            //    }
-            //}
-            //else
-            //{
-            //    AdvanceDialogue();
-            //}
-
             if(!_isTyping)
             {
                 AdvanceDialogue();
@@ -78,6 +65,8 @@ public class SceneDialogue : MonoBehaviour
 
     public void StartDialogue()
     {
+        _isTyping = true;
+
         if (_lang == RU)
         {
             StartCoroutine(TypeText(_textRu[_currentIndex]));
@@ -145,6 +134,8 @@ public class SceneDialogue : MonoBehaviour
 
     private void UpdateDialogue()
     {
+        _isTyping = true;
+
         if (_lang == RU)
         {
             if (_currentIndex < _textRu.Length)
@@ -189,13 +180,10 @@ public class SceneDialogue : MonoBehaviour
     private IEnumerator TypeText(string dialogue)
     {
         ClearDialogueField();
-        _isTyping = true;
-        //_typedCharCount = 0;
 
         foreach (char letter in dialogue.ToCharArray())
         {
             _dialogueTextField.text += letter;
-            //_typedCharCount++;
 
             yield return new WaitForSecondsRealtime(_typingSpeed);
         }
@@ -236,29 +224,6 @@ public class SceneDialogue : MonoBehaviour
         yield return new WaitForSeconds(_timeForTemporaryDisable);
 
         _trigger.enabled = true;
-    }
-
-    private void ShowFullText()
-    {
-        StopAllCoroutines();
-
-        if (_lang == RU)
-        {
-            _dialogueTextField.text = _textRu[_currentIndex];
-        }
-
-        if (_lang == EN)
-        {
-            _dialogueTextField.text = _textEn[_currentIndex];
-        }
-
-        if (_lang == TR)
-        {
-            _dialogueTextField.text = _textTr[_currentIndex];
-        }
-
-        _isTyping = false;
-        //_typedCharCount = 0;
     }
 
     private void EnableAuxularyObjects()
