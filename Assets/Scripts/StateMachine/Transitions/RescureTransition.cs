@@ -1,11 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RescureTransition : Transition
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    [SerializeField] private BoxCollider2D _rescureTriggerCollider;
+
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        NeedTransit = true;
+        foreach (ContactPoint2D contact in collision.contacts)
+        {
+            if (contact.collider == _rescureTriggerCollider || contact.otherCollider == _rescureTriggerCollider)
+            {
+                NeedTransit = true;
+                return;
+            }
+        }
     }
+
 }

@@ -1,19 +1,30 @@
 using UnityEngine;
 
 [RequireComponent(typeof(VectorCreator))]
+[RequireComponent(typeof(PolygonCollider2D))]
 public class RescureState : State
 {
     [SerializeField] private float _distance;
 
-    private VectorCreator _vectorCreator;
+    private PolygonCollider2D _playerCollider;
     private Vector2 _startPosition;
     private Vector2 _targetPosition;
-    private Vector3 _direction;
+
+    private void Awake()
+    {
+        _playerCollider = GetComponent<PolygonCollider2D>();
+    }
 
     private void OnEnable()
     {
+        _playerCollider.enabled = false;
         UpdateTargetPosition();
         MoveBackward();
+    }
+
+    private void OnDisable()
+    {
+        _playerCollider.enabled = true;
     }
 
     private void UpdateTargetPosition()
@@ -26,8 +37,6 @@ public class RescureState : State
 
     private void MoveBackward()
     {
-        //transform.position = Vector2.MoveTowards(transform.position, _targetPosition, _speed * Time.deltaTime);
-        //transform.position = Vector2.MoveTowards(transform.position, _targetPosition, 0.1f * Time.deltaTime);
         transform.position = new Vector2(_targetPosition.x, _targetPosition.y);
     }
 }
