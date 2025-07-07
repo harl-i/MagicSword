@@ -9,6 +9,7 @@ public class IntroductionLevel1 : MonoBehaviour
     [SerializeField] private GameObject _startDialogueCanvas;
     [SerializeField] private GameObject _ui;
     [SerializeField] private FlashBangEffect _flashBangEffect;
+    [SerializeField] private GameObject _tapToScreenTip;
 
     [Space]
     [Header("Curtain")]
@@ -39,9 +40,12 @@ public class IntroductionLevel1 : MonoBehaviour
 
     private void Update()
     {
-        if (!_isTyping)
+        if (Input.GetMouseButtonDown(0))
         {
-            AdvanceCutscene();
+            if (!_isTyping)
+            {
+                AdvanceCutscene();
+            }
         }
     }
 
@@ -99,6 +103,7 @@ public class IntroductionLevel1 : MonoBehaviour
         }
         else if (_currentIndex == _textsRu.Length)
         {
+            HideTapTip();
             EndCutscene();
         }
     }
@@ -112,6 +117,7 @@ public class IntroductionLevel1 : MonoBehaviour
     private IEnumerator TypeText(string text)
     {
         _isTyping = true;
+        HideTapTip();
 
         _textDisplay.text = "";
         foreach (char letter in text.ToCharArray())
@@ -122,6 +128,7 @@ public class IntroductionLevel1 : MonoBehaviour
 
         yield return new WaitForSeconds(1);
         _isTyping = false;
+        ShowTapTip();
     }
 
     private IEnumerator FadeOut()
@@ -151,5 +158,15 @@ public class IntroductionLevel1 : MonoBehaviour
 
         color.a = 0;
         _curtain.color = color;
+    }
+
+    private void ShowTapTip()
+    {
+        _tapToScreenTip.gameObject.SetActive(true);
+    }
+
+    private void HideTapTip()
+    {
+        _tapToScreenTip.gameObject.SetActive(false);
     }
 }

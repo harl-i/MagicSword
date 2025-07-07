@@ -18,6 +18,7 @@ public class CutSceneEditor : Editor
     private SerializedProperty _typingSpeed;
     private SerializedProperty _nextSceneLoader;
     private SerializedProperty _skipCutscene;
+    private SerializedProperty _tapToScreenTip;
 
     private void OnEnable()
     {
@@ -33,6 +34,7 @@ public class CutSceneEditor : Editor
         _nextSceneLoader = serializedObject.FindProperty("_nextSceneLoader");
         _nextSceneLoader = serializedObject.FindProperty("_nextSceneLoader");
         _skipCutscene = serializedObject.FindProperty("_skipCutscene");
+        _tapToScreenTip = serializedObject.FindProperty("_tapToScreenTip");
     }
 
     public override void OnInspectorGUI()
@@ -68,6 +70,7 @@ public class CutSceneEditor : Editor
         DrawLine();
 
         EditorGUILayout.PropertyField(_skipCutscene);
+        EditorGUILayout.PropertyField(_tapToScreenTip);
 
         serializedObject.ApplyModifiedProperties();
     }

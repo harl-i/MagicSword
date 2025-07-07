@@ -22,6 +22,8 @@ public class CutScene : MonoBehaviour
     [SerializeField] private NextSceneLoader _nextSceneLoader;
     [SerializeField] private GameObject _skipCutscene;
 
+    [SerializeField] private GameObject _tapToScreenTip;
+
     private const string RU = "ru";
     private const string EN = "en";
     private const string TR = "tr";
@@ -72,14 +74,21 @@ public class CutScene : MonoBehaviour
     private void Update()
     {
 
-        if (_isResume)
+        //if (_isResume)
+        //{
+        //    if (!_isTyping)
+        //    {
+        //        AdvanceCutscene();
+        //    }
+        //}
+
+        if (Input.GetMouseButtonDown(0))
         {
             if (!_isTyping)
             {
                 AdvanceCutscene();
             }
         }
-
     }
 
     private void UpdateCutscene()
@@ -131,6 +140,7 @@ public class CutScene : MonoBehaviour
 
     private void AdvanceCutscene()
     {
+        HideTapTip();
         _currentIndex++;
 
         if (_currentIndex < _images.Length)
@@ -190,7 +200,7 @@ public class CutScene : MonoBehaviour
 
         yield return new WaitForSeconds(1);
         _isTyping = false;
-
+        ShowTapTip();
     }
 
     public void ResumeCutscene()
@@ -207,6 +217,16 @@ public class CutScene : MonoBehaviour
         {
             YG2.saves.skipFirstCutscene = 1;
         }
+    }
+
+    private void ShowTapTip()
+    {
+        _tapToScreenTip.gameObject.SetActive(true);
+    }
+
+    private void HideTapTip()
+    {
+        _tapToScreenTip.gameObject.SetActive(false);
     }
 }
 

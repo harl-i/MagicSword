@@ -20,6 +20,7 @@ public class SceneDialogue : MonoBehaviour
     [SerializeField] private GameObject[] _auxiliaryObjects;
 
     [SerializeField] private GameObject _pauseButton;
+    [SerializeField] private GameObject _tapToScreenTip;
 
     private const string RU = "ru";
     private const string EN = "en";
@@ -180,6 +181,7 @@ public class SceneDialogue : MonoBehaviour
     private IEnumerator TypeText(string dialogue)
     {
         ClearDialogueField();
+        HideTapTip();
 
         foreach (char letter in dialogue.ToCharArray())
         {
@@ -189,6 +191,7 @@ public class SceneDialogue : MonoBehaviour
         }
 
         _isTyping = false;
+        ShowTapTip();
     }
 
     private void ClearDialogueField()
@@ -214,6 +217,7 @@ public class SceneDialogue : MonoBehaviour
         ClearDialogueField();
         _currentIndex = 0;
 
+        HideTapTip();
         Time.timeScale = 1f;
     }
 
@@ -265,6 +269,16 @@ public class SceneDialogue : MonoBehaviour
             default:
                 return false;
         }
+    }
+
+    private void ShowTapTip()
+    {
+        _tapToScreenTip.gameObject.SetActive(true);
+    }
+
+    private void HideTapTip()
+    {
+        _tapToScreenTip.gameObject.SetActive(false);
     }
 }
 
