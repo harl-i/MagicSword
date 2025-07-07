@@ -9,7 +9,7 @@ public class SoulsReseter : MonoBehaviour
     public void Reset()
     {
         YG2.saves.soulsCount = 0;
-        YG2.SetLeaderboard("soulsCountLeaderboard", YG2.saves.soulsCount);
+        YG2.SetLeaderboard("soulsCountLeaderboard", 0);
         _soulsCountUI.text = YG2.saves.soulsCount.ToString();
     }
 }

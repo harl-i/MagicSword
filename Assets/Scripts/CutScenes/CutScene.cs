@@ -151,7 +151,7 @@ public class CutScene : MonoBehaviour
             _cutsceneFlags[sceneName].Invoke();
         }
 
-
+        Time.timeScale = 1;
         _nextSceneLoader.LoadScene();
     }
 

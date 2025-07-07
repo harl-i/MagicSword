@@ -45,13 +45,13 @@ public class Portal : MonoBehaviour
     {
         if (collision.TryGetComponent(out Soul soul))
         {
-            AddSoulToPlayerSaves();
             _currentSoulsAmountForActivation++;
             SoulsChanged?.Invoke(_currentSoulsAmountForActivation);
 
             if (_currentSoulsAmountForActivation == _soulsAmountForActivation)
             {
                 SoulsCollected?.Invoke();
+                AddSoulsToPlayerSaves();
             }
         }
 
@@ -61,8 +61,8 @@ public class Portal : MonoBehaviour
         }
     }
 
-    private void AddSoulToPlayerSaves()
+    private void AddSoulsToPlayerSaves()
     {
-        YG2.saves.soulsCount++;
+        YG2.saves.soulsCount += _soulsAmountForActivation;
     }
 }

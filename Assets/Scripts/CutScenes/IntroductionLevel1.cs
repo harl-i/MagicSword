@@ -51,7 +51,12 @@ public class IntroductionLevel1 : MonoBehaviour
 
     private void UpdateCutscene()
     {
-        if (YG2.saves.skipFirstCutscene == 1) return;
+        if (YG2.saves.skipFirstCutscene == 1)
+        {
+            Time.timeScale = 1;
+            StartCoroutine(FadeOut());
+            return;
+        }
 
         if (_lang == RU)
         {
