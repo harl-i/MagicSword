@@ -97,7 +97,7 @@ public class CutScene : MonoBehaviour
 
             _images[_currentIndex].SetActive(true);
             
-            PrintLocalizedText(_currentIndex - 1);
+            PrintLocalizedText(_currentIndex);
         }
     }
 
