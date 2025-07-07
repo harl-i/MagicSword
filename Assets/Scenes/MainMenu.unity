@@ -10996,6 +10996,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1782286991}
     m_Modifications:
     - target: {fileID: 7685576460283069890, guid: 8445df2da8d3abe408ff5fbd5931c8d3, type: 3}
+      propertyPath: nameLB
+      value: soulsCountLeaderboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685576460283069890, guid: 8445df2da8d3abe408ff5fbd5931c8d3, type: 3}
+      propertyPath: advanced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685576460283069890, guid: 8445df2da8d3abe408ff5fbd5931c8d3, type: 3}
       propertyPath: playerDataPrefab
       value: 
       objectReference: {fileID: 261911392790581394, guid: cb0ef7854c0a3914ea93add3d5d04c9d, type: 3}

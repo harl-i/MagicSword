@@ -1,8 +1,8 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using YG;
+using YG.Utils.LB;
 
 public class NextSceneLoader : MonoBehaviour
 {
@@ -10,8 +10,21 @@ public class NextSceneLoader : MonoBehaviour
     [SerializeField] private bool _isDelayNeeded;
     [SerializeField] private float _delay;
 
+    private const string SOULS_LEADERBOARD = "soulsCountLeaderboard";
+
     private int _nextSceneIndex;
     private int _mainMenuSceneIndex = 0;
+    private int _playerScoreInLeaderboard = 0;
+
+    private void OnEnable()
+    {
+        YG2.onGetLeaderboard += OnLeaderboardReceived;
+    }
+
+    private void OnDisable()
+    {
+        YG2.onGetLeaderboard -= OnLeaderboardReceived;
+    }
 
     public void LoadScene()
     {
@@ -67,7 +80,23 @@ public class NextSceneLoader : MonoBehaviour
 
     private void UpdateLeaderboard()
     {
-        YG2.SetLeaderboard("soulsCountLeaderboard", YG2.saves.soulsCount);
+        YG2.GetLeaderboard(SOULS_LEADERBOARD);
+
+        if (_playerScoreInLeaderboard > YG2.saves.soulsCount)
+        {
+            YG2.SetLeaderboard(SOULS_LEADERBOARD, YG2.saves.soulsCount);
+        }
+    }
+
+    private void OnLeaderboardReceived(LBData data)
+    {
+        if (data.technoName == SOULS_LEADERBOARD)
+        {
+            if (data.currentPlayer != null)
+            {
+                _playerScoreInLeaderboard = data.currentPlayer.score;
+            }
+        }
     }
 
     private void SetSeenDialogueTrigger(int sceneIndex)
