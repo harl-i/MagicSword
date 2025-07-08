@@ -14,7 +14,8 @@ public class NextSceneLoader : MonoBehaviour
 
     private int _nextSceneIndex;
     private int _mainMenuSceneIndex = 0;
-    private int _playerScoreInLeaderboard = 0;
+    private int _playerScoreInLeaderboard;
+    private bool _isLeaderboardUpdating;
 
     private void OnEnable()
     {
@@ -36,8 +37,8 @@ public class NextSceneLoader : MonoBehaviour
         int totalScenes = SceneManager.sceneCountInBuildSettings;
         _nextSceneIndex = currentSceneIndex + 1;
 
-        UpdateLeaderboard();
         SavePlayerData();
+        UpdateLeaderboard();
 
         if (_nextSceneIndex < totalScenes && !_isDelayNeeded)
         {
@@ -55,7 +56,7 @@ public class NextSceneLoader : MonoBehaviour
 
     private void ShowAdvertisment(int sceneIndex)
     {
-        if (sceneIndex % 3 == 0)
+        if (sceneIndex % 4 == 0)
         {
             YG2.InterstitialAdvShow();
         }
@@ -80,21 +81,40 @@ public class NextSceneLoader : MonoBehaviour
 
     private void UpdateLeaderboard()
     {
-        YG2.GetLeaderboard(SOULS_LEADERBOARD);
+        //YG2.GetLeaderboard(SOULS_LEADERBOARD);
 
-        if (_playerScoreInLeaderboard > YG2.saves.soulsCount)
-        {
-            YG2.SetLeaderboard(SOULS_LEADERBOARD, YG2.saves.soulsCount);
-        }
+        //Debug.Log("_playerScoreInLeaderboard: " + _playerScoreInLeaderboard);
+        //Debug.Log("YG2.saves.soulsCount: " + YG2.saves.soulsCount);
+        //if (_playerScoreInLeaderboard < YG2.saves.soulsCount)
+        //{
+        //    YG2.SetLeaderboard(SOULS_LEADERBOARD, YG2.saves.soulsCount);
+        //    Debug.Log("UPDATE LEADREBOARD");
+        //}
+
+        if (_isLeaderboardUpdating) return;
+
+        _isLeaderboardUpdating = true;
+        YG2.GetLeaderboard(SOULS_LEADERBOARD);
     }
 
     private void OnLeaderboardReceived(LBData data)
     {
+        _isLeaderboardUpdating = false;
+        Debug.Log("OnLeaderboardReceived");
         if (data.technoName == SOULS_LEADERBOARD)
         {
+            Debug.Log("data.technoName: " + data.technoName);
             if (data.currentPlayer != null)
             {
+                Debug.Log("data.currentPlayer: " + data.currentPlayer);
                 _playerScoreInLeaderboard = data.currentPlayer.score;
+                Debug.Log("data.currentPlayer/_playerScoreInLeaderboard " + _playerScoreInLeaderboard);
+
+                if (_playerScoreInLeaderboard < YG2.saves.soulsCount)
+                {
+                    YG2.SetLeaderboard(SOULS_LEADERBOARD, YG2.saves.soulsCount);
+                    Debug.Log($"Leaderboard updated: {YG2.saves.soulsCount}");
+                }
             }
         }
     }

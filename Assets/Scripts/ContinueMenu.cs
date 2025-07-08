@@ -27,7 +27,6 @@ public class ContinueMenu : MonoBehaviour
         {
             YG2.saves.soulsCount -= _soulsForContinue;
             ResetContinues();
-            UpdateLeaderboard();
             LoadContinueLevel();
         }
         else
@@ -58,11 +57,6 @@ public class ContinueMenu : MonoBehaviour
         _error.SetActive(true);
         yield return new WaitForSeconds(delay);
         _error.SetActive(false);
-    }
-
-    private void UpdateLeaderboard()
-    {
-        YG2.SetLeaderboard("soulsCountLeaderboard", YG2.saves.soulsCount);
     }
 
     private void ResetContinues()
