@@ -41,7 +41,6 @@ public class PlayerMissingInDetectionZoneTransition : Transition
 
             if (!_playerInside)
             {
-                //HandlePlayerExit();
                 NeedTransit = true;
             }
         }
@@ -85,13 +84,6 @@ public class PlayerMissingInDetectionZoneTransition : Transition
         Collider2D hit = Physics2D.OverlapBox(adjustedPosition, _detectionRectangleSize, 0f, _playerLayer);
         return hit != null;
     }
-
-    //private void HandlePlayerExit()
-    //{
-    //    _playerInside = false;
-
-    //    NeedTransit = true;
-    //}
 
     private void OnDrawGizmosSelected()
     {

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EvasionState : State
 {
-    [SerializeField][Range(0.5F, 2)] private float arrowLength = 1.0F;
+    [SerializeField] [Range(0.5F, 2)] private float arrowLength = 1.0F;
 
     [SerializeField] private float _rayLength;
     [SerializeField] private int _numberOfRays = 12;
@@ -61,7 +61,7 @@ public class EvasionState : State
             }
         }
 
-        Gizmos.color = Color.yellow; 
+        Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(_newPosition, 0.1f);
     }
 #endif

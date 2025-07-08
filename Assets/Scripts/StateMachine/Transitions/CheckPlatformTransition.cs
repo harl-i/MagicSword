@@ -46,12 +46,6 @@ public class CheckPlatformTransition : Transition
                     break;
             }
 
-            //_isColliderDetected = _hit.collider != null;
-            //if (_isColliderDetected)
-            //{
-            //    NeedTransit = true;
-            //}
-
             DrawRaycast(raycastOrigin, _raycastDirection);
 
             _raycastTimer = 0f;

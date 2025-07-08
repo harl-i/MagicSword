@@ -15,9 +15,6 @@ public class LevelTransition : MonoBehaviour
     {
         yield return new WaitForSeconds(_loadDelay);
 
-        //int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        //int nextSceneIndex = currentSceneIndex + 1;
-
         SceneManager.LoadScene(0);
     }
 

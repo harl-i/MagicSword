@@ -13,11 +13,6 @@ public class SwordEjectFromTrolleyTrapState : State
     private bool _isRotating = true;
     private float _targetHeight;
 
-    //void Start()
-    //{
-
-    //}
-
     private void OnEnable()
     {
         _rotationProgress = 0f;

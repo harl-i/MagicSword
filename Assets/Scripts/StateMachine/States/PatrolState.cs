@@ -45,14 +45,6 @@ public class PatrolState : State
 
     private void UpdateWaypointsPositions()
     {
-        //float newPositionY = transform.position.y;
-        //foreach (var waypoint in _waypoints)
-        //{
-        //    Vector2 newPosition = new Vector2(waypoint.position.x, newPositionY);
-        //    waypoint.position = newPosition;
-        //}
-
-
         for (int i = 0; i < _waypoints.Length; i++)
         {
             int directionCoefficient = _transformForUpdate.position.x > 0 ? -1 : 1;

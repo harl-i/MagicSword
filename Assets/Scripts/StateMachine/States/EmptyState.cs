@@ -1,6 +1,4 @@
-using UnityEngine;
-
-public class EmptyState : State 
+public class EmptyState : State
 {
     private void Update()
     {

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DelayTransition : Transition
@@ -8,7 +7,7 @@ public class DelayTransition : Transition
 
     private void OnEnable()
     {
-        NeedTransit = false;   
+        NeedTransit = false;
         StartCoroutine(Delay(_delay));
     }
 

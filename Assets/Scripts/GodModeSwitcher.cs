@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using YG;
 
@@ -14,7 +12,5 @@ public class GodModeSwitcher : MonoBehaviour
         {
             YG2.saves.godMode = 1;
         }
-
-        Debug.Log($"{YG2.saves.godMode}");
     }
 }

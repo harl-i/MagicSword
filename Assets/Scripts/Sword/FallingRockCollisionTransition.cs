@@ -7,7 +7,6 @@ public class FallingRockCollisionTransition : Transition
         if (collision.gameObject.TryGetComponent(out FaliingRock faliingRock))
         {
             NeedTransit = true;
-            Debug.Log("Rock transition");
         }
     }
 }

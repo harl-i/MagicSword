@@ -10,7 +10,6 @@ public class JumpAttackState : State
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
-    //private Vector2 _currentDirection;
 
     private void Awake()
     {

@@ -17,7 +17,6 @@ public class TrappedTrolleyState : State
     {
         if (collision.gameObject.TryGetComponent(out TrollleyTrap trollleyTrap))
         {
-            Debug.Log("Trolley trap collision");
             _trolleyTrapTransform = trollleyTrap.gameObject.transform;
 
             _trapMainCollider = trollleyTrap.GetMainTrolleyCollider();
