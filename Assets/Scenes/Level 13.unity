@@ -15211,6 +15211,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.39986122
       objectReference: {fileID: 0}
+    - target: {fileID: 7202817114425864359, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 640
+      objectReference: {fileID: 0}
     - target: {fileID: 7353290544314523384, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: _offsetY
       value: 0.72

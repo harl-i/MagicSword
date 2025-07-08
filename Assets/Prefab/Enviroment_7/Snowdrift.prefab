@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3313086359999310022}
   - component: {fileID: 2168934489503651996}
   - component: {fileID: 4999747677901117751}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ExitTrapTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,12 +78,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.23889679, y: 0.39370894}
-      - {x: -0.2578838, y: 0.40866804}
-      - {x: -0.51147777, y: 0.20840195}
+    - - {x: 0.19997942, y: 0.33290052}
+      - {x: -0.20437253, y: 0.31380677}
+      - {x: -0.46039873, y: 0.17678145}
       - {x: -0.6506228, y: 0.030721784}
       - {x: 0.6534792, y: 0.033578157}
-      - {x: 0.5009007, y: 0.22553962}
+      - {x: 0.44252455, y: 0.21581024}
   m_UseDelaunayMesh: 0
 --- !u!114 &2168934489503651996
 MonoBehaviour:
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 2392565266661082389}
   - component: {fileID: 2242095523959304674}
   - component: {fileID: 8928650894911516651}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: snowdrift 30x30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5120662292714612040}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Snowdrift
   m_TagString: Untagged
   m_Icon: {fileID: 0}
