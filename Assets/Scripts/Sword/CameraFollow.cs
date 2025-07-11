@@ -10,7 +10,7 @@ public class CameraFollow : MonoBehaviour
     private Vector3 _cameraPos;
     private Vector3 _velocity = Vector3.zero;
 
-    void Update()
+    private void Update()
     {
         float currentX = transform.position.x;
 
@@ -27,5 +27,15 @@ public class CameraFollow : MonoBehaviour
         }
 
         transform.position = Vector3.SmoothDamp(transform.position, _cameraPos, ref _velocity, _dampTime);
+    }
+
+    public void SwitchToDesktop()
+    {
+        _minY = -1.24f;
+    }
+
+    public void SwitchToMobile()
+    {
+        _minY = -1f;
     }
 }

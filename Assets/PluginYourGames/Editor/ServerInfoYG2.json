@@ -8,13 +8,13 @@
     "modules": [
         {
             "name": "PluginYG2",
-            "version": "2.0031",
+            "version": "2.004",
             "download": "https://max-games.ru/public/pluginYG2/other/PluginYG2.unitypackage",
             "doc": "https://max-games.ru/plugin-yg/doc/"
         },
         {
             "name": "YandexGames",
-            "version": "1.003",
+            "version": "1.004",
             "download": "https://max-games.ru/public/pluginYG2/platforms/YandexGames.unitypackage",
             "doc": "https://max-games.ru/plugin-yg/yandexgames/",
             "platform": true
@@ -37,7 +37,7 @@
         },
         {
             "name": "InterstitialAdv",
-            "version": "1.002",
+            "version": "1.003",
             "download": "https://max-games.ru/public/pluginYG2/modules/InterstitialAdv.unitypackage",
             "doc": "https://max-games.ru/plugin-yg/doc/inter-ad/"
         },
@@ -49,7 +49,7 @@
         },
         {
             "name": "EnvirData",
-            "version": "1.002",
+            "version": "1.003",
             "download": "https://max-games.ru/public/pluginYG2/modules/EnvirData.unitypackage",
             "doc": "https://max-games.ru/plugin-yg/doc/envir/"
         },

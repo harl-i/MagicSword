@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class PlatformDestroyerActivator : MonoBehaviour
 {
     [SerializeField] private PlatformDestroyer _platformDestroyer;
-    [SerializeField] private Button _platformDestroyerButton;
+    [SerializeField] private Button _platformDestroyerButtonDesktop;
+    [SerializeField] private Button _platformDestroyerButtonMobile;
     [SerializeField] private ShieldActivator _shieldActivator;
 
     private bool _isBlock = false;
@@ -23,13 +24,15 @@ public class PlatformDestroyerActivator : MonoBehaviour
     public void Block()
     {
         _isBlock = true;
-        _platformDestroyerButton.enabled = false;
+        _platformDestroyerButtonDesktop.enabled = false;
+        _platformDestroyerButtonMobile.enabled = false;
     }
 
     public void Unblock()
     {
         _isBlock = false;
-        _platformDestroyerButton.enabled = true;
+        _platformDestroyerButtonDesktop.enabled = true;
+        _platformDestroyerButtonMobile.enabled = true;
     }
 
     private void OnPlatformDestructionActivated(float time)

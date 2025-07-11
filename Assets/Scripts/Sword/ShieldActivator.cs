@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class ShieldActivator : MonoBehaviour
 {
     [SerializeField] private Shield _shield;
-    [SerializeField] private Button _shieldButton;
+    [SerializeField] private Button _shieldButtonMobile;
+    [SerializeField] private Button _shieldButtonDesktop;
     [SerializeField] private PlatformDestroyerActivator _platformDestroyerActivator;
-    [SerializeField] private TextMeshProUGUI _shieldCounter;
+    [SerializeField] private TextMeshProUGUI _shieldCounterDesktop;
+    [SerializeField] private TextMeshProUGUI _shieldCounterMobile;
 
     private bool _isBlock = false;
     private bool _isActive = false;
@@ -19,7 +21,8 @@ public class ShieldActivator : MonoBehaviour
 
     private void Start()
     {
-        _shieldCounter.text = _activationCount.ToString();
+        _shieldCounterDesktop.text = _activationCount.ToString();
+        _shieldCounterMobile.text = _activationCount.ToString();
     }
 
     private void OnEnable()
@@ -35,13 +38,15 @@ public class ShieldActivator : MonoBehaviour
     public void Block()
     {
         _isBlock = true;
-        _shieldButton.enabled = false;
+        _shieldButtonMobile.enabled = false;
+        _shieldButtonDesktop.enabled = false;
     }
 
     public void Unblock()
     {
         _isBlock = false;
-        _shieldButton.enabled = true;
+        _shieldButtonMobile.enabled = true;
+        _shieldButtonDesktop.enabled = true;
     }
 
     private void OnSkillActivated(float time)
@@ -60,7 +65,8 @@ public class ShieldActivator : MonoBehaviour
         ShieldActivated?.Invoke(true);
 
         _activationCount--;
-        _shieldCounter.text = _activationCount.ToString();
+        _shieldCounterDesktop.text = _activationCount.ToString();
+        _shieldCounterMobile.text = _activationCount.ToString();
 
         yield return new WaitForSeconds(time);
 
