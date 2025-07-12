@@ -26,6 +26,9 @@ public class IntroductionLevel1 : MonoBehaviour
     [Header("UI Switch")]
     [SerializeField] private EnviromentSwitcher _enviromentSwitcher;
 
+    [Header("UI Move Hint")]
+    [SerializeField] private GameObject _moveHint;
+
     private const string RU = "ru";
     private const string EN = "en";
     private const string TR = "tr";
@@ -33,12 +36,8 @@ public class IntroductionLevel1 : MonoBehaviour
     private int _currentIndex = 0;
     private bool _isTyping = false;
     private string _lang;
+    private bool _hasAlreadyActivated = false;
 
-    //private void Awake()
-    //{
-    //    _enviromentSwitcher.gameObject.SetActive(true);
-    //    _enviromentSwitcher.gameObject.SetActive(false);
-    //}
 
     private void Start()
     {
@@ -46,8 +45,6 @@ public class IntroductionLevel1 : MonoBehaviour
         _lang = YG2.lang;
 
         UpdateCutscene();
-
-        //_enviromentSwitcher.CheckEnviroment();
     }
 
     private void Update()
@@ -165,19 +162,20 @@ public class IntroductionLevel1 : MonoBehaviour
 
             _curtain.color = color;
 
-            //_enviromentSwitcher.gameObject.SetActive(true);
             if (color.a < 0.8)
             {
-                //_uiMobile.SetActive(true);
-                //_uiDesktop.SetActive(true);
-                //_enviromentSwitcher.CheckEnviroment();
                 _enviromentSwitcher.gameObject.SetActive(true);
+
+                Debug.Log(_moveHint.activeSelf);
+                if (!_hasAlreadyActivated)
+                {
+                    _moveHint.SetActive(true);
+                    _hasAlreadyActivated = true;
+                }
             }
-            //_enviromentSwitcher.gameObject.SetActive(true);
 
             yield return null;
         }
-        //_enviromentSwitcher.gameObject.SetActive(true);
 
         color.a = 0;
         _curtain.color = color;

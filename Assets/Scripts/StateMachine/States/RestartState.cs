@@ -8,13 +8,11 @@ public class RestartState : State
     [SerializeField] private SpriteRenderer _swordSprite;
     [SerializeField] private Animator _playerAnimator;
     [SerializeField] private Quaternion _startRotation = Quaternion.identity;
-    [SerializeField] private GameObject _UIContinueScreenDesktop;
-    [SerializeField] private GameObject _UIContinueScreenMobile;
+    [SerializeField] private GameObject _UIContinueScreen;
 
     private void OnEnable()
     {
-        _UIContinueScreenDesktop.SetActive(true);
-        _UIContinueScreenMobile.SetActive(true);
+        _UIContinueScreen.SetActive(true);
 
         if (YG2.saves.continues > 0)
         {
