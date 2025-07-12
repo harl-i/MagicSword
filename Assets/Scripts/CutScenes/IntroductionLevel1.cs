@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using YG;
@@ -7,7 +6,8 @@ using YG;
 public class IntroductionLevel1 : MonoBehaviour
 {
     [SerializeField] private GameObject _startDialogueCanvas;
-    [SerializeField] private GameObject _ui;
+    [SerializeField] private GameObject _uiMobile;
+    [SerializeField] private GameObject _uiDesktop;
     [SerializeField] private FlashBangEffect _flashBangEffect;
     [SerializeField] private GameObject _tapToScreenTip;
 
@@ -23,6 +23,9 @@ public class IntroductionLevel1 : MonoBehaviour
     [SerializeField] private string[] _textsEn;
     [SerializeField] private string[] _textsTr;
 
+    [Header("UI Switch")]
+    [SerializeField] private EnviromentSwitcher _enviromentSwitcher;
+
     private const string RU = "ru";
     private const string EN = "en";
     private const string TR = "tr";
@@ -31,11 +34,20 @@ public class IntroductionLevel1 : MonoBehaviour
     private bool _isTyping = false;
     private string _lang;
 
+    //private void Awake()
+    //{
+    //    _enviromentSwitcher.gameObject.SetActive(true);
+    //    _enviromentSwitcher.gameObject.SetActive(false);
+    //}
+
     private void Start()
     {
+        
         _lang = YG2.lang;
 
         UpdateCutscene();
+
+        //_enviromentSwitcher.CheckEnviroment();
     }
 
     private void Update()
@@ -153,16 +165,23 @@ public class IntroductionLevel1 : MonoBehaviour
 
             _curtain.color = color;
 
+            //_enviromentSwitcher.gameObject.SetActive(true);
             if (color.a < 0.8)
             {
-                _ui.SetActive(true);
+                //_uiMobile.SetActive(true);
+                //_uiDesktop.SetActive(true);
+                //_enviromentSwitcher.CheckEnviroment();
+                _enviromentSwitcher.gameObject.SetActive(true);
             }
+            //_enviromentSwitcher.gameObject.SetActive(true);
 
             yield return null;
         }
+        //_enviromentSwitcher.gameObject.SetActive(true);
 
         color.a = 0;
         _curtain.color = color;
+        gameObject.SetActive(false);
     }
 
     private void ShowTapTip()

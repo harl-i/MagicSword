@@ -20,7 +20,7 @@ public class ReseterLevelsFlags : MonoBehaviour
         YG2.saves.CutScene13Watched = 0;
         YG2.saves.CutScene14Watched = 0;
 
-        YG2.saves.fifthLevelDialogueWatch = 0;
+        YG2.saves.firstLevelDialogueWatch = 0;
         YG2.saves.thirdLevelDialogueWatch = 0;
         YG2.saves.fifthLevelDialogueWatch = 0;
         YG2.saves.seventhLevelDialogueWatch = 0;

@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using YG;
 
@@ -16,22 +18,28 @@ public class EnviromentSwitcher : MonoBehaviour
 
     public float _scaleFactor;
 
+    private void OnEnable()
+    {
+        SceneDialogue.OnDialogShow += HandleDialogueShow;
+        OneTimeCheckScreenSize();
+    }
+
+    private void OnDisable()
+    {
+        SceneDialogue.OnDialogShow -= HandleDialogueShow;
+    }
+
+
     private void Start()
     {
-        if (YG2.envir.isDesktop)
-        {
-            SwitchToDesktop();
-        }
-        else if (YG2.envir.isMobile)
-        {
-            SwitchToMobile();
-        }
+
+        StartCoroutine(CheckScreenSize());
     }
-    private void Update()
+
+    public void OneTimeCheckScreenSize()
     {
         float width = Screen.width;
         float height = Screen.height;
-
 
         if (width / height < _scaleFactor)
         {
@@ -40,6 +48,39 @@ public class EnviromentSwitcher : MonoBehaviour
         else if (width / height > _scaleFactor)
         {
             SwitchToDesktop();
+        }
+    }
+
+    private IEnumerator CheckScreenSize()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.5f);
+
+            float width = Screen.width;
+            float height = Screen.height;
+
+            if (width / height < _scaleFactor)
+            {
+                SwitchToMobile();
+            }
+            else if (width / height > _scaleFactor)
+            {
+                SwitchToDesktop();
+            }
+        }
+        
+    }
+
+    private void HandleDialogueShow(bool isShow)
+    {
+        if (isShow)
+        {
+            StopCoroutine(CheckScreenSize());
+        }
+        else
+        {
+            StartCoroutine(CheckScreenSize());
         }
     }
 
@@ -59,12 +100,5 @@ public class EnviromentSwitcher : MonoBehaviour
         _mainCamera.orthographicSize = 3.2f;
 
         _cameraFollow.SwitchToDesktop();
-    }
-
-    private void ChangePosition(float newPosition, RectTransform background)
-    {
-        Vector2 backgroundPosition = background.anchoredPosition;
-        backgroundPosition.x = newPosition;
-        background.anchoredPosition = backgroundPosition;
     }
 }

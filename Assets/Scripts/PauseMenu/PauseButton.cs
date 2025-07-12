@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
+
 public class PauseButton : MonoBehaviour
 {
     [SerializeField] private GameObject _pausePanel;
@@ -19,7 +21,28 @@ public class PauseButton : MonoBehaviour
     {
         _button = GetComponent<Button>();
         _buttonImage = _button.GetComponent<Image>();
-        
+    }
+
+    private void OnEnable()
+    {
+        SceneDialogue.OnDialogShow += HandleDialogueShow;
+    }
+
+    private void OnDisable()
+    {
+        SceneDialogue.OnDialogShow -= HandleDialogueShow;
+    }
+
+    private void HandleDialogueShow(bool isShow)
+    {
+        if (isShow)
+        {
+            _buttonImage.enabled = false;
+        }
+        else
+        {
+            _buttonImage.enabled = true;
+        }
     }
 
     public void ToggleMenu()

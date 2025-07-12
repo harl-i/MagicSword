@@ -4,9 +4,11 @@ public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Transform _player;
     [SerializeField] private float _dampTime = 0.4f;
-    [SerializeField] private float _maxY;
-    [SerializeField] private float _minY;
+    [SerializeField] private float _maxYMobile;
+    [SerializeField] private float _maxYDesktop;
 
+    private float _maxY = 100f;
+    private float _minY;
     private Vector3 _cameraPos;
     private Vector3 _velocity = Vector3.zero;
 
@@ -31,11 +33,13 @@ public class CameraFollow : MonoBehaviour
 
     public void SwitchToDesktop()
     {
+        _maxY = _maxYDesktop;
         _minY = -1.24f;
     }
 
     public void SwitchToMobile()
     {
+        _maxY = _maxYMobile;
         _minY = -1f;
     }
 }

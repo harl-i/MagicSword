@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -19,7 +20,8 @@ public class SceneDialogue : MonoBehaviour
     [SerializeField] private float _timeForTemporaryDisable;
     [SerializeField] private GameObject[] _auxiliaryObjects;
 
-    [SerializeField] private GameObject _pauseButton;
+    [SerializeField] private GameObject _mobileUI;
+    [SerializeField] private GameObject _desktopUI;
     [SerializeField] private GameObject _tapToScreenTip;
 
     private const string RU = "ru";
@@ -29,9 +31,13 @@ public class SceneDialogue : MonoBehaviour
     private int _currentIndex = 0;
     private bool _isTyping = true;
     private string _lang;
+    private Animator _tapTipAnimator;
+
+    public static Action<bool> OnDialogShow;
 
     private void OnEnable()
     {
+        _tapTipAnimator = _tapToScreenTip.GetComponent<Animator>();
         _isTyping = true;
         _lang = YG2.lang;
 
@@ -89,6 +95,7 @@ public class SceneDialogue : MonoBehaviour
     private void OnDialogueWindowShown()
     {
         StartDialogue();
+        OnDialogShow?.Invoke(true);
     }
 
 
@@ -165,15 +172,19 @@ public class SceneDialogue : MonoBehaviour
     private void EndDialogue()
     {
         DisableAuxularyObjects();
+        OnDialogShow?.Invoke(false);
         ResumeGame();
     }
 
     private void PauseGame()
     {
-        _pauseButton.SetActive(false);
+        _mobileUI.SetActive(false);
+        _desktopUI.SetActive(false);
+ 
         Time.timeScale = 0f;
         _dialogueWindow.gameObject.SetActive(true);
 
+        _tapTipAnimator.updateMode = AnimatorUpdateMode.UnscaledTime;
         _animator.updateMode = AnimatorUpdateMode.UnscaledTime;
         _animator.SetTrigger("DialogueTrigger");
     }
@@ -201,7 +212,10 @@ public class SceneDialogue : MonoBehaviour
 
     private void ResumeGame()
     {
-        _pauseButton.SetActive(true);
+        _mobileUI.SetActive(true);
+        _desktopUI.SetActive(true);
+
+        _animator.updateMode = AnimatorUpdateMode.Normal;
         _animator.updateMode = AnimatorUpdateMode.Normal;
         _dialogueWindow.gameObject.SetActive(false);
 

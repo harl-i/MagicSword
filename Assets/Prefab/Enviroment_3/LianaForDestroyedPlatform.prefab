@@ -20,6 +20,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.newSize.y
       value: 2.16
       objectReference: {fileID: 0}
+    - target: {fileID: 2045604011018462792, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045604011018462792, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2.16
+      objectReference: {fileID: 0}
     - target: {fileID: 3160683450953146134, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
       propertyPath: _transitions.Array.size
       value: 2
@@ -34,6 +42,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4382898829932699629, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
       propertyPath: m_Size.y
+      value: 2.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017992850377562836, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017992850377562836, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
       value: 2.16
       objectReference: {fileID: 0}
     - target: {fileID: 7973725379423878280, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
@@ -78,8 +94,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8094365909021998043, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
       propertyPath: _transitions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8094365909021998043, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
+      propertyPath: _transitions.Array.data[0]
+      value: 
+      objectReference: {fileID: 5799695622584156553}
     - target: {fileID: 8094365909021998043, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
       propertyPath: _transitions.Array.data[1]
       value: 
@@ -166,3 +186,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transitions: []
+  _soul: {fileID: 0}
