@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 8185011183327248684}
   - component: {fileID: 1329236671055668869}
   - component: {fileID: 739653399102016272}
+  - component: {fileID: 6778305850508356539}
   - component: {fileID: 1750544067072533128}
   m_Layer: 0
   m_Name: bird 42x42_0
@@ -226,6 +227,7 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 0
   _speed: 1
   _colliderOffsetX: 0
+  _lengthPatrolRoute: 1.7
 --- !u!114 &4645353212355122308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +294,7 @@ MonoBehaviour:
   - {fileID: 1092520455256591685}
   - {fileID: 1770395593308001243}
   - {fileID: 739653399102016272}
+  - {fileID: 6778305850508356539}
   _speed: 1
 --- !u!114 &1092520455256591685
 MonoBehaviour:
@@ -328,6 +331,7 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 0
   _speed: 1
   _colliderOffsetX: 0
+  _lengthPatrolRoute: 1.7
 --- !u!114 &1770395593308001243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,6 +400,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetState: {fileID: 9056689916230099416}
+--- !u!114 &6778305850508356539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4223291525579171617}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7530ccc12e4744cbb05ff009974861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetState: {fileID: 3779030277338178198}
 --- !u!114 &1750544067072533128
 MonoBehaviour:
   m_ObjectHideFlags: 0
