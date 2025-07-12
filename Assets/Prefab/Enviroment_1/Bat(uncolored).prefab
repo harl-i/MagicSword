@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 9066219619471920755}
   - component: {fileID: 5215879310980652377}
   - component: {fileID: 4763464403801573637}
+  - component: {fileID: 2483879061017452676}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Untagged
@@ -314,6 +315,7 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 0
   _speed: 0.5
   _colliderOffsetX: 0
+  _lengthPatrolRoute: 1.7
 --- !u!114 &4726608783155134913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,6 +369,7 @@ MonoBehaviour:
   _transitions:
   - {fileID: 4726608783155134913}
   - {fileID: 9066219619471920755}
+  - {fileID: 2483879061017452676}
   _speed: 1
 --- !u!114 &8251068272446838288
 MonoBehaviour:
@@ -456,6 +459,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetState: {fileID: 247272616341823111}
   _timeout: 2
+--- !u!114 &2483879061017452676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5542056623667898624}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7530ccc12e4744cbb05ff009974861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetState: {fileID: 8622917931818980023}
 --- !u!1 &8378266284523944527
 GameObject:
   m_ObjectHideFlags: 0
