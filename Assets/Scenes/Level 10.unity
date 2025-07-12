@@ -571,8 +571,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameOverMessage: {fileID: 1820082365}
-  _blackBackground: {fileID: 0}
-  _continueScreen: {fileID: 0}
+  _blackBackground: {fileID: 1095485541}
+  _continueScreen: {fileID: 311320377}
 --- !u!114 &221458830 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2764845387452997854, guid: 5850cd25c8135274d9ed6b1390e8cdbb, type: 3}
@@ -3011,7 +3011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOverMessage: {fileID: 1116547007}
   _blackBackground: {fileID: 1995389785}
-  _continueScreen: {fileID: 0}
+  _continueScreen: {fileID: 311320377}
 --- !u!1001 &731650909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4630,6 +4630,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3971976623210155374, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: _delay
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4150738934783977899, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -4645,6 +4649,10 @@ PrefabInstance:
     - target: {fileID: 4903952275562583651, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: _UIContinueScreenDesktop
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326248068860826957, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: _delay
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6275951658795786767, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: _distance
@@ -5196,6 +5204,81 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1095485541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1095485544}
+  - component: {fileID: 1095485543}
+  - component: {fileID: 1095485542}
+  m_Layer: 5
+  m_Name: black_back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1095485542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095485541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1095485543
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095485541}
+  m_CullTransparentMesh: 1
+--- !u!224 &1095485544
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095485541}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2033855679}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -58.032715, y: -50.342285}
+  m_SizeDelta: {x: 4377.3813, y: 2254.809}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1114328479 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5963480267263832919, guid: 5850cd25c8135274d9ed6b1390e8cdbb, type: 3}
@@ -15120,6 +15203,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 790059722904247604, guid: 5850cd25c8135274d9ed6b1390e8cdbb, type: 3}
       insertIndex: 3
       addedObject: {fileID: 1255765700}
+    - targetCorrespondingSourceObject: {fileID: 790059722904247604, guid: 5850cd25c8135274d9ed6b1390e8cdbb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1095485544}
     - targetCorrespondingSourceObject: {fileID: 790059722904247604, guid: 5850cd25c8135274d9ed6b1390e8cdbb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 201586899}

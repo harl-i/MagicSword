@@ -7670,7 +7670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOverMessage: {fileID: 1607438157}
   _blackBackground: {fileID: 1098417747}
-  _continueScreen: {fileID: 0}
+  _continueScreen: {fileID: 318567358}
 --- !u!1 &1358962382
 GameObject:
   m_ObjectHideFlags: 0
@@ -8136,7 +8136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOverMessage: {fileID: 780836027}
   _blackBackground: {fileID: 1975424296}
-  _continueScreen: {fileID: 0}
+  _continueScreen: {fileID: 318567358}
 --- !u!1 &1418501034 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4716679707792106689, guid: 29bede44d4fa40a449393a1e3453f732, type: 3}
@@ -12969,7 +12969,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1829592233
 RectTransform:
   m_ObjectHideFlags: 0

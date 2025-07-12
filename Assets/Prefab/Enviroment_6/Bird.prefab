@@ -295,7 +295,7 @@ MonoBehaviour:
   - {fileID: 1770395593308001243}
   - {fileID: 739653399102016272}
   - {fileID: 6778305850508356539}
-  _speed: 1
+  _speed: 0.6
 --- !u!114 &1092520455256591685
 MonoBehaviour:
   m_ObjectHideFlags: 0

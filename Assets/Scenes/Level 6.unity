@@ -4462,7 +4462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOverMessage: {fileID: 1652421055}
   _blackBackground: {fileID: 1947412413}
-  _continueScreen: {fileID: 0}
+  _continueScreen: {fileID: 894458148}
 --- !u!1001 &840807822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5147,6 +5147,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3971976623210155374, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: _delay
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4150738934783977899, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -5162,6 +5166,10 @@ PrefabInstance:
     - target: {fileID: 4903952275562583651, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: _UIContinueScreenDesktop
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326248068860826957, guid: a79524da97425fe408961239731ec081, type: 3}
+      propertyPath: _delay
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6275951658795786767, guid: a79524da97425fe408961239731ec081, type: 3}
       propertyPath: _distance
@@ -6972,7 +6980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOverMessage: {fileID: 1539351193}
   _blackBackground: {fileID: 445902334}
-  _continueScreen: {fileID: 0}
+  _continueScreen: {fileID: 894458148}
 --- !u!1 &1427171555
 GameObject:
   m_ObjectHideFlags: 0
