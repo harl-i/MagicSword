@@ -11,4 +11,10 @@ public class CrystalTrapDeactivationState : State
         _firstCrystalDeactivator.Destroy();
         _secondCrystalDeactivator.Destroy();
     }
+
+    private void OnDisable()
+    {
+        _firstCrystalDeactivator.gameObject.SetActive(false);
+        _secondCrystalDeactivator.gameObject.SetActive(false);
+    }
 }

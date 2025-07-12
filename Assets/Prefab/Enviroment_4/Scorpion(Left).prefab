@@ -497,6 +497,7 @@ GameObject:
   - component: {fileID: 73397664830667291}
   - component: {fileID: 7780980268968562600}
   - component: {fileID: 8035652011394720484}
+  - component: {fileID: 1804012283345321474}
   m_Layer: 0
   m_Name: scorpion48x48_0
   m_TagString: Untagged
@@ -677,6 +678,7 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 0
   _speed: 0.5
   _colliderOffsetX: -0.3
+  _lengthPatrolRoute: 1.7
 --- !u!114 &521118548920602710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,6 +718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions:
   - {fileID: 4923713700305839008}
+  - {fileID: 1804012283345321474}
   _enemyType: 3
   _shootingComponent: {fileID: 1595041957001907591}
   _shootDelay: 5
@@ -794,6 +797,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions: []
   _soul: {fileID: 4585123027038391117}
+--- !u!114 &1804012283345321474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4881955313877191861}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7530ccc12e4744cbb05ff009974861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetState: {fileID: 2788115637927953820}
 --- !u!1 &5394182270591510094
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,6 +919,8 @@ GameObject:
   - component: {fileID: 7446518413454491765}
   - component: {fileID: 4503995109334657747}
   - component: {fileID: 918662745152100588}
+  - component: {fileID: 4970214768465797022}
+  - component: {fileID: 7331645412557471701}
   m_Layer: 0
   m_Name: CrystalTrap
   m_TagString: Untagged
@@ -993,6 +1011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitions:
   - {fileID: 4503995109334657747}
+  - {fileID: 4970214768465797022}
   _crystalFromFirstGrowPoint: {fileID: 1343039985391517840}
   _crystalFromSecondGrowPoint: {fileID: 222514859632561579}
 --- !u!114 &4503995109334657747
@@ -1022,6 +1041,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transitions: []
+  _firstCrystalDeactivator: {fileID: 5422500263406235}
+  _secondCrystalDeactivator: {fileID: 8103654602455178060}
+--- !u!114 &4970214768465797022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064675803759516202}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7530ccc12e4744cbb05ff009974861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetState: {fileID: 7331645412557471701}
+--- !u!114 &7331645412557471701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064675803759516202}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c349fa369ee4a46995cdf96b5c1a99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transitions:
+  - {fileID: 7079216886224263546}
   _firstCrystalDeactivator: {fileID: 5422500263406235}
   _secondCrystalDeactivator: {fileID: 8103654602455178060}
 --- !u!1 &8184713637440545212
