@@ -18,7 +18,7 @@ public class CheckPlatformTransition : Transition
         StartCoroutine(DelayAndCheck(3f));
     }
 
-    private IEnumerator DelayAndCheck(float delay) 
+    private IEnumerator DelayAndCheck(float delay)
     {
         yield return new WaitForSeconds(delay);
 

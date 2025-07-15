@@ -4,7 +4,6 @@ using UnityEngine;
 public class PursuitState : State
 {
     private SpriteRenderer _spriteRenderer;
-
     public float _speed = 2f;
 
     private void Awake()

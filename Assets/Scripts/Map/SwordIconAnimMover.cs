@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
@@ -19,11 +18,6 @@ public class SwordIconAnimMover : MonoBehaviour
     private void Start()
     {
         IsMoveCompleted = false;
-    }
-
-    private void SetMovedCompletedFlag()
-    {
-        IsMoveCompleted = true;
     }
 
     public IEnumerator StartAnimationAfterDelay()

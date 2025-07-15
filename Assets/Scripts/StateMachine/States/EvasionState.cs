@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EvasionState : State
 {
-    [SerializeField] [Range(0.5F, 2)] private float arrowLength = 1.0F;
+    [SerializeField] [Range(0.5F, 2)] private float _arrowLength = 1.0F;
 
     [SerializeField] private float _rayLength;
     [SerializeField] private int _numberOfRays = 12;
@@ -57,7 +57,7 @@ public class EvasionState : State
             if (direction.magnitude > 0.1f)
             {
                 Handles.color = Color.red;
-                Handles.ArrowHandleCap(0, position, Quaternion.LookRotation(direction), arrowLength, EventType.Repaint);
+                Handles.ArrowHandleCap(0, position, Quaternion.LookRotation(direction), _arrowLength, EventType.Repaint);
             }
         }
 

@@ -33,6 +33,6 @@ public class EnemyAttackTransition : Transition
 
     public void Transition()
     {
-        NeedTransit = true;     
+        NeedTransit = true;
     }
 }

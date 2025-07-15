@@ -63,12 +63,4 @@ public class CollisionWithPlatformsWhenFallingTransition : Transition
         _rigidbody2D.velocity = Vector2.zero;
         _rigidbody2D.angularVelocity = 0f;
     }
-
-    //private IEnumerator TransitAfterDelay(float delay)
-    //{
-    //    yield return new WaitForSeconds(delay);
-
-    //    SwitchToKinematic();
-    //    NeedTransit = true;
-    //}
 }
