@@ -1368,33 +1368,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 1415464119}
     m_Modifications:
     - target: {fileID: 464538322273227057, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 464538322273227057, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 464538322273227057, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1780910126}
-    - target: {fileID: 464538322273227057, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 464538322273227057, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SkipCutscene
-      objectReference: {fileID: 0}
-    - target: {fileID: 464538322273227057, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CutScene, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 464538322273227057, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6986115599399439318, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1476,33 +1452,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7186703362707800671, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7186703362707800671, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7186703362707800671, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1780910126}
-    - target: {fileID: 7186703362707800671, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7186703362707800671, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeCutscene
-      objectReference: {fileID: 0}
-    - target: {fileID: 7186703362707800671, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CutScene, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 7186703362707800671, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7988520331270915586, guid: 28cbced389d54a241bcc2b2063b83a6c, type: 3}
       propertyPath: m_Name
       value: SkipCutscene
@@ -1583,7 +1535,7 @@ MonoBehaviour:
   - It's dark...
   - It's damp...
   - It's cold...
-  - Where am I?
+  - where am I?
   - 
   - 
   - 
@@ -1706,7 +1658,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77d746bcb952120429c957d22228d31c, type: 2}
-  m_sharedMaterial: {fileID: 3319613284895594336, guid: 77d746bcb952120429c957d22228d31c, type: 2}
+  m_sharedMaterial: {fileID: 1742305317460579261, guid: 77d746bcb952120429c957d22228d31c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
