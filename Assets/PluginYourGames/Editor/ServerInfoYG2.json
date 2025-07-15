@@ -8,7 +8,7 @@
     "modules": [
         {
             "name": "PluginYG2",
-            "version": "2.004",
+            "version": "2.0041",
             "download": "https://max-games.ru/public/pluginYG2/other/PluginYG2.unitypackage",
             "doc": "https://max-games.ru/plugin-yg/doc/"
         },
@@ -49,7 +49,7 @@
         },
         {
             "name": "EnvirData",
-            "version": "1.003",
+            "version": "1.0031",
             "download": "https://max-games.ru/public/pluginYG2/modules/EnvirData.unitypackage",
             "doc": "https://max-games.ru/plugin-yg/doc/envir/"
         },
@@ -88,7 +88,7 @@
         },
         {
             "name": "Localization",
-            "version": "1.001",
+            "version": "1.0011",
             "download": "https://max-games.ru/public/pluginYG2/modules/Localization.unitypackage",
             "doc": "https://max-games.ru/plugin-yg/doc/lang/"
         },
