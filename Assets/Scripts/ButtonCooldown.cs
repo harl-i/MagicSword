@@ -11,7 +11,6 @@ public class ButtonCooldown : MonoBehaviour
     private void Awake()
     {
         _button = GetComponent<Button>();
-
         _button.onClick.AddListener(StartCooldown);
     }
 

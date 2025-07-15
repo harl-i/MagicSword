@@ -1,7 +1,5 @@
-using System;
 using System.Collections;
 using UnityEngine;
-using YG;
 
 public class EnviromentSwitcher : MonoBehaviour
 {
@@ -69,7 +67,7 @@ public class EnviromentSwitcher : MonoBehaviour
                 SwitchToDesktop();
             }
         }
-        
+
     }
 
     private void HandleDialogueShow(bool isShow)

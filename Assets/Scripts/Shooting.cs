@@ -177,7 +177,7 @@ public class Shooting : BulletPool
 
         bullet.SetFlip(_spriteRenderer.flipX);
         bullet.gameObject.SetActive(true);
-    }   
+    }
 
     private void ShootWithTowardsBullet(bool canLookAtTarget)
     {
@@ -192,8 +192,8 @@ public class Shooting : BulletPool
         }
 
         bullet.gameObject.SetActive(true);
-    }   
-    
+    }
+
     private void ShootWithTowardsBullet(Vector3 direction)
     {
         Bullet bullet = GetBulletFromPool();
