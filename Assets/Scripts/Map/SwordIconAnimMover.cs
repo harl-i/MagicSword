@@ -20,6 +20,11 @@ public class SwordIconAnimMover : MonoBehaviour
         IsMoveCompleted = false;
     }
 
+    private void SetMovedCompletedFlag()
+    {
+        IsMoveCompleted = true;
+    }
+
     public IEnumerator StartAnimationAfterDelay()
     {
         yield return new WaitForSeconds(_delay);
