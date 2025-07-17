@@ -21,8 +21,7 @@ public class MeleeAttackState : State
     private void Start()
     {
         _raycastOriginStartPosition = _raycastOrigin;
-        _raycastOriginOffsetXPosition = new Vector2(_raycastOriginStartPosition.position.x +
-            _raycastOriginOffsetX, _raycastOriginStartPosition.position.y);
+        _raycastOriginOffsetXPosition = new Vector2(_raycastOriginStartPosition.position.x + _raycastOriginOffsetX, _raycastOriginStartPosition.position.y);
     }
 
     private void OnEnable()
@@ -75,7 +74,7 @@ public class MeleeAttackState : State
 
     private void SetRaycastOriginPosition()
     {
-        if (!_spriteRenderer.flipX && _raycastOrigin.localPosition.x <= 0 || _spriteRenderer.flipX && _raycastOrigin.localPosition.x >= 0)
+        if ((!_spriteRenderer.flipX && _raycastOrigin.localPosition.x <= 0) || (_spriteRenderer.flipX && _raycastOrigin.localPosition.x >= 0))
         {
             FlipXRaycastOrigin();
         }

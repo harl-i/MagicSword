@@ -1,5 +1,11 @@
 using UnityEngine;
 
+public enum MoveDirection
+{
+    Horizontal,
+    Vertical,
+}
+
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(PolygonCollider2D))]
@@ -35,7 +41,6 @@ public class PatrolState : State
         }
 
         _animator.SetTrigger("Patrol");
-
     }
 
     private void OnDisable()
@@ -92,8 +97,6 @@ public class PatrolState : State
             default:
                 break;
         }
-
-
     }
 
     private bool ReachedCurrentWaypoint()
@@ -105,10 +108,4 @@ public class PatrolState : State
     {
         waypointIndex = (waypointIndex + 1) % _waypoints.Length;
     }
-}
-
-public enum MoveDirection
-{
-    Horizontal,
-    Vertical
 }

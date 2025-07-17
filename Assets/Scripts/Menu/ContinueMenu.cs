@@ -23,9 +23,9 @@ public class ContinueMenu : MonoBehaviour
 
     public void ContinueForSouls()
     {
-        if (YG2.saves.soulsCount >= _soulsForContinue)
+        if (YG2.saves.SoulsCount >= _soulsForContinue)
         {
-            YG2.saves.soulsCount -= _soulsForContinue;
+            YG2.saves.SoulsCount -= _soulsForContinue;
             ResetContinues();
             LoadContinueLevel();
         }
@@ -49,7 +49,7 @@ public class ContinueMenu : MonoBehaviour
 
     private void LoadContinueLevel()
     {
-        SceneManager.LoadScene(YG2.saves.sceneForContinue);
+        SceneManager.LoadScene(YG2.saves.SceneForContinue);
     }
 
     private IEnumerator ShowError(int delay)
@@ -61,6 +61,6 @@ public class ContinueMenu : MonoBehaviour
 
     private void ResetContinues()
     {
-        YG2.saves.continues = 3;
+        YG2.saves.Continues = 3;
     }
 }

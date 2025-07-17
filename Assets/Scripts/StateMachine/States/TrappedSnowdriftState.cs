@@ -47,7 +47,6 @@ public class TrappedSnowdriftState : State
         if (_isCaughtInTrap == false)
         {
             MoveBackward();
-
         }
     }
 

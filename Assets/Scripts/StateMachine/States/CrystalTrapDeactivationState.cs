@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 public class CrystalTrapDeactivationState : State
 {
     [SerializeField] private CrystalDestroyer _firstCrystalDeactivator;

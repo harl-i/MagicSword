@@ -10,12 +10,12 @@ public class NextSceneLoader : MonoBehaviour
     [SerializeField] private bool _isDelayNeeded;
     [SerializeField] private float _delay;
 
-    private const string SOULS_LEADERBOARD = "soulsCountLeaderboard";
-
     private int _nextSceneIndex;
     private int _mainMenuSceneIndex = 0;
     private int _playerScoreInLeaderboard;
     private bool _isLeaderboardUpdating;
+
+    private const string SOULS_LEADERBOARD = "soulsCountLeaderboard";
 
     private void OnEnable()
     {
@@ -73,9 +73,10 @@ public class NextSceneLoader : MonoBehaviour
     {
         if (_player)
         {
-            YG2.saves.health = _player.Health;
-            YG2.saves.sceneForContinue = _nextSceneIndex;
+            YG2.saves.Health = _player.Health;
+            YG2.saves.SceneForContinue = _nextSceneIndex;
         }
+
         YG2.SaveProgress();
     }
 
@@ -96,9 +97,9 @@ public class NextSceneLoader : MonoBehaviour
             {
                 _playerScoreInLeaderboard = data.currentPlayer.score;
 
-                if (_playerScoreInLeaderboard < YG2.saves.soulsCount && YG2.saves.soulsCount > 0)
+                if (_playerScoreInLeaderboard < YG2.saves.SoulsCount && YG2.saves.SoulsCount > 0)
                 {
-                    YG2.SetLeaderboard(SOULS_LEADERBOARD, YG2.saves.soulsCount);
+                    YG2.SetLeaderboard(SOULS_LEADERBOARD, YG2.saves.SoulsCount);
                 }
             }
         }
@@ -108,17 +109,17 @@ public class NextSceneLoader : MonoBehaviour
     {
         switch (sceneIndex)
         {
-            case (int)level.firstLevel:
-                if (YG2.saves.firstLevelDialogueWatch == 0) YG2.saves.firstLevelDialogueWatch = 1;
+            case (int)Level.FirstLevel:
+                if (YG2.saves.FirstLevelDialogueWatch == 0) YG2.saves.FirstLevelDialogueWatch = 1;
                 break;
-            case (int)level.thirdLevel:
-                if (YG2.saves.thirdLevelDialogueWatch == 0) YG2.saves.thirdLevelDialogueWatch = 1;
+            case (int)Level.ThirdLevel:
+                if (YG2.saves.ThirdLevelDialogueWatch == 0) YG2.saves.ThirdLevelDialogueWatch = 1;
                 break;
-            case (int)level.fifthLevel:
-                if (YG2.saves.fifthLevelDialogueWatch == 0) YG2.saves.fifthLevelDialogueWatch = 1;
+            case (int)Level.FifthLevel:
+                if (YG2.saves.FifthLevelDialogueWatch == 0) YG2.saves.FifthLevelDialogueWatch = 1;
                 break;
-            case (int)level.seventhLevel:
-                if (YG2.saves.seventhLevelDialogueWatch == 0) YG2.saves.seventhLevelDialogueWatch = 1;
+            case (int)Level.SeventhLevel:
+                if (YG2.saves.SeventhLevelDialogueWatch == 0) YG2.saves.SeventhLevelDialogueWatch = 1;
                 break;
             default:
                 break;

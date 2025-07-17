@@ -18,10 +18,9 @@ public class Player : MonoBehaviour, IDamageable
 
     public bool IsLaunched => _isLaunched;
     public bool IsShieldActivated => _isShieldActivated;
+    public int Health => _healthCount;
 
     public static Action<int> HealthHasChanged;
-
-    public int Health => _healthCount;
 
     private void Awake()
     {
@@ -49,7 +48,7 @@ public class Player : MonoBehaviour, IDamageable
 
     public void TakeDamage()
     {
-        if (YG2.saves.godMode == 1)
+        if (YG2.saves.GodMode == 1)
         {
             return;
         }

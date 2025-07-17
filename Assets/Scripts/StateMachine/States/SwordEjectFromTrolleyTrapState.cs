@@ -21,7 +21,7 @@ public class SwordEjectFromTrolleyTrapState : State
         _targetHeight = _startPosition.y + _ejectHeight;
     }
 
-    void Update()
+    private void Update()
     {
         if (_isRotating)
         {
@@ -34,8 +34,7 @@ public class SwordEjectFromTrolleyTrapState : State
                 _isRotating = false;
             }
 
-            Vector3 newPosition = Vector3.MoveTowards(transform.position, 
-                new Vector3(transform.position.x, _targetHeight, transform.position.z), _ejectSpeed * Time.deltaTime);
+            Vector3 newPosition = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, _targetHeight, transform.position.z), _ejectSpeed * Time.deltaTime);
 
             Quaternion newRotation = Quaternion.Euler(0, 0, rotationAngle);
 

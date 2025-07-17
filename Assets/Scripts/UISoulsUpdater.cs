@@ -1,5 +1,5 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using YG;
 
 public class UISoulsUpdater : MonoBehaviour
@@ -8,6 +8,6 @@ public class UISoulsUpdater : MonoBehaviour
 
     private void OnEnable()
     {
-        _soulsCountUI.text = YG2.saves.soulsCount.ToString();
+        _soulsCountUI.text = YG2.saves.SoulsCount.ToString();
     }
 }

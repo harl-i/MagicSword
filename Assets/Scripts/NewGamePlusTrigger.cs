@@ -5,6 +5,6 @@ public class NewGamePlusTrigger : MonoBehaviour
 {
     public void Activate()
     {
-        YG2.saves.newGamePlus = 1;
+        YG2.saves.NewGamePlus = 1;
     }
 }

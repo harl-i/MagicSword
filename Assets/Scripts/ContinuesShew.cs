@@ -22,15 +22,14 @@ public class ContinuesShew : MonoBehaviour
     private void OnEnable()
     {
         StartCoroutine(DelayBeforeDisable());
-        _continuesCount = YG2.saves.continues + 1;
+        _continuesCount = YG2.saves.Continues + 1;
         _continueTMP.text = _continuesCount.ToString();
     }
 
-
     public void Subtract()
     {
-       _continueTMP.text = YG2.saves.continues.ToString();
-        _animator.SetTrigger("subtract");
+       _continueTMP.text = YG2.saves.Continues.ToString();
+       _animator.SetTrigger("subtract");
     }
 
     private IEnumerator DelayBeforeDisable()

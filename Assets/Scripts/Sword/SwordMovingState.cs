@@ -105,8 +105,7 @@ public class SwordMovingState : State
         {
             float rotationAngleInRadians = angleBetweenSwordAndWall * Mathf.Deg2Rad;
 
-            StartCoroutine(RotateAroundSmoothly(_bladeEnd.position, Vector3.forward,
-                rotationAngleInRadians * _angleCoefficient * _inversion, _rotateSpeed));
+            StartCoroutine(RotateAroundSmoothly(_bladeEnd.position, Vector3.forward, rotationAngleInRadians * _angleCoefficient * _inversion, _rotateSpeed));
         }
     }
 
@@ -157,11 +156,11 @@ public class SwordMovingState : State
             SwordLaunched?.Invoke(true);
             _vectorCreator.enabled = false;
         }
+
         StuckInWall?.Invoke(false);
         _arrow.RemoveRedFill();
         _arrow.gameObject.SetActive(false);
     }
-
 
     public void SetDirectionAndAngle(Vector2 direction, float angle)
     {
@@ -216,7 +215,8 @@ public class SwordMovingState : State
         if (raycastHit)
         {
             _arrow.FillWithRed();
-        } else
+        } 
+        else
         {
             _arrow.RemoveRedFill();
         }

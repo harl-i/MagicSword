@@ -7,13 +7,13 @@ public class StaticPositionTransition : Transition
     private Vector3 _lastPosition;
     private float _timer;
 
-    void Start()
+    private void Start()
     {
         _lastPosition = transform.position;
         _timer = _timeout;
     }
 
-    void Update()
+    private void Update()
     {
         if (_timer > 0)
         {

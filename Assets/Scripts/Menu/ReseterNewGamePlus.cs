@@ -8,7 +8,7 @@ public class ReseterNewGamePlus : MonoBehaviour
 
     public void ResetTrigger()
     {
-        YG2.saves.newGamePlus = 0;
+        YG2.saves.NewGamePlus = 0;
         _newGame.SetActive(true);
         _newGamePlus.SetActive(false);
     }

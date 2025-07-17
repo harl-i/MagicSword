@@ -39,7 +39,6 @@ public class SpriteSwapperActivator : MonoBehaviour
 
             StartCoroutine(DelayBeforeInvoke(_delayBeforeDeactivateSprite));
         }
-
     }
 
     private IEnumerator DelayBeforeInvoke(float delay)

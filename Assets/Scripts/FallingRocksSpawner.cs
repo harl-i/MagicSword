@@ -17,7 +17,7 @@ public class FallingRocksSpawner : MonoBehaviour
         Initialize(_rockPrefab);
     }
 
-    void Update()
+    private void Update()
     {
         _timer += Time.deltaTime;
         if (_timer >= _delay)

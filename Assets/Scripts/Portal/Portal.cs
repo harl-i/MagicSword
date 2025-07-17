@@ -61,6 +61,6 @@ public class Portal : MonoBehaviour
 
     private void AddSoulsToPlayerSaves()
     {
-        YG2.saves.soulsCount += _soulsAmountForActivation;
+        YG2.saves.SoulsCount += _soulsAmountForActivation;
     }
 }

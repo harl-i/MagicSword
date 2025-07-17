@@ -12,23 +12,23 @@ public class AudioToggle : MonoBehaviour
 
     private void Start()
     {
-        _isMuted = YG2.saves.volume == 0;
-        AudioListener.volume = YG2.saves.volume;
+        _isMuted = YG2.saves.Volume == 0;
+        AudioListener.volume = YG2.saves.Volume;
         UpdateIcon();
     }
 
     public void ToggleAudio()
     {
         _isMuted = !_isMuted;
-        YG2.saves.volume = _isMuted ? 0 : 1;
-        AudioListener.volume = YG2.saves.volume;
+        YG2.saves.Volume = _isMuted ? 0 : 1;
+        AudioListener.volume = YG2.saves.Volume;
 
         UpdateIcon();
     }
 
     private void UpdateIcon()
     {
-        if (YG2.saves.volume == 1)
+        if (YG2.saves.Volume == 1)
         {
             _buttonIcon.sprite = _volumeOn;
         }

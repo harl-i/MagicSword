@@ -82,6 +82,7 @@ public class DetectTransition : Transition
 
                 StartCoroutine(TransitAfterDelay(_detectReactionDelay));
             }
+
             _timeAfterDetect = 0f;
         }
 

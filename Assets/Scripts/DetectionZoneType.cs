@@ -1,5 +1,5 @@
 public enum DetectionZoneType
 {
     Circle,
-    Rectangle
+    Rectangle,
 }

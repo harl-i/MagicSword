@@ -9,7 +9,7 @@ public class FlashBangEffect : MonoBehaviour
 
     private bool isFlashBangActive = false;
 
-    void Update()
+    private void Update()
     {
         if (isFlashBangActive)
         {
@@ -28,7 +28,7 @@ public class FlashBangEffect : MonoBehaviour
     {
         int randomValue = Random.Range(0, 20);
         
-        if(randomValue < 6)
+        if (randomValue < 6)
         {
             isFlashBangActive = true;
 

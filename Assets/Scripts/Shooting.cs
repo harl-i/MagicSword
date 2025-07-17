@@ -218,7 +218,7 @@ public class Shooting : BulletPool
 
     private void SetShootPointPosition()
     {
-        if (!_spriteRenderer.flipX && _shootPoint.localPosition.x <= 0 || _spriteRenderer.flipX && _shootPoint.localPosition.x >= 0)
+        if ((!_spriteRenderer.flipX && _shootPoint.localPosition.x <= 0) || (_spriteRenderer.flipX && _shootPoint.localPosition.x >= 0))
         {
             FlipX();
         }

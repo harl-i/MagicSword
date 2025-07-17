@@ -10,7 +10,6 @@ public class EnviromentSwitcher : MonoBehaviour
     [SerializeField] private GameObject _mobileUI;
     [SerializeField] private GameObject _desktopUI;
 
-
     [Header("Camera follow component")]
     [SerializeField] private CameraFollow _cameraFollow;
 
@@ -27,10 +26,8 @@ public class EnviromentSwitcher : MonoBehaviour
         SceneDialogue.OnDialogShow -= HandleDialogueShow;
     }
 
-
     private void Start()
     {
-
         StartCoroutine(CheckScreenSize());
     }
 
@@ -67,7 +64,6 @@ public class EnviromentSwitcher : MonoBehaviour
                 SwitchToDesktop();
             }
         }
-
     }
 
     private void HandleDialogueShow(bool isShow)

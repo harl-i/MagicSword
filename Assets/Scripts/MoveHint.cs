@@ -6,7 +6,7 @@ public class MoveHint : MonoBehaviour
 {
     private void OnEnable()
     {
-        if (YG2.saves.newGamePlus == 1)
+        if (YG2.saves.NewGamePlus == 1)
         {
             gameObject.SetActive(false);
         }

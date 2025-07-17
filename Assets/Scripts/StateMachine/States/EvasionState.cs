@@ -52,7 +52,7 @@ public class EvasionState : State
         if (_isMovingAway)
         {
             Vector2 position = transform.position;
-            var direction = (_targetHit.point) - position;
+            var direction = _targetHit.point - position;
 
             if (direction.magnitude > 0.1f)
             {

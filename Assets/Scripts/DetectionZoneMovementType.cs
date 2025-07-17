@@ -1,5 +1,5 @@
 public enum DetectionZoneMovementType
 {
     Moving,
-    Static
+    Static,
 }

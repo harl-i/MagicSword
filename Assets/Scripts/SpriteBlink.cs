@@ -1,6 +1,12 @@
 using System.Collections;
 using UnityEngine;
 
+public enum ObjectDisableOption
+{
+    Disable,
+    Enable,
+}
+
 public class SpriteBlink : MonoBehaviour
 {
     [SerializeField] private ObjectDisableOption _disableOption;
@@ -10,7 +16,7 @@ public class SpriteBlink : MonoBehaviour
 
     private bool _isBlinking = false;
 
-    void Awake()
+    private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -47,10 +53,4 @@ public class SpriteBlink : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-}
-
-public enum ObjectDisableOption
-{
-    Disable,
-    Enable
 }

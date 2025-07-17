@@ -7,6 +7,6 @@ public class VolumeUpdater : MonoBehaviour
 {
     private void Start()
     {
-        YG2.saves.volume = (int)AudioListener.volume;
+        YG2.saves.Volume = (int)AudioListener.volume;
     }
 }

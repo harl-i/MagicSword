@@ -14,7 +14,7 @@ public class RestartState : State
     {
         _UIContinueScreen.SetActive(true);
 
-        if (YG2.saves.continues > 0)
+        if (YG2.saves.Continues > 0)
         {
             _playerAnimator.Rebind();
             _playerAnimator.Update(0f);

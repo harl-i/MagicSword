@@ -34,7 +34,6 @@ public class DestructiblePlatform : MonoBehaviour
 
             StartCoroutine(DelayBeforeDisablePlatform(_delay));
         }
-
     }
 
     private IEnumerator DelayBeforeDisablePlatform(float delay)

@@ -2,12 +2,12 @@ namespace YG
 {
     public partial class SavesYG
     {
-        public int health;
-        public int sceneForContinue;
-        public int godMode;
-        public int volume = 1;
-        public int continues = 3;
-        public int soulsCount = 0;
-        public int newGamePlus = 0;
+        public int Health;
+        public int SceneForContinue;
+        public int GodMode;
+        public int Volume = 1;
+        public int Continues = 3;
+        public int SoulsCount = 0;
+        public int NewGamePlus = 0;
     }
 }

@@ -29,19 +29,17 @@ public class IntroductionLevel1 : MonoBehaviour
     [Header("UI Move Hint")]
     [SerializeField] private GameObject _moveHint;
 
-    private const string RU = "ru";
-    private const string EN = "en";
-    private const string TR = "tr";
-
     private int _currentIndex = 0;
     private bool _isTyping = false;
     private string _lang;
     private bool _hasAlreadyActivated = false;
 
+    private const string RU = "ru";
+    private const string EN = "en";
+    private const string TR = "tr";
 
     private void Start()
     {
-
         _lang = YG2.lang;
 
         UpdateCutscene();
@@ -60,7 +58,7 @@ public class IntroductionLevel1 : MonoBehaviour
 
     private void UpdateCutscene()
     {
-        if (YG2.saves.skipFirstCutscene == 1)
+        if (YG2.saves.SkipFirstCutscene == 1)
         {
             Time.timeScale = 1;
             StartCoroutine(FadeOut());
@@ -133,7 +131,7 @@ public class IntroductionLevel1 : MonoBehaviour
         _isTyping = true;
         HideTapTip();
 
-        _textDisplay.text = "";
+        _textDisplay.text = string.Empty;
         foreach (char letter in text.ToCharArray())
         {
             _textDisplay.text += letter;

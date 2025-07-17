@@ -24,14 +24,14 @@ public class CutScene : MonoBehaviour
 
     [SerializeField] private GameObject _tapToScreenTip;
 
-    private const string RU = "ru";
-    private const string EN = "en";
-    private const string TR = "tr";
-
     private int _currentIndex = 0;
     private int _firstCutscene = 2;
     private bool _isTyping = false;
     private string _lang;
+
+    private const string RU = "ru";
+    private const string EN = "en";
+    private const string TR = "tr";
 
     private Dictionary<string, System.Action> _cutsceneFlags;
 
@@ -54,7 +54,7 @@ public class CutScene : MonoBehaviour
             { "CutScene 11", () => YG2.saves.CutScene11Watched = 1 },
             { "CutScene 12", () => YG2.saves.CutScene12Watched = 1 },
             { "CutScene 13", () => YG2.saves.CutScene13Watched = 1 },
-            { "CutScene 14", () => YG2.saves.CutScene14Watched = 1 }
+            { "CutScene 14", () => YG2.saves.CutScene14Watched = 1 },
         };
 
         string sceneName = SceneManager.GetActiveScene().name;
@@ -65,7 +65,7 @@ public class CutScene : MonoBehaviour
         }
         else
         {
-            YG2.saves.skipFirstCutscene = 0;
+            YG2.saves.SkipFirstCutscene = 0;
             UpdateCutscene();
         }
     }
@@ -181,7 +181,7 @@ public class CutScene : MonoBehaviour
     {
         _isTyping = true;
 
-        _textDisplay.text = "";
+        _textDisplay.text = string.Empty;
         foreach (char letter in text.ToCharArray())
         {
             _textDisplay.text += letter;
@@ -205,7 +205,7 @@ public class CutScene : MonoBehaviour
 
         if (SceneManager.sceneCount == _firstCutscene)
         {
-            YG2.saves.skipFirstCutscene = 1;
+            YG2.saves.SkipFirstCutscene = 1;
         }
     }
 

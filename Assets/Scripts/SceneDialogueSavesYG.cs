@@ -2,9 +2,9 @@ namespace YG
 {
     public partial class SavesYG
     {
-        public int firstLevelDialogueWatch = 0;
-        public int thirdLevelDialogueWatch = 0;
-        public int fifthLevelDialogueWatch = 0;
-        public int seventhLevelDialogueWatch = 0;
+        public int FirstLevelDialogueWatch = 0;
+        public int ThirdLevelDialogueWatch = 0;
+        public int FifthLevelDialogueWatch = 0;
+        public int SeventhLevelDialogueWatch = 0;
     }
 }

@@ -5,6 +5,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using YG;
 
+public enum Level
+{
+    FirstLevel = 2,
+    ThirdLevel = 8,
+    FifthLevel = 14,
+    SeventhLevel = 20,
+}
+
 public class SceneDialogue : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
@@ -24,14 +32,14 @@ public class SceneDialogue : MonoBehaviour
     [SerializeField] private GameObject _desktopUI;
     [SerializeField] private GameObject _tapToScreenTip;
 
-    private const string RU = "ru";
-    private const string EN = "en";
-    private const string TR = "tr";
-
     private int _currentIndex = 0;
     private bool _isTyping = true;
     private string _lang;
     private Animator _tapTipAnimator;
+
+    private const string RU = "ru";
+    private const string EN = "en";
+    private const string TR = "tr";
 
     public static Action<bool> OnDialogShow;
 
@@ -53,7 +61,7 @@ public class SceneDialogue : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && _dialogueWindow.gameObject.activeSelf)
         {
-            if(!_isTyping)
+            if (!_isTyping)
             {
                 AdvanceDialogue();
             }
@@ -97,7 +105,6 @@ public class SceneDialogue : MonoBehaviour
         StartDialogue();
         OnDialogShow?.Invoke(true);
     }
-
 
     private void AdvanceDialogue()
     {
@@ -207,7 +214,7 @@ public class SceneDialogue : MonoBehaviour
 
     private void ClearDialogueField()
     {
-        _dialogueTextField.text = "";
+        _dialogueTextField.text = string.Empty;
     }
 
     private void ResumeGame()
@@ -272,14 +279,14 @@ public class SceneDialogue : MonoBehaviour
 
         switch (currentSceneIndex)
         {
-            case (int)level.firstLevel:
-                return YG2.saves.firstLevelDialogueWatch == 1;
-            case (int)level.thirdLevel:
-                return YG2.saves.thirdLevelDialogueWatch == 1;
-            case (int)level.fifthLevel:
-                return YG2.saves.fifthLevelDialogueWatch == 1;
-            case (int)level.seventhLevel:
-                return YG2.saves.seventhLevelDialogueWatch == 1;
+            case (int)Level.FirstLevel:
+                return YG2.saves.FirstLevelDialogueWatch == 1;
+            case (int)Level.ThirdLevel:
+                return YG2.saves.ThirdLevelDialogueWatch == 1;
+            case (int)Level.FifthLevel:
+                return YG2.saves.FifthLevelDialogueWatch == 1;
+            case (int)Level.SeventhLevel:
+                return YG2.saves.SeventhLevelDialogueWatch == 1;
             default:
                 return false;
         }
@@ -294,12 +301,4 @@ public class SceneDialogue : MonoBehaviour
     {
         _tapToScreenTip.gameObject.SetActive(false);
     }
-}
-
-public enum level
-{
-    firstLevel = 2,
-    thirdLevel = 8,
-    fifthLevel = 14,
-    seventhLevel = 20
 }

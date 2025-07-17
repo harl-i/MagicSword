@@ -31,7 +31,6 @@ public class Soul : MonoBehaviour
 
     private void SetEnablePosition()
     {
-        transform.position = new Vector2(_enemyTransform.position.x + _offsetX, 
-            _enemyTransform.position.y + _offsetY);
+        transform.position = new Vector2(_enemyTransform.position.x + _offsetX, _enemyTransform.position.y + _offsetY);
     }
 }

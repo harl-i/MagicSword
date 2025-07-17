@@ -10,12 +10,13 @@ public class FirstPlayButtonVisibleSwitcher : MonoBehaviour
 
     private void Start()
     {
-        if (YG2.saves.sceneForContinue == _noProgress)
+        if (YG2.saves.SceneForContinue == _noProgress)
         {
             _continueButton.SetActive(false);
             _newGamePlus.SetActive(false);
             _newGame.SetActive(true);
-        } else
+        } 
+        else 
         {
             _continueButton.SetActive(true);
             _newGamePlus.SetActive(true);

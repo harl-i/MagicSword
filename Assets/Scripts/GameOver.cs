@@ -34,8 +34,8 @@ public class GameOver : MonoBehaviour
     {
         if (count == 0)
         {
-            YG2.saves.continues--;
-            if (YG2.saves.continues == 0)
+            YG2.saves.Continues--;
+            if (YG2.saves.Continues == 0)
             {
                 StartCoroutine(ShowGameOverScreenAndExit(_delay));
             }

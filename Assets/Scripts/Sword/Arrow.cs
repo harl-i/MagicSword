@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class Arrow : MonoBehaviour {
-    [SerializeField]private SpriteRenderer _spriteRenderer;
+public class Arrow : MonoBehaviour 
+{
+    [SerializeField] private SpriteRenderer _spriteRenderer;
     
     private void Start()
     {

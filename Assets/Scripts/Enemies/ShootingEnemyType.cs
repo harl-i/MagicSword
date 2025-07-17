@@ -5,5 +5,5 @@ public enum ShootingEnemyType
     Turret,
     Scorpion,
     TowardsTurret,
-    Archer
+    Archer,
 }
