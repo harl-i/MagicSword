@@ -21,7 +21,7 @@
         },
         {
             "name": "CrazyGames",
-            "version": "1.02",
+            "version": "1.03",
             "download": "https://boosty.to/maximalist/posts/75f8b5d7-6d88-4de7-a94d-e27750bc445d?share=post_link",
             "noLoad": true,
             "doc": "https://max-games.ru/crazy/",
@@ -133,7 +133,7 @@
         },
         {
             "name": "ServerTime",
-            "version": "1.01",
+            "version": "1.02",
             "download": "https://max-games.ru/public/pluginYG2/modules/ServerTime.unitypackage",
             "doc": "https://max-games.ru/server-time/"
         },
