@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class TrollleyTrap : MonoBehaviour 
+namespace Traps
 {
-    [SerializeField] private PolygonCollider2D _mainTrolleyCollider;
-
-    public PolygonCollider2D GetMainTrolleyCollider()
+    public class TrollleyTrap : MonoBehaviour
     {
-        return _mainTrolleyCollider;
+        [SerializeField] private PolygonCollider2D _mainTrolleyCollider;
+
+        public PolygonCollider2D GetMainTrolleyCollider()
+        {
+            return _mainTrolleyCollider;
+        }
     }
 }

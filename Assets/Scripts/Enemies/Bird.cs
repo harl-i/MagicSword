@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class Bird : MonoBehaviour { }
+namespace Enemies
+{
+    public class Bird : MonoBehaviour { }
+}

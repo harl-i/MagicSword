@@ -1,12 +1,15 @@
 using System;
 using UnityEngine;
 
-public class ShieldSkill : MonoBehaviour
+namespace Sword
 {
-    public static Action<float> SkillActivated;
-
-    public void OnButtonClick(float time)
+    public class ShieldSkill : MonoBehaviour
     {
-        SkillActivated?.Invoke(time);
+        public static Action<float> SkillActivated;
+
+        public void OnButtonClick(float time)
+        {
+            SkillActivated?.Invoke(time);
+        }
     }
 }

@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class Bull : MonoBehaviour { }
+namespace Enemies
+{
+    public class Bull : MonoBehaviour { }
+}

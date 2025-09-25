@@ -1,9 +1,12 @@
-public enum ShootingEnemyType
+namespace Enemies
 {
-    Spider,
-    Gargoyle,
-    Turret,
-    Scorpion,
-    TowardsTurret,
-    Archer,
+    public enum ShootingEnemyType
+    {
+        Spider,
+        Gargoyle,
+        Turret,
+        Scorpion,
+        TowardsTurret,
+        Archer,
+    }
 }

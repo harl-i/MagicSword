@@ -1,17 +1,20 @@
 using UnityEngine;
 
-public class RescureTransition : Transition
+namespace StateMachine
 {
-    [SerializeField] private BoxCollider2D _rescureTriggerCollider;
-
-    private void OnCollisionStay2D(Collision2D collision)
+    public class RescureTransition : Transition
     {
-        foreach (ContactPoint2D contact in collision.contacts)
+        [SerializeField] private BoxCollider2D _rescureTriggerCollider;
+
+        private void OnCollisionStay2D(Collision2D collision)
         {
-            if (contact.collider == _rescureTriggerCollider || contact.otherCollider == _rescureTriggerCollider)
+            foreach (ContactPoint2D contact in collision.contacts)
             {
-                NeedTransit = true;
-                return;
+                if (contact.collider == _rescureTriggerCollider || contact.otherCollider == _rescureTriggerCollider)
+                {
+                    NeedTransit = true;
+                    return;
+                }
             }
         }
     }

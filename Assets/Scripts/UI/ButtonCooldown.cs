@@ -2,34 +2,37 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
-public class ButtonCooldown : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private float _cooldownTime = 5f;
-    private Button _button;
-
-    private void Awake()
+    [RequireComponent(typeof(Button))]
+    public class ButtonCooldown : MonoBehaviour
     {
-        _button = GetComponent<Button>();
-        _button.onClick.AddListener(StartCooldown);
-    }
+        [SerializeField] private float _cooldownTime = 5f;
+        private Button _button;
 
-    private void StartCooldown()
-    {
-        StartCoroutine(CooldownCoroutine());
-    }
-
-    private IEnumerator CooldownCoroutine()
-    {
-        _button.interactable = false;
-
-        float timer = 0;
-        while (timer < _cooldownTime)
+        private void Awake()
         {
-            timer += Time.deltaTime;
-            yield return null;
+            _button = GetComponent<Button>();
+            _button.onClick.AddListener(StartCooldown);
         }
 
-        _button.interactable = true;
+        private void StartCooldown()
+        {
+            StartCoroutine(CooldownCoroutine());
+        }
+
+        private IEnumerator CooldownCoroutine()
+        {
+            _button.interactable = false;
+
+            float timer = 0;
+            while (timer < _cooldownTime)
+            {
+                timer += Time.deltaTime;
+                yield return null;
+            }
+
+            _button.interactable = true;
+        }
     }
 }

@@ -1,12 +1,16 @@
+using Obstacles;
 using UnityEngine;
 
-public class CollisionTriggerWallTransition : Transition
+namespace StateMachine
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class CollisionTriggerWallTransition : Transition
     {
-        if (collision.gameObject.TryGetComponent(out Wall wall))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            NeedTransit = true;
+            if (collision.gameObject.TryGetComponent(out Wall wall))
+            {
+                NeedTransit = true;
+            }
         }
     }
 }

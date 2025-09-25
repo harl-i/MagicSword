@@ -1,21 +1,25 @@
+using Portals;
 using UnityEngine;
 
-public class NotEnoughSoulsTriggerDisabler : MonoBehaviour
+namespace Sword
 {
-    [SerializeField] private Portal _portal;
-
-    private void OnEnable()
+    public class NotEnoughSoulsTriggerDisabler : MonoBehaviour
     {
-        _portal.SoulsCollected += OnSoulsCollected;
-    }
+        [SerializeField] private Portal _portal;
 
-    private void OnDisable()
-    {
-        _portal.SoulsCollected -= OnSoulsCollected;
-    }
+        private void OnEnable()
+        {
+            _portal.SoulsCollected += OnSoulsCollected;
+        }
 
-    private void OnSoulsCollected()
-    {
-        gameObject.SetActive(false);
+        private void OnDisable()
+        {
+            _portal.SoulsCollected -= OnSoulsCollected;
+        }
+
+        private void OnSoulsCollected()
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

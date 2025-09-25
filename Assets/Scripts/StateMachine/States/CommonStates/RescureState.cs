@@ -1,42 +1,46 @@
+using Sword;
 using UnityEngine;
 
-[RequireComponent(typeof(VectorCreator))]
-[RequireComponent(typeof(PolygonCollider2D))]
-public class RescureState : State
+namespace StateMachine
 {
-    [SerializeField] private float _distance;
-
-    private PolygonCollider2D _playerCollider;
-    private Vector2 _startPosition;
-    private Vector2 _targetPosition;
-
-    private void Awake()
+    [RequireComponent(typeof(VectorCreator))]
+    [RequireComponent(typeof(PolygonCollider2D))]
+    public class RescureState : State
     {
-        _playerCollider = GetComponent<PolygonCollider2D>();
-    }
+        [SerializeField] private float _distance;
 
-    private void OnEnable()
-    {
-        _playerCollider.enabled = false;
-        UpdateTargetPosition();
-        MoveBackward();
-    }
+        private PolygonCollider2D _playerCollider;
+        private Vector2 _startPosition;
+        private Vector2 _targetPosition;
 
-    private void OnDisable()
-    {
-        _playerCollider.enabled = true;
-    }
+        private void Awake()
+        {
+            _playerCollider = GetComponent<PolygonCollider2D>();
+        }
 
-    private void UpdateTargetPosition()
-    {
-        _startPosition = gameObject.transform.position;
-        Vector2 localDownDirection = transform.up;
+        private void OnEnable()
+        {
+            _playerCollider.enabled = false;
+            UpdateTargetPosition();
+            MoveBackward();
+        }
 
-        _targetPosition = _startPosition - localDownDirection * _distance;
-    }
+        private void OnDisable()
+        {
+            _playerCollider.enabled = true;
+        }
 
-    private void MoveBackward()
-    {
-        transform.position = new Vector2(_targetPosition.x, _targetPosition.y);
+        private void UpdateTargetPosition()
+        {
+            _startPosition = gameObject.transform.position;
+            Vector2 localDownDirection = transform.up;
+
+            _targetPosition = _startPosition - localDownDirection * _distance;
+        }
+
+        private void MoveBackward()
+        {
+            transform.position = new Vector2(_targetPosition.x, _targetPosition.y);
+        }
     }
 }

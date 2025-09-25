@@ -1,7 +1,10 @@
-public class BecameVisibleTransition : Transition
+namespace StateMachine
 {
-    private void OnBecameVisible()
+    public class BecameVisibleTransition : Transition
     {
-        NeedTransit = true;
+        private void OnBecameVisible()
+        {
+            NeedTransit = true;
+        }
     }
 }

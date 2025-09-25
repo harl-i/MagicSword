@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class LevelChangeMenu : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private GameObject _levelChangeMenu;
-
-    public void EnableLevelsMenu()
+    public class LevelChangeMenu : MonoBehaviour
     {
-        _levelChangeMenu.gameObject.SetActive(true);
+        [SerializeField] private GameObject _levelChangeMenu;
+
+        public void EnableLevelsMenu()
+        {
+            _levelChangeMenu.gameObject.SetActive(true);
+        }
     }
 }

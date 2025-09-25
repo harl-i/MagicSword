@@ -1,15 +1,18 @@
 using UnityEngine;
 using YG;
 
-public class ReseterNewGamePlus : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private GameObject _newGame;
-    [SerializeField] private GameObject _newGamePlus;
-
-    public void ResetTrigger()
+    public class ReseterNewGamePlus : MonoBehaviour
     {
-        YG2.saves.NewGamePlus = 0;
-        _newGame.SetActive(true);
-        _newGamePlus.SetActive(false);
+        [SerializeField] private GameObject _newGame;
+        [SerializeField] private GameObject _newGamePlus;
+
+        public void ResetTrigger()
+        {
+            YG2.saves.NewGamePlus = 0;
+            _newGame.SetActive(true);
+            _newGamePlus.SetActive(false);
+        }
     }
 }

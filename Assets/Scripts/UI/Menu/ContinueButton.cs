@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class ContinueButton : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private GameObject _continueMenu;
-
-    public void OpenMenu() 
+    public class ContinueButton : MonoBehaviour
     {
-        _continueMenu.SetActive(true);
+        [SerializeField] private GameObject _continueMenu;
+
+        public void OpenMenu()
+        {
+            _continueMenu.SetActive(true);
+        }
     }
 }

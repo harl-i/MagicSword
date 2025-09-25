@@ -1,31 +1,34 @@
 using UnityEngine;
 
-public class HideTurretState : State
+namespace StateMachine
 {
-    [SerializeField] private float _moveDistance;
-    [SerializeField] private float _moveSpeed = 1f;
-
-    private Vector3 _startPosition;
-    private Vector3 _targetPosition;
-    private bool _isMoving;
-    private float _blockDistance = 0.09f;
-
-    private void OnEnable()
+    public class HideTurretState : State
     {
-        _isMoving = true;
-        _startPosition = transform.position;
-        _targetPosition = _startPosition + new Vector3(_moveDistance, 0, 0);
-    }
+        [SerializeField] private float _moveDistance;
+        [SerializeField] private float _moveSpeed = 1f;
 
-    private void Update()
-    {
-        if (_isMoving)
+        private Vector3 _startPosition;
+        private Vector3 _targetPosition;
+        private bool _isMoving;
+        private float _blockDistance = 0.09f;
+
+        private void OnEnable()
         {
-            transform.position = Vector3.Lerp(transform.position, _targetPosition, _moveSpeed * Time.deltaTime);
+            _isMoving = true;
+            _startPosition = transform.position;
+            _targetPosition = _startPosition + new Vector3(_moveDistance, 0, 0);
+        }
 
-            if (Vector3.Distance(transform.position, _targetPosition) < _blockDistance)
+        private void Update()
+        {
+            if (_isMoving)
             {
-                _isMoving = false;
+                transform.position = Vector3.Lerp(transform.position, _targetPosition, _moveSpeed * Time.deltaTime);
+
+                if (Vector3.Distance(transform.position, _targetPosition) < _blockDistance)
+                {
+                    _isMoving = false;
+                }
             }
         }
     }

@@ -1,50 +1,54 @@
+using Sword;
 using UnityEngine;
 
-public abstract class Bullet : MonoBehaviour
+namespace Bullets
 {
-    [SerializeField] protected float _speed;
-
-    protected Transform _target;
-    protected bool _isFlip;
-    protected Vector3 _direction;
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    public abstract class Bullet : MonoBehaviour
     {
-        if (collision.gameObject.TryGetComponent(out Player player))
+        [SerializeField] protected float _speed;
+
+        protected Transform _target;
+        protected bool _isFlip;
+        protected Vector3 _direction;
+
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            player.TakeDamage();
+            if (collision.gameObject.TryGetComponent(out Player player))
+            {
+                player.TakeDamage();
+            }
+
+            gameObject.SetActive(false);
         }
 
-        gameObject.SetActive(false);
-    }
-
-    public void SetDirection(Vector3 direction)
-    {
-        _direction = direction;
-    }
-
-    public void CalculateDirection()
-    {
-        if (_target != null)
+        public void SetDirection(Vector3 direction)
         {
-            _direction = (_target.position - transform.position).normalized;
+            _direction = direction;
         }
-    }
 
-    public void LookAtTarget()
-    {
-        float angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
+        public void CalculateDirection()
+        {
+            if (_target != null)
+            {
+                _direction = (_target.position - transform.position).normalized;
+            }
+        }
 
-        transform.rotation = Quaternion.Euler(0f, 0f, angle);
-    }
+        public void LookAtTarget()
+        {
+            float angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
 
-    public void SetFlip(bool isFlip)
-    {
-        _isFlip = isFlip;
-    }
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        }
 
-    public void SetTarget(Transform target)
-    {
-        _target = target;
+        public void SetFlip(bool isFlip)
+        {
+            _isFlip = isFlip;
+        }
+
+        public void SetTarget(Transform target)
+        {
+            _target = target;
+        }
     }
 }

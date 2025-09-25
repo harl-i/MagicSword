@@ -1,7 +1,10 @@
-public enum RaycastDirection
+namespace Sword
 {
-    Up,
-    Down,
-    Left,
-    Right,
+    public enum RaycastDirection
+    {
+        Up,
+        Down,
+        Left,
+        Right,
+    }
 }

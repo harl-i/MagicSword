@@ -1,12 +1,16 @@
+using Bullets;
 using UnityEngine;
 
-public class FireballHitTransition : Transition
+namespace StateMachine
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    public class FireballHitTransition : Transition
     {
-        if (collision.gameObject.TryGetComponent(out TurretFireball turretFireball))
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            NeedTransit = true;
+            if (collision.gameObject.TryGetComponent(out TurretFireball turretFireball))
+            {
+                NeedTransit = true;
+            }
         }
     }
 }

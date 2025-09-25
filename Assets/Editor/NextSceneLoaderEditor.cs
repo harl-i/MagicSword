@@ -1,3 +1,4 @@
+using LevelsManagment;
 using UnityEditor;
 
 [CustomEditor(typeof(NextSceneLoader), true)]

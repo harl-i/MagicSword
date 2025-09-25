@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class Wall : MonoBehaviour{}
+namespace Obstacles
+{
+    public class Wall : MonoBehaviour { }
+}

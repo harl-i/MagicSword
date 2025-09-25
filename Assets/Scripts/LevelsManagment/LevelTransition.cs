@@ -2,24 +2,27 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelTransition : MonoBehaviour
+namespace LevelsManagment
 {
-    private float _loadDelay = 1f;
-
-    public void LoadAdminScene()
+    public class LevelTransition : MonoBehaviour
     {
-        StartCoroutine(LoadWithDelay());
-    }
+        private float _loadDelay = 1f;
 
-    private IEnumerator LoadWithDelay()
-    {
-        yield return new WaitForSeconds(_loadDelay);
+        public void LoadAdminScene()
+        {
+            StartCoroutine(LoadWithDelay());
+        }
 
-        SceneManager.LoadScene(0);
-    }
+        private IEnumerator LoadWithDelay()
+        {
+            yield return new WaitForSeconds(_loadDelay);
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        LoadAdminScene();
+            SceneManager.LoadScene(0);
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            LoadAdminScene();
+        }
     }
 }

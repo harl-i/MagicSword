@@ -1,12 +1,15 @@
-public class ExplosionEndTransition : Transition
+namespace StateMachine
 {
-    public void ExplosionEnded()
+    public class ExplosionEndTransition : Transition
     {
-        NeedTransit = true;
-    }
+        public void ExplosionEnded()
+        {
+            NeedTransit = true;
+        }
 
-    private void OnDisable()
-    {
-        NeedTransit = false;
+        private void OnDisable()
+        {
+            NeedTransit = false;
+        }
     }
 }

@@ -1,12 +1,15 @@
 using UnityEngine;
 
-public class LeaderboardPanel : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private GameObject _mainMenu;
-
-    public void Close()
+    public class LeaderboardPanel : MonoBehaviour
     {
-        _mainMenu.SetActive(true);
-        gameObject.SetActive(false);
+        [SerializeField] private GameObject _mainMenu;
+
+        public void Close()
+        {
+            _mainMenu.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
 }

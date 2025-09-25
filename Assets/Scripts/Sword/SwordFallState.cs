@@ -1,22 +1,26 @@
+using StateMachine;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(PolygonCollider2D))]
-public class SwordFallState : State
+namespace Sword
 {
-    private Rigidbody2D _rigidbody2D;
-    private float _spinForce = 0.5f;
-    private float _division—oefficient = 1f;
-
-    private void Awake()
+    [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(PolygonCollider2D))]
+    public class SwordFallState : State
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
-    }
+        private Rigidbody2D _rigidbody2D;
+        private float _spinForce = 0.5f;
+        private float _division—oefficient = 1f;
 
-    private void OnEnable()
-    {
-        _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+        private void Awake()
+        {
+            _rigidbody2D = GetComponent<Rigidbody2D>();
+        }
 
-        _rigidbody2D.AddTorque(_spinForce / _division—oefficient, ForceMode2D.Impulse);
+        private void OnEnable()
+        {
+            _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+
+            _rigidbody2D.AddTorque(_spinForce / _division—oefficient, ForceMode2D.Impulse);
+        }
     }
 }

@@ -1,12 +1,16 @@
+using Traps;
 using UnityEngine;
 
-public class TrappedInTrolleyTransition : Transition
+namespace StateMachine
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    public class TrappedInTrolleyTransition : Transition
     {
-        if (collision.gameObject.TryGetComponent(out TrollleyTrap trollleyTrap))
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            NeedTransit = true;
+            if (collision.gameObject.TryGetComponent(out TrollleyTrap trollleyTrap))
+            {
+                NeedTransit = true;
+            }
         }
     }
 }

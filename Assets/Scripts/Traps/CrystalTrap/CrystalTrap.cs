@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class CrystalTrap : MonoBehaviour { }
+namespace Traps
+{
+    public class CrystalTrap : MonoBehaviour { }
+}

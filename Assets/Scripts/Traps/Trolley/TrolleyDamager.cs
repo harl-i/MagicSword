@@ -1,29 +1,34 @@
+using DamageInterfaces;
+using Sword;
 using System.Collections;
 using UnityEngine;
 
-public class TrolleyDamager : MonoBehaviour, IDamaging
+namespace Traps
 {
-    [SerializeField] private float _enableColliderDelay = 1.5f;
-    [SerializeField] private PolygonCollider2D _colliderForDisable;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class TrolleyDamager : MonoBehaviour, IDamaging
     {
-        if (collision.gameObject.TryGetComponent(out Player player))
+        [SerializeField] private float _enableColliderDelay = 1.5f;
+        [SerializeField] private PolygonCollider2D _colliderForDisable;
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            ApplyDamage(player);
-            StartCoroutine(TemporaryDisableCollider());
+            if (collision.gameObject.TryGetComponent(out Player player))
+            {
+                ApplyDamage(player);
+                StartCoroutine(TemporaryDisableCollider());
+            }
         }
-    }
 
-    public void ApplyDamage(Player player)
-    {
-        player.TakeDamage();
-    }
+        public void ApplyDamage(Player player)
+        {
+            player.TakeDamage();
+        }
 
-    private IEnumerator TemporaryDisableCollider()
-    {
-        _colliderForDisable.enabled = false;
-        yield return new WaitForSeconds(_enableColliderDelay);
-        _colliderForDisable.enabled = true;
+        private IEnumerator TemporaryDisableCollider()
+        {
+            _colliderForDisable.enabled = false;
+            yield return new WaitForSeconds(_enableColliderDelay);
+            _colliderForDisable.enabled = true;
+        }
     }
 }

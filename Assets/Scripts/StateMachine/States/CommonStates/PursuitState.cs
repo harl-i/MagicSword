@@ -1,26 +1,29 @@
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
-public class PursuitState : State
+namespace StateMachine
 {
-    private SpriteRenderer _spriteRenderer;
-    public float _speed = 2f;
-
-    private void Awake()
+    [RequireComponent(typeof(SpriteRenderer))]
+    public class PursuitState : State
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+        private SpriteRenderer _spriteRenderer;
+        public float _speed = 2f;
 
-    private void Update()
-    {
-        PursueTarget();
-    }
+        private void Awake()
+        {
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
 
-    private void PursueTarget()
-    {
-        Vector2 direction = (Player.position - transform.position).normalized;
-        transform.position += (Vector3)direction * _speed * Time.deltaTime;
+        private void Update()
+        {
+            PursueTarget();
+        }
 
-        _spriteRenderer.flipX = direction.x < 0;
+        private void PursueTarget()
+        {
+            Vector2 direction = (Player.position - transform.position).normalized;
+            transform.position += (Vector3)direction * _speed * Time.deltaTime;
+
+            _spriteRenderer.flipX = direction.x < 0;
+        }
     }
 }

@@ -1,14 +1,15 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueWindow : MonoBehaviour
+namespace UI
 {
-    public Action WindowShown;
-
-    public void OnWindowShowAnimationFinished()
+    public class DialogueWindow : MonoBehaviour
     {
-        WindowShown?.Invoke();
+        public Action WindowShown;
+
+        public void OnWindowShowAnimationFinished()
+        {
+            WindowShown?.Invoke();
+        }
     }
 }

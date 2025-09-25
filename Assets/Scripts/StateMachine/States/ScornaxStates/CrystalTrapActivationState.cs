@@ -1,13 +1,17 @@
+using Traps;
 using UnityEngine;
 
-public class CrystalTrapActivationState : State
+namespace StateMachine
 {
-    [SerializeField] private CrystalTrap _crystalFromFirstGrowPoint;
-    [SerializeField] private CrystalTrap _crystalFromSecondGrowPoint;
-
-    private void OnEnable()
+    public class CrystalTrapActivationState : State
     {
-        _crystalFromFirstGrowPoint.gameObject.SetActive(true);
-        _crystalFromSecondGrowPoint.gameObject.SetActive(true);
+        [SerializeField] private CrystalTrap _crystalFromFirstGrowPoint;
+        [SerializeField] private CrystalTrap _crystalFromSecondGrowPoint;
+
+        private void OnEnable()
+        {
+            _crystalFromFirstGrowPoint.gameObject.SetActive(true);
+            _crystalFromSecondGrowPoint.gameObject.SetActive(true);
+        }
     }
 }

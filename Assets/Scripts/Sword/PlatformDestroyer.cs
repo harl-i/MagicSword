@@ -1,12 +1,15 @@
 using UnityEngine;
 
-public class PlatformDestroyer : MonoBehaviour
+namespace Sword
 {
-    [SerializeField] private Player _player;
-
-    private void Update()
+    public class PlatformDestroyer : MonoBehaviour
     {
-        transform.position = _player.transform.position;
-        transform.rotation = _player.transform.rotation;
+        [SerializeField] private Player _player;
+
+        private void Update()
+        {
+            transform.position = _player.transform.position;
+            transform.rotation = _player.transform.rotation;
+        }
     }
 }

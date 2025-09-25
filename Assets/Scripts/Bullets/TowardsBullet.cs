@@ -1,10 +1,13 @@
 using System;
 using UnityEngine;
 
-public class TowardsBullet : Bullet
+namespace Bullets
 {
-    private void Update()
+    public class TowardsBullet : Bullet
     {
-        transform.position += _direction * _speed * Time.deltaTime;
+        private void Update()
+        {
+            transform.position += _direction * _speed * Time.deltaTime;
+        }
     }
 }

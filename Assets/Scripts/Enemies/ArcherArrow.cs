@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class ArcherArrow : MonoBehaviour { }
+namespace Enemies
+{
+    public class ArcherArrow : MonoBehaviour { }
+}

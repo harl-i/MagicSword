@@ -1,41 +1,45 @@
+using Sword;
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(PolygonCollider2D))]
-public class ToggleTrigger : MonoBehaviour
+namespace TriggersAndZones
 {
-    private PolygonCollider2D _polygonCollider;
-
-    private void OnEnable()
+    [RequireComponent(typeof(PolygonCollider2D))]
+    public class ToggleTrigger : MonoBehaviour
     {
-        PlatformDestructionSkill.SkillActivated += Toggle;
-    }
+        private PolygonCollider2D _polygonCollider;
 
-    private void OnDisable()
-    {
-        PlatformDestructionSkill.SkillActivated -= Toggle;
-    }
+        private void OnEnable()
+        {
+            PlatformDestructionSkill.SkillActivated += Toggle;
+        }
 
-    private void Awake()
-    {
-        _polygonCollider = GetComponent<PolygonCollider2D>();
-    }
+        private void OnDisable()
+        {
+            PlatformDestructionSkill.SkillActivated -= Toggle;
+        }
 
-    public void Toggle(float timer)
-    {
-        SwitchToTrigger();
-        StartCoroutine(SwitchToCollider(timer));
-    }
+        private void Awake()
+        {
+            _polygonCollider = GetComponent<PolygonCollider2D>();
+        }
 
-    private void SwitchToTrigger()
-    {
-        _polygonCollider.isTrigger = true;
-    }
+        public void Toggle(float timer)
+        {
+            SwitchToTrigger();
+            StartCoroutine(SwitchToCollider(timer));
+        }
 
-    private IEnumerator SwitchToCollider(float switchDelay)
-    {
-        yield return new WaitForSeconds(switchDelay);
+        private void SwitchToTrigger()
+        {
+            _polygonCollider.isTrigger = true;
+        }
 
-        _polygonCollider.isTrigger = false;
+        private IEnumerator SwitchToCollider(float switchDelay)
+        {
+            yield return new WaitForSeconds(switchDelay);
+
+            _polygonCollider.isTrigger = false;
+        }
     }
 }

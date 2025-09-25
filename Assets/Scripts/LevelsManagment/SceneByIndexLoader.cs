@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneByIndexLoader : MonoBehaviour
+namespace LevelsManagment
 {
-    [SerializeField] private int _sceneIndex;
-
-    public void LoadScene()
+    public class SceneByIndexLoader : MonoBehaviour
     {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(_sceneIndex);
+        [SerializeField] private int _sceneIndex;
+
+        public void LoadScene()
+        {
+            Time.timeScale = 1;
+            SceneManager.LoadScene(_sceneIndex);
+        }
     }
 }

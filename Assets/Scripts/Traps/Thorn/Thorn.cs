@@ -1,41 +1,46 @@
+using DamageInterfaces;
+using Sword;
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(PolygonCollider2D))]
-public class Thorn : MonoBehaviour, IDamaging
+namespace Traps
 {
-    private float _delayEnableTrigger = 5f;
-    private PolygonCollider2D _triggerCollider;
-
-    private void Awake()
+    [RequireComponent(typeof(PolygonCollider2D))]
+    public class Thorn : MonoBehaviour, IDamaging
     {
-        _triggerCollider = GetComponent<PolygonCollider2D>();
-    }
+        private float _delayEnableTrigger = 5f;
+        private PolygonCollider2D _triggerCollider;
 
-    public void ApplyDamage(Player player)
-    {
-        player.TakeDamage();
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.TryGetComponent(out Player player) && !player.IsShieldActivated)
+        private void Awake()
         {
-            ApplyDamage(player);
-            TemporaryDisableTrigger();
+            _triggerCollider = GetComponent<PolygonCollider2D>();
         }
-    }
 
-    private void TemporaryDisableTrigger()
-    {
-        _triggerCollider.enabled = false;
+        public void ApplyDamage(Player player)
+        {
+            player.TakeDamage();
+        }
 
-        StartCoroutine(EnableColliderAfterDelay(_delayEnableTrigger));
-    }
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.TryGetComponent(out Player player) && !player.IsShieldActivated)
+            {
+                ApplyDamage(player);
+                TemporaryDisableTrigger();
+            }
+        }
 
-    private IEnumerator EnableColliderAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        _triggerCollider.enabled = true;
+        private void TemporaryDisableTrigger()
+        {
+            _triggerCollider.enabled = false;
+
+            StartCoroutine(EnableColliderAfterDelay(_delayEnableTrigger));
+        }
+
+        private IEnumerator EnableColliderAfterDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            _triggerCollider.enabled = true;
+        }
     }
 }

@@ -1,12 +1,16 @@
+using Enemies;
 using UnityEngine;
 
-public class BirdHitTransition : Transition
+namespace StateMachine
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class BirdHitTransition : Transition
     {
-        if (collision.gameObject.TryGetComponent(out Bird bird))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            NeedTransit = true;
+            if (collision.gameObject.TryGetComponent(out Bird bird))
+            {
+                NeedTransit = true;
+            }
         }
     }
 }

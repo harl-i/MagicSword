@@ -1,30 +1,34 @@
+using Portals;
 using TMPro;
 using UnityEngine;
 
-public class SoulsScoreView : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private Portal _portal;
-
-    [SerializeField] private TextMeshProUGUI _currentSoulsAmount;
-    [SerializeField] private TextMeshProUGUI _soulsAmountForActivation;
-
-    private void Start()
+    public class SoulsScoreView : MonoBehaviour
     {
-        _soulsAmountForActivation.text = _portal.SoulsAmountForActivation.ToString();
-    }
+        [SerializeField] private Portal _portal;
 
-    private void OnEnable()
-    {
-        _portal.SoulsChanged += OnSoulsAmountChanged;
-    }
+        [SerializeField] private TextMeshProUGUI _currentSoulsAmount;
+        [SerializeField] private TextMeshProUGUI _soulsAmountForActivation;
 
-    private void OnDisable()
-    {
-        _portal.SoulsChanged -= OnSoulsAmountChanged;
-    }
+        private void Start()
+        {
+            _soulsAmountForActivation.text = _portal.SoulsAmountForActivation.ToString();
+        }
 
-    private void OnSoulsAmountChanged(int amount)
-    {
-        _currentSoulsAmount.text = amount.ToString();
+        private void OnEnable()
+        {
+            _portal.SoulsChanged += OnSoulsAmountChanged;
+        }
+
+        private void OnDisable()
+        {
+            _portal.SoulsChanged -= OnSoulsAmountChanged;
+        }
+
+        private void OnSoulsAmountChanged(int amount)
+        {
+            _currentSoulsAmount.text = amount.ToString();
+        }
     }
 }

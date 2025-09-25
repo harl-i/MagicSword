@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class LeaderBoardButton : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private GameObject _leaderboardPanel;
-    [SerializeField] private GameObject _mainMenu;
-
-    public void Open()
+    public class LeaderBoardButton : MonoBehaviour
     {
-        _leaderboardPanel.SetActive(true);
-        _mainMenu.SetActive(false);
+        [SerializeField] private GameObject _leaderboardPanel;
+        [SerializeField] private GameObject _mainMenu;
+
+        public void Open()
+        {
+            _leaderboardPanel.SetActive(true);
+            _mainMenu.SetActive(false);
+        }
     }
 }

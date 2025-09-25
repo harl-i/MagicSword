@@ -3,38 +3,41 @@ using TMPro;
 using UnityEngine;
 using YG;
 
-[RequireComponent(typeof(Animator))]
-public class ContinuesShew : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private GameObject _continuesPanel;
-    [SerializeField] private TMP_Text _continueTMP;
-    [SerializeField] private float _delay;
-
-    private Animator _animator;
-
-    private int _continuesCount;
-
-    private void Awake()
+    [RequireComponent(typeof(Animator))]
+    public class ContinuesShew : MonoBehaviour
     {
-        _animator = GetComponent<Animator>();
-    }
+        [SerializeField] private GameObject _continuesPanel;
+        [SerializeField] private TMP_Text _continueTMP;
+        [SerializeField] private float _delay;
 
-    private void OnEnable()
-    {
-        StartCoroutine(DelayBeforeDisable());
-        _continuesCount = YG2.saves.Continues + 1;
-        _continueTMP.text = _continuesCount.ToString();
-    }
+        private Animator _animator;
 
-    public void Subtract()
-    {
-       _continueTMP.text = YG2.saves.Continues.ToString();
-       _animator.SetTrigger("subtract");
-    }
+        private int _continuesCount;
 
-    private IEnumerator DelayBeforeDisable()
-    {
-        yield return new WaitForSeconds(_delay);
-        _continuesPanel.SetActive(false);
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+        }
+
+        private void OnEnable()
+        {
+            StartCoroutine(DelayBeforeDisable());
+            _continuesCount = YG2.saves.Continues + 1;
+            _continueTMP.text = _continuesCount.ToString();
+        }
+
+        public void Subtract()
+        {
+            _continueTMP.text = YG2.saves.Continues.ToString();
+            _animator.SetTrigger("subtract");
+        }
+
+        private IEnumerator DelayBeforeDisable()
+        {
+            yield return new WaitForSeconds(_delay);
+            _continuesPanel.SetActive(false);
+        }
     }
 }

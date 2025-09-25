@@ -1,16 +1,20 @@
+using Souls;
 using UnityEngine;
 
-public class DisableState : State
+namespace StateMachine
 {
-    [SerializeField] private Soul _soul;
-
-    private void OnEnable()
+    public class DisableState : State
     {
-        if (_soul != null)
-        {
-            _soul.gameObject.SetActive(true);
-        }
+        [SerializeField] private Soul _soul;
 
-        gameObject.SetActive(false);
+        private void OnEnable()
+        {
+            if (_soul != null)
+            {
+                _soul.gameObject.SetActive(true);
+            }
+
+            gameObject.SetActive(false);
+        }
     }
 }

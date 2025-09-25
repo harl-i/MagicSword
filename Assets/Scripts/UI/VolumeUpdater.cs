@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using YG;
 
-public class VolumeUpdater : MonoBehaviour
+namespace UI
 {
-    private void Start()
+    public class VolumeUpdater : MonoBehaviour
     {
-        YG2.saves.Volume = (int)AudioListener.volume;
+        private void Start()
+        {
+            YG2.saves.Volume = (int)AudioListener.volume;
+        }
     }
 }

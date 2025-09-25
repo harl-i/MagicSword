@@ -1,17 +1,21 @@
+using Traps;
 using UnityEngine;
 
-public class ExitSnowdriftTransition : Transition
+namespace StateMachine
 {
-    private void OnTriggerExit2D(Collider2D collision)
+    public class ExitSnowdriftTransition : Transition
     {
-        if (collision.gameObject.TryGetComponent(out ExitSnowdriftTrigger exitSnowdriftTrigger))
+        private void OnTriggerExit2D(Collider2D collision)
         {
-            NeedTransit = true;
+            if (collision.gameObject.TryGetComponent(out ExitSnowdriftTrigger exitSnowdriftTrigger))
+            {
+                NeedTransit = true;
+            }
         }
-    }
 
-    private void OnDisable()
-    {
-        NeedTransit = false;
+        private void OnDisable()
+        {
+            NeedTransit = false;
+        }
     }
 }

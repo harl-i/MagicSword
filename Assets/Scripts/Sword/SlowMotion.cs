@@ -1,43 +1,46 @@
 using System.Collections;
 using UnityEngine;
 
-public class SlowMotion : MonoBehaviour
+namespace Sword
 {
-    private float _originalTimeScale;
-    private Coroutine _startSlowMotion;
-
-    private void Start()
+    public class SlowMotion : MonoBehaviour
     {
-        _originalTimeScale = Time.timeScale;
-    }
+        private float _originalTimeScale;
+        private Coroutine _startSlowMotion;
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
+        private void Start()
         {
-            _startSlowMotion = StartCoroutine(StartSlowMotion());
+            _originalTimeScale = Time.timeScale;
         }
 
-        if (Input.GetMouseButtonUp(0))
+        private void Update()
         {
-            StopCoroutine(_startSlowMotion);
-            Time.timeScale = _originalTimeScale;
-        }
-    }
+            if (Input.GetMouseButtonDown(0))
+            {
+                _startSlowMotion = StartCoroutine(StartSlowMotion());
+            }
 
-    private IEnumerator StartSlowMotion()
-    {
-        float currentTime = 0f;
-        float duration = 0.6f;
-        float targetTimeScale = 0.3f;
-
-        while (currentTime < duration)
-        {
-            currentTime += Time.unscaledDeltaTime;
-            Time.timeScale = Mathf.Lerp(_originalTimeScale, targetTimeScale, currentTime / duration);
-            yield return null;
+            if (Input.GetMouseButtonUp(0))
+            {
+                StopCoroutine(_startSlowMotion);
+                Time.timeScale = _originalTimeScale;
+            }
         }
 
-        Time.timeScale = targetTimeScale;
+        private IEnumerator StartSlowMotion()
+        {
+            float currentTime = 0f;
+            float duration = 0.6f;
+            float targetTimeScale = 0.3f;
+
+            while (currentTime < duration)
+            {
+                currentTime += Time.unscaledDeltaTime;
+                Time.timeScale = Mathf.Lerp(_originalTimeScale, targetTimeScale, currentTime / duration);
+                yield return null;
+            }
+
+            Time.timeScale = targetTimeScale;
+        }
     }
 }

@@ -1,45 +1,49 @@
+using LevelsManagment;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Visuals;
 using YG;
 
-public class CutScene : MonoBehaviour
+namespace CutScenes
 {
-    [SerializeField] private bool _needFlashEffect;
-    [SerializeField] private int _sceneForFlashEffect;
-    [SerializeField] private FlashBangEffect _flashBangEffect;
-
-    [SerializeField] private GameObject[] _images;
-
-    [SerializeField] private TextMeshProUGUI _textDisplay;
-    [SerializeField] private string[] _textsRu;
-    [SerializeField] private string[] _textsEn;
-    [SerializeField] private string[] _textsTr;
-    [SerializeField] private float _typingSpeed = 0.05f;
-
-    [SerializeField] private NextSceneLoader _nextSceneLoader;
-    [SerializeField] private GameObject _skipCutscene;
-
-    [SerializeField] private GameObject _tapToScreenTip;
-
-    private int _currentIndex = 0;
-    private int _firstCutscene = 2;
-    private bool _isTyping = false;
-    private string _lang;
-
-    private const string RU = "ru";
-    private const string EN = "en";
-    private const string TR = "tr";
-
-    private Dictionary<string, System.Action> _cutsceneFlags;
-
-    private void Start()
+    public class CutScene : MonoBehaviour
     {
-        _lang = YG2.lang;
+        [SerializeField] private bool _needFlashEffect;
+        [SerializeField] private int _sceneForFlashEffect;
+        [SerializeField] private FlashBangEffect _flashBangEffect;
 
-        _cutsceneFlags = new Dictionary<string, System.Action>
+        [SerializeField] private GameObject[] _images;
+
+        [SerializeField] private TextMeshProUGUI _textDisplay;
+        [SerializeField] private string[] _textsRu;
+        [SerializeField] private string[] _textsEn;
+        [SerializeField] private string[] _textsTr;
+        [SerializeField] private float _typingSpeed = 0.05f;
+
+        [SerializeField] private NextSceneLoader _nextSceneLoader;
+        [SerializeField] private GameObject _skipCutscene;
+
+        [SerializeField] private GameObject _tapToScreenTip;
+
+        private int _currentIndex = 0;
+        private int _firstCutscene = 2;
+        private bool _isTyping = false;
+        private string _lang;
+
+        private const string RU = "ru";
+        private const string EN = "en";
+        private const string TR = "tr";
+
+        private Dictionary<string, System.Action> _cutsceneFlags;
+
+        private void Start()
+        {
+            _lang = YG2.lang;
+
+            _cutsceneFlags = new Dictionary<string, System.Action>
         {
             { "CutScene 1", () => YG2.saves.CutScene1Watched = 1 },
             { "CutScene 2", () => YG2.saves.CutScene2Watched = 1 },
@@ -57,166 +61,167 @@ public class CutScene : MonoBehaviour
             { "CutScene 14", () => YG2.saves.CutScene14Watched = 1 },
         };
 
-        string sceneName = SceneManager.GetActiveScene().name;
-        if (_cutsceneFlags.ContainsKey(sceneName) && IsCutsceneWatched(sceneName))
-        {
-            _skipCutscene.gameObject.SetActive(true);
-            Time.timeScale = 0;
-        }
-        else
-        {
-            YG2.saves.SkipFirstCutscene = 0;
-            UpdateCutscene();
-        }
-    }
-
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (!_isTyping)
+            string sceneName = SceneManager.GetActiveScene().name;
+            if (_cutsceneFlags.ContainsKey(sceneName) && IsCutsceneWatched(sceneName))
             {
-                AdvanceCutscene();
+                _skipCutscene.gameObject.SetActive(true);
+                Time.timeScale = 0;
             }
-        }
-    }
-
-    private void UpdateCutscene()
-    {
-        if (_currentIndex < _images.Length)
-        {
-            if (_currentIndex != 0)
+            else
             {
-                _images[_currentIndex - 1].SetActive(false);
-            }
-
-            if (_currentIndex == _sceneForFlashEffect && _needFlashEffect)
-            {
-                _flashBangEffect.FlashBanged();
-            }
-
-            _images[_currentIndex].SetActive(true);
-
-            PrintLocalizedText(_currentIndex);
-        }
-    }
-
-    private void PrintLocalizedText(int currentIndex)
-    {
-        if (_lang == RU)
-        {
-            if (currentIndex < _textsRu.Length)
-            {
-                StartCoroutine(TypeText(_textsRu[currentIndex]));
+                YG2.saves.SkipFirstCutscene = 0;
+                UpdateCutscene();
             }
         }
 
-        if (_lang == EN)
+        private void Update()
         {
-            if (currentIndex < _textsEn.Length)
+            if (Input.GetMouseButtonDown(0))
             {
-                StartCoroutine(TypeText(_textsEn[currentIndex]));
+                if (!_isTyping)
+                {
+                    AdvanceCutscene();
+                }
             }
         }
 
-        if (_lang == TR)
+        private void UpdateCutscene()
         {
-            if (currentIndex < _textsTr.Length)
+            if (_currentIndex < _images.Length)
             {
-                StartCoroutine(TypeText(_textsTr[currentIndex]));
+                if (_currentIndex != 0)
+                {
+                    _images[_currentIndex - 1].SetActive(false);
+                }
+
+                if (_currentIndex == _sceneForFlashEffect && _needFlashEffect)
+                {
+                    _flashBangEffect.FlashBanged();
+                }
+
+                _images[_currentIndex].SetActive(true);
+
+                PrintLocalizedText(_currentIndex);
             }
         }
-    }
 
-    private void AdvanceCutscene()
-    {
-        HideTapTip();
-        _currentIndex++;
-
-        if (_currentIndex < _images.Length)
+        private void PrintLocalizedText(int currentIndex)
         {
-            UpdateCutscene();
+            if (_lang == RU)
+            {
+                if (currentIndex < _textsRu.Length)
+                {
+                    StartCoroutine(TypeText(_textsRu[currentIndex]));
+                }
+            }
+
+            if (_lang == EN)
+            {
+                if (currentIndex < _textsEn.Length)
+                {
+                    StartCoroutine(TypeText(_textsEn[currentIndex]));
+                }
+            }
+
+            if (_lang == TR)
+            {
+                if (currentIndex < _textsTr.Length)
+                {
+                    StartCoroutine(TypeText(_textsTr[currentIndex]));
+                }
+            }
         }
-        else
+
+        private void AdvanceCutscene()
+        {
+            HideTapTip();
+            _currentIndex++;
+
+            if (_currentIndex < _images.Length)
+            {
+                UpdateCutscene();
+            }
+            else
+            {
+                EndCutscene();
+            }
+        }
+
+        private void EndCutscene()
+        {
+            string sceneName = SceneManager.GetActiveScene().name;
+            if (_cutsceneFlags.ContainsKey(sceneName))
+            {
+                _cutsceneFlags[sceneName].Invoke();
+            }
+
+            Time.timeScale = 1;
+            _nextSceneLoader.LoadScene();
+        }
+
+        private bool IsCutsceneWatched(string sceneName)
+        {
+            return sceneName switch
+            {
+                "CutScene 1" => YG2.saves.CutScene1Watched == 1,
+                "CutScene 2" => YG2.saves.CutScene2Watched == 1,
+                "CutScene 3" => YG2.saves.CutScene3Watched == 1,
+                "CutScene 4" => YG2.saves.CutScene4Watched == 1,
+                "CutScene 5" => YG2.saves.CutScene5Watched == 1,
+                "CutScene 6" => YG2.saves.CutScene6Watched == 1,
+                "CutScene 7" => YG2.saves.CutScene7Watched == 1,
+                "CutScene 8" => YG2.saves.CutScene8Watched == 1,
+                "CutScene 9" => YG2.saves.CutScene9Watched == 1,
+                "CutScene 10" => YG2.saves.CutScene10Watched == 1,
+                "CutScene 11" => YG2.saves.CutScene11Watched == 1,
+                "CutScene 12" => YG2.saves.CutScene12Watched == 1,
+                "CutScene 13" => YG2.saves.CutScene13Watched == 1,
+                "CutScene 14" => YG2.saves.CutScene14Watched == 1,
+                _ => false
+            };
+        }
+
+        private IEnumerator TypeText(string text)
+        {
+            _isTyping = true;
+
+            _textDisplay.text = string.Empty;
+            foreach (char letter in text.ToCharArray())
+            {
+                _textDisplay.text += letter;
+                yield return new WaitForSeconds(_typingSpeed);
+            }
+
+            yield return new WaitForSeconds(1);
+            _isTyping = false;
+            ShowTapTip();
+        }
+
+        public void ResumeCutscene()
+        {
+            _skipCutscene.gameObject.SetActive(false);
+            Time.timeScale = 1;
+        }
+
+        public void SkipCutscene()
         {
             EndCutscene();
-        }
-    }
 
-    private void EndCutscene()
-    {
-        string sceneName = SceneManager.GetActiveScene().name;
-        if (_cutsceneFlags.ContainsKey(sceneName))
-        {
-            _cutsceneFlags[sceneName].Invoke();
+            if (SceneManager.sceneCount == _firstCutscene)
+            {
+                YG2.saves.SkipFirstCutscene = 1;
+            }
         }
 
-        Time.timeScale = 1;
-        _nextSceneLoader.LoadScene();
-    }
-
-    private bool IsCutsceneWatched(string sceneName)
-    {
-        return sceneName switch
+        private void ShowTapTip()
         {
-            "CutScene 1" => YG2.saves.CutScene1Watched == 1,
-            "CutScene 2" => YG2.saves.CutScene2Watched == 1,
-            "CutScene 3" => YG2.saves.CutScene3Watched == 1,
-            "CutScene 4" => YG2.saves.CutScene4Watched == 1,
-            "CutScene 5" => YG2.saves.CutScene5Watched == 1,
-            "CutScene 6" => YG2.saves.CutScene6Watched == 1,
-            "CutScene 7" => YG2.saves.CutScene7Watched == 1,
-            "CutScene 8" => YG2.saves.CutScene8Watched == 1,
-            "CutScene 9" => YG2.saves.CutScene9Watched == 1,
-            "CutScene 10" => YG2.saves.CutScene10Watched == 1,
-            "CutScene 11" => YG2.saves.CutScene11Watched == 1,
-            "CutScene 12" => YG2.saves.CutScene12Watched == 1,
-            "CutScene 13" => YG2.saves.CutScene13Watched == 1,
-            "CutScene 14" => YG2.saves.CutScene14Watched == 1,
-            _ => false
-        };
-    }
-
-    private IEnumerator TypeText(string text)
-    {
-        _isTyping = true;
-
-        _textDisplay.text = string.Empty;
-        foreach (char letter in text.ToCharArray())
-        {
-            _textDisplay.text += letter;
-            yield return new WaitForSeconds(_typingSpeed);
+            _tapToScreenTip.gameObject.SetActive(true);
         }
 
-        yield return new WaitForSeconds(1);
-        _isTyping = false;
-        ShowTapTip();
-    }
-
-    public void ResumeCutscene()
-    {
-        _skipCutscene.gameObject.SetActive(false);
-        Time.timeScale = 1;
-    }
-
-    public void SkipCutscene()
-    {
-        EndCutscene();
-
-        if (SceneManager.sceneCount == _firstCutscene)
+        private void HideTapTip()
         {
-            YG2.saves.SkipFirstCutscene = 1;
+            _tapToScreenTip.gameObject.SetActive(false);
         }
-    }
-
-    private void ShowTapTip()
-    {
-        _tapToScreenTip.gameObject.SetActive(true);
-    }
-
-    private void HideTapTip()
-    {
-        _tapToScreenTip.gameObject.SetActive(false);
     }
 }
 

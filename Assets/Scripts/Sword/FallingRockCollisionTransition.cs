@@ -1,12 +1,17 @@
+using Obstacles;
+using StateMachine;
 using UnityEngine;
 
-public class FallingRockCollisionTransition : Transition
+namespace Sword
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    public class FallingRockCollisionTransition : Transition
     {
-        if (collision.gameObject.TryGetComponent(out FaliingRock faliingRock))
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            NeedTransit = true;
+            if (collision.gameObject.TryGetComponent(out FaliingRock faliingRock))
+            {
+                NeedTransit = true;
+            }
         }
     }
 }

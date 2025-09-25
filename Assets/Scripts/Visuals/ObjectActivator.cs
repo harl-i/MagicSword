@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class ObjectActivator : MonoBehaviour
+namespace Visuals
 {
-    [SerializeField] private GameObject _objectForActivate;
-
-    private void OnEnable()
+    public class ObjectActivator : MonoBehaviour
     {
-        _objectForActivate.SetActive(true);
+        [SerializeField] private GameObject _objectForActivate;
+
+        private void OnEnable()
+        {
+            _objectForActivate.SetActive(true);
+        }
     }
 }

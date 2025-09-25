@@ -1,29 +1,32 @@
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
-public class SpriteDeactivator : MonoBehaviour
+namespace Visuals
 {
-    [SerializeField] private SpriteSwapperActivator _spriteSwapperActivator;
-
-    private SpriteRenderer _spriteRenderer;
-
-    private void Awake()
+    [RequireComponent(typeof(SpriteRenderer))]
+    public class SpriteDeactivator : MonoBehaviour
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+        [SerializeField] private SpriteSwapperActivator _spriteSwapperActivator;
 
-    private void OnEnable()
-    {
-        _spriteSwapperActivator.AllSpritesSwapped += HandleAllSpriteSwap;
-    }
+        private SpriteRenderer _spriteRenderer;
 
-    private void OnDisable()
-    {
-        _spriteSwapperActivator.AllSpritesSwapped -= HandleAllSpriteSwap;
-    }
+        private void Awake()
+        {
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
 
-    private void HandleAllSpriteSwap()
-    {
-        _spriteRenderer.enabled = false;
+        private void OnEnable()
+        {
+            _spriteSwapperActivator.AllSpritesSwapped += HandleAllSpriteSwap;
+        }
+
+        private void OnDisable()
+        {
+            _spriteSwapperActivator.AllSpritesSwapped -= HandleAllSpriteSwap;
+        }
+
+        private void HandleAllSpriteSwap()
+        {
+            _spriteRenderer.enabled = false;
+        }
     }
 }

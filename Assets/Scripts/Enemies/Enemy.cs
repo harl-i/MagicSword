@@ -1,40 +1,45 @@
+using DamageInterfaces;
+using Sword;
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(PolygonCollider2D))]
-public class Enemy : MonoBehaviour, IDamaging
+namespace Enemies
 {
-    [SerializeField] private float _enableColliderDelay = 1.5f;
-
-    private PolygonCollider2D _collider;
-
-    private void Awake()
+    [RequireComponent(typeof(PolygonCollider2D))]
+    public class Enemy : MonoBehaviour, IDamaging
     {
-        _collider = GetComponent<PolygonCollider2D>();
-    }
+        [SerializeField] private float _enableColliderDelay = 1.5f;
 
-    public void ApplyDamage(Player player)
-    {
-        player.TakeDamage();
-    }
+        private PolygonCollider2D _collider;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        collision.TryGetComponent(out Player player);
-        if (player != null)
+        private void Awake()
         {
-            if (!player.IsLaunched)
+            _collider = GetComponent<PolygonCollider2D>();
+        }
+
+        public void ApplyDamage(Player player)
+        {
+            player.TakeDamage();
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            collision.TryGetComponent(out Player player);
+            if (player != null)
             {
-                ApplyDamage(player);
-                StartCoroutine(TemporarilyDisableCollider());
+                if (!player.IsLaunched)
+                {
+                    ApplyDamage(player);
+                    StartCoroutine(TemporarilyDisableCollider());
+                }
             }
         }
-    }
 
-    private IEnumerator TemporarilyDisableCollider()
-    {
-        _collider.enabled = false;
-        yield return new WaitForSeconds(_enableColliderDelay);
-        _collider.enabled = true;
+        private IEnumerator TemporarilyDisableCollider()
+        {
+            _collider.enabled = false;
+            yield return new WaitForSeconds(_enableColliderDelay);
+            _collider.enabled = true;
+        }
     }
 }

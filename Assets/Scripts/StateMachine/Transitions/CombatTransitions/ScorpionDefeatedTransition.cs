@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public class ScorpionDefeatedTransition : Transition
+namespace StateMachine
 {
-    [SerializeField] private GameObject _scorpion;
-
-    private void Update()
+    public class ScorpionDefeatedTransition : Transition
     {
-        if (_scorpion.activeSelf == false)
+        [SerializeField] private GameObject _scorpion;
+
+        private void Update()
         {
-            NeedTransit = true;
+            if (_scorpion.activeSelf == false)
+            {
+                NeedTransit = true;
+            }
         }
     }
 }

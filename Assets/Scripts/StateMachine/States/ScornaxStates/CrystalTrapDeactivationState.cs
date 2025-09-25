@@ -1,19 +1,23 @@
+using Traps;
 using UnityEngine;
 
-public class CrystalTrapDeactivationState : State
+namespace StateMachine
 {
-    [SerializeField] private CrystalDestroyer _firstCrystalDeactivator;
-    [SerializeField] private CrystalDestroyer _secondCrystalDeactivator;
-
-    private void OnEnable()
+    public class CrystalTrapDeactivationState : State
     {
-        _firstCrystalDeactivator.Destroy();
-        _secondCrystalDeactivator.Destroy();
-    }
+        [SerializeField] private CrystalDestroyer _firstCrystalDeactivator;
+        [SerializeField] private CrystalDestroyer _secondCrystalDeactivator;
 
-    private void OnDisable()
-    {
-        _firstCrystalDeactivator.gameObject.SetActive(false);
-        _secondCrystalDeactivator.gameObject.SetActive(false);
+        private void OnEnable()
+        {
+            _firstCrystalDeactivator.Destroy();
+            _secondCrystalDeactivator.Destroy();
+        }
+
+        private void OnDisable()
+        {
+            _firstCrystalDeactivator.gameObject.SetActive(false);
+            _secondCrystalDeactivator.gameObject.SetActive(false);
+        }
     }
 }

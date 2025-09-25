@@ -1,25 +1,29 @@
+using Sword;
 using System.Collections;
 using UnityEngine;
 
-public class TrolleyTrapColliderTemporaryDisable : MonoBehaviour
+namespace Traps
 {
-    [SerializeField] private PolygonCollider2D _trolleyTrapCollider;
-    [SerializeField] private float _delay;
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    public class TrolleyTrapColliderTemporaryDisable : MonoBehaviour
     {
-        if (collision.gameObject.TryGetComponent(out Player player))
+        [SerializeField] private PolygonCollider2D _trolleyTrapCollider;
+        [SerializeField] private float _delay;
+
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            StartCoroutine(TemporaryDisable(_delay));
+            if (collision.gameObject.TryGetComponent(out Player player))
+            {
+                StartCoroutine(TemporaryDisable(_delay));
+            }
         }
-    }
 
-    private IEnumerator TemporaryDisable(float delay)
-    {
-        _trolleyTrapCollider.enabled = false;
+        private IEnumerator TemporaryDisable(float delay)
+        {
+            _trolleyTrapCollider.enabled = false;
 
-        yield return new WaitForSeconds(delay);
+            yield return new WaitForSeconds(delay);
 
-        _trolleyTrapCollider.enabled = true;
+            _trolleyTrapCollider.enabled = true;
+        }
     }
 }

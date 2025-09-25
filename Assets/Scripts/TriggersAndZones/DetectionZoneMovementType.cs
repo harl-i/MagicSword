@@ -1,5 +1,8 @@
-public enum DetectionZoneMovementType
+namespace TriggersAndZones
 {
-    Moving,
-    Static,
+    public enum DetectionZoneMovementType
+    {
+        Moving,
+        Static,
+    }
 }

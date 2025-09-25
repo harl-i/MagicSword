@@ -3,64 +3,67 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using YG;
 
-public class ContinueMenu : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private int _soulsForContinue;
-    [SerializeField] private GameObject _error;
-    [SerializeField] private int _delay;
-    [SerializeField] private GameObject _mainMenu;
-
-    private void OnEnable()
+    public class ContinueMenu : MonoBehaviour
     {
-        _mainMenu.SetActive(false);
-    }
+        [SerializeField] private int _soulsForContinue;
+        [SerializeField] private GameObject _error;
+        [SerializeField] private int _delay;
+        [SerializeField] private GameObject _mainMenu;
 
-    public void Close()
-    {
-        _mainMenu.SetActive(true);
-        gameObject.SetActive(false);
-    }
-
-    public void ContinueForSouls()
-    {
-        if (YG2.saves.SoulsCount >= _soulsForContinue)
+        private void OnEnable()
         {
-            YG2.saves.SoulsCount -= _soulsForContinue;
+            _mainMenu.SetActive(false);
+        }
+
+        public void Close()
+        {
+            _mainMenu.SetActive(true);
+            gameObject.SetActive(false);
+        }
+
+        public void ContinueForSouls()
+        {
+            if (YG2.saves.SoulsCount >= _soulsForContinue)
+            {
+                YG2.saves.SoulsCount -= _soulsForContinue;
+                ResetContinues();
+                LoadContinueLevel();
+            }
+            else
+            {
+                StartCoroutine(ShowError(_delay));
+            }
+        }
+
+        public void ContinueForAdvertisment()
+        {
             ResetContinues();
-            LoadContinueLevel();
+            ShowAdvReward();
         }
-        else
+
+        private void ShowAdvReward()
         {
-            StartCoroutine(ShowError(_delay));
+            string id = "continue";
+            YG2.RewardedAdvShow(id, LoadContinueLevel);
         }
-    }
 
-    public void ContinueForAdvertisment()
-    {
-        ResetContinues();
-        ShowAdvReward();
-    }
+        private void LoadContinueLevel()
+        {
+            SceneManager.LoadScene(YG2.saves.SceneForContinue);
+        }
 
-    private void ShowAdvReward()
-    {
-        string id = "continue";
-        YG2.RewardedAdvShow(id, LoadContinueLevel);
-    }
+        private IEnumerator ShowError(int delay)
+        {
+            _error.SetActive(true);
+            yield return new WaitForSeconds(delay);
+            _error.SetActive(false);
+        }
 
-    private void LoadContinueLevel()
-    {
-        SceneManager.LoadScene(YG2.saves.SceneForContinue);
-    }
-
-    private IEnumerator ShowError(int delay)
-    {
-        _error.SetActive(true);
-        yield return new WaitForSeconds(delay);
-        _error.SetActive(false);
-    }
-
-    private void ResetContinues()
-    {
-        YG2.saves.Continues = 3;
+        private void ResetContinues()
+        {
+            YG2.saves.Continues = 3;
+        }
     }
 }

@@ -1,14 +1,17 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
-public class TapTip : MonoBehaviour
+namespace UI
 {
-    private Animator _animator;
-
-    private void Awake()
+    [RequireComponent(typeof(Animator))]
+    public class TapTip : MonoBehaviour
     {
-        _animator = GetComponent<Animator>();
+        private Animator _animator;
 
-        _animator.updateMode = AnimatorUpdateMode.UnscaledTime;
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+
+            _animator.updateMode = AnimatorUpdateMode.UnscaledTime;
+        }
     }
 }

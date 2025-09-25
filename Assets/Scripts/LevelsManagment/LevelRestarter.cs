@@ -1,14 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelRestarter : MonoBehaviour
+namespace LevelsManagment
 {
-    private int _currentSceneIndex;
-
-    public void Restart()
+    public class LevelRestarter : MonoBehaviour
     {
-        Time.timeScale = 1;
-        _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(_currentSceneIndex);
+        private int _currentSceneIndex;
+
+        public void Restart()
+        {
+            Time.timeScale = 1;
+            _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(_currentSceneIndex);
+        }
     }
 }

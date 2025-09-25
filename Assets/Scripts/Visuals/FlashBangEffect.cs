@@ -1,40 +1,43 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FlashBangEffect : MonoBehaviour
+namespace Visuals
 {
-    [SerializeField] private Image _flasImage;
-    [SerializeField] private float flashDuration = 1f;
-    [SerializeField] private float fadeDuration = 1f;
-
-    private bool isFlashBangActive = false;
-
-    private void Update()
+    public class FlashBangEffect : MonoBehaviour
     {
-        if (isFlashBangActive)
-        {
-            Color color = _flasImage.color;
-            color.a -= Time.deltaTime / fadeDuration;
-            _flasImage.color = color;
+        [SerializeField] private Image _flasImage;
+        [SerializeField] private float flashDuration = 1f;
+        [SerializeField] private float fadeDuration = 1f;
 
-            if (_flasImage.color.a <= 0)
+        private bool isFlashBangActive = false;
+
+        private void Update()
+        {
+            if (isFlashBangActive)
             {
-                isFlashBangActive = false;
+                Color color = _flasImage.color;
+                color.a -= Time.deltaTime / fadeDuration;
+                _flasImage.color = color;
+
+                if (_flasImage.color.a <= 0)
+                {
+                    isFlashBangActive = false;
+                }
             }
         }
-    }
 
-    public void FlashBanged()
-    {
-        int randomValue = Random.Range(0, 20);
-        
-        if (randomValue < 6)
+        public void FlashBanged()
         {
-            isFlashBangActive = true;
+            int randomValue = Random.Range(0, 20);
 
-            Color color = _flasImage.color;
-            color.a = 1;
-            _flasImage.color = color;
+            if (randomValue < 6)
+            {
+                isFlashBangActive = true;
+
+                Color color = _flasImage.color;
+                color.a = 1;
+                _flasImage.color = color;
+            }
         }
     }
 }

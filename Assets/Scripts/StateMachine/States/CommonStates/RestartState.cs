@@ -1,32 +1,36 @@
+using Sword;
 using UnityEngine;
 using YG;
 
-public class RestartState : State
+namespace StateMachine
 {
-    [SerializeField] private GameObject _playerObject;
-    [SerializeField] private Player _player;
-    [SerializeField] private SpriteRenderer _swordSprite;
-    [SerializeField] private Animator _playerAnimator;
-    [SerializeField] private Quaternion _startRotation = Quaternion.identity;
-    [SerializeField] private GameObject _UIContinueScreen;
-
-    private void OnEnable()
+    public class RestartState : State
     {
-        _UIContinueScreen.SetActive(true);
+        [SerializeField] private GameObject _playerObject;
+        [SerializeField] private Player _player;
+        [SerializeField] private SpriteRenderer _swordSprite;
+        [SerializeField] private Animator _playerAnimator;
+        [SerializeField] private Quaternion _startRotation = Quaternion.identity;
+        [SerializeField] private GameObject _UIContinueScreen;
 
-        if (YG2.saves.Continues > 0)
+        private void OnEnable()
         {
-            _playerAnimator.Rebind();
-            _playerAnimator.Update(0f);
+            _UIContinueScreen.SetActive(true);
 
-            _player.FullHealing();
-            _playerObject.transform.localPosition = Vector3.zero;
-            _playerObject.transform.rotation = _startRotation;
-            _playerObject.transform.localScale = Vector3.one;
+            if (YG2.saves.Continues > 0)
+            {
+                _playerAnimator.Rebind();
+                _playerAnimator.Update(0f);
 
-            Color newColor = _swordSprite.color;
-            newColor.a = 1;
-            _swordSprite.color = newColor;
+                _player.FullHealing();
+                _playerObject.transform.localPosition = Vector3.zero;
+                _playerObject.transform.rotation = _startRotation;
+                _playerObject.transform.localScale = Vector3.one;
+
+                Color newColor = _swordSprite.color;
+                newColor.a = 1;
+                _swordSprite.color = newColor;
+            }
         }
     }
 }

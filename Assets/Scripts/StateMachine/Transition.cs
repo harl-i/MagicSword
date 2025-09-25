@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public abstract class Transition : MonoBehaviour
+namespace StateMachine
 {
-    [SerializeField] protected State _targetState;
-
-    public State TargetState => _targetState;
-    public bool NeedTransit { get; protected set; }
-
-    private void OnEnable()
+    public abstract class Transition : MonoBehaviour
     {
-        NeedTransit = false;
+        [SerializeField] protected State _targetState;
+
+        public State TargetState => _targetState;
+        public bool NeedTransit { get; protected set; }
+
+        private void OnEnable()
+        {
+            NeedTransit = false;
+        }
     }
 }

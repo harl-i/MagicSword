@@ -1,10 +1,13 @@
 using UnityEngine;
 using YG;
 
-public class ContinuesReseter : MonoBehaviour
+namespace UI
 {
-    public void Reset()
+    public class ContinuesReseter : MonoBehaviour
     {
-        YG2.saves.Continues = 3;
+        public void Reset()
+        {
+            YG2.saves.Continues = 3;
+        }
     }
 }

@@ -1,57 +1,42 @@
+using DialogueTriggers;
+using Sword;
 using System.Collections;
 using UnityEngine;
 
-public class EnviromentSwitcher : MonoBehaviour
+namespace UI
 {
-    [Header("Camera")]
-    [SerializeField] private Camera _mainCamera;
-
-    [Header("UI")]
-    [SerializeField] private GameObject _mobileUI;
-    [SerializeField] private GameObject _desktopUI;
-
-    [Header("Camera follow component")]
-    [SerializeField] private CameraFollow _cameraFollow;
-
-    public float _scaleFactor;
-
-    private void OnEnable()
+    public class EnviromentSwitcher : MonoBehaviour
     {
-        SceneDialogue.OnDialogShow += HandleDialogueShow;
-        OneTimeCheckScreenSize();
-    }
+        [Header("Camera")]
+        [SerializeField] private Camera _mainCamera;
 
-    private void OnDisable()
-    {
-        SceneDialogue.OnDialogShow -= HandleDialogueShow;
-    }
+        [Header("UI")]
+        [SerializeField] private GameObject _mobileUI;
+        [SerializeField] private GameObject _desktopUI;
 
-    private void Start()
-    {
-        StartCoroutine(CheckScreenSize());
-    }
+        [Header("Camera follow component")]
+        [SerializeField] private CameraFollow _cameraFollow;
 
-    public void OneTimeCheckScreenSize()
-    {
-        float width = Screen.width;
-        float height = Screen.height;
+        public float _scaleFactor;
 
-        if (width / height < _scaleFactor)
+        private void OnEnable()
         {
-            SwitchToMobile();
+            SceneDialogue.OnDialogShow += HandleDialogueShow;
+            OneTimeCheckScreenSize();
         }
-        else if (width / height > _scaleFactor)
+
+        private void OnDisable()
         {
-            SwitchToDesktop();
+            SceneDialogue.OnDialogShow -= HandleDialogueShow;
         }
-    }
 
-    private IEnumerator CheckScreenSize()
-    {
-        while (true)
+        private void Start()
         {
-            yield return new WaitForSeconds(0.5f);
+            StartCoroutine(CheckScreenSize());
+        }
 
+        public void OneTimeCheckScreenSize()
+        {
             float width = Screen.width;
             float height = Screen.height;
 
@@ -64,35 +49,55 @@ public class EnviromentSwitcher : MonoBehaviour
                 SwitchToDesktop();
             }
         }
-    }
 
-    private void HandleDialogueShow(bool isShow)
-    {
-        if (isShow)
+        private IEnumerator CheckScreenSize()
         {
-            StopCoroutine(CheckScreenSize());
+            while (true)
+            {
+                yield return new WaitForSeconds(0.5f);
+
+                float width = Screen.width;
+                float height = Screen.height;
+
+                if (width / height < _scaleFactor)
+                {
+                    SwitchToMobile();
+                }
+                else if (width / height > _scaleFactor)
+                {
+                    SwitchToDesktop();
+                }
+            }
         }
-        else
+
+        private void HandleDialogueShow(bool isShow)
         {
-            StartCoroutine(CheckScreenSize());
+            if (isShow)
+            {
+                StopCoroutine(CheckScreenSize());
+            }
+            else
+            {
+                StartCoroutine(CheckScreenSize());
+            }
         }
-    }
 
-    private void SwitchToMobile()
-    {
-        _desktopUI.SetActive(false);
-        _mobileUI.SetActive(true);
-        _mainCamera.orthographicSize = 5.61f;
+        private void SwitchToMobile()
+        {
+            _desktopUI.SetActive(false);
+            _mobileUI.SetActive(true);
+            _mainCamera.orthographicSize = 5.61f;
 
-        _cameraFollow.SwitchToMobile();
-    }
+            _cameraFollow.SwitchToMobile();
+        }
 
-    private void SwitchToDesktop()
-    {
-        _desktopUI.SetActive(true);
-        _mobileUI.SetActive(false);
-        _mainCamera.orthographicSize = 3.2f;
+        private void SwitchToDesktop()
+        {
+            _desktopUI.SetActive(true);
+            _mobileUI.SetActive(false);
+            _mainCamera.orthographicSize = 3.2f;
 
-        _cameraFollow.SwitchToDesktop();
+            _cameraFollow.SwitchToDesktop();
+        }
     }
 }

@@ -2,28 +2,31 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class BulletPool : MonoBehaviour
+namespace Bullets
 {
-    [SerializeField] private Transform _container;
-    [SerializeField] private int _capacity;
-
-    protected List<Bullet> _pool = new List<Bullet>();
-
-    protected void Initialize(Bullet prefab)
+    public class BulletPool : MonoBehaviour
     {
-        for (int i = 0; i < _capacity; i++)
+        [SerializeField] private Transform _container;
+        [SerializeField] private int _capacity;
+
+        protected List<Bullet> _pool = new List<Bullet>();
+
+        protected void Initialize(Bullet prefab)
         {
-            Bullet spawned = Instantiate(prefab, _container.transform);
-            spawned.gameObject.SetActive(false);
+            for (int i = 0; i < _capacity; i++)
+            {
+                Bullet spawned = Instantiate(prefab, _container.transform);
+                spawned.gameObject.SetActive(false);
 
-            _pool.Add(spawned);
+                _pool.Add(spawned);
+            }
         }
-    }
 
-    protected bool TryGetObject(out Bullet result)
-    {
-        result = _pool.FirstOrDefault(p => p.gameObject.activeSelf == false);
+        protected bool TryGetObject(out Bullet result)
+        {
+            result = _pool.FirstOrDefault(p => p.gameObject.activeSelf == false);
 
-        return result != null;
+            return result != null;
+        }
     }
 }

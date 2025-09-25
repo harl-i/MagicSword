@@ -1,14 +1,18 @@
+using Sword;
 using UnityEngine;
 
-public class DamagePlayerTransition : Transition
+namespace StateMachine
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class DamagePlayerTransition : Transition
     {
-        if (collision.TryGetComponent(out Player player))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (!player.IsLaunched)
+            if (collision.TryGetComponent(out Player player))
             {
-                NeedTransit = true;
+                if (!player.IsLaunched)
+                {
+                    NeedTransit = true;
+                }
             }
         }
     }

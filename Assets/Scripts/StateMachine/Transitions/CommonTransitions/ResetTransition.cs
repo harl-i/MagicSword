@@ -1,18 +1,21 @@
-public class ResetTransition : Transition
+namespace StateMachine
 {
-    private void OnEnable()
+    public class ResetTransition : Transition
     {
-        ResetTrigger.OnResetTrtiggerHit += HandlePlayerHitTrigger;
-    }
+        private void OnEnable()
+        {
+            ResetTrigger.OnResetTrtiggerHit += HandlePlayerHitTrigger;
+        }
 
-    private void OnDisable()
-    {
-        ResetTrigger.OnResetTrtiggerHit -= HandlePlayerHitTrigger;
-        NeedTransit = false;
-    }
+        private void OnDisable()
+        {
+            ResetTrigger.OnResetTrtiggerHit -= HandlePlayerHitTrigger;
+            NeedTransit = false;
+        }
 
-    private void HandlePlayerHitTrigger()
-    {
-        NeedTransit = true;
+        private void HandlePlayerHitTrigger()
+        {
+            NeedTransit = true;
+        }
     }
 }

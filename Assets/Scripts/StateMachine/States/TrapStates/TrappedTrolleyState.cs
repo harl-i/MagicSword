@@ -1,49 +1,53 @@
+using Traps;
 using UnityEngine;
 
-[RequireComponent(typeof(PolygonCollider2D))]
-public class TrappedTrolleyState : State
+namespace StateMachine
 {
-    [SerializeField] private float _offsetY = 3f;
-
-    private PolygonCollider2D _swordCollider;
-    private Transform _trolleyTrapTransform;
-    private PolygonCollider2D _trapMainCollider;
-    private void Awake()
+    [RequireComponent(typeof(PolygonCollider2D))]
+    public class TrappedTrolleyState : State
     {
-        _swordCollider = GetComponent<PolygonCollider2D>();
-    }
+        [SerializeField] private float _offsetY = 3f;
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.TryGetComponent(out TrollleyTrap trollleyTrap))
+        private PolygonCollider2D _swordCollider;
+        private Transform _trolleyTrapTransform;
+        private PolygonCollider2D _trapMainCollider;
+        private void Awake()
         {
-            _trolleyTrapTransform = trollleyTrap.gameObject.transform;
+            _swordCollider = GetComponent<PolygonCollider2D>();
+        }
 
-            _trapMainCollider = trollleyTrap.GetMainTrolleyCollider();
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.TryGetComponent(out TrollleyTrap trollleyTrap))
+            {
+                _trolleyTrapTransform = trollleyTrap.gameObject.transform;
+
+                _trapMainCollider = trollleyTrap.GetMainTrolleyCollider();
+
+                if (_trapMainCollider != null)
+                {
+                    Physics2D.IgnoreCollision(_swordCollider, _trapMainCollider);
+                }
+            }
+        }
+
+        private void Update()
+        {
+            if (_trolleyTrapTransform != null)
+            {
+                Vector2 positionInTrap = new Vector2(_trolleyTrapTransform.position.x, _trolleyTrapTransform.position.y + _offsetY);
+                transform.position = positionInTrap;
+            }
+        }
+
+        private void OnDisable()
+        {
+            _trolleyTrapTransform = null;
 
             if (_trapMainCollider != null)
             {
-                Physics2D.IgnoreCollision(_swordCollider, _trapMainCollider);
+                Physics2D.IgnoreCollision(_swordCollider, _trapMainCollider, false);
             }
-        }
-    }
-
-    private void Update()
-    {
-        if (_trolleyTrapTransform != null)
-        {
-            Vector2 positionInTrap = new Vector2(_trolleyTrapTransform.position.x, _trolleyTrapTransform.position.y + _offsetY);
-            transform.position = positionInTrap;
-        }
-    }
-
-    private void OnDisable()
-    {
-        _trolleyTrapTransform = null;
-
-        if (_trapMainCollider != null)
-        {
-            Physics2D.IgnoreCollision(_swordCollider, _trapMainCollider, false);
         }
     }
 }

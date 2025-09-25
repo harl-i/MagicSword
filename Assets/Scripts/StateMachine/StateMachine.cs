@@ -1,42 +1,45 @@
 using UnityEngine;
 
-public class StateMachine : MonoBehaviour
+namespace StateMachine
 {
-    [SerializeField] private State _firstState;
-
-    private State _currentState;
-
-    private void Start()
+    public class StateMachine : MonoBehaviour
     {
-        ResetState(_firstState);
-    }
+        [SerializeField] private State _firstState;
 
-    private void Update()
-    {
-        if (_currentState == null)
-            return;
+        private State _currentState;
 
-        State nextState = _currentState.GetNextState();
-        if (nextState != null)
-            Transit(nextState);
-    }
+        private void Start()
+        {
+            ResetState(_firstState);
+        }
 
-    private void ResetState(State startState)
-    {
-        _currentState = startState;
+        private void Update()
+        {
+            if (_currentState == null)
+                return;
 
-        if (_currentState != null)
-            _currentState.Enter();
-    }
+            State nextState = _currentState.GetNextState();
+            if (nextState != null)
+                Transit(nextState);
+        }
 
-    private void Transit(State nextState)
-    {
-        if (_currentState != null)
-            _currentState.Exit();
+        private void ResetState(State startState)
+        {
+            _currentState = startState;
 
-        _currentState = nextState;
+            if (_currentState != null)
+                _currentState.Enter();
+        }
 
-        if (_currentState != null)
-            _currentState.Enter();
+        private void Transit(State nextState)
+        {
+            if (_currentState != null)
+                _currentState.Exit();
+
+            _currentState = nextState;
+
+            if (_currentState != null)
+                _currentState.Enter();
+        }
     }
 }

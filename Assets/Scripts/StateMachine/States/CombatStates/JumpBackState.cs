@@ -1,62 +1,65 @@
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
-[RequireComponent(typeof(Animator))]
-public class JumpBackState : State
+namespace StateMachine
 {
-    [SerializeField] private float _speed;
-    [SerializeField] private float _distance;
-
-    private SpriteRenderer _spriteRenderer;
-    private Animator _animator;
-    private Vector2 _startPosition;
-    private Vector2 _targetPosition;
-    private bool _isReadyToJump;
-
-    private void Awake()
+    [RequireComponent(typeof(SpriteRenderer))]
+    [RequireComponent(typeof(Animator))]
+    public class JumpBackState : State
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        _animator = GetComponent<Animator>();
-    }
+        [SerializeField] private float _speed;
+        [SerializeField] private float _distance;
 
-    private void Update()
-    {
-        if (_isReadyToJump)
+        private SpriteRenderer _spriteRenderer;
+        private Animator _animator;
+        private Vector2 _startPosition;
+        private Vector2 _targetPosition;
+        private bool _isReadyToJump;
+
+        private void Awake()
         {
-            MoveBackward();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+            _animator = GetComponent<Animator>();
         }
-    }
 
-    private void OnEnable()
-    {
-        _isReadyToJump = false;
-        _animator.SetTrigger("JumpBack");
+        private void Update()
+        {
+            if (_isReadyToJump)
+            {
+                MoveBackward();
+            }
+        }
 
-        _startPosition = transform.position;
+        private void OnEnable()
+        {
+            _isReadyToJump = false;
+            _animator.SetTrigger("JumpBack");
 
-        Vector2 direction = _spriteRenderer.flipX ? Vector2.left : Vector2.right;
+            _startPosition = transform.position;
 
-        _targetPosition = _startPosition - direction.normalized * _distance;
-    }
+            Vector2 direction = _spriteRenderer.flipX ? Vector2.left : Vector2.right;
 
-    private void OnDisable()
-    {
-        _isReadyToJump = false;
-    }
+            _targetPosition = _startPosition - direction.normalized * _distance;
+        }
 
-    public void Jump()
-    {
-        _isReadyToJump = true;
-    }
+        private void OnDisable()
+        {
+            _isReadyToJump = false;
+        }
 
-    public void MoveBackward()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, _targetPosition, _speed * Time.deltaTime);
-    }
+        public void Jump()
+        {
+            _isReadyToJump = true;
+        }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawSphere(_targetPosition, 0.1f);
+        public void MoveBackward()
+        {
+            transform.position = Vector2.MoveTowards(transform.position, _targetPosition, _speed * Time.deltaTime);
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(_targetPosition, 0.1f);
+        }
     }
 }

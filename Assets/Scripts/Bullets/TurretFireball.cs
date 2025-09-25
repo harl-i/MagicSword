@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class TurretFireball : MonoBehaviour { }
+namespace Bullets
+{
+    public class TurretFireball : MonoBehaviour { }
+}

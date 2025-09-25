@@ -1,3 +1,4 @@
-public class EmptyState : State
+namespace StateMachine
 {
+    public class EmptyState : State { }
 }

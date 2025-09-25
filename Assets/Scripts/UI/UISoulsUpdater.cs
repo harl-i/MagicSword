@@ -2,12 +2,15 @@ using TMPro;
 using UnityEngine;
 using YG;
 
-public class UISoulsUpdater : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private TMP_Text _soulsCountUI;
-
-    private void OnEnable()
+    public class UISoulsUpdater : MonoBehaviour
     {
-        _soulsCountUI.text = YG2.saves.SoulsCount.ToString();
+        [SerializeField] private TMP_Text _soulsCountUI;
+
+        private void OnEnable()
+        {
+            _soulsCountUI.text = YG2.saves.SoulsCount.ToString();
+        }
     }
 }

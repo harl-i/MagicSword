@@ -1,50 +1,54 @@
+using Sword;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteSwapperActivator : MonoBehaviour
+namespace Visuals
 {
-    public Action AllSpritesSwapped;
-
-    [SerializeField] private float _delayBeforeDeactivateSprite;
-
-    private List<SpriteSwapper> _swappers = new List<SpriteSwapper>();
-
-    private void Awake()
+    public class SpriteSwapperActivator : MonoBehaviour
     {
-        FindAndStoreSwappers();
-    }
+        public Action AllSpritesSwapped;
 
-    private void FindAndStoreSwappers()
-    {
-        foreach (Transform child in transform)
+        [SerializeField] private float _delayBeforeDeactivateSprite;
+
+        private List<SpriteSwapper> _swappers = new List<SpriteSwapper>();
+
+        private void Awake()
         {
-            SpriteSwapper swapper = child.GetComponent<SpriteSwapper>();
-            if (swapper != null)
+            FindAndStoreSwappers();
+        }
+
+        private void FindAndStoreSwappers()
+        {
+            foreach (Transform child in transform)
             {
-                _swappers.Add(swapper);
+                SpriteSwapper swapper = child.GetComponent<SpriteSwapper>();
+                if (swapper != null)
+                {
+                    _swappers.Add(swapper);
+                }
             }
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.TryGetComponent(out Player player))
+        private void OnTriggerEnter2D(Collider2D collider)
         {
-            foreach (var swapper in _swappers)
+            if (collider.TryGetComponent(out Player player))
             {
-                swapper.enabled = true;
+                foreach (var swapper in _swappers)
+                {
+                    swapper.enabled = true;
+                }
+
+                StartCoroutine(DelayBeforeInvoke(_delayBeforeDeactivateSprite));
             }
-
-            StartCoroutine(DelayBeforeInvoke(_delayBeforeDeactivateSprite));
         }
-    }
 
-    private IEnumerator DelayBeforeInvoke(float delay)
-    {
-        yield return new WaitForSeconds(delay);
+        private IEnumerator DelayBeforeInvoke(float delay)
+        {
+            yield return new WaitForSeconds(delay);
 
-        AllSpritesSwapped?.Invoke();
+            AllSpritesSwapped?.Invoke();
+        }
     }
 }

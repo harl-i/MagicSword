@@ -1,22 +1,25 @@
 using UnityEngine;
 using YG;
 
-[RequireComponent(typeof(Animator))]
-public class MoveHint : MonoBehaviour
+namespace UI
 {
-    private void OnEnable()
+    [RequireComponent(typeof(Animator))]
+    public class MoveHint : MonoBehaviour
     {
-        if (YG2.saves.NewGamePlus == 1)
+        private void OnEnable()
         {
-            gameObject.SetActive(false);
+            if (YG2.saves.NewGamePlus == 1)
+            {
+                gameObject.SetActive(false);
+            }
         }
-    }
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
+        private void Update()
         {
-            gameObject.SetActive(false);
+            if (Input.GetMouseButtonDown(0))
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }

@@ -1,29 +1,32 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(PolygonCollider2D))]
-public class FallState : State
+namespace StateMachine
 {
-    private PolygonCollider2D _colliderForDisable;
-    private Rigidbody2D _rigidbody2D;
-    private Animator _animator;
-
-    private void Awake()
+    [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(Animator))]
+    [RequireComponent(typeof(PolygonCollider2D))]
+    public class FallState : State
     {
-        _animator = GetComponent<Animator>();
-        _rigidbody2D = GetComponent<Rigidbody2D>();
-        _colliderForDisable = GetComponent<PolygonCollider2D>();
-    }
+        private PolygonCollider2D _colliderForDisable;
+        private Rigidbody2D _rigidbody2D;
+        private Animator _animator;
 
-    private void OnEnable()
-    {
-        _animator.SetTrigger("Fall");
-    }
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+            _rigidbody2D = GetComponent<Rigidbody2D>();
+            _colliderForDisable = GetComponent<PolygonCollider2D>();
+        }
 
-    public void OnAnmationEnd()
-    {
-        _colliderForDisable.enabled = false;
-        _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+        private void OnEnable()
+        {
+            _animator.SetTrigger("Fall");
+        }
+
+        public void OnAnmationEnd()
+        {
+            _colliderForDisable.enabled = false;
+            _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+        }
     }
 }

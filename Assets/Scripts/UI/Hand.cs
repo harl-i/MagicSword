@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class Hand : MonoBehaviour { }
+namespace UI
+{
+    public class Hand : MonoBehaviour { }
+}

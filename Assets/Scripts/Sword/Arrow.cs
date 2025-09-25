@@ -1,21 +1,24 @@
 using UnityEngine;
 
-public class Arrow : MonoBehaviour 
+namespace Sword
 {
-    [SerializeField] private SpriteRenderer _spriteRenderer;
-    
-    private void Start()
+    public class Arrow : MonoBehaviour
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+        [SerializeField] private SpriteRenderer _spriteRenderer;
 
-    public void FillWithRed()
-    {
-        _spriteRenderer.color = Color.red;
-    }
+        private void Start()
+        {
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
 
-    public void RemoveRedFill()
-    {
-        _spriteRenderer.color = Color.white;
+        public void FillWithRed()
+        {
+            _spriteRenderer.color = Color.red;
+        }
+
+        public void RemoveRedFill()
+        {
+            _spriteRenderer.color = Color.white;
+        }
     }
 }

@@ -2,39 +2,42 @@ using UnityEngine;
 using UnityEngine.UI;
 using YG;
 
-public class AudioToggle : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private Image _buttonIcon;
-    [SerializeField] private Sprite _volumeOn;
-    [SerializeField] private Sprite _volumeOff;
-
-    private bool _isMuted = false;
-
-    private void Start()
+    public class AudioToggle : MonoBehaviour
     {
-        _isMuted = YG2.saves.Volume == 0;
-        AudioListener.volume = YG2.saves.Volume;
-        UpdateIcon();
-    }
+        [SerializeField] private Image _buttonIcon;
+        [SerializeField] private Sprite _volumeOn;
+        [SerializeField] private Sprite _volumeOff;
 
-    public void ToggleAudio()
-    {
-        _isMuted = !_isMuted;
-        YG2.saves.Volume = _isMuted ? 0 : 1;
-        AudioListener.volume = YG2.saves.Volume;
+        private bool _isMuted = false;
 
-        UpdateIcon();
-    }
-
-    private void UpdateIcon()
-    {
-        if (YG2.saves.Volume == 1)
+        private void Start()
         {
-            _buttonIcon.sprite = _volumeOn;
+            _isMuted = YG2.saves.Volume == 0;
+            AudioListener.volume = YG2.saves.Volume;
+            UpdateIcon();
         }
-        else
+
+        public void ToggleAudio()
         {
-            _buttonIcon.sprite = _volumeOff;
+            _isMuted = !_isMuted;
+            YG2.saves.Volume = _isMuted ? 0 : 1;
+            AudioListener.volume = YG2.saves.Volume;
+
+            UpdateIcon();
+        }
+
+        private void UpdateIcon()
+        {
+            if (YG2.saves.Volume == 1)
+            {
+                _buttonIcon.sprite = _volumeOn;
+            }
+            else
+            {
+                _buttonIcon.sprite = _volumeOff;
+            }
         }
     }
 }

@@ -1,15 +1,19 @@
+using Sword;
 using System;
 using UnityEngine;
 
-public class ResetTrigger : MonoBehaviour
+namespace StateMachine
 {
-    public static Action OnResetTrtiggerHit;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class ResetTrigger : MonoBehaviour
     {
-        if (collision.TryGetComponent(out Player player))
+        public static Action OnResetTrtiggerHit;
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            OnResetTrtiggerHit?.Invoke();
+            if (collision.TryGetComponent(out Player player))
+            {
+                OnResetTrtiggerHit?.Invoke();
+            }
         }
     }
 }

@@ -1,5 +1,8 @@
-public enum DetectionZoneType
+namespace TriggersAndZones
 {
-    Circle,
-    Rectangle,
+    public enum DetectionZoneType
+    {
+        Circle,
+        Rectangle,
+    }
 }

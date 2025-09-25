@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class ExitSnowdriftTrigger : MonoBehaviour { }
+namespace Traps
+{
+    public class ExitSnowdriftTrigger : MonoBehaviour { }
+}

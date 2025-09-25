@@ -1,77 +1,82 @@
+using Obstacles;
+using Platforms;
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
-public class NotPhysicalFallState : State
+namespace StateMachine
 {
-    [SerializeField] private float _fallSpeed = 10f;
-    [SerializeField] private float _gravity = 9.81f;
-
-    private Vector3 _velocity;
-    private Animator _animator;
-    private float _delay = 0.5f;
-    private bool _canDetectCollision;
-    private bool _isFall;
-
-    private void Awake()
+    [RequireComponent(typeof(Animator))]
+    public class NotPhysicalFallState : State
     {
-        _animator = GetComponent<Animator>();
-    }
+        [SerializeField] private float _fallSpeed = 10f;
+        [SerializeField] private float _gravity = 9.81f;
 
-    private void Start()
-    {
-        _canDetectCollision = false;
-        _isFall = true;
-        _velocity = new Vector3(0, -_fallSpeed, 0);
-        _animator.SetTrigger("StartFall");
+        private Vector3 _velocity;
+        private Animator _animator;
+        private float _delay = 0.5f;
+        private bool _canDetectCollision;
+        private bool _isFall;
 
-        StartCoroutine(DelayBeforeDetectCollision(_delay));
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (_canDetectCollision)
+        private void Awake()
         {
-            if (collision.collider.TryGetComponent(out Obstacle obstacle))
+            _animator = GetComponent<Animator>();
+        }
+
+        private void Start()
+        {
+            _canDetectCollision = false;
+            _isFall = true;
+            _velocity = new Vector3(0, -_fallSpeed, 0);
+            _animator.SetTrigger("StartFall");
+
+            StartCoroutine(DelayBeforeDetectCollision(_delay));
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (_canDetectCollision)
             {
-                _animator.SetTrigger("EndFall");
-                _isFall = false;
+                if (collision.collider.TryGetComponent(out Obstacle obstacle))
+                {
+                    _animator.SetTrigger("EndFall");
+                    _isFall = false;
+                }
             }
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (_canDetectCollision)
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.gameObject.TryGetComponent(out StopFallingPlatform stopFallingPlatform))
+            if (_canDetectCollision)
             {
-                _animator.SetTrigger("EndFall");
-                _isFall = false;
+                if (collision.gameObject.TryGetComponent(out StopFallingPlatform stopFallingPlatform))
+                {
+                    _animator.SetTrigger("EndFall");
+                    _isFall = false;
+                }
             }
         }
-    }
 
-    private void Update()
-    {
-        if (_isFall)
+        private void Update()
         {
-            _velocity.y -= _gravity * Time.deltaTime;
+            if (_isFall)
+            {
+                _velocity.y -= _gravity * Time.deltaTime;
 
-            transform.position += _velocity * Time.deltaTime;
+                transform.position += _velocity * Time.deltaTime;
+            }
         }
-    }
 
-    private void OnDisable()
-    {
-        _animator.ResetTrigger("StartFall");
-        _animator.ResetTrigger("EndFall");
-    }
+        private void OnDisable()
+        {
+            _animator.ResetTrigger("StartFall");
+            _animator.ResetTrigger("EndFall");
+        }
 
-    private IEnumerator DelayBeforeDetectCollision(float delay)
-    {
-        yield return new WaitForSeconds(delay);
+        private IEnumerator DelayBeforeDetectCollision(float delay)
+        {
+            yield return new WaitForSeconds(delay);
 
-        _canDetectCollision = true;
+            _canDetectCollision = true;
+        }
     }
 }

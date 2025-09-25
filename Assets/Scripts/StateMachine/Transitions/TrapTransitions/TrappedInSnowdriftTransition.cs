@@ -1,12 +1,16 @@
+using Traps;
 using UnityEngine;
 
-public class TrappedInSnowdriftTransition : Transition
+namespace StateMachine
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class TrappedInSnowdriftTransition : Transition
     {
-        if (collision.gameObject.TryGetComponent(out Snowdrift snowdrift))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            NeedTransit = true;
+            if (collision.gameObject.TryGetComponent(out Snowdrift snowdrift))
+            {
+                NeedTransit = true;
+            }
         }
     }
 }

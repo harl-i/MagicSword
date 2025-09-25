@@ -1,25 +1,28 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(BoxCollider2D))]
-public class CrystalDestroyer : MonoBehaviour
+namespace Traps
 {
-    private Animator _animator;
-    private BoxCollider2D _collider;
-
-    private void Awake()
+    [RequireComponent(typeof(Animator))]
+    [RequireComponent(typeof(BoxCollider2D))]
+    public class CrystalDestroyer : MonoBehaviour
     {
-        _animator = GetComponent<Animator>();
-        _collider = GetComponent<BoxCollider2D>();
-    }
+        private Animator _animator;
+        private BoxCollider2D _collider;
 
-    public void Destroy()
-    {
-        _animator.SetTrigger("CrystalDestroy");
-    }
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+            _collider = GetComponent<BoxCollider2D>();
+        }
 
-    public void DisableCollider()
-    {
-        _collider.enabled = false;
+        public void Destroy()
+        {
+            _animator.SetTrigger("CrystalDestroy");
+        }
+
+        public void DisableCollider()
+        {
+            _collider.enabled = false;
+        }
     }
 }

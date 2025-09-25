@@ -1,10 +1,13 @@
 using UnityEngine;
 using YG;
 
-public class NewGamePlusTrigger : MonoBehaviour
+namespace TriggersAndZones
 {
-    public void Activate()
+    public class NewGamePlusTrigger : MonoBehaviour
     {
-        YG2.saves.NewGamePlus = 1;
+        public void Activate()
+        {
+            YG2.saves.NewGamePlus = 1;
+        }
     }
 }

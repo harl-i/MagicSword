@@ -1,12 +1,15 @@
-public class EndEjectTransition : Transition
+namespace StateMachine
 {
-    private void OnDisable()
+    public class EndEjectTransition : Transition
     {
-        NeedTransit = false;
-    }
+        private void OnDisable()
+        {
+            NeedTransit = false;
+        }
 
-    public void EjectEnded()
-    {
-        NeedTransit = true;
+        public void EjectEnded()
+        {
+            NeedTransit = true;
+        }
     }
 }

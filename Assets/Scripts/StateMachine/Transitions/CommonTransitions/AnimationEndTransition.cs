@@ -1,7 +1,10 @@
-public class AnimationEndTransition : Transition
+namespace StateMachine
 {
-    public void AnimationEnded()
+    public class AnimationEndTransition : Transition
     {
-        NeedTransit = true;
+        public void AnimationEnded()
+        {
+            NeedTransit = true;
+        }
     }
 }

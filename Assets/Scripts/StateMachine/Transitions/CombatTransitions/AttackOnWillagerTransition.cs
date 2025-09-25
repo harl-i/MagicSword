@@ -1,12 +1,16 @@
+using Characters;
 using UnityEngine;
 
-public class AttackOnWillagerTransition : Transition
+namespace StateMachine
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class AttackOnWillagerTransition : Transition
     {
-        if (collision.gameObject.TryGetComponent(out Willager willager))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            NeedTransit = true;
+            if (collision.gameObject.TryGetComponent(out Willager willager))
+            {
+                NeedTransit = true;
+            }
         }
     }
 }

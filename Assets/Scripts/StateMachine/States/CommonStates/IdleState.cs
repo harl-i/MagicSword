@@ -1,17 +1,20 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
-public class IdleState : State
+namespace StateMachine
 {
-    private Animator _animator;
-
-    private void Awake()
+    [RequireComponent(typeof(Animator))]
+    public class IdleState : State
     {
-        _animator = GetComponent<Animator>();
-    }
+        private Animator _animator;
 
-    private void OnEnable()
-    {
-        _animator.SetTrigger("Idle");
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+        }
+
+        private void OnEnable()
+        {
+            _animator.SetTrigger("Idle");
+        }
     }
 }

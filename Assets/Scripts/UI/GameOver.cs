@@ -1,60 +1,64 @@
+using Sword;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using YG;
 
-[RequireComponent(typeof(Image))]
-public class GameOver : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private GameObject _gameOverMessage;
-    [SerializeField] private GameObject _blackBackground;
-    [SerializeField] private GameObject _continueScreen;
-
-    private Image _gameoverImage;
-
-    private float _delay = 3.4f;
-
-    private void Awake()
+    [RequireComponent(typeof(Image))]
+    public class GameOver : MonoBehaviour
     {
-        _gameoverImage = GetComponent<Image>();
-    }
+        [SerializeField] private GameObject _gameOverMessage;
+        [SerializeField] private GameObject _blackBackground;
+        [SerializeField] private GameObject _continueScreen;
 
-    private void OnEnable()
-    {
-        Player.HealthHasChanged += CheckPlayerHealth;
-    }
+        private Image _gameoverImage;
 
-    private void OnDisable()
-    {
-        Player.HealthHasChanged -= CheckPlayerHealth;
-    }
+        private float _delay = 3.4f;
 
-    private void CheckPlayerHealth(int count)
-    {
-        if (count == 0)
+        private void Awake()
         {
-            YG2.saves.Continues--;
-            if (YG2.saves.Continues == 0)
+            _gameoverImage = GetComponent<Image>();
+        }
+
+        private void OnEnable()
+        {
+            Player.HealthHasChanged += CheckPlayerHealth;
+        }
+
+        private void OnDisable()
+        {
+            Player.HealthHasChanged -= CheckPlayerHealth;
+        }
+
+        private void CheckPlayerHealth(int count)
+        {
+            if (count == 0)
             {
-                StartCoroutine(ShowGameOverScreenAndExit(_delay));
+                YG2.saves.Continues--;
+                if (YG2.saves.Continues == 0)
+                {
+                    StartCoroutine(ShowGameOverScreenAndExit(_delay));
+                }
             }
         }
-    }
 
-    private IEnumerator ShowGameOverScreenAndExit(float delay)
-    {
-        yield return new WaitForSecondsRealtime(delay);
+        private IEnumerator ShowGameOverScreenAndExit(float delay)
+        {
+            yield return new WaitForSecondsRealtime(delay);
 
-        Time.timeScale = 0;
-        _continueScreen.SetActive(false);
-        _gameOverMessage.SetActive(true);
-        _blackBackground.SetActive(true);
-        _gameoverImage.enabled = true;
+            Time.timeScale = 0;
+            _continueScreen.SetActive(false);
+            _gameOverMessage.SetActive(true);
+            _blackBackground.SetActive(true);
+            _gameoverImage.enabled = true;
 
-        yield return new WaitForSecondsRealtime(delay - 2);
+            yield return new WaitForSecondsRealtime(delay - 2);
 
-        Time.timeScale = 1;
-        SceneManager.LoadScene(0);
+            Time.timeScale = 1;
+            SceneManager.LoadScene(0);
+        }
     }
 }

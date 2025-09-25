@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class PositionUpdater : MonoBehaviour
+namespace Sword
 {
-    [SerializeField] private Transform _objectForCopyPosition;
-
-    private void Update()
+    public class PositionUpdater : MonoBehaviour
     {
-        transform.position = _objectForCopyPosition.position;
+        [SerializeField] private Transform _objectForCopyPosition;
+
+        private void Update()
+        {
+            transform.position = _objectForCopyPosition.position;
+        }
     }
 }

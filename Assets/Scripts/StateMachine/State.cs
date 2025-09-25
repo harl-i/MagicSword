@@ -1,49 +1,52 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class State : MonoBehaviour
+namespace StateMachine
 {
-    [SerializeField] private List<Transition> _transitions;
-
-    protected Transform Player { get; private set; }
-
-    public void Enter()
+    public abstract class State : MonoBehaviour
     {
-        if (enabled == false)
-        {
-            enabled = true;
+        [SerializeField] private List<Transition> _transitions;
 
-            foreach (var transition in _transitions)
+        protected Transform Player { get; private set; }
+
+        public void Enter()
+        {
+            if (enabled == false)
             {
-                transition.enabled = true;
+                enabled = true;
+
+                foreach (var transition in _transitions)
+                {
+                    transition.enabled = true;
+                }
             }
         }
-    }
 
-    public void Exit()
-    {
-        if (enabled == true)
+        public void Exit()
+        {
+            if (enabled == true)
+            {
+                foreach (var transition in _transitions)
+                    transition.enabled = false;
+            }
+
+            enabled = false;
+        }
+
+        public State GetNextState()
         {
             foreach (var transition in _transitions)
-                transition.enabled = false;
+            {
+                if (transition.NeedTransit)
+                    return transition.TargetState;
+            }
+
+            return null;
         }
 
-        enabled = false;
-    }
-
-    public State GetNextState()
-    {
-        foreach (var transition in _transitions)
+        public void SetPlayerTransform(Transform playerTransform)
         {
-            if (transition.NeedTransit)
-                return transition.TargetState;
+            Player = playerTransform;
         }
-
-        return null;
-    }
-
-    public void SetPlayerTransform(Transform playerTransform)
-    {
-        Player = playerTransform;
     }
 }

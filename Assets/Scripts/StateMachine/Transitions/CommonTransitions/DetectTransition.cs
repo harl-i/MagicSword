@@ -1,134 +1,138 @@
 using System.Collections;
+using TriggersAndZones;
 using UnityEngine;
 
-[ExecuteInEditMode]
-public class DetectTransition : Transition
+namespace StateMachine
 {
-    [SerializeField] private DetectionZoneType _detectionZoneType;
-    [SerializeField] private DetectionZoneMovementType _zoneMovementType;
-    [SerializeField] private float _detectionRadius = 5f;
-    [SerializeField] private float _detectReactionDelay;
-    [SerializeField] private Vector2 _detectionRectangleSize = new Vector2(10f, 5f);
-    [SerializeField] private LayerMask _targetLayer;
-    [SerializeField] private bool _isCooldownActive;
-    [SerializeField] private float _cooldown;
-    [SerializeField] private float _offsetY;
-    [SerializeField] private float _offsetX;
-
-    private Vector2 _fixedDetectionPosition;
-    private Transform _playerTransform;
-    private float _timeAfterDetect;
-
-    private void Awake()
+    [ExecuteInEditMode]
+    public class DetectTransition : Transition
     {
-        _timeAfterDetect = _cooldown;
+        [SerializeField] private DetectionZoneType _detectionZoneType;
+        [SerializeField] private DetectionZoneMovementType _zoneMovementType;
+        [SerializeField] private float _detectionRadius = 5f;
+        [SerializeField] private float _detectReactionDelay;
+        [SerializeField] private Vector2 _detectionRectangleSize = new Vector2(10f, 5f);
+        [SerializeField] private LayerMask _targetLayer;
+        [SerializeField] private bool _isCooldownActive;
+        [SerializeField] private float _cooldown;
+        [SerializeField] private float _offsetY;
+        [SerializeField] private float _offsetX;
 
-        if (_zoneMovementType == DetectionZoneMovementType.Static)
+        private Vector2 _fixedDetectionPosition;
+        private Transform _playerTransform;
+        private float _timeAfterDetect;
+
+        private void Awake()
         {
-            _fixedDetectionPosition = transform.parent.position;
-        }
-    }
+            _timeAfterDetect = _cooldown;
 
-    private void Update()
-    {
-        if (_detectionZoneType == DetectionZoneType.Circle)
-        {
-            DetectUsingCircle();
-        }
-        else if (_detectionZoneType == DetectionZoneType.Rectangle)
-        {
-            DetectUsingRectangle();
-        }
-    }
-
-    private void DetectUsingCircle()
-    {
-        Collider2D hit;
-
-        hit = Physics2D.OverlapCircle(transform.position, _detectionRadius, _targetLayer);
-
-        if (hit != null)
-        {
-            SendPlayerTransform(hit.transform);
-
-            StartCoroutine(TransitAfterDelay(_detectReactionDelay));
-        }
-    }
-
-    private void DetectUsingRectangle()
-    {
-        if (_timeAfterDetect >= _cooldown)
-        {
-            Vector2 offset = new Vector2(_offsetX, _offsetY);
-            Vector2 adjustedPosition;
-
-            switch (_zoneMovementType)
+            if (_zoneMovementType == DetectionZoneMovementType.Static)
             {
-                case DetectionZoneMovementType.Moving:
-                    adjustedPosition = (Vector2)transform.position + offset;
-                    break;
-                case DetectionZoneMovementType.Static:
-                    adjustedPosition = _fixedDetectionPosition + offset;
-                    break;
-                default:
-                    adjustedPosition = _fixedDetectionPosition + offset;
-                    break;
+                _fixedDetectionPosition = transform.parent.position;
             }
+        }
 
-            Collider2D hit = Physics2D.OverlapBox(adjustedPosition, _detectionRectangleSize, 0f, _targetLayer);
+        private void Update()
+        {
+            if (_detectionZoneType == DetectionZoneType.Circle)
+            {
+                DetectUsingCircle();
+            }
+            else if (_detectionZoneType == DetectionZoneType.Rectangle)
+            {
+                DetectUsingRectangle();
+            }
+        }
+
+        private void DetectUsingCircle()
+        {
+            Collider2D hit;
+
+            hit = Physics2D.OverlapCircle(transform.position, _detectionRadius, _targetLayer);
+
             if (hit != null)
             {
                 SendPlayerTransform(hit.transform);
 
                 StartCoroutine(TransitAfterDelay(_detectReactionDelay));
             }
-
-            _timeAfterDetect = 0f;
         }
 
-        _timeAfterDetect += Time.deltaTime;
-    }
-
-    private void SendPlayerTransform(Transform playerTransform)
-    {
-        _playerTransform = playerTransform;
-        _targetState.SetPlayerTransform(_playerTransform);
-    }
-
-    private IEnumerator TransitAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-
-        NeedTransit = true;
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        if (_detectionZoneType == DetectionZoneType.Circle)
+        private void DetectUsingRectangle()
         {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, _detectionRadius);
-        }
-        else if (_detectionZoneType == DetectionZoneType.Rectangle)
-        {
-            Vector2 offset = new Vector2(_offsetX, _offsetY);
-            Vector2 adjustedPosition;
-
-            switch (_zoneMovementType)
+            if (_timeAfterDetect >= _cooldown)
             {
-                case DetectionZoneMovementType.Moving:
-                    adjustedPosition = (Vector2)transform.position + offset;
-                    break;
-                case DetectionZoneMovementType.Static:
-                    adjustedPosition = _fixedDetectionPosition + offset;
-                    break;
-                default:
-                    adjustedPosition = _fixedDetectionPosition + offset;
-                    break;
+                Vector2 offset = new Vector2(_offsetX, _offsetY);
+                Vector2 adjustedPosition;
+
+                switch (_zoneMovementType)
+                {
+                    case DetectionZoneMovementType.Moving:
+                        adjustedPosition = (Vector2)transform.position + offset;
+                        break;
+                    case DetectionZoneMovementType.Static:
+                        adjustedPosition = _fixedDetectionPosition + offset;
+                        break;
+                    default:
+                        adjustedPosition = _fixedDetectionPosition + offset;
+                        break;
+                }
+
+                Collider2D hit = Physics2D.OverlapBox(adjustedPosition, _detectionRectangleSize, 0f, _targetLayer);
+                if (hit != null)
+                {
+                    SendPlayerTransform(hit.transform);
+
+                    StartCoroutine(TransitAfterDelay(_detectReactionDelay));
+                }
+
+                _timeAfterDetect = 0f;
             }
 
-            Gizmos.color = Color.blue;
-            Gizmos.DrawWireCube(adjustedPosition, _detectionRectangleSize);
+            _timeAfterDetect += Time.deltaTime;
+        }
+
+        private void SendPlayerTransform(Transform playerTransform)
+        {
+            _playerTransform = playerTransform;
+            _targetState.SetPlayerTransform(_playerTransform);
+        }
+
+        private IEnumerator TransitAfterDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+
+            NeedTransit = true;
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            if (_detectionZoneType == DetectionZoneType.Circle)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawWireSphere(transform.position, _detectionRadius);
+            }
+            else if (_detectionZoneType == DetectionZoneType.Rectangle)
+            {
+                Vector2 offset = new Vector2(_offsetX, _offsetY);
+                Vector2 adjustedPosition;
+
+                switch (_zoneMovementType)
+                {
+                    case DetectionZoneMovementType.Moving:
+                        adjustedPosition = (Vector2)transform.position + offset;
+                        break;
+                    case DetectionZoneMovementType.Static:
+                        adjustedPosition = _fixedDetectionPosition + offset;
+                        break;
+                    default:
+                        adjustedPosition = _fixedDetectionPosition + offset;
+                        break;
+                }
+
+                Gizmos.color = Color.blue;
+                Gizmos.DrawWireCube(adjustedPosition, _detectionRectangleSize);
+            }
         }
     }
 }

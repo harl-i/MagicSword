@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public class DeactivateObjectsState : State
+namespace StateMachine
 {
-    [SerializeField] private GameObject[] _objects;
-
-    private void OnEnable()
+    public class DeactivateObjectsState : State
     {
-        foreach (var item in _objects)
+        [SerializeField] private GameObject[] _objects;
+
+        private void OnEnable()
         {
-            item.gameObject.SetActive(false);
+            foreach (var item in _objects)
+            {
+                item.gameObject.SetActive(false);
+            }
         }
     }
 }

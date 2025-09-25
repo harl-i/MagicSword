@@ -1,4 +1,9 @@
-public interface IDamaging
+using Sword;
+
+namespace DamageInterfaces
 {
-    public void ApplyDamage(Player player);
+    public interface IDamaging
+    {
+        public void ApplyDamage(Player player);
+    }
 }

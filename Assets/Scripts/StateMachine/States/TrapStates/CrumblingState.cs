@@ -1,17 +1,20 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
-public class CrumblingState : State
+namespace StateMachine
 {
-    private Animator _animator;
-
-    private void Awake()
+    [RequireComponent(typeof(Animator))]
+    public class CrumblingState : State
     {
-        _animator = GetComponent<Animator>();
-    }
+        private Animator _animator;
 
-    private void OnEnable()
-    {
-        _animator.SetTrigger("Crumbling");
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+        }
+
+        private void OnEnable()
+        {
+            _animator.SetTrigger("Crumbling");
+        }
     }
 }

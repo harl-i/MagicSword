@@ -1,12 +1,16 @@
+using Enemies;
 using UnityEngine;
 
-public class ArcherArrowHitTransition : Transition
+namespace StateMachine
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    public class ArcherArrowHitTransition : Transition
     {
-        if (collision.gameObject.TryGetComponent(out ArcherArrow archerArrow))
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            NeedTransit = true;
+            if (collision.gameObject.TryGetComponent(out ArcherArrow archerArrow))
+            {
+                NeedTransit = true;
+            }
         }
     }
 }

@@ -1,17 +1,20 @@
 using UnityEngine;
 using YG;
 
-public class GodModeSwitcher : MonoBehaviour
+namespace UI
 {
-    public void SwitchMode()
+    public class GodModeSwitcher : MonoBehaviour
     {
-        if (YG2.saves.GodMode == 1)
+        public void SwitchMode()
         {
-            YG2.saves.GodMode = 0;
-        } 
-        else
-        {
-            YG2.saves.GodMode = 1;
+            if (YG2.saves.GodMode == 1)
+            {
+                YG2.saves.GodMode = 0;
+            }
+            else
+            {
+                YG2.saves.GodMode = 1;
+            }
         }
     }
 }

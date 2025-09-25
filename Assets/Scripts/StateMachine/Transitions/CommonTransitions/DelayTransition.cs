@@ -1,25 +1,28 @@
 using System.Collections;
 using UnityEngine;
 
-public class DelayTransition : Transition
+namespace StateMachine
 {
-    [SerializeField] private float _delay;
-
-    private void OnEnable()
+    public class DelayTransition : Transition
     {
-        NeedTransit = false;
-        StartCoroutine(Delay(_delay));
-    }
+        [SerializeField] private float _delay;
 
-    private void OnDisable()
-    {
-        NeedTransit = false;
-    }
+        private void OnEnable()
+        {
+            NeedTransit = false;
+            StartCoroutine(Delay(_delay));
+        }
 
-    private IEnumerator Delay(float delay)
-    {
-        yield return new WaitForSecondsRealtime(delay);
+        private void OnDisable()
+        {
+            NeedTransit = false;
+        }
 
-        NeedTransit = true;
+        private IEnumerator Delay(float delay)
+        {
+            yield return new WaitForSecondsRealtime(delay);
+
+            NeedTransit = true;
+        }
     }
 }

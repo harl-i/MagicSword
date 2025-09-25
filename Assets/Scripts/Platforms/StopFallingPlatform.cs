@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class StopFallingPlatform : MonoBehaviour { }
+namespace Platforms
+{
+    public class StopFallingPlatform : MonoBehaviour { }
+}

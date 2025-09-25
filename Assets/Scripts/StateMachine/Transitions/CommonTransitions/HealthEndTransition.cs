@@ -1,19 +1,23 @@
+using Sword;
 using UnityEngine;
 
-public class HealthEndTransition : Transition
+namespace StateMachine
 {
-    [SerializeField] private Player _player;
-
-    private void OnEnable()
+    public class HealthEndTransition : Transition
     {
-        if (_player.Health == 0)
+        [SerializeField] private Player _player;
+
+        private void OnEnable()
         {
-            NeedTransit = true;
+            if (_player.Health == 0)
+            {
+                NeedTransit = true;
+            }
         }
-    }
 
-    private void OnDisable()
-    {
-        NeedTransit = false;
+        private void OnDisable()
+        {
+            NeedTransit = false;
+        }
     }
 }

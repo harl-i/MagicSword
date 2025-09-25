@@ -1,3 +1,6 @@
 using UnityEngine;
 
-public class Willager : MonoBehaviour { }
+namespace Characters
+{
+    public class Willager : MonoBehaviour { }
+}

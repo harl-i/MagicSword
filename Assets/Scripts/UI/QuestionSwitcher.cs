@@ -1,23 +1,26 @@
 using UnityEngine;
 
-public class QuestionSwitcher : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private GameObject _questionFirst;
-    [SerializeField] private GameObject _questionSecond;
-
-    public void FirstQuestionEnable()
+    public class QuestionSwitcher : MonoBehaviour
     {
-        _questionFirst.SetActive(true);
-    }
+        [SerializeField] private GameObject _questionFirst;
+        [SerializeField] private GameObject _questionSecond;
 
-    public void SecondQuestionEnable()
-    {
-        _questionSecond.SetActive(true);
-    }
+        public void FirstQuestionEnable()
+        {
+            _questionFirst.SetActive(true);
+        }
 
-    public void DisableQuestions()
-    {
-        _questionFirst.SetActive(false);
-        _questionSecond.SetActive(false);
+        public void SecondQuestionEnable()
+        {
+            _questionSecond.SetActive(true);
+        }
+
+        public void DisableQuestions()
+        {
+            _questionFirst.SetActive(false);
+            _questionSecond.SetActive(false);
+        }
     }
 }
