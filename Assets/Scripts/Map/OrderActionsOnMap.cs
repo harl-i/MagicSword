@@ -18,10 +18,7 @@ namespace Map
         {
             yield return StartCoroutine(_swordIconAnimMover.StartAnimationAfterDelay());
 
-            while (!_swordIconAnimMover.IsMoveCompleted)
-            {
-                yield return null;
-            }
+            yield return new WaitUntil(() => _swordIconAnimMover.IsMoveCompleted);
 
             _nextSceneLoader.LoadScene();
         }
