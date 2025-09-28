@@ -12,6 +12,8 @@ namespace UI
         [SerializeField] private int _delay;
         [SerializeField] private GameObject _mainMenu;
 
+        private const string Id = "continue";
+
         private void OnEnable()
         {
             _mainMenu.SetActive(false);
@@ -45,8 +47,7 @@ namespace UI
 
         private void ShowAdvReward()
         {
-            string id = "continue";
-            YG2.RewardedAdvShow(id, LoadContinueLevel);
+            YG2.RewardedAdvShow(Id, LoadContinueLevel);
         }
 
         private void LoadContinueLevel()

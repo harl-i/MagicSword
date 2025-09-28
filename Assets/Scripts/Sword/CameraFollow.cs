@@ -9,25 +9,27 @@ namespace Sword
         [SerializeField] private float _maxYMobile;
         [SerializeField] private float _maxYDesktop;
 
-        private float _maxY = 100f;
+        private float MaxY = 100f;
         private float _minY;
         private Vector3 _cameraPos;
         private Vector3 _velocity = Vector3.zero;
+        
+        private const float LevelRightEdge = 2.4f;
 
         private void Update()
         {
             float currentX = transform.position.x;
 
             _cameraPos = new Vector3(currentX, _player.position.y, _player.position.z);
-            _cameraPos.y = Mathf.Clamp(_cameraPos.y, _minY, _maxY);
+            _cameraPos.y = Mathf.Clamp(_cameraPos.y, _minY, MaxY);
 
-            if (_player.position.x > 2.4f)
+            if (_player.position.x > LevelRightEdge)
             {
-                _cameraPos = new Vector2(5.6f, Mathf.Clamp(_cameraPos.y, _minY, _maxY));
+                _cameraPos = new Vector2(5.6f, Mathf.Clamp(_cameraPos.y, _minY, MaxY));
             }
-            else if (_player.position.x < 2.4f)
+            else if (_player.position.x < LevelRightEdge)
             {
-                _cameraPos = new Vector2(0f, Mathf.Clamp(_cameraPos.y, _minY, _maxY));
+                _cameraPos = new Vector2(0f, Mathf.Clamp(_cameraPos.y, _minY, MaxY));
             }
 
             transform.position = Vector3.SmoothDamp(transform.position, _cameraPos, ref _velocity, _dampTime);
@@ -35,13 +37,13 @@ namespace Sword
 
         public void SwitchToDesktop()
         {
-            _maxY = _maxYDesktop;
+            MaxY = _maxYDesktop;
             _minY = -1.24f;
         }
 
         public void SwitchToMobile()
         {
-            _maxY = _maxYMobile;
+            MaxY = _maxYMobile;
             _minY = -1f;
         }
     }
