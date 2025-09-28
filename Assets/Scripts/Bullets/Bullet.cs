@@ -7,9 +7,9 @@ namespace Bullets
     {
         [SerializeField] protected float _speed;
 
-        protected Transform _target;
-        protected bool _isFlip;
-        protected Vector3 _direction;
+        protected Transform Target;
+        protected bool IsFlip;
+        protected Vector3 Direction;
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
@@ -23,32 +23,32 @@ namespace Bullets
 
         public void SetDirection(Vector3 direction)
         {
-            _direction = direction;
+            Direction = direction;
         }
 
         public void CalculateDirection()
         {
-            if (_target != null)
+            if (Target != null)
             {
-                _direction = (_target.position - transform.position).normalized;
+                Direction = (Target.position - transform.position).normalized;
             }
         }
 
         public void LookAtTarget()
         {
-            float angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
+            float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg;
 
             transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }
 
         public void SetFlip(bool isFlip)
         {
-            _isFlip = isFlip;
+            IsFlip = isFlip;
         }
 
         public void SetTarget(Transform target)
         {
-            _target = target;
+            Target = target;
         }
     }
 }

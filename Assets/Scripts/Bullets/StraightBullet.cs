@@ -6,7 +6,7 @@ namespace Bullets
     {
         private void Update()
         {
-            if (_isFlip)
+            if (IsFlip)
             {
                 transform.Translate(new Vector2(0, _speed * Time.deltaTime), Space.Self);
             }

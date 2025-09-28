@@ -11,7 +11,7 @@ namespace Obstacles
         [SerializeField] private int _capacity;
         [SerializeField] private float _delay;
 
-        protected List<FaliingRock> _pool = new List<FaliingRock>();
+        protected List<FaliingRock> Pool = new List<FaliingRock>();
         private float _timer;
 
         private void Start()
@@ -36,7 +36,7 @@ namespace Obstacles
                 FaliingRock spawned = Instantiate(prefab, _container.transform);
                 spawned.gameObject.SetActive(false);
 
-                _pool.Add(spawned);
+                Pool.Add(spawned);
             }
         }
 
@@ -49,7 +49,7 @@ namespace Obstacles
 
         private bool TryGetObject(out FaliingRock result)
         {
-            result = _pool.FirstOrDefault(p => p.gameObject.activeSelf == false);
+            result = Pool.FirstOrDefault(p => p.gameObject.activeSelf == false);
 
             return result != null;
         }

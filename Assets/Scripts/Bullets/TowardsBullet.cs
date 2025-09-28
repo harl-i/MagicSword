@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Bullets
@@ -7,7 +6,7 @@ namespace Bullets
     {
         private void Update()
         {
-            transform.position += _direction * _speed * Time.deltaTime;
+            transform.position += Direction * _speed * Time.deltaTime;
         }
     }
 }

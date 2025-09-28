@@ -9,7 +9,7 @@ namespace Bullets
         [SerializeField] private Transform _container;
         [SerializeField] private int _capacity;
 
-        protected List<Bullet> _pool = new List<Bullet>();
+        protected List<Bullet> Pool = new List<Bullet>();
 
         protected void Initialize(Bullet prefab)
         {
@@ -18,13 +18,13 @@ namespace Bullets
                 Bullet spawned = Instantiate(prefab, _container.transform);
                 spawned.gameObject.SetActive(false);
 
-                _pool.Add(spawned);
+                Pool.Add(spawned);
             }
         }
 
         protected bool TryGetObject(out Bullet result)
         {
-            result = _pool.FirstOrDefault(p => p.gameObject.activeSelf == false);
+            result = Pool.FirstOrDefault(p => p.gameObject.activeSelf == false);
 
             return result != null;
         }

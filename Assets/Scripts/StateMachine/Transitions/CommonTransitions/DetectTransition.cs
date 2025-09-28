@@ -95,7 +95,7 @@ namespace StateMachine
         private void SendPlayerTransform(Transform playerTransform)
         {
             _playerTransform = playerTransform;
-            _targetState.SetPlayerTransform(_playerTransform);
+            StateTarget.SetPlayerTransform(_playerTransform);
         }
 
         private IEnumerator TransitAfterDelay(float delay)
