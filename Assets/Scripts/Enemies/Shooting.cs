@@ -7,7 +7,6 @@ namespace Enemies
     [RequireComponent(typeof(Animator))]
     public abstract class Shooting : BulletPool
     {
-        //[SerializeField] private ShootingEnemyType _enemyType;
         [SerializeField] private Transform _shootPoint;
         [SerializeField] protected TowardsBullet _towardsBullet;
         [SerializeField] protected StraightBullet _straightBullet;
@@ -37,88 +36,12 @@ namespace Enemies
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _animator = GetComponent<Animator>();
-
-            //switch (_enemyType)
-            //{
-            //    case ShootingEnemyType.Spider:
-            //        Initialize(_straightBullet);
-            //        break;
-            //    case ShootingEnemyType.Gargoyle:
-            //    case ShootingEnemyType.Scorpion:
-            //        Initialize(_homingBullet);
-            //        break;
-            //    case ShootingEnemyType.Turret:
-            //    case ShootingEnemyType.Archer:
-            //        Initialize(_towardsBullet);
-            //        break;
-            //    case ShootingEnemyType.TowardsTurret:
-            //        Initialize(_towardsBullet);
-            //        break;
-            //    default:
-            //        break;
-            //}
-        }
-
-        private void OnEnable()
-        {
-            //switch (_enemyType)
-            //{
-            //    case ShootingEnemyType.Spider:
-            //    case ShootingEnemyType.Scorpion:
-            //    case ShootingEnemyType.Archer:
-            //        SetShootPointPosition();
-            //        break;
-            //    case ShootingEnemyType.Turret:
-            //    case ShootingEnemyType.TowardsTurret:
-            //        _showTurretComponent.enabled = true;
-            //        break;
-            //    default:
-            //        break;
-            //}
-        }
-
-        private void OnDisable()
-        {
-            //switch (_enemyType)
-            //{
-            //    case ShootingEnemyType.Turret:
-            //    case ShootingEnemyType.TowardsTurret:
-            //        _showTurretComponent.enabled = false;
-            //        break;
-            //    default:
-            //        break;
-            //}
         }
 
         public void PlayShootAnimation()
         {
             _animator.SetTrigger("Shoot");
         }
-
-        //public void Shoot()
-        //{
-        //    //switch (_enemyType)
-        //    //{
-        //    //    case ShootingEnemyType.Spider:
-        //    //        ShootWithStraightBullet();
-        //    //        break;
-        //    //    case ShootingEnemyType.Gargoyle:
-        //    //    case ShootingEnemyType.Scorpion:
-        //    //        ShootWithHomingBullet();
-        //    //        break;
-        //    //    case ShootingEnemyType.Turret:
-        //    //        ShootWithTowardsBullet(false);
-        //    //        break;
-        //    //    case ShootingEnemyType.Archer:
-        //    //        ShootWithTowardsBullet(true);
-        //    //        break;
-        //    //    case ShootingEnemyType.TowardsTurret:
-        //    //        StartCoroutine(LookAtPlayerAndShoot());  //private IEnumerator LookAtPlayerAndShoot()
-        //    //        break;
-        //    //    default:
-        //    //        break;
-        //    //}
-        //}
 
         public abstract void Shoot();
 
@@ -170,11 +93,6 @@ namespace Enemies
                 yield return wait;
             }
         }
-
-        //public void SetEnemyType(ShootingEnemyType enemyType)
-        //{
-        //    _enemyType = enemyType;
-        //}
 
         public void SetPlayerTransform(Transform transform)
         {
