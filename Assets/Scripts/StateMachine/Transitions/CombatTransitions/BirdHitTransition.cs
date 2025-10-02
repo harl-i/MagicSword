@@ -7,7 +7,7 @@ namespace StateMachine
     {
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.gameObject.TryGetComponent(out Bird bird))
+            if (collision.gameObject.TryGetComponent(out CollisionTag collisionTag))
             {
                 NeedTransit = true;
             }
