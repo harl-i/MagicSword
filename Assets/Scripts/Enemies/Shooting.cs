@@ -102,6 +102,7 @@ namespace Enemies
         protected void ShootWithStraightBullet()
         {
             Bullet bullet = GetBulletFromPool();
+            if (bullet == null) return;
 
             bullet.SetFlip(_spriteRenderer.flipX);
             bullet.gameObject.SetActive(true);
@@ -110,6 +111,8 @@ namespace Enemies
         protected void ShootWithTowardsBullet(bool canLookAtTarget)
         {
             Bullet bullet = GetBulletFromPool();
+            if (bullet == null) return;
+
             bullet.SetTarget(_playerTransform);
 
             bullet.CalculateDirection();
@@ -125,6 +128,8 @@ namespace Enemies
         protected void ShootWithTowardsBullet(Vector3 direction)
         {
             Bullet bullet = GetBulletFromPool();
+            if (bullet == null) return;
+
             bullet.SetDirection(direction);
             bullet.gameObject.SetActive(true);
         }
@@ -132,6 +137,7 @@ namespace Enemies
         protected void ShootWithHomingBullet()
         {
             Bullet bullet = GetBulletFromPool();
+            if (bullet == null) return;
 
             bullet.SetTarget(_playerTransform);
             bullet.gameObject.SetActive(true);
@@ -140,8 +146,14 @@ namespace Enemies
         protected Bullet GetBulletFromPool()
         {
             TryGetObject(out Bullet bullet);
-            bullet.transform.position = _shootPoint.position;
-            return bullet;
+
+            if (bullet != null)
+            {
+                bullet.transform.position = _shootPoint.position;
+                return bullet;
+            }
+
+            return null;
         }
 
         protected void SetShootPointPosition()
