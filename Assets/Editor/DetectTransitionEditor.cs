@@ -22,7 +22,7 @@ public class DetectTransitionEditor : Editor
 
     private void OnEnable()
     {
-        _targetState = serializedObject.FindProperty("_targetState");
+        _targetState = serializedObject.FindProperty("TargetState");
         _targetLayer = serializedObject.FindProperty("_targetLayer");
         _detectionZoneType = serializedObject.FindProperty("_detectionZoneType");
         _zoneMovementType = serializedObject.FindProperty("_zoneMovementType");

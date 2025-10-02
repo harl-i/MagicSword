@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 8375419248547318459}
   - component: {fileID: 3125237790957833676}
   - component: {fileID: 6846743228507253241}
-  - component: {fileID: 29579075375120047}
+  - component: {fileID: 3916670743328504396}
   - component: {fileID: 6043441521735042600}
   - component: {fileID: 3120112038298283870}
   - component: {fileID: 124274866007193868}
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 6846743228507253241}
+  TargetState: {fileID: 6846743228507253241}
   _detectionZoneType: 1
   _zoneMovementType: 1
   _detectionRadius: 5
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfae695672a26a04484ae413cb49c21c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 316842173466057765}
+  TargetState: {fileID: 316842173466057765}
   _detectionZoneType: 1
   _zoneMovementType: 1
   _detectionRadius: 5
@@ -303,10 +303,10 @@ MonoBehaviour:
   _transitions:
   - {fileID: 6043441521735042600}
   - {fileID: 3125237790957833676}
-  _enemyType: 1
-  _shootingComponent: {fileID: 29579075375120047}
+  _enemyType: 6
+  _shootingComponent: {fileID: 3916670743328504396}
   _shootDelay: 4.5
---- !u!114 &29579075375120047
+--- !u!114 &3916670743328504396
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -315,12 +315,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1973744850165285517}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ed37d92b4198f42a68a46d7307fa73, type: 3}
+  m_Script: {fileID: 11500000, guid: 66c05eecd5a2e634a81748c9ecaa760d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _container: {fileID: 6691725910699446368}
   _capacity: 6
-  _enemyType: 1
   _shootPoint: {fileID: 4512489975849442847}
   _towardsBullet: {fileID: 0}
   _straightBullet: {fileID: 0}
@@ -338,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 3120112038298283870}
+  TargetState: {fileID: 3120112038298283870}
 --- !u!114 &3120112038298283870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 5131204321464708611}
+  TargetState: {fileID: 5131204321464708611}
   _delay: 1
 --- !u!114 &5131204321464708611
 MonoBehaviour:

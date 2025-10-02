@@ -17,7 +17,7 @@ public class PlayerMissingInDetectionZoneTransitionEditor : Editor
 
     private void OnEnable()
     {
-        _targetState = serializedObject.FindProperty("_targetState");
+        _targetState = serializedObject.FindProperty("TargetState");
         _detectionZoneType = serializedObject.FindProperty("_detectionZoneType");
         _playerLayer = serializedObject.FindProperty("_playerLayer");
         _detectionRadius = serializedObject.FindProperty("_detectionRadius");

@@ -38,7 +38,7 @@ namespace StateMachine
             foreach (var transition in _transitions)
             {
                 if (transition.NeedTransit)
-                    return transition.TargetState;
+                    return transition.TargetStateProperty;
             }
 
             return null;

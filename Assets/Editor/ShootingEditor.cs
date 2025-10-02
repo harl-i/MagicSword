@@ -53,6 +53,7 @@ public class ShootingEditor : Editor
                     break;
                 case ShootingEnemyType.Gargoyle:
                 case ShootingEnemyType.Scorpion:
+                case ShootingEnemyType.Snowman:
                     EditorGUILayout.PropertyField(_homingBullet);
                     break;
                 case ShootingEnemyType.Archer:

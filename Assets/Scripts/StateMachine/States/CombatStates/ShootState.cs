@@ -5,7 +5,6 @@ namespace StateMachine
 {
     [ExecuteInEditMode]
     [RequireComponent(typeof(SpriteRenderer))]
-    [RequireComponent(typeof(Shooting))]
     public class ShootState : State
     {
         [SerializeField] private ShootingEnemyType _enemyType;
@@ -21,7 +20,7 @@ namespace StateMachine
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _shootElapsedTime = _shootDelay;
-            _shootingComponent.SetEnemyType(_enemyType);
+            //_shootingComponent.SetEnemyType(_enemyType);
         }
 
         private void OnEnable()

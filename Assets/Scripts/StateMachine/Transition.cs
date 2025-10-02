@@ -4,9 +4,9 @@ namespace StateMachine
 {
     public abstract class Transition : MonoBehaviour
     {
-        [SerializeField] protected State StateTarget;
+        [SerializeField] protected State TargetState;
 
-        public State TargetState => StateTarget;
+        public State TargetStateProperty => TargetState;
         public bool NeedTransit { get; protected set; }
 
         private void OnEnable()
