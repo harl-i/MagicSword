@@ -14,7 +14,7 @@ namespace Enemies
 
         private void Initialize()
         {
-            InitializePool(_towardsBullet);
+            InitializePool(TowardsBullet);
             SetShootPointPosition();
         }
     }

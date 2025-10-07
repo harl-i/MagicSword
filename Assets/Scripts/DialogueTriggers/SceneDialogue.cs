@@ -1,3 +1,4 @@
+using Localization;
 using Sword;
 using System;
 using System.Collections;
@@ -22,10 +23,9 @@ namespace DialogueTriggers
         [SerializeField] private Animator _animator;
         [SerializeField] private DialogueWindow _dialogueWindow;
         [SerializeField] private TextMeshProUGUI _dialogueTextField;
-        [SerializeField] private string[] _textRu;
-        [SerializeField] private string[] _textEn;
-        [SerializeField] private string[] _textTr;
+        [SerializeField] private string[] _dialogueKeys;
         [SerializeField] private float _typingSpeed = 0.05f;
+        [SerializeField] private LocalizationManager _localizationManager;
 
         [SerializeField] private bool _needPermanentDisableTrigger;
         [SerializeField] private Collider2D _trigger;
@@ -38,12 +38,7 @@ namespace DialogueTriggers
 
         private int _currentIndex = 0;
         private bool _isTyping = true;
-        private string _lang;
         private Animator _tapTipAnimator;
-
-        private const string RU = "ru";
-        private const string EN = "en";
-        private const string TR = "tr";
 
         public static Action<bool> OnDialogShow;
 
@@ -51,7 +46,6 @@ namespace DialogueTriggers
         {
             _tapTipAnimator = _tapToScreenTip.GetComponent<Animator>();
             _isTyping = true;
-            _lang = YG2.lang;
 
             _dialogueWindow.WindowShown += OnDialogueWindowShown;
         }
@@ -86,19 +80,10 @@ namespace DialogueTriggers
         {
             _isTyping = true;
 
-            if (_lang == RU)
+            if (_dialogueKeys.Length > 0)
             {
-                StartCoroutine(TypeText(_textRu[_currentIndex]));
-            }
-
-            if (_lang == EN)
-            {
-                StartCoroutine(TypeText(_textEn[_currentIndex]));
-            }
-
-            if (_lang == TR)
-            {
-                StartCoroutine(TypeText(_textTr[_currentIndex]));
+                string text = _localizationManager.GetText(_dialogueKeys[_currentIndex]);
+                StartCoroutine(TypeText(text));
             }
 
             EnableAuxularyObjects();
@@ -114,40 +99,13 @@ namespace DialogueTriggers
         {
             _currentIndex++;
 
-            if (_lang == RU)
+            if (_currentIndex < _dialogueKeys.Length)
             {
-                if (_currentIndex < _textRu.Length)
-                {
-                    UpdateDialogue();
-                }
-                else if (_currentIndex == _textRu.Length)
-                {
-                    EndDialogue();
-                }
+                UpdateDialogue();
             }
-
-            if (_lang == EN)
+            else
             {
-                if (_currentIndex < _textEn.Length)
-                {
-                    UpdateDialogue();
-                }
-                else if (_currentIndex == _textEn.Length)
-                {
-                    EndDialogue();
-                }
-            }
-
-            if (_lang == TR)
-            {
-                if (_currentIndex < _textTr.Length)
-                {
-                    UpdateDialogue();
-                }
-                else if (_currentIndex == _textTr.Length)
-                {
-                    EndDialogue();
-                }
+                EndDialogue();
             }
         }
 
@@ -155,28 +113,10 @@ namespace DialogueTriggers
         {
             _isTyping = true;
 
-            if (_lang == RU)
+            if (_currentIndex < _dialogueKeys.Length)
             {
-                if (_currentIndex < _textRu.Length)
-                {
-                    StartCoroutine(TypeText(_textRu[_currentIndex]));
-                }
-            }
-
-            if (_lang == EN)
-            {
-                if (_currentIndex < _textEn.Length)
-                {
-                    StartCoroutine(TypeText(_textEn[_currentIndex]));
-                }
-            }
-
-            if (_lang == TR)
-            {
-                if (_currentIndex < _textRu.Length)
-                {
-                    StartCoroutine(TypeText(_textTr[_currentIndex]));
-                }
+                string text = _localizationManager.GetText(_dialogueKeys[_currentIndex]);
+                StartCoroutine(TypeText(text));
             }
         }
 

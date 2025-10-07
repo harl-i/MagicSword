@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 2788115637927953820}
   - component: {fileID: 521118548920602710}
   - component: {fileID: 529303971153676026}
-  - component: {fileID: 1595041957001907591}
+  - component: {fileID: 8821105238247400239}
   - component: {fileID: 4923713700305839008}
   - component: {fileID: 73397664830667291}
   - component: {fileID: 7780980268968562600}
@@ -691,7 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 529303971153676026}
+  TargetState: {fileID: 529303971153676026}
   _detectionZoneType: 1
   _zoneMovementType: 1
   _detectionRadius: 5
@@ -720,9 +720,9 @@ MonoBehaviour:
   - {fileID: 4923713700305839008}
   - {fileID: 1804012283345321474}
   _enemyType: 3
-  _shootingComponent: {fileID: 1595041957001907591}
+  _shootingComponent: {fileID: 8821105238247400239}
   _shootDelay: 5
---- !u!114 &1595041957001907591
+--- !u!114 &8821105238247400239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -731,17 +731,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 4881955313877191861}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ed37d92b4198f42a68a46d7307fa73, type: 3}
+  m_Script: {fileID: 11500000, guid: f1f24551d09db974491c41ce8ed7ffd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _container: {fileID: 6706869567021192206}
-  _capacity: 7
-  _enemyType: 3
-  _shootPoint: {fileID: 4751124019657275908}
-  _towardsBullet: {fileID: 0}
-  _straightBullet: {fileID: 0}
-  _homingBullet: {fileID: 8907061294021842223, guid: 6776a5eac9488a147b23ceaaa02aee33, type: 3}
-  _showTurretComponent: {fileID: 0}
+  _capacity: 6
+  ShootPoint: {fileID: 4751124019657275908}
+  TowardsBullet: {fileID: 0}
+  StraightBullet: {fileID: 0}
+  HomingBullet: {fileID: 8907061294021842223, guid: 6776a5eac9488a147b23ceaaa02aee33, type: 3}
+  ShowTurretComponent: {fileID: 0}
 --- !u!114 &4923713700305839008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,7 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 73397664830667291}
+  TargetState: {fileID: 73397664830667291}
 --- !u!114 &73397664830667291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,7 +780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 8035652011394720484}
+  TargetState: {fileID: 8035652011394720484}
   _delay: 1
 --- !u!114 &8035652011394720484
 MonoBehaviour:
@@ -809,7 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e7530ccc12e4744cbb05ff009974861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 2788115637927953820}
+  TargetState: {fileID: 2788115637927953820}
 --- !u!1 &5394182270591510094
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,7 +983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 7446518413454491765}
+  TargetState: {fileID: 0}
   _detectionZoneType: 1
   _zoneMovementType: 1
   _detectionRadius: 5
@@ -1026,7 +1025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fb58fe6fbe07574889c107dd944bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 918662745152100588}
+  TargetState: {fileID: 0}
   _scorpion: {fileID: 4881955313877191861}
 --- !u!114 &918662745152100588
 MonoBehaviour:
@@ -1055,7 +1054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e7530ccc12e4744cbb05ff009974861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 7331645412557471701}
+  TargetState: {fileID: 0}
 --- !u!114 &7331645412557471701
 MonoBehaviour:
   m_ObjectHideFlags: 0

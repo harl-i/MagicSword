@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 4833756736724927796}
+  TargetState: {fileID: 4833756736724927796}
 --- !u!114 &3628935347785250239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 4045728366334402735}
+  TargetState: {fileID: 4045728366334402735}
   _detectionZoneType: 0
   _zoneMovementType: 0
   _detectionRadius: 1.84
@@ -362,7 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa956f5424179ff458a2ec35f80b21c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 1110289699626427365}
+  TargetState: {fileID: 1110289699626427365}
 --- !u!114 &1110289699626427365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb69c20f1b141b418445449dd719de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 7891801900497062746}
+  TargetState: {fileID: 7891801900497062746}
 --- !u!114 &7891801900497062746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   _transitions:
   - {fileID: 8028525266307289343}
   - {fileID: 8565957792120023570}
-  arrowLength: 1
+  _arrowLength: 1
   _rayLength: 1
   _numberOfRays: 12
   _rayStartOffset: 0.1
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bffa03c04b8ac654b984f3ea0690b1ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 4045728366334402735}
+  TargetState: {fileID: 4045728366334402735}
   _timeout: 2
 --- !u!114 &1275695316299853935
 MonoBehaviour:
@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e7530ccc12e4744cbb05ff009974861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 7215549675157993492}
+  TargetState: {fileID: 7215549675157993492}
 --- !u!1 &5664371951530314410
 GameObject:
   m_ObjectHideFlags: 0

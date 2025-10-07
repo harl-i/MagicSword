@@ -9,7 +9,7 @@ namespace Enemies
 
         private void OnDisable()
         {
-            _showTurretComponent.enabled = false;
+            ShowTurretComponent.enabled = false;
         }
 
         public override void Shoot()
@@ -19,8 +19,8 @@ namespace Enemies
 
         private void Initialize()
         {
-            InitializePool(_towardsBullet);
-            _showTurretComponent.enabled = true;
+            InitializePool(TowardsBullet);
+            ShowTurretComponent.enabled = true;
         }
     }
 }

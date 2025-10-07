@@ -20,7 +20,6 @@ namespace StateMachine
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _shootElapsedTime = _shootDelay;
-            //_shootingComponent.SetEnemyType(_enemyType);
         }
 
         private void OnEnable()

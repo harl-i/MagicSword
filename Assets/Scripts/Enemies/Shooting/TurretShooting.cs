@@ -9,18 +9,19 @@ namespace Enemies
 
         public override void Shoot()
         {
+            ShowTurretComponent.enabled = true;
             ShootWithTowardsBullet(false);
         }
 
         private void Initialize()
         {
-            InitializePool(_towardsBullet);
-            _showTurretComponent.enabled = true;
+            InitializePool(TowardsBullet);
+            ShowTurretComponent.enabled = true;
         }
 
         private void OnDisable()
         {
-            _showTurretComponent.enabled = false;
+            ShowTurretComponent.enabled = false;
         }
     }
 }

@@ -42,6 +42,7 @@ namespace Portals
         {
             _animator.SetTrigger("Activation");
             _isActive = true;
+            Debug.Log(_isActive);
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -60,6 +61,7 @@ namespace Portals
 
             if (collision.gameObject.GetComponentInChildren<Player>() != null && _isActive)
             {
+                Debug.Log("_nextSceneLoader.LoadScene();");
                 _nextSceneLoader.LoadScene();
             }
         }

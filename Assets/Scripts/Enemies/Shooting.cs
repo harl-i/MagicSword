@@ -7,16 +7,13 @@ namespace Enemies
     [RequireComponent(typeof(Animator))]
     public abstract class Shooting : BulletPool
     {
-        [SerializeField] private Transform _shootPoint;
-        [SerializeField] protected TowardsBullet _towardsBullet;
-        [SerializeField] protected StraightBullet _straightBullet;
-        [SerializeField] protected HomingBullet _homingBullet;
-        [SerializeField] protected ShowTurret _showTurretComponent;
+        [SerializeField] protected Transform ShootPoint;
+        [SerializeField] protected TowardsBullet TowardsBullet;
+        [SerializeField] protected StraightBullet StraightBullet;
+        [SerializeField] protected HomingBullet HomingBullet;
+        [SerializeField] protected ShowTurret ShowTurretComponent;
 
-        protected SpriteRenderer _spriteRenderer;
-        protected Transform _playerTransform;
         private Animator _animator;
-
         private float _minAngleLeftSide = -45f;
         private float _maxAngleLeftSide = 55f;
 
@@ -27,29 +24,18 @@ namespace Enemies
 
         private float _rotationSpeed = 150f;
 
-        protected void InitializePool(Bullet prefab)
-        {
-            Initialize(prefab);
-        }
+        protected SpriteRenderer SpriteRenderer;
+        protected Transform PlayerTransform;
 
         private void Awake()
         {
-            _spriteRenderer = GetComponent<SpriteRenderer>();
+            SpriteRenderer = GetComponent<SpriteRenderer>();
             _animator = GetComponent<Animator>();
         }
 
-        public void PlayShootAnimation()
+        protected void InitializePool(Bullet prefab)
         {
-            _animator.SetTrigger("Shoot");
-        }
-
-        public abstract void Shoot();
-
-        public void FlipX()
-        {
-            Vector2 position = _shootPoint.localPosition;
-            position.x *= -1;
-            _shootPoint.localPosition = position;
+            Initialize(prefab);
         }
 
         protected IEnumerator LookAtPlayerAndShoot()
@@ -58,7 +44,7 @@ namespace Enemies
             WaitForSeconds delayBeforeShoot = new WaitForSeconds(0.5f);
             while (true)
             {
-                Vector2 direction = (Vector2)_playerTransform.position - (Vector2)transform.position;
+                Vector2 direction = (Vector2)PlayerTransform.position - (Vector2)transform.position;
                 float targetAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
                 if (transform.position.x < 0)
@@ -94,17 +80,12 @@ namespace Enemies
             }
         }
 
-        public void SetPlayerTransform(Transform transform)
-        {
-            _playerTransform = transform;
-        }
-
         protected void ShootWithStraightBullet()
         {
             Bullet bullet = GetBulletFromPool();
             if (bullet == null) return;
 
-            bullet.SetFlip(_spriteRenderer.flipX);
+            bullet.SetFlip(SpriteRenderer.flipX);
             bullet.gameObject.SetActive(true);
         }
 
@@ -113,7 +94,7 @@ namespace Enemies
             Bullet bullet = GetBulletFromPool();
             if (bullet == null) return;
 
-            bullet.SetTarget(_playerTransform);
+            bullet.SetTarget(PlayerTransform);
 
             bullet.CalculateDirection();
 
@@ -139,7 +120,7 @@ namespace Enemies
             Bullet bullet = GetBulletFromPool();
             if (bullet == null) return;
 
-            bullet.SetTarget(_playerTransform);
+            bullet.SetTarget(PlayerTransform);
             bullet.gameObject.SetActive(true);
         }
 
@@ -149,7 +130,7 @@ namespace Enemies
 
             if (bullet != null)
             {
-                bullet.transform.position = _shootPoint.position;
+                bullet.transform.position = ShootPoint.position;
                 return bullet;
             }
 
@@ -158,10 +139,30 @@ namespace Enemies
 
         protected void SetShootPointPosition()
         {
-            if (!_spriteRenderer.flipX && _shootPoint.localPosition.x <= 0 || _spriteRenderer.flipX && _shootPoint.localPosition.x >= 0)
+            Debug.Log(ShootPoint.localPosition.x);
+            if (!SpriteRenderer.flipX && ShootPoint.localPosition.x <= 0 || SpriteRenderer.flipX && ShootPoint.localPosition.x >= 0)
             {
                 FlipX();
             }
+        }
+
+        public void PlayShootAnimation()
+        {
+            _animator.SetTrigger("Shoot");
+        }
+
+        public abstract void Shoot();
+
+        public void FlipX()
+        {
+            Vector2 position = ShootPoint.localPosition;
+            position.x *= -1;
+            ShootPoint.localPosition = position;
+        }
+
+        public void SetPlayerTransform(Transform transform)
+        {
+            PlayerTransform = transform;
         }
     }
 }

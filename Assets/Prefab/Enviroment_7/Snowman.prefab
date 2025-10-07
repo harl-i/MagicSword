@@ -320,11 +320,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _container: {fileID: 6691725910699446368}
   _capacity: 6
-  _shootPoint: {fileID: 4512489975849442847}
-  _towardsBullet: {fileID: 0}
-  _straightBullet: {fileID: 0}
-  _homingBullet: {fileID: 8648295568697269897, guid: 5d9d12044d914e149ad320f5126b7b68, type: 3}
-  _showTurretComponent: {fileID: 0}
+  ShootPoint: {fileID: 4512489975849442847}
+  TowardsBullet: {fileID: 0}
+  StraightBullet: {fileID: 0}
+  HomingBullet: {fileID: 8648295568697269897, guid: 5d9d12044d914e149ad320f5126b7b68, type: 3}
+  ShowTurretComponent: {fileID: 0}
 --- !u!114 &6043441521735042600
 MonoBehaviour:
   m_ObjectHideFlags: 0

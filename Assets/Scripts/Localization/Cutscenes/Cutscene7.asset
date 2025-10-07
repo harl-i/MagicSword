@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bef1b8eaa29a141a7fbdbeb62b334f, type: 3}
+  m_Name: Cutscene7
+  m_EditorClassIdentifier: 
+  Entries:
+  - Key: Cutscene7_0
+    Russian: "\u042D\u0442\u043E \u0431\u044B\u043B \u0443\u0440\u043E\u043A \u043D\u0435
+      \u0442\u043E\u043B\u044C\u043A\u043E \u0432\u044B\u0436\u0438\u0432\u0430\u043D\u0438\u044F,
+      \u043D\u043E \u0438 \u0443\u0440\u043E\u043A \u0441\u043F\u043B\u043E\u0447\u0435\u043D\u0438\u044F."
+    English: It was not only a lesson in survival, but also a lesson in unity.
+    Turkish: "Bu sadece hayatta kalma dersi de\u011Fil, ayn\u0131 zamanda bir dayan\u0131\u015Fma
+      dersiydi."
+  - Key: Cutscene7_1
+    Russian: "\u041C\u0430\u0433 \u0441\u043E\u0432\u043C\u0435\u0441\u0442\u043D\u043E
+      \u0441 \u043C\u0435\u0447\u043D\u0438\u043A\u043E\u043C \u0443\u0447\u0438\u043B\u0438\u0441\u044C
+      \u0434\u043E\u0431\u044B\u0432\u0430\u0442\u044C \u0441\u043E\u043A \u0438\u0437
+      \u0434\u0435\u0440\u0435\u0432\u044C\u0435\u0432, \u0430 \u0442\u0430\u043A
+      \u0436\u0435 \u0441\u043E\u0431\u0438\u0440\u0430\u043B\u0438 \u043B\u0435\u0447\u0435\u0431\u043D\u044B\u0435
+      \u0438 \u0441\u044A\u0435\u0434\u043E\u0431\u043D\u044B\u0435 \u0442\u0440\u0430\u0432\u044B
+      \u0438 \u043A\u043E\u0440\u0435\u043D\u044C\u044F."
+    English: The mage and the swordsman learned together how to extract sap from
+      trees and collect medicinal and edible herbs and roots.
+    Turkish: "B\xFCy\xFCc\xFC ve k\u0131l\u0131\xE7 ustas\u0131 birlikte a\u011Fa\xE7lardan
+      \xF6z \xE7\u0131karmay\u0131, \u015Fifal\u0131 ve yenilebilir otlar ile k\xF6kleri
+      toplamay\u0131 \xF6\u011Frendiler."
+  - Key: Cutscene7_2
+    Russian: "\u041B\u0443\u0447\u043D\u0438\u043A\u0438 \u0441\u043E\u043E\u0431\u0449\u0430
+      \u0434\u043E\u0431\u044B\u0432\u0430\u043B\u0438 \u043F\u0440\u043E\u0432\u0438\u0430\u043D\u0442."
+    English: The archers worked together to gather provisions.
+    Turkish: "Ok\xE7ular birlikte erzak topluyorlard\u0131."
+  - Key: Cutscene7_3
+    Russian: "\u0412\u0441\u0435 \u0432\u043C\u0435\u0441\u0442\u0435 \u0441\u0442\u0440\u043E\u0438\u043B\u0438
+      \u0432\u0440\u0435\u043C\u0435\u043D\u043D\u0443\u044E \u0431\u0430\u0437\u0443,
+      \u043A\u0430\u0436\u0434\u044B\u0439 \u0441\u0434\u0435\u043B\u0430\u043B \u0441\u0432\u043E\u0439
+      \u0432\u043A\u043B\u0430\u0434 \u0432 \u043E\u0431\u0449\u0435\u0435 \u0434\u0435\u043B\u043E."
+    English: "Everyone worked together to build a temporary base \u2014 each contributed
+      to the common cause."
+    Turkish: "Herkes ge\xE7ici bir \xFCs kurmak i\xE7in birlikte \xE7al\u0131\u015Ft\u0131
+      \u2014 herkes ortak i\u015Fe katk\u0131da bulundu."
+  - Key: Cutscene7_4
+    Russian: "\u0421\u043F\u0443\u0441\u0442\u044F \u0433\u043E\u0434\u0430 \u043A\u043E\u043C\u0430\u043D\u0434\u0430
+      \u0432\u043D\u043E\u0432\u044C \u043F\u043E\u0441\u0435\u0442\u0438\u043B\u0430
+      \u0442\u043E \u043C\u0435\u0441\u0442\u043E."
+    English: Years later, the team visited that place again.
+    Turkish: "Y\u0131llar sonra ekip o yeri tekrar ziyaret etti."
+  - Key: Cutscene7_5
+    Russian: "\u0418\u0445 \u043F\u0443\u043D\u043A\u0442 \u0440\u0430\u0437\u0440\u043E\u0441\u0441\u044F
+      \u0438 \u0441\u0442\u0430\u043B \u043E\u043F\u043E\u0440\u043E\u0439 \u0437\u0430\u0431\u043B\u0443\u0434\u0448\u0438\u043C
+      \u0438 \u0443\u0441\u0442\u0430\u0432\u0448\u0438\u043C \u043F\u0443\u0442\u043D\u0438\u043A\u0430\u043C
+      \u0432 \u044D\u0442\u043E\u043C \u0436\u0435\u0441\u0442\u043E\u043A\u043E\u043C
+      \u043B\u0435\u0441\u0443."
+    English: Their camp had grown and become a refuge for lost and weary travelers
+      in that harsh forest.
+    Turkish: "Kamplar\u0131 b\xFCy\xFCm\xFC\u015F ve bu ac\u0131mas\u0131z ormanda
+      kaybolmu\u015F ve yorgun yolcular i\xE7in bir s\u0131\u011F\u0131nak h\xE2line
+      gelmi\u015Fti."

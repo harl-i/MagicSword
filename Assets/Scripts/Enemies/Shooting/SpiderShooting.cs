@@ -9,12 +9,13 @@ namespace Enemies
 
         public override void Shoot()
         {
+            SetShootPointPosition();
             ShootWithStraightBullet();
         }
 
         private void Initialize()
         {
-            InitializePool(_straightBullet);
+            InitializePool(StraightBullet);
             SetShootPointPosition();
         }
     }

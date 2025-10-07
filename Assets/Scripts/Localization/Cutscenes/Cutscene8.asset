@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bef1b8eaa29a141a7fbdbeb62b334f, type: 3}
+  m_Name: Cutscene8
+  m_EditorClassIdentifier: 
+  Entries:
+  - Key: Cutscene8_0
+    Russian: "\u042D\u0442\u043E \u043C\u0435\u0441\u0442\u043E \u043D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u0435\u0442
+      \u043C\u043D\u0435 \u0435\u0449\u0451 \u043E\u0434\u043D\u043E \u043D\u0430\u0448\u0435
+      \u0441\u043B\u0430\u0432\u043D\u043E\u0435 \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435."
+    English: This place reminds me of another one of our glorious adventures.
+    Turkish: "Buras\u0131 bana bir ba\u015Fka g\xF6rkemli maceram\u0131z\u0131 hat\u0131rlat\u0131yor."
+  - Key: Cutscene8_1
+    Russian: "\u041F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435,
+      \u043D\u0430\u0443\u0447\u0438\u0432\u0448\u0435\u0435 \u043D\u0430\u0441 \u0434\u043E\u0432\u0435\u0440\u0438\u044E."
+    English: An adventure that taught us trust.
+    Turkish: "Bize g\xFCvenmeyi \xF6\u011Freten bir macera."
+  - Key: Cutscene8_2
+    Russian: "\u041A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u044B \u0441\u043E\u0437\u0434\u0430\u044E\u0442
+      \u0438\u043B\u043B\u044E\u0437\u0438\u0438, \u043F\u0440\u0435\u043B\u043E\u043C\u043B\u044F\u044E\u0442
+      \u0441\u0432\u0435\u0442 \u0438 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C."
+    English: Crystals create illusions, bending light and reality.
+    Turkish: "Kristaller ill\xFCzyonlar yarat\u0131r, \u0131\u015F\u0131\u011F\u0131
+      ve ger\xE7e\u011Fi k\u0131rar."
+  - Key: Cutscene8_3
+    Russian: "\u041E\u0434\u043D\u0430\u0436\u0434\u044B \u042D\u043D\u043E\u0440
+      \u0441\u043E\u0431\u0440\u0430\u043B \u0432\u0441\u0435\u0445 \u0443 \u043A\u043E\u0441\u0442\u0440\u0430
+      \u0438 \u0437\u0430\u044F\u0432\u0438\u043B, \u0447\u0442\u043E \u043E\u0434\u0438\u043D
+      \u0438\u0437 \u043A\u043E\u043C\u0430\u043D\u0434\u044B \u0431\u044B\u043B
+      \u043F\u043E\u0434\u043C\u0435\u043D\u0451\u043D."
+    English: One day, Enor gathered everyone around the campfire and announced that
+      one of the team members had been replaced.
+    Turkish: "Bir g\xFCn Enor, kamp ate\u015Fi etraf\u0131nda herkesi toplad\u0131
+      ve ekip \xFCyelerinden birinin yerine ba\u015Fkas\u0131n\u0131n ge\xE7ti\u011Fini
+      a\xE7\u0131klad\u0131."
+  - Key: Cutscene8_4
+    Russian: "\u041D\u043E \u043A\u0442\u043E \u0438\u043C\u0435\u043D\u043D\u043E
+      \u043E\u043D \u043D\u0435 \u0437\u043D\u0430\u0435\u0442 \u0438 \u043D\u0430\u043C
+      \u043F\u0440\u0435\u0434\u0441\u0442\u043E\u0438\u0442 \u0432\u044B\u044F\u0441\u043D\u0438\u0442\u044C
+      \u043A\u0442\u043E \u0436\u0435 \u043B\u0436\u0451\u0442."
+    English: "But he didn\u2019t know who exactly, and it was up to us to find out
+      who was lying."
+    Turkish: "Ama tam olarak kimin oldu\u011Funu bilmiyordu ve kimin yalan s\xF6yledi\u011Fini
+      bulmak bize d\xFC\u015F\xFCyordu."
+  - Key: Cutscene8_5
+    Russian: "\u041A\u0430\u0436\u0434\u044B\u0439 \u0438\u0437 \u043A\u043E\u043C\u0430\u043D\u0434\u044B
+      \u0441\u0442\u0430\u043B \u043D\u0435\u0434\u043E\u0432\u0435\u0440\u0447\u0438\u0432,
+      \u0432\u0441\u0435 \u0441\u0442\u0430\u0432\u0438\u043B\u043E\u0441\u044C \u043F\u043E\u0434
+      \u0441\u043E\u043C\u043D\u0435\u043D\u044C\u0435 \u0438 \u0434\u0430\u0436\u0435
+      \u0431\u0440\u0430\u0442 \u0441 \u0441\u0435\u0441\u0442\u0440\u043E\u0439
+      \u0437\u0430\u0431\u044B\u043B\u0438 \u043F\u0440\u043E \u0440\u043E\u0434\u043D\u0443\u044E
+      \u0441\u0432\u044F\u0437\u044C."
+    English: Everyone in the team became suspicious; everything was questioned, and
+      even a brother and sister forgot their familial bond.
+    Turkish: "Tak\u0131mdaki herkes \u015F\xFCpheci oldu; her \u015Fey sorgulanmaya
+      ba\u015Flad\u0131 ve hatta karde\u015Fler bile aralar\u0131ndaki aile ba\u011F\u0131n\u0131
+      unuttu."

@@ -168,7 +168,6 @@ namespace CutScenes
                 {
                     _enviromentSwitcher.gameObject.SetActive(true);
 
-                    Debug.Log(_moveHint.activeSelf);
                     if (!_hasAlreadyActivated)
                     {
                         _moveHint.SetActive(true);

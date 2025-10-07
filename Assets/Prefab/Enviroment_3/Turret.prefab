@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 2429283746294705727}
   - component: {fileID: 5131538668382406720}
   - component: {fileID: 962509103058203695}
-  - component: {fileID: 865324125008111932}
   - component: {fileID: 3423482185253618555}
   - component: {fileID: 2813047779485077273}
   - component: {fileID: 1902656607111684214}
   - component: {fileID: 1454691721979240433}
   - component: {fileID: 6073085318330844805}
+  - component: {fileID: 63359056317624781}
   - component: {fileID: 3834713405651721030}
   - component: {fileID: 2024108490804611803}
   m_Layer: 0
@@ -115,26 +115,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &865324125008111932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324512482478425930}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ed37d92b4198f42a68a46d7307fa73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _container: {fileID: 6023260348135160240}
-  _capacity: 6
-  _enemyType: 2
-  _shootPoint: {fileID: 200499839408494362}
-  _towardsBullet: {fileID: 7939399138380152378, guid: e7b0146f4b7c79746ad527d0a6114f19, type: 3}
-  _straightBullet: {fileID: 0}
-  _homingBullet: {fileID: 0}
-  _showTurretComponent: {fileID: 3423482185253618555}
 --- !u!114 &3423482185253618555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 6073085318330844805}
+  TargetState: {fileID: 6073085318330844805}
   _detectionZoneType: 1
   _zoneMovementType: 0
   _detectionRadius: 5
@@ -216,8 +196,27 @@ MonoBehaviour:
   _transitions:
   - {fileID: 3834713405651721030}
   _enemyType: 2
-  _shootingComponent: {fileID: 865324125008111932}
+  _shootingComponent: {fileID: 63359056317624781}
   _shootDelay: 3
+--- !u!114 &63359056317624781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324512482478425930}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e4ef0c94c4aac4fa8d83fe3e720074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _container: {fileID: 6023260348135160240}
+  _capacity: 6
+  ShootPoint: {fileID: 200499839408494362}
+  TowardsBullet: {fileID: 7939399138380152378, guid: e7b0146f4b7c79746ad527d0a6114f19, type: 3}
+  StraightBullet: {fileID: 0}
+  HomingBullet: {fileID: 0}
+  ShowTurretComponent: {fileID: 3423482185253618555}
 --- !u!114 &3834713405651721030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfae695672a26a04484ae413cb49c21c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 2024108490804611803}
+  TargetState: {fileID: 2024108490804611803}
   _detectionZoneType: 1
   _zoneMovementType: 0
   _detectionRadius: 5

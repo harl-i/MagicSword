@@ -9453,6 +9453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snowdrift (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7719257991276521654, guid: 1f8f27ef34c90ce4db8c3bdc5e0a37fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10003,6 +10007,10 @@ PrefabInstance:
     - target: {fileID: 7719257991276521654, guid: 1f8f27ef34c90ce4db8c3bdc5e0a37fc, type: 3}
       propertyPath: m_Name
       value: Snowdrift (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719257991276521654, guid: 1f8f27ef34c90ce4db8c3bdc5e0a37fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -16625,6 +16633,10 @@ PrefabInstance:
     - target: {fileID: 7719257991276521654, guid: 1f8f27ef34c90ce4db8c3bdc5e0a37fc, type: 3}
       propertyPath: m_Name
       value: Snowdrift (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719257991276521654, guid: 1f8f27ef34c90ce4db8c3bdc5e0a37fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24053,6 +24065,10 @@ PrefabInstance:
     - target: {fileID: 7719257991276521654, guid: 1f8f27ef34c90ce4db8c3bdc5e0a37fc, type: 3}
       propertyPath: m_Name
       value: Snowdrift (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719257991276521654, guid: 1f8f27ef34c90ce4db8c3bdc5e0a37fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -40115,6 +40131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snowdrift (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7719257991276521654, guid: 1f8f27ef34c90ce4db8c3bdc5e0a37fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7076832496997717249, guid: 1f8f27ef34c90ce4db8c3bdc5e0a37fc, type: 3}
@@ -47669,6 +47689,10 @@ PrefabInstance:
     - target: {fileID: 7719257991276521654, guid: 1f8f27ef34c90ce4db8c3bdc5e0a37fc, type: 3}
       propertyPath: m_Name
       value: Snowdrift (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719257991276521654, guid: 1f8f27ef34c90ce4db8c3bdc5e0a37fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

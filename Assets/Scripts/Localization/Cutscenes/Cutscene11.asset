@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bef1b8eaa29a141a7fbdbeb62b334f, type: 3}
+  m_Name: Cutscene11
+  m_EditorClassIdentifier: 
+  Entries:
+  - Key: Cutscene11_0
+    Russian: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u0447\u0442\u043E \u0434\u0430\u043B
+      \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0432\u044B\u0439\u0442\u0438
+      \u043D\u0430 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C."
+    English: Thank you for giving me the chance to reach the surface.
+    Turkish: "Y\xFCzeye \xE7\u0131kmam i\xE7in bana f\u0131rsat verdi\u011Fin i\xE7in
+      te\u015Fekk\xFCr ederim."
+  - Key: Cutscene11_1
+    Russian: "\u041D\u043E \u0432\u0435\u0434\u044C \u0442\u044B \u043D\u0435 \u0441\u0442\u0430\u043B
+      \u0442\u0430\u043A\u0438\u043C, \u043A\u0430\u043A \u0431\u044B\u043B \u043F\u0440\u0435\u0436\u0434\u0435."
+    English: "But you haven\u2019t become the way you were before."
+    Turkish: "Ama eskisi gibi olmad\u0131n."
+  - Key: Cutscene11_2
+    Russian: "\u041A \u0441\u043E\u0436\u0430\u043B\u0435\u043D\u0438\u044E \u0434\u0430,
+      \u043D\u043E \u043C\u043E\u0436\u0435\u0442 \u0435\u0441\u0442\u044C \u0448\u0430\u043D\u0441,
+      \u0432\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u0432 \u043F\u0435\u0440\u0432\u043E\u043D\u0430\u0447\u0430\u043B\u044C\u043D\u044B\u0439
+      \u0432\u0438\u0434."
+    English: "Unfortunately, yes. But maybe there\u2019s still a chance to return
+      to my original form."
+    Turkish: "Ne yaz\u0131k ki evet. Ama belki de eski halime d\xF6nme \u015Fans\u0131m
+      h\xE2l\xE2 vard\u0131r."
+  - Key: Cutscene11_3
+    Russian: "\u042F \u0431\u0443\u0434\u0443 \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0442\u044C
+      \u0438\u0441\u043A\u0430\u0442\u044C \u0437\u043D\u0430\u043A\u043E\u043C\u044B\u0435
+      \u043B\u0438\u0446\u0430, \u043D\u0435 \u0437\u043D\u0430\u044E \u0441\u043A\u043E\u043B\u044C\u043A\u043E
+      \u044F \u043F\u0440\u043E\u0432\u0435\u043B \u043F\u043E\u0434 \u0437\u0435\u043C\u043B\u0435\u0439,
+      \u0432\u0440\u0435\u043C\u044F \u0442\u0430\u043C \u0438\u0434\u0435\u0442
+      \u0438\u043D\u0430\u0447\u0435."
+    English: "I\u2019ll keep searching for familiar faces. I don\u2019t know how
+      long I\u2019ve spent underground \u2014 time flows differently down there."
+    Turkish: "Tan\u0131d\u0131k y\xFCzleri aramaya devam edece\u011Fim. Yeralt\u0131nda
+      ne kadar zaman ge\xE7irdi\u011Fimi bilmiyorum \u2014 orada zaman farkl\u0131
+      akar."
+  - Key: Cutscene11_4
+    Russian: "\u0416\u0435\u043B\u0430\u044E \u0443\u0434\u0430\u0447\u0438 \u0432
+      \u043F\u043E\u0438\u0441\u043A\u0430\u0445, \u0434\u0443\u043C\u0430\u044E
+      \u043D\u0430\u0448\u0438 \u043F\u0443\u0442\u0438 \u0440\u0430\u0441\u0445\u043E\u0434\u044F\u0442\u0441\u044F,
+      \u0432\u0435\u0434\u044C \u043C\u043D\u0435 \u043F\u043E\u0440\u0430 \u0438\u0441\u043A\u0430\u0442\u044C
+      \u0441\u0432\u043E\u0435\u0433\u043E \u0445\u043E\u0437\u044F\u0438\u043D\u0430."
+    English: "I wish you luck in your search. I think our paths part here, for it\u2019s
+      time for me to look for my master."
+    Turkish: "Aray\u0131\u015F\u0131nda sana iyi \u015Fanslar diliyorum. San\u0131r\u0131m
+      yollar\u0131m\u0131z burada ayr\u0131l\u0131yor, \xE7\xFCnk\xFC art\u0131k
+      sahibimi araman\u0131n zaman\u0131 geldi."
+  - Key: Cutscene11_5
+    Russian: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u043D\u0430\u0434\u0435\u044E\u0441\u044C
+      \u0442\u044B \u0441\u043C\u043E\u0436\u0435\u0448\u044C \u043D\u0430\u0439\u0442\u0438
+      \u0441\u0432\u043E\u0438\u0445 \u0431\u043B\u0438\u0437\u043A\u0438\u0445."
+    English: "Thank you. I hope you\u2019ll be able to find your loved ones."
+    Turkish: "Te\u015Fekk\xFCr ederim. Umar\u0131m sevdiklerini bulabilirsin."

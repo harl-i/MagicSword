@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bef1b8eaa29a141a7fbdbeb62b334f, type: 3}
+  m_Name: Cutscene3
+  m_EditorClassIdentifier: 
+  Entries:
+  - Key: Cutscene3_0
+    Russian: "\u041C\u044B \u0431\u044B\u043B\u0438 \u043E\u0442\u043B\u0438\u0447\u043D\u043E\u0439
+      \u043A\u043E\u043C\u0430\u043D\u0434\u043E\u0439."
+    English: We were a great team.
+    Turkish: "Biz harika bir tak\u0131md\u0131k."
+  - Key: Cutscene3_1
+    Russian: "\u041F\u044F\u0442\u044C \u043B\u0443\u0447\u0448\u0438\u0445 \u0432\u043E\u0438\u043D\u043E\u0432."
+    English: Five of the best warriors.
+    Turkish: "En iyi be\u015F sava\u015F\xE7\u0131."
+  - Key: Cutscene3_2
+    Russian: "\u041C\u0435\u0447\u043D\u0438\u043A, \u0434\u0432\u0430 \u043C\u0430\u0433\u0430
+      \u0438 \u0434\u0432\u0430 \u043B\u0443\u0447\u043D\u0438\u043A\u0430."
+    English: A swordsman, two mages, and two archers.
+    Turkish: "Bir k\u0131l\u0131\xE7 ustas\u0131, iki b\xFCy\xFCc\xFC ve iki ok\xE7u."

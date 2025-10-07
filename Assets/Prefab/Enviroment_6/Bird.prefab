@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3997654773580813687}
   - component: {fileID: 4922097242368936274}
   - component: {fileID: 8242689694815670221}
-  - component: {fileID: 2870143287778336684}
   - component: {fileID: 9161966831376420036}
   - component: {fileID: 9056689916230099416}
   - component: {fileID: 4645353212355122308}
@@ -179,18 +178,6 @@ PolygonCollider2D:
       - {x: 0.44285715, y: -0.18571429}
       - {x: 0.5285714, y: -0.12857144}
   m_UseDelaunayMesh: 0
---- !u!114 &2870143287778336684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4223291525579171617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6c30b8bd54984340ad1aa5f9eec0e92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &9161966831376420036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 7895529287309290822}
+  TargetState: {fileID: 7895529287309290822}
   _detectionZoneType: 0
   _zoneMovementType: 0
   _detectionRadius: 4.01
@@ -265,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 7895529287309290822}
+  TargetState: {fileID: 7895529287309290822}
   _detectionZoneType: 0
   _zoneMovementType: 0
   _detectionRadius: 4.01
@@ -308,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49ba6fb43c4fd1438cd097688afaadc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 3779030277338178198}
+  TargetState: {fileID: 3779030277338178198}
 --- !u!114 &3779030277338178198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 4125713361079421789}
+  TargetState: {fileID: 4125713361079421789}
 --- !u!114 &4125713361079421789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,7 +358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 1329236671055668869}
+  TargetState: {fileID: 1329236671055668869}
   _delay: 1
 --- !u!114 &1329236671055668869
 MonoBehaviour:
@@ -399,7 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb69c20f1b141b418445449dd719de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 9056689916230099416}
+  TargetState: {fileID: 3779030277338178198}
 --- !u!114 &6778305850508356539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e7530ccc12e4744cbb05ff009974861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 3779030277338178198}
+  TargetState: {fileID: 3779030277338178198}
 --- !u!114 &1750544067072533128
 MonoBehaviour:
   m_ObjectHideFlags: 0
