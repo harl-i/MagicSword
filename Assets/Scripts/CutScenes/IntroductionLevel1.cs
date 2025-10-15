@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using TMPro;
 using UI;
 using UnityEngine;
@@ -9,6 +9,10 @@ namespace CutScenes
 {
     public class IntroductionLevel1 : MonoBehaviour
     {
+        private const string RU = "ru";
+        private const string EN = "en";
+        private const string TR = "tr";
+
         [SerializeField] private GameObject _startDialogueCanvas;
         [SerializeField] private GameObject _uiMobile;
         [SerializeField] private GameObject _uiDesktop;
@@ -37,10 +41,6 @@ namespace CutScenes
         private bool _isTyping = false;
         private string _lang;
         private bool _hasAlreadyActivated = false;
-
-        private const string RU = "ru";
-        private const string EN = "en";
-        private const string TR = "tr";
 
         private void Start()
         {
@@ -183,14 +183,8 @@ namespace CutScenes
             gameObject.SetActive(false);
         }
 
-        private void ShowTapTip()
-        {
-            _tapToScreenTip.gameObject.SetActive(true);
-        }
+        private void ShowTapTip() => _tapToScreenTip.gameObject.SetActive(true);
 
-        private void HideTapTip()
-        {
-            _tapToScreenTip.gameObject.SetActive(false);
-        }
+        private void HideTapTip() => _tapToScreenTip.gameObject.SetActive(false);
     }
 }

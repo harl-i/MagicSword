@@ -1,6 +1,6 @@
+﻿using System.Collections;
 using DamageInterfaces;
 using Sword;
-using System.Collections;
 using UnityEngine;
 
 namespace Traps
@@ -11,15 +11,9 @@ namespace Traps
         private float _delayEnableTrigger = 5f;
         private PolygonCollider2D _triggerCollider;
 
-        private void Awake()
-        {
-            _triggerCollider = GetComponent<PolygonCollider2D>();
-        }
+        private void Awake() => _triggerCollider = GetComponent<PolygonCollider2D>();
 
-        public void ApplyDamage(Player player)
-        {
-            player.TakeDamage();
-        }
+        public void ApplyDamage(Player player) => player.TakeDamage();
 
         private void OnTriggerEnter2D(Collider2D collision)
         {

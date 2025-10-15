@@ -1,5 +1,5 @@
-using Sword;
 using System.Collections;
+using Sword;
 using UnityEngine;
 
 namespace Traps

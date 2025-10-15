@@ -1,5 +1,5 @@
-using Sword;
 using System;
+using Sword;
 using UnityEngine;
 
 namespace StateMachine

@@ -1,6 +1,6 @@
+﻿using System.Collections;
 using DialogueTriggers;
 using Sword;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using YG;
@@ -10,6 +10,8 @@ namespace LevelsManagment
 {
     public class NextSceneLoader : MonoBehaviour
     {
+        private const string SoulsLeaderboard = "soulsCountLeaderboard";
+
         [SerializeField] private Player _player;
         [SerializeField] private bool _isDelayNeeded;
         [SerializeField] private float _delay;
@@ -19,17 +21,9 @@ namespace LevelsManagment
         private int _playerScoreInLeaderboard;
         private bool _isLeaderboardUpdating;
 
-        private const string SOULS_LEADERBOARD = "soulsCountLeaderboard";
+        private void OnEnable() => YG2.onGetLeaderboard += OnLeaderboardReceived;
 
-        private void OnEnable()
-        {
-            YG2.onGetLeaderboard += OnLeaderboardReceived;
-        }
-
-        private void OnDisable()
-        {
-            YG2.onGetLeaderboard -= OnLeaderboardReceived;
-        }
+        private void OnDisable() => YG2.onGetLeaderboard -= OnLeaderboardReceived;
 
         public void LoadScene()
         {
@@ -86,16 +80,17 @@ namespace LevelsManagment
 
         private void UpdateLeaderboard()
         {
-            if (_isLeaderboardUpdating) return;
+            if (_isLeaderboardUpdating)
+                return;
 
             _isLeaderboardUpdating = true;
-            YG2.GetLeaderboard(SOULS_LEADERBOARD);
+            YG2.GetLeaderboard(SoulsLeaderboard);
         }
 
         private void OnLeaderboardReceived(LBData data)
         {
             _isLeaderboardUpdating = false;
-            if (data.technoName == SOULS_LEADERBOARD)
+            if (data.technoName == SoulsLeaderboard)
             {
                 if (data.currentPlayer != null)
                 {
@@ -103,7 +98,7 @@ namespace LevelsManagment
 
                     if (_playerScoreInLeaderboard < YG2.saves.SoulsCount && YG2.saves.SoulsCount > 0)
                     {
-                        YG2.SetLeaderboard(SOULS_LEADERBOARD, YG2.saves.SoulsCount);
+                        YG2.SetLeaderboard(SoulsLeaderboard, YG2.saves.SoulsCount);
                     }
                 }
             }
@@ -114,16 +109,20 @@ namespace LevelsManagment
             switch (sceneIndex)
             {
                 case (int)Level.FirstLevel:
-                    if (YG2.saves.FirstLevelDialogueWatch == 0) YG2.saves.FirstLevelDialogueWatch = 1;
+                    if (YG2.saves.FirstLevelDialogueWatch == 0)
+                        YG2.saves.FirstLevelDialogueWatch = 1;
                     break;
                 case (int)Level.ThirdLevel:
-                    if (YG2.saves.ThirdLevelDialogueWatch == 0) YG2.saves.ThirdLevelDialogueWatch = 1;
+                    if (YG2.saves.ThirdLevelDialogueWatch == 0)
+                        YG2.saves.ThirdLevelDialogueWatch = 1;
                     break;
                 case (int)Level.FifthLevel:
-                    if (YG2.saves.FifthLevelDialogueWatch == 0) YG2.saves.FifthLevelDialogueWatch = 1;
+                    if (YG2.saves.FifthLevelDialogueWatch == 0)
+                        YG2.saves.FifthLevelDialogueWatch = 1;
                     break;
                 case (int)Level.SeventhLevel:
-                    if (YG2.saves.SeventhLevelDialogueWatch == 0) YG2.saves.SeventhLevelDialogueWatch = 1;
+                    if (YG2.saves.SeventhLevelDialogueWatch == 0)
+                        YG2.saves.SeventhLevelDialogueWatch = 1;
                     break;
                 default:
                     break;

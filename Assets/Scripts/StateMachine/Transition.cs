@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace StateMachine
 {
@@ -9,9 +9,6 @@ namespace StateMachine
         public State TargetStateProperty => TargetState;
         public bool NeedTransit { get; protected set; }
 
-        private void OnEnable()
-        {
-            NeedTransit = false;
-        }
+        private void OnEnable() => NeedTransit = false;
     }
 }

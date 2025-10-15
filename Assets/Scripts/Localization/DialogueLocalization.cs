@@ -6,6 +6,8 @@ namespace Localization
     [CreateAssetMenu(menuName = "Localization/DialogueLocalization")]
     public class DialogueLocalization : ScriptableObject
     {
+        public List<LocalizedEntry> Entries = new List<LocalizedEntry>();
+
         [System.Serializable]
         public class LocalizedEntry
         {
@@ -14,7 +16,5 @@ namespace Localization
             public string English;
             public string Turkish;
         }
-
-        public List<LocalizedEntry> Entries = new List<LocalizedEntry>();
     }
 }

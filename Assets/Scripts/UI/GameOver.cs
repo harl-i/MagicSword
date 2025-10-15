@@ -1,5 +1,5 @@
+﻿using System.Collections;
 using Sword;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -18,20 +18,11 @@ namespace UI
 
         private float _delay = 3.4f;
 
-        private void Awake()
-        {
-            _gameoverImage = GetComponent<Image>();
-        }
+        private void Awake() => _gameoverImage = GetComponent<Image>();
 
-        private void OnEnable()
-        {
-            Player.HealthHasChanged += CheckPlayerHealth;
-        }
+        private void OnEnable() => Player.HealthHasChanged += CheckPlayerHealth;
 
-        private void OnDisable()
-        {
-            Player.HealthHasChanged -= CheckPlayerHealth;
-        }
+        private void OnDisable() => Player.HealthHasChanged -= CheckPlayerHealth;
 
         private void CheckPlayerHealth(int count)
         {

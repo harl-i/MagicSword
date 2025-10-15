@@ -1,5 +1,5 @@
+﻿using System.Collections;
 using Sword;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,15 +14,9 @@ namespace Platforms
 
         private bool _isBlock = false;
 
-        private void OnEnable()
-        {
-            PlatformDestructionSkill.SkillActivated += OnPlatformDestructionActivated;
-        }
+        private void OnEnable() => PlatformDestructionSkill.SkillActivated += OnPlatformDestructionActivated;
 
-        private void OnDisable()
-        {
-            PlatformDestructionSkill.SkillActivated -= OnPlatformDestructionActivated;
-        }
+        private void OnDisable() => PlatformDestructionSkill.SkillActivated -= OnPlatformDestructionActivated;
 
         public void Block()
         {

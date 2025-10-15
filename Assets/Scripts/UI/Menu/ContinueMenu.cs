@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using YG;
@@ -7,17 +7,14 @@ namespace UI
 {
     public class ContinueMenu : MonoBehaviour
     {
+        private const string Id = "continue";
+
         [SerializeField] private int _soulsForContinue;
         [SerializeField] private GameObject _error;
         [SerializeField] private int _delay;
         [SerializeField] private GameObject _mainMenu;
 
-        private const string Id = "continue";
-
-        private void OnEnable()
-        {
-            _mainMenu.SetActive(false);
-        }
+        private void OnEnable() => _mainMenu.SetActive(false);
 
         public void Close()
         {
@@ -45,26 +42,17 @@ namespace UI
             ShowAdvReward();
         }
 
-        private void ShowAdvReward()
-        {
-            YG2.RewardedAdvShow(Id, LoadContinueLevel);
-        }
+        private void ShowAdvReward() => YG2.RewardedAdvShow(Id, LoadContinueLevel);
 
-        private void LoadContinueLevel()
-        {
-            SceneManager.LoadScene(YG2.saves.SceneForContinue);
-        }
+        private void LoadContinueLevel() => SceneManager.LoadScene(YG2.saves.SceneForContinue);
+
+        private void ResetContinues() => YG2.saves.Continues = 3;
 
         private IEnumerator ShowError(int delay)
         {
             _error.SetActive(true);
             yield return new WaitForSeconds(delay);
             _error.SetActive(false);
-        }
-
-        private void ResetContinues()
-        {
-            YG2.saves.Continues = 3;
         }
     }
 }

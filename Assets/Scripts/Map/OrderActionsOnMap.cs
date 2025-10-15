@@ -1,5 +1,5 @@
+﻿using System.Collections;
 using LevelsManagment;
-using System.Collections;
 using UnityEngine;
 
 namespace Map
@@ -9,10 +9,7 @@ namespace Map
         [SerializeField] private SwordIconAnimMover _swordIconAnimMover;
         [SerializeField] private NextSceneLoader _nextSceneLoader;
 
-        private void Start()
-        {
-            StartCoroutine(StartAnimationAndLoadScene());
-        }
+        private void Start() => StartCoroutine(StartAnimationAndLoadScene());
 
         private IEnumerator StartAnimationAndLoadScene()
         {

@@ -1,6 +1,6 @@
+﻿using System.Collections;
 using DamageInterfaces;
 using Sword;
-using System.Collections;
 using UnityEngine;
 
 namespace Enemies
@@ -12,15 +12,9 @@ namespace Enemies
 
         private PolygonCollider2D _collider;
 
-        private void Awake()
-        {
-            _collider = GetComponent<PolygonCollider2D>();
-        }
+        private void Awake() => _collider = GetComponent<PolygonCollider2D>();
 
-        public void ApplyDamage(Player player)
-        {
-            player.TakeDamage();
-        }
+        public void ApplyDamage(Player player) => player.TakeDamage();
 
         private void OnTriggerEnter2D(Collider2D collision)
         {

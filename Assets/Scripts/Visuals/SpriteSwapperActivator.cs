@@ -1,23 +1,20 @@
-using Sword;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sword;
 using UnityEngine;
 
 namespace Visuals
 {
     public class SpriteSwapperActivator : MonoBehaviour
     {
-        public Action AllSpritesSwapped;
-
         [SerializeField] private float _delayBeforeDeactivateSprite;
 
         private List<SpriteSwapper> _swappers = new List<SpriteSwapper>();
 
-        private void Awake()
-        {
-            FindAndStoreSwappers();
-        }
+        public Action AllSpritesSwapped;
+
+        private void Awake() => FindAndStoreSwappers();
 
         private void FindAndStoreSwappers()
         {

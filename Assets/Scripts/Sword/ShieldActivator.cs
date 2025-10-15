@@ -1,6 +1,6 @@
-using Platforms;
-using System;
+﻿using System;
 using System.Collections;
+using Platforms;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,15 +28,9 @@ namespace Sword
             _shieldCounterMobile.text = _activationCount.ToString();
         }
 
-        private void OnEnable()
-        {
-            ShieldSkill.SkillActivated += OnSkillActivated;
-        }
+        private void OnEnable() => ShieldSkill.SkillActivated += OnSkillActivated;
 
-        private void OnDisable()
-        {
-            ShieldSkill.SkillActivated -= OnSkillActivated;
-        }
+        private void OnDisable() => ShieldSkill.SkillActivated -= OnSkillActivated;
 
         public void Block()
         {

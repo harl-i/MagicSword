@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -14,10 +14,7 @@ namespace Obstacles
         protected List<FaliingRock> Pool = new List<FaliingRock>();
         private float _timer;
 
-        private void Start()
-        {
-            Initialize(_rockPrefab);
-        }
+        private void Start() => Initialize(_rockPrefab);
 
         private void Update()
         {

@@ -1,7 +1,7 @@
+﻿using System;
+using System.Collections;
 using Localization;
 using Sword;
-using System;
-using System.Collections;
 using TMPro;
 using UI;
 using UnityEngine;
@@ -50,10 +50,7 @@ namespace DialogueTriggers
             _dialogueWindow.WindowShown += OnDialogueWindowShown;
         }
 
-        private void OnDisable()
-        {
-            _dialogueWindow.WindowShown -= OnDialogueWindowShown;
-        }
+        private void OnDisable() => _dialogueWindow.WindowShown -= OnDialogueWindowShown;
 
         private void Update()
         {
@@ -68,7 +65,8 @@ namespace DialogueTriggers
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (SkipIfSeenBefore()) return;
+            if (SkipIfSeenBefore())
+                return;
 
             if (collision.TryGetComponent(out Player player))
             {
@@ -156,10 +154,7 @@ namespace DialogueTriggers
             ShowTapTip();
         }
 
-        private void ClearDialogueField()
-        {
-            _dialogueTextField.text = string.Empty;
-        }
+        private void ClearDialogueField() => _dialogueTextField.text = string.Empty;
 
         private void ResumeGame()
         {
@@ -221,30 +216,18 @@ namespace DialogueTriggers
         {
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-            switch (currentSceneIndex)
+            return currentSceneIndex switch
             {
-                case (int)Level.FirstLevel:
-                    return YG2.saves.FirstLevelDialogueWatch == 1;
-                case (int)Level.ThirdLevel:
-                    return YG2.saves.ThirdLevelDialogueWatch == 1;
-                case (int)Level.FifthLevel:
-                    return YG2.saves.FifthLevelDialogueWatch == 1;
-                case (int)Level.SeventhLevel:
-                    return YG2.saves.SeventhLevelDialogueWatch == 1;
-                default:
-                    return false;
-            }
+                (int)Level.FirstLevel => YG2.saves.FirstLevelDialogueWatch == 1,
+                (int)Level.ThirdLevel => YG2.saves.ThirdLevelDialogueWatch == 1,
+                (int)Level.FifthLevel => YG2.saves.FifthLevelDialogueWatch == 1,
+                (int)Level.SeventhLevel => YG2.saves.SeventhLevelDialogueWatch == 1,
+                _ => false,
+            };
         }
 
-        private void ShowTapTip()
-        {
-            _tapToScreenTip.gameObject.SetActive(true);
-        }
+        private void ShowTapTip() => _tapToScreenTip.gameObject.SetActive(true);
 
-        private void HideTapTip()
-        {
-            _tapToScreenTip.gameObject.SetActive(false);
-        }
+        private void HideTapTip() => _tapToScreenTip.gameObject.SetActive(false);
     }
-
 }

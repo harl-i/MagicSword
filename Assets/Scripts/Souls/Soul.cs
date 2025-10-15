@@ -1,5 +1,5 @@
+﻿using System;
 using Portals;
-using System;
 using UnityEngine;
 
 namespace Souls
@@ -19,10 +19,7 @@ namespace Souls
             SetEnablePosition();
         }
 
-        private void OnDisable()
-        {
-            OnSoulDisabled?.Invoke();
-        }
+        private void OnDisable() => OnSoulDisabled?.Invoke();
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -32,9 +29,6 @@ namespace Souls
             }
         }
 
-        private void SetEnablePosition()
-        {
-            transform.position = new Vector2(_enemyTransform.position.x + _offsetX, _enemyTransform.position.y + _offsetY);
-        }
+        private void SetEnablePosition() => transform.position = new Vector2(_enemyTransform.position.x + _offsetX, _enemyTransform.position.y + _offsetY);
     }
 }

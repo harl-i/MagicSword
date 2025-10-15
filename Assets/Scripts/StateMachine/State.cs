@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace StateMachine
@@ -24,7 +24,7 @@ namespace StateMachine
 
         public void Exit()
         {
-            if (enabled == true)
+            if (enabled)
             {
                 foreach (var transition in _transitions)
                     transition.enabled = false;
@@ -44,9 +44,6 @@ namespace StateMachine
             return null;
         }
 
-        public void SetPlayerTransform(Transform playerTransform)
-        {
-            Player = playerTransform;
-        }
+        public void SetPlayerTransform(Transform playerTransform) => Player = playerTransform;
     }
 }

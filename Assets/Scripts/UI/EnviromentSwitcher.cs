@@ -1,6 +1,6 @@
+﻿using System.Collections;
 using DialogueTriggers;
 using Sword;
-using System.Collections;
 using UnityEngine;
 
 namespace UI
@@ -25,15 +25,9 @@ namespace UI
             OneTimeCheckScreenSize();
         }
 
-        private void OnDisable()
-        {
-            SceneDialogue.OnDialogShow -= HandleDialogueShow;
-        }
+        private void OnDisable() => SceneDialogue.OnDialogShow -= HandleDialogueShow;
 
-        private void Start()
-        {
-            StartCoroutine(CheckScreenSize());
-        }
+        private void Start() => StartCoroutine(CheckScreenSize());
 
         public void OneTimeCheckScreenSize()
         {

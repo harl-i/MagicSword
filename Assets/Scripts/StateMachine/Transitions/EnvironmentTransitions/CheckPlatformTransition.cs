@@ -1,5 +1,5 @@
+﻿using System.Collections;
 using Sword;
-using System.Collections;
 using UnityEngine;
 
 namespace StateMachine
@@ -16,10 +16,7 @@ namespace StateMachine
         private float _offset = -0.2f;
         private RaycastHit2D _hit;
 
-        private void Update()
-        {
-            StartCoroutine(DelayAndCheck(3f));
-        }
+        private void Update() => StartCoroutine(DelayAndCheck(3f));
 
         private IEnumerator DelayAndCheck(float delay)
         {
@@ -29,7 +26,7 @@ namespace StateMachine
 
             if (_raycastTimer >= _raycastFrequency)
             {
-                Vector3 raycastOrigin = transform.position + Vector3.down * _offset;
+                Vector3 raycastOrigin = transform.position + (Vector3.down * _offset);
 
                 switch (_raycastDirection)
                 {

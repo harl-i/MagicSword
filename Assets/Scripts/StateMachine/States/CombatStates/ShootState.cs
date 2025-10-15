@@ -1,4 +1,4 @@
-using Enemies;
+﻿using Enemies;
 using UnityEngine;
 
 namespace StateMachine
@@ -41,10 +41,7 @@ namespace StateMachine
             _shootingComponent.SetPlayerTransform(Player);
         }
 
-        private void OnDisable()
-        {
-            _shootingComponent.enabled = false;
-        }
+        private void OnDisable() => _shootingComponent.enabled = false;
 
         private void Update()
         {
@@ -72,7 +69,6 @@ namespace StateMachine
                 default:
                     break;
             }
-
         }
 
         private void FlipX(Vector2 directionToPlayer)

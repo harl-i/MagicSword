@@ -1,7 +1,7 @@
+ï»¿using System;
+using System.Collections;
 using Obstacles;
 using StateMachine;
-using System;
-using System.Collections;
 using UnityEngine;
 
 namespace Sword
@@ -91,7 +91,7 @@ namespace Sword
                 SwordLaunched?.Invoke(false);
                 _vectorCreator.enabled = true;
 
-                ÑorrectSwordWallAngle(collision);
+                Ð¡orrectSwordWallAngle(collision);
 
                 if (_canPlayStuckInWallEffect)
                 {
@@ -100,7 +100,7 @@ namespace Sword
             }
         }
 
-        private void ÑorrectSwordWallAngle(Collision2D collision)
+        private void Ð¡orrectSwordWallAngle(Collision2D collision)
         {
             Vector2 wallNormal = collision.contacts[0].normal;
             float angleBetweenSwordAndWall = Vector2.SignedAngle(transform.up, wallNormal);
@@ -181,15 +181,12 @@ namespace Sword
             _arrow.gameObject.transform.up = _direction;
         }
 
-        private void CalculateAngle()
-        {
-            _angle = Vector2.SignedAngle(transform.InverseTransformDirection(transform.up), _direction);
-        }
+        private void CalculateAngle() => _angle = Vector2.SignedAngle(transform.InverseTransformDirection(transform.up), _direction);
 
         private void Throw()
         {
             transform.localRotation = Quaternion.Euler(0f, 0f, transform.localRotation.z + _angle);
-            transform.Translate(transform.InverseTransformDirection(transform.up) * Time.deltaTime * _speed);
+            transform.Translate(_speed * Time.deltaTime * transform.InverseTransformDirection(transform.up));
 
             if (!_swordCollider.enabled)
                 StartCoroutine(EnableTriggerWithDelay(_triggerEnableDelay));
@@ -214,7 +211,7 @@ namespace Sword
         {
             RaycastHit2D raycastHit = Physics2D.Raycast(transform.position, _direction, _raycastDistance, _obstacleLayer);
 
-            Debug.DrawLine(transform.position, transform.position + _direction * _raycastDistance, Color.cyan);
+            Debug.DrawLine(transform.position, transform.position + (_direction * _raycastDistance), Color.cyan);
 
             if (raycastHit)
             {

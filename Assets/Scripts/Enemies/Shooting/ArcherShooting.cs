@@ -1,16 +1,10 @@
-namespace Enemies
+﻿namespace Enemies
 {
     public class ArcherShooting : Shooting
     {
-        private void Start()
-        {
-            Initialize();
-        }
+        private void Start() => Initialize();
 
-        public override void Shoot()
-        {
-            ShootWithTowardsBullet(true);
-        }
+        public override void Shoot() => ShootWithTowardsBullet(true);
 
         private void Initialize()
         {

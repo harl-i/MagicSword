@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using YG;
 
 namespace UI
@@ -7,9 +7,6 @@ namespace UI
     {
         private const int MaxContinuesAmount = 3;
 
-        public void Reset()
-        {
-            YG2.saves.Continues = MaxContinuesAmount;
-        }
+        public void Reset() => YG2.saves.Continues = MaxContinuesAmount;
     }
 }

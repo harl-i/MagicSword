@@ -1,20 +1,11 @@
-namespace Enemies
+﻿namespace Enemies
 {
     public class GargoyleShooting : Shooting
     {
-        private void Start()
-        {
-            Initialize();
-        }
+        private void Start() => Initialize();
 
-        public override void Shoot()
-        {
-            ShootWithHomingBullet();
-        }
+        public override void Shoot() => ShootWithHomingBullet();
 
-        private void Initialize()
-        {
-            InitializePool(HomingBullet);
-        }
+        private void Initialize() => InitializePool(HomingBullet);
     }
 }

@@ -8,6 +8,6 @@ namespace Enemies
         Scorpion,
         TowardsTurret,
         Archer,
-        Snowman
+        Snowman,
     }
 }

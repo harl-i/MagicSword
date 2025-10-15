@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using YG;
@@ -7,14 +7,11 @@ namespace Localization
 {
     public class LocalizationManager : MonoBehaviour
     {
-        [SerializeField] DialogueLocalization _dialogueLocalization;
+        [SerializeField] private DialogueLocalization _dialogueLocalization;
 
         private Dictionary<string, DialogueLocalization.LocalizedEntry> _localizationDictionary;
 
-        private void Awake()
-        {
-            _localizationDictionary = _dialogueLocalization.Entries.ToDictionary(e => e.Key);
-        }
+        private void Awake() => _localizationDictionary = _dialogueLocalization.Entries.ToDictionary(e => e.Key);
 
         public string GetText(string key)
         {
@@ -28,7 +25,7 @@ namespace Localization
             {
                 "ru" => entry.Russian,
                 "tr" => entry.Turkish,
-                _ => entry.English
+                _ => entry.English,
             };
         }
     }

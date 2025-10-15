@@ -1,4 +1,4 @@
-using Sword;
+﻿using Sword;
 using UnityEngine;
 
 namespace Bullets
@@ -21,10 +21,7 @@ namespace Bullets
             gameObject.SetActive(false);
         }
 
-        public void SetDirection(Vector3 direction)
-        {
-            Direction = direction;
-        }
+        public void SetDirection(Vector3 direction) => Direction = direction;
 
         public void CalculateDirection()
         {
@@ -41,14 +38,8 @@ namespace Bullets
             transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }
 
-        public void SetFlip(bool isFlip)
-        {
-            IsFlip = isFlip;
-        }
+        public void SetFlip(bool isFlip) => IsFlip = isFlip;
 
-        public void SetTarget(Transform target)
-        {
-            Target = target;
-        }
+        public void SetTarget(Transform target) => Target = target;
     }
 }

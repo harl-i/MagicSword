@@ -1,5 +1,5 @@
+﻿using System.Collections;
 using Sword;
-using System.Collections;
 using UnityEngine;
 
 namespace TriggersAndZones
@@ -9,20 +9,11 @@ namespace TriggersAndZones
     {
         private PolygonCollider2D _polygonCollider;
 
-        private void OnEnable()
-        {
-            PlatformDestructionSkill.SkillActivated += Toggle;
-        }
+        private void OnEnable() => PlatformDestructionSkill.SkillActivated += Toggle;
 
-        private void OnDisable()
-        {
-            PlatformDestructionSkill.SkillActivated -= Toggle;
-        }
+        private void OnDisable() => PlatformDestructionSkill.SkillActivated -= Toggle;
 
-        private void Awake()
-        {
-            _polygonCollider = GetComponent<PolygonCollider2D>();
-        }
+        private void Awake() => _polygonCollider = GetComponent<PolygonCollider2D>();
 
         public void Toggle(float timer)
         {
@@ -30,10 +21,7 @@ namespace TriggersAndZones
             StartCoroutine(SwitchToCollider(timer));
         }
 
-        private void SwitchToTrigger()
-        {
-            _polygonCollider.isTrigger = true;
-        }
+        private void SwitchToTrigger() => _polygonCollider.isTrigger = true;
 
         private IEnumerator SwitchToCollider(float switchDelay)
         {

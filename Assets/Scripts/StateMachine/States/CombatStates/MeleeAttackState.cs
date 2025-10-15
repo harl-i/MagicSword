@@ -1,4 +1,4 @@
-using Sword;
+﻿using Sword;
 using UnityEngine;
 
 namespace StateMachine
@@ -33,10 +33,7 @@ namespace StateMachine
             _animator.SetTrigger("Attack");
         }
 
-        private void OnDisable()
-        {
-            _animator.ResetTrigger("Attack");
-        }
+        private void OnDisable() => _animator.ResetTrigger("Attack");
 
         public void Attack()
         {
@@ -77,7 +74,7 @@ namespace StateMachine
 
         private void SetRaycastOriginPosition()
         {
-            if (!_spriteRenderer.flipX && _raycastOrigin.localPosition.x <= 0 || _spriteRenderer.flipX && _raycastOrigin.localPosition.x >= 0)
+            if ((!_spriteRenderer.flipX && _raycastOrigin.localPosition.x <= 0) || (_spriteRenderer.flipX && _raycastOrigin.localPosition.x >= 0))
             {
                 FlipXRaycastOrigin();
             }
@@ -90,9 +87,6 @@ namespace StateMachine
             _raycastOrigin.localPosition = position;
         }
 
-        private void DrawRaycast(Vector2 raycastOrigin, Vector2 raycastDirection)
-        {
-            Debug.DrawRay(raycastOrigin, raycastDirection, Color.green);
-        }
+        private void DrawRaycast(Vector2 raycastOrigin, Vector2 raycastDirection) => Debug.DrawRay(raycastOrigin, raycastDirection, Color.green);
     }
 }

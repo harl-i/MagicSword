@@ -1,5 +1,5 @@
+﻿using System;
 using DamageInterfaces;
-using System;
 using UnityEngine;
 using YG;
 
@@ -10,20 +10,15 @@ namespace Sword
     [RequireComponent(typeof(Animator))]
     public class Player : MonoBehaviour, IDamageable
     {
-        private int _healthCount = 3;
-
-        private bool _isLaunched;
-        private bool _isShieldActivated;
-
         private SwordMovingState _swordMovingState;
         private ShieldActivator _shieldActivator;
         private Animator _animator;
 
-        public bool IsLaunched => _isLaunched;
-        public bool IsShieldActivated => _isShieldActivated;
-        public int Health => _healthCount;
-
         public static Action<int> HealthHasChanged;
+
+        public bool IsLaunched { get; private set; }
+        public bool IsShieldActivated { get; private set; }
+        public int Health { get; private set; } = 3;
 
         private void Awake()
         {
@@ -32,10 +27,7 @@ namespace Sword
             _animator = GetComponent<Animator>();
         }
 
-        private void Start()
-        {
-            HealthHasChanged?.Invoke(_healthCount);
-        }
+        private void Start() => HealthHasChanged?.Invoke(Health);
 
         private void OnEnable()
         {
@@ -56,27 +48,21 @@ namespace Sword
                 return;
             }
 
-            if (_healthCount > 0 && !_isShieldActivated)
+            if (Health > 0 && !IsShieldActivated)
             {
-                _healthCount--;
-                HealthHasChanged?.Invoke(_healthCount);
+                Health--;
+                HealthHasChanged?.Invoke(Health);
             }
         }
 
         public void FullHealing()
         {
-            _healthCount = 3;
-            HealthHasChanged?.Invoke(_healthCount);
+            Health = 3;
+            HealthHasChanged?.Invoke(Health);
         }
 
-        private void OnSwordLaunched(bool isLaunched)
-        {
-            _isLaunched = isLaunched;
-        }
+        private void OnSwordLaunched(bool isLaunched) => IsLaunched = isLaunched;
 
-        private void OnShieldActivated(bool isActivated)
-        {
-            _isShieldActivated = isActivated;
-        }
+        private void OnShieldActivated(bool isActivated) => IsShieldActivated = isActivated;
     }
 }

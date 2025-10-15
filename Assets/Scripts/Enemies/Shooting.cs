@@ -1,5 +1,5 @@
+﻿using System.Collections;
 using Bullets;
-using System.Collections;
 using UnityEngine;
 
 namespace Enemies
@@ -33,10 +33,7 @@ namespace Enemies
             _animator = GetComponent<Animator>();
         }
 
-        protected void InitializePool(Bullet prefab)
-        {
-            Initialize(prefab);
-        }
+        protected void InitializePool(Bullet prefab) => Initialize(prefab);
 
         protected IEnumerator LookAtPlayerAndShoot()
         {
@@ -83,7 +80,8 @@ namespace Enemies
         protected void ShootWithStraightBullet()
         {
             Bullet bullet = GetBulletFromPool();
-            if (bullet == null) return;
+            if (bullet == null)
+                return;
 
             bullet.SetFlip(SpriteRenderer.flipX);
             bullet.gameObject.SetActive(true);
@@ -92,7 +90,8 @@ namespace Enemies
         protected void ShootWithTowardsBullet(bool canLookAtTarget)
         {
             Bullet bullet = GetBulletFromPool();
-            if (bullet == null) return;
+            if (bullet == null)
+                return;
 
             bullet.SetTarget(PlayerTransform);
 
@@ -109,7 +108,8 @@ namespace Enemies
         protected void ShootWithTowardsBullet(Vector3 direction)
         {
             Bullet bullet = GetBulletFromPool();
-            if (bullet == null) return;
+            if (bullet == null)
+                return;
 
             bullet.SetDirection(direction);
             bullet.gameObject.SetActive(true);
@@ -118,7 +118,8 @@ namespace Enemies
         protected void ShootWithHomingBullet()
         {
             Bullet bullet = GetBulletFromPool();
-            if (bullet == null) return;
+            if (bullet == null)
+                return;
 
             bullet.SetTarget(PlayerTransform);
             bullet.gameObject.SetActive(true);
@@ -140,16 +141,13 @@ namespace Enemies
         protected void SetShootPointPosition()
         {
             Debug.Log(ShootPoint.localPosition.x);
-            if (!SpriteRenderer.flipX && ShootPoint.localPosition.x <= 0 || SpriteRenderer.flipX && ShootPoint.localPosition.x >= 0)
+            if ((!SpriteRenderer.flipX && ShootPoint.localPosition.x <= 0) || (SpriteRenderer.flipX && ShootPoint.localPosition.x >= 0))
             {
                 FlipX();
             }
         }
 
-        public void PlayShootAnimation()
-        {
-            _animator.SetTrigger("Shoot");
-        }
+        public void PlayShootAnimation() => _animator.SetTrigger("Shoot");
 
         public abstract void Shoot();
 
@@ -160,9 +158,6 @@ namespace Enemies
             ShootPoint.localPosition = position;
         }
 
-        public void SetPlayerTransform(Transform transform)
-        {
-            PlayerTransform = transform;
-        }
+        public void SetPlayerTransform(Transform transform) => PlayerTransform = transform;
     }
 }

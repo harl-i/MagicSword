@@ -1,6 +1,6 @@
+﻿using System.Collections;
 using DamageInterfaces;
 using Sword;
-using System.Collections;
 using UnityEngine;
 
 namespace Traps
@@ -19,10 +19,7 @@ namespace Traps
             }
         }
 
-        public void ApplyDamage(Player player)
-        {
-            player.TakeDamage();
-        }
+        public void ApplyDamage(Player player) => player.TakeDamage();
 
         private IEnumerator TemporaryDisableCollider()
         {

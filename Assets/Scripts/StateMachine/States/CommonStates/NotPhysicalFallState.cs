@@ -1,6 +1,6 @@
+﻿using System.Collections;
 using Obstacles;
 using Platforms;
-using System.Collections;
 using UnityEngine;
 
 namespace StateMachine
@@ -17,10 +17,7 @@ namespace StateMachine
         private bool _canDetectCollision;
         private bool _isFall;
 
-        private void Awake()
-        {
-            _animator = GetComponent<Animator>();
-        }
+        private void Awake() => _animator = GetComponent<Animator>();
 
         private void Start()
         {

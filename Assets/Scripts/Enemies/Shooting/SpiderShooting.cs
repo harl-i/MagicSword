@@ -1,11 +1,8 @@
-namespace Enemies
+﻿namespace Enemies
 {
     public class SpiderShooting : Shooting
     {
-        private void Start()
-        {
-            Initialize();
-        }
+        private void Start() => Initialize();
 
         public override void Shoot()
         {

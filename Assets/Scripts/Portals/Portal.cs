@@ -1,7 +1,7 @@
+﻿using System;
 using LevelsManagment;
 using Souls;
 using Sword;
-using System;
 using UnityEngine;
 using YG;
 
@@ -23,27 +23,11 @@ namespace Portals
 
         public int SoulsAmountForActivation => _soulsAmountForActivation;
 
-        private void Awake()
-        {
-            _animator = GetComponent<Animator>();
-        }
+        private void Awake() => _animator = GetComponent<Animator>();
 
-        private void OnEnable()
-        {
-            _portalActivator.PortalActivatorActivated += OnPortalActivatorActivated;
-        }
+        private void OnEnable() => _portalActivator.PortalActivatorActivated += OnPortalActivatorActivated;
 
-        private void OnDisable()
-        {
-            _portalActivator.PortalActivatorActivated -= OnPortalActivatorActivated;
-        }
-
-        private void OnPortalActivatorActivated()
-        {
-            _animator.SetTrigger("Activation");
-            _isActive = true;
-            Debug.Log(_isActive);
-        }
+        private void OnDisable() => _portalActivator.PortalActivatorActivated -= OnPortalActivatorActivated;
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -66,9 +50,13 @@ namespace Portals
             }
         }
 
-        private void AddSoulsToPlayerSaves()
+        private void OnPortalActivatorActivated()
         {
-            YG2.saves.SoulsCount += _soulsAmountForActivation;
+            _animator.SetTrigger("Activation");
+            _isActive = true;
+            Debug.Log(_isActive);
         }
+
+        private void AddSoulsToPlayerSaves() => YG2.saves.SoulsCount += _soulsAmountForActivation;
     }
 }

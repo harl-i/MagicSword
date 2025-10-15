@@ -1,6 +1,8 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Traps
 {
-    public class Snowdrift : MonoBehaviour { }
+    public class Snowdrift : MonoBehaviour
+    {
+    }
 }

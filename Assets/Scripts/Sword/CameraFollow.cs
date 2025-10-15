@@ -4,6 +4,8 @@ namespace Sword
 {
     public class CameraFollow : MonoBehaviour
     {
+        private const float LevelRightEdge = 2.4f;
+
         [SerializeField] private Transform _player;
         [SerializeField] private float _dampTime = 0.4f;
         [SerializeField] private float _maxYMobile;
@@ -13,8 +15,6 @@ namespace Sword
         private float _minY;
         private Vector3 _cameraPos;
         private Vector3 _velocity = Vector3.zero;
-        
-        private const float LevelRightEdge = 2.4f;
 
         private void Update()
         {

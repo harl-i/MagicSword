@@ -1,5 +1,5 @@
+﻿using System;
 using Sword;
-using System;
 using UnityEngine;
 
 namespace Portals
@@ -20,21 +20,9 @@ namespace Portals
             _isActive = false;
         }
 
-        private void OnEnable()
-        {
-            _portal.SoulsCollected += OnSoulsCollected;
-        }
+        private void OnEnable() => _portal.SoulsCollected += OnSoulsCollected;
 
-        private void OnDisable()
-        {
-            _portal.SoulsCollected -= OnSoulsCollected;
-        }
-
-        private void OnSoulsCollected()
-        {
-            _animator.SetTrigger("Activation");
-            _isActive = true;
-        }
+        private void OnDisable() => _portal.SoulsCollected -= OnSoulsCollected;
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -42,6 +30,12 @@ namespace Portals
             {
                 PortalActivatorActivated?.Invoke();
             }
+        }
+
+        private void OnSoulsCollected()
+        {
+            _animator.SetTrigger("Activation");
+            _isActive = true;
         }
     }
 }

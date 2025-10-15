@@ -1,6 +1,6 @@
-using Sword;
 using System.Collections;
 using System.Collections.Generic;
+using Sword;
 using UnityEngine;
 
 namespace Platforms

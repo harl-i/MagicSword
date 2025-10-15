@@ -1,16 +1,10 @@
-namespace Enemies
+﻿namespace Enemies
 {
     public class ScorpionShooting : Shooting
     {
-        private void Start()
-        {
-            Initialize();
-        }
+        private void Start() => Initialize();
 
-        public override void Shoot()
-        {
-            ShootWithHomingBullet();
-        }
+        public override void Shoot() => ShootWithHomingBullet();
 
         private void Initialize()
         {
