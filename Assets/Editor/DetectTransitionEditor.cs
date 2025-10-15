@@ -1,4 +1,4 @@
-using StateMachine;
+﻿using StateMachine;
 using TriggersAndZones;
 using UnityEditor;
 using UnityEngine;
@@ -18,7 +18,6 @@ public class DetectTransitionEditor : Editor
     private SerializedProperty _cooldown;
     private SerializedProperty _offsetY;
     private SerializedProperty _offsetX;
-
 
     private void OnEnable()
     {
@@ -77,10 +76,7 @@ public class DetectTransitionEditor : Editor
         }
     }
 
-    private void ShowCircleZoneFields()
-    {
-        EditorGUILayout.PropertyField(_detectionRadius);
-    }
+    private void ShowCircleZoneFields() => EditorGUILayout.PropertyField(_detectionRadius);
 
     private void DrawLine()
     {

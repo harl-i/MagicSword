@@ -1,4 +1,4 @@
-using StateMachine;
+﻿using StateMachine;
 using TriggersAndZones;
 using UnityEditor;
 using UnityEngine;
@@ -58,10 +58,7 @@ public class PlayerMissingInDetectionZoneTransitionEditor : Editor
         EditorGUILayout.PropertyField(_offsetY);
     }
 
-    private void ShowCircleZoneFields()
-    {
-        EditorGUILayout.PropertyField(_detectionRadius);
-    }
+    private void ShowCircleZoneFields() => EditorGUILayout.PropertyField(_detectionRadius);
 
     private void DrawLine()
     {
