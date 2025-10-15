@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 63359056317624781}
   - component: {fileID: 3834713405651721030}
   - component: {fileID: 2024108490804611803}
+  - component: {fileID: 6678072541584602218}
   m_Layer: 0
   m_Name: turret(color)
   m_TagString: Untagged
@@ -210,8 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e4ef0c94c4aac4fa8d83fe3e720074, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _container: {fileID: 6023260348135160240}
-  _capacity: 6
   ShootPoint: {fileID: 200499839408494362}
   TowardsBullet: {fileID: 7939399138380152378, guid: e7b0146f4b7c79746ad527d0a6114f19, type: 3}
   StraightBullet: {fileID: 0}
@@ -254,6 +253,19 @@ MonoBehaviour:
   - {fileID: 1454691721979240433}
   _moveDistance: 0.55
   _moveSpeed: 1
+--- !u!114 &6678072541584602218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324512482478425930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97bd1622f8731b64e9a8a947a300efee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _container: {fileID: 6023260348135160240}
 --- !u!1 &1694300171943460006
 GameObject:
   m_ObjectHideFlags: 0

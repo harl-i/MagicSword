@@ -1,4 +1,4 @@
-using Enemies;
+﻿using Enemies;
 using StateMachine;
 using UnityEditor;
 using UnityEngine;
@@ -8,8 +8,6 @@ using UnityEngine;
 public class ShootingEditor : Editor
 {
     private SerializedProperty ShootPoint;
-    private SerializedProperty _container;
-    private SerializedProperty _capacity;
     private SerializedProperty TowardsBullet;
     private SerializedProperty StraightBullet;
     private SerializedProperty HomingBullet;
@@ -18,8 +16,6 @@ public class ShootingEditor : Editor
     private void OnEnable()
     {
         ShootPoint = serializedObject.FindProperty("ShootPoint");
-        _container = serializedObject.FindProperty("_container");
-        _capacity = serializedObject.FindProperty("_capacity");
         TowardsBullet = serializedObject.FindProperty("TowardsBullet");
         StraightBullet = serializedObject.FindProperty("StraightBullet");
         HomingBullet = serializedObject.FindProperty("HomingBullet");
@@ -67,8 +63,6 @@ public class ShootingEditor : Editor
         DrawLine();
 
         EditorGUILayout.PropertyField(ShootPoint);
-        EditorGUILayout.PropertyField(_container);
-        EditorGUILayout.PropertyField(_capacity);
 
         if (GUI.changed)
         {

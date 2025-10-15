@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 6458018909080853869}
   - component: {fileID: 588047993658533740}
   - component: {fileID: 2837040927635280758}
+  - component: {fileID: 8225164258608303168}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Untagged
@@ -518,8 +519,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ab36eb579ec9b46abe97d28cff29a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _container: {fileID: 8968686843497621948}
-  _capacity: 6
   ShootPoint: {fileID: 1525337018594870181}
   TowardsBullet: {fileID: 0}
   StraightBullet: {fileID: 660479779829443832, guid: 8c930718c6841294e8358772ed9d7345, type: 3}
@@ -546,6 +545,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   _offsetY: 0
+--- !u!114 &8225164258608303168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910390252967289087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97bd1622f8731b64e9a8a947a300efee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _container: {fileID: 8968686843497621948}
+  _capacity: 6
 --- !u!1001 &6955858651869360906
 PrefabInstance:
   m_ObjectHideFlags: 0

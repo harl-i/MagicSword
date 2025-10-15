@@ -5,7 +5,8 @@ using UnityEngine;
 namespace Enemies
 {
     [RequireComponent(typeof(Animator))]
-    public abstract class Shooting : BulletPool
+    [RequireComponent(typeof(BulletPool))]
+    public abstract class Shooting : MonoBehaviour
     {
         [SerializeField] protected Transform ShootPoint;
         [SerializeField] protected TowardsBullet TowardsBullet;
@@ -24,6 +25,8 @@ namespace Enemies
 
         private float _rotationSpeed = 150f;
 
+        private BulletPool _bulletPool;
+
         protected SpriteRenderer SpriteRenderer;
         protected Transform PlayerTransform;
 
@@ -31,9 +34,10 @@ namespace Enemies
         {
             SpriteRenderer = GetComponent<SpriteRenderer>();
             _animator = GetComponent<Animator>();
+            _bulletPool = GetComponent<BulletPool>();
         }
 
-        protected void InitializePool(Bullet prefab) => Initialize(prefab);
+        protected void InitializePool(Bullet prefab) => _bulletPool.Initialize(prefab);
 
         protected IEnumerator LookAtPlayerAndShoot()
         {
@@ -127,7 +131,7 @@ namespace Enemies
 
         protected Bullet GetBulletFromPool()
         {
-            TryGetObject(out Bullet bullet);
+            _bulletPool.TryGetObject(out Bullet bullet);
 
             if (bullet != null)
             {

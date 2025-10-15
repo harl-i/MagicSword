@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 4504448963349884128}
   - component: {fileID: 4393121977896580381}
   - component: {fileID: 7348381151501827658}
+  - component: {fileID: 1978123090729029780}
   m_Layer: 0
   m_Name: archer 2 32x32_0
   m_TagString: Untagged
@@ -420,8 +421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c50aae2be50564c93bbe7073a07fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _container: {fileID: 2382937744266675390}
-  _capacity: 6
   ShootPoint: {fileID: 3082531721286330339}
   TowardsBullet: {fileID: 8812371218968243853, guid: a1eb93e9eebbd914c83604e2ac5660f2, type: 3}
   StraightBullet: {fileID: 0}
@@ -516,6 +515,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enableColliderDelay: 1.5
+--- !u!114 &1978123090729029780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690351901100307118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97bd1622f8731b64e9a8a947a300efee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _container: {fileID: 2382937744266675390}
 --- !u!1001 &2764073884263477196
 PrefabInstance:
   m_ObjectHideFlags: 0
