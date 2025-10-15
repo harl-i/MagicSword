@@ -8,6 +8,7 @@ namespace UI
     public class ContinueMenu : MonoBehaviour
     {
         private const string Id = "continue";
+        private const int MaxContinuesAmount = 3;
 
         [SerializeField] private int _soulsForContinue;
         [SerializeField] private GameObject _error;
@@ -46,7 +47,7 @@ namespace UI
 
         private void LoadContinueLevel() => SceneManager.LoadScene(YG2.saves.SceneForContinue);
 
-        private void ResetContinues() => YG2.saves.Continues = 3;
+        private void ResetContinues() => YG2.saves.Continues = MaxContinuesAmount;
 
         private IEnumerator ShowError(int delay)
         {
