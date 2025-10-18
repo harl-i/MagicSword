@@ -708,6 +708,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &156465452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8094365909021998043, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
+  m_PrefabInstance: {fileID: 925237250637418992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfe40f7233d71548bf4ea7d136ef61b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &195038588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,8 +1018,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6b4e570b34ffd5d47b75131312164948, type: 2}
-  m_sharedMaterial: {fileID: -8097688301961711714, guid: 6b4e570b34ffd5d47b75131312164948, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 77d746bcb952120429c957d22228d31c, type: 2}
+  m_sharedMaterial: {fileID: 1742305317460579261, guid: 77d746bcb952120429c957d22228d31c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6876,6 +6887,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 63359056317624781, guid: 2b80ae93265a06345a110890603aad64, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 455308234233426888, guid: 2b80ae93265a06345a110890603aad64, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.2717986
@@ -12984,7 +12999,8 @@ PrefabInstance:
       propertyPath: _detectionRectangleSize.y
       value: 4.78
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8519042720371005366, guid: e7c84bcf559135a4b935682dfe79dc19, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13835,6 +13851,7 @@ GameObject:
   - component: {fileID: 1721798740}
   - component: {fileID: 1721798739}
   - component: {fileID: 1721798738}
+  - component: {fileID: 1721798741}
   m_Layer: 0
   m_Name: First time see turret
   m_TagString: Untagged
@@ -13857,21 +13874,11 @@ MonoBehaviour:
   _animator: {fileID: 891667380}
   _dialogueWindow: {fileID: 891667381}
   _dialogueTextField: {fileID: 1955467230}
-  _textRu:
-  - "\u0422\u0443\u0440\u0435\u043B\u0438 \u0432 \u043E\u0442\u043B\u0438\u0447\u0438\u0438
-    \u043E\u0442 \u0433\u043E\u0440\u0433\u0443\u043B\u0435\u0439 \u044D\u0442\u043E
-    \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C\u044B, \u0430 \u043D\u0435 \u043C\u0430\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0435
-    \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0430."
-  - "\u0421\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E
-    \u0434\u0443\u0448\u0438 \u0432 \u043D\u0438\u0445 \u043D\u0435\u0442"
-  _textEn:
-  - "Unlike gargoyles, turrets are mere mechanisms\u2014not magical beings."
-  - Thus, they hold no soul to claim.
-  _textTr:
-  - "Gargoyllerden farkl\u0131 olarak taretler mekanik d\xFCzeneklerdir, b\xFCy\xFCl\xFC
-    varl\u0131klar de\u011Fil."
-  - "Bu y\xFCzden i\xE7lerinde al\u0131nacak ruh bar\u0131nd\u0131rmazlar."
+  _dialogueKeys:
+  - FirstTimeSeeTurretDialogue_0
+  - FirstTimeSeeTurretDialogue_1
   _typingSpeed: 0.05
+  _localizationManager: {fileID: 1721798741}
   _needPermanentDisableTrigger: 1
   _trigger: {fileID: 1721798739}
   _timeForTemporaryDisable: 0
@@ -13941,6 +13948,19 @@ Transform:
   - {fileID: 502545044}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1721798741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721798737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146352afeebd5be4eaf161d8a15da950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueLocalization: {fileID: 11400000, guid: 288251d259d19494ebc916d67e293c78, type: 2}
 --- !u!1001 &1725607188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16464,6 +16484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Liana
       objectReference: {fileID: 0}
+    - target: {fileID: 6183210090423450507, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
+      propertyPath: TargetState
+      value: 
+      objectReference: {fileID: 156465452}
     - target: {fileID: 7973725379423878280, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.82
@@ -16695,21 +16719,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4324965058639704325, guid: 2b505a16dbbd4924cb85f71d3969b506, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324965058639704325, guid: 2b505a16dbbd4924cb85f71d3969b506, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6024938389446765512, guid: 2b505a16dbbd4924cb85f71d3969b506, type: 3}
       propertyPath: m_Name
       value: Snake(Color)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024938389446765512, guid: 2b505a16dbbd4924cb85f71d3969b506, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7058900413817429554, guid: 2b505a16dbbd4924cb85f71d3969b506, type: 3}
       propertyPath: m_LocalPosition.x

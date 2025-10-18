@@ -1,32 +1,35 @@
 using UnityEngine;
 
-public class HomingBullet : Bullet
+namespace Bullets
 {
-    [SerializeField] private float _rotationSpeed;
-    [SerializeField] private float _lifetime;
-
-    private float _elapsedTime;
-
-    private void OnEnable()
+    public class HomingBullet : Bullet
     {
-        _elapsedTime = 0f;
-    }
+        [SerializeField] private float _rotationSpeed;
+        [SerializeField] private float _lifetime;
 
-    private void Update()
-    {
-        CalculateDirection();
-        float angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg - 90f;
+        private float _elapsedTime;
 
-        Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
-
-        transform.position += transform.up * _speed * Time.deltaTime;
-
-        if (_elapsedTime >= _lifetime)
+        private void OnEnable()
         {
-            gameObject.SetActive(false);
+            _elapsedTime = 0f;
         }
 
-        _elapsedTime += Time.deltaTime;
+        private void Update()
+        {
+            CalculateDirection();
+            float angle = Mathf.Atan2(Direction.y, Direction.x) * Mathf.Rad2Deg - 90f;
+
+            Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
+
+            transform.position += transform.up * _speed * Time.deltaTime;
+
+            if (_elapsedTime >= _lifetime)
+            {
+                gameObject.SetActive(false);
+            }
+
+            _elapsedTime += Time.deltaTime;
+        }
     }
 }

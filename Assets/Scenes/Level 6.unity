@@ -1952,8 +1952,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6b4e570b34ffd5d47b75131312164948, type: 2}
-  m_sharedMaterial: {fileID: -8097688301961711714, guid: 6b4e570b34ffd5d47b75131312164948, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 77d746bcb952120429c957d22228d31c, type: 2}
+  m_sharedMaterial: {fileID: 1742305317460579261, guid: 77d746bcb952120429c957d22228d31c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14011,10 +14011,6 @@ PrefabInstance:
     - target: {fileID: 381147777462716885, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
       propertyPath: m_Name
       value: Liana (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 381147777462716885, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7973725379423878280, guid: 263b289de2d74fe4e8744c38ef144d76, type: 3}
       propertyPath: m_LocalPosition.x

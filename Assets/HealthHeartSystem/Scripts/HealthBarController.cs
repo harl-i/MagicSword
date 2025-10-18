@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Sword;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthBarController : MonoBehaviour

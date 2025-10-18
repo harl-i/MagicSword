@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bef1b8eaa29a141a7fbdbeb62b334f, type: 3}
+  m_Name: Cutscene6
+  m_EditorClassIdentifier: 
+  Entries:
+  - Key: Cutscene6_0
+    Russian: "\u042D\u0442\u043E \u043C\u0435\u0441\u0442\u043E..."
+    English: This place...
+    Turkish: "Buras\u0131..."
+  - Key: Cutscene6_1
+    Russian: "\u043D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u0435\u0442 \u043C\u043D\u0435
+      \u043E\u0434\u043D\u043E \u043D\u0430\u0448\u0435 \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435."
+    English: reminds me of one of our adventures.
+    Turkish: "bana bir maceram\u0131z\u0131 hat\u0131rlat\u0131yor."
+  - Key: Cutscene6_2
+    Russian: "\u0411\u044B\u043B\u043E \u0442\u044F\u0436\u0435\u043B\u043E, \u043D\u0430\u0448\u0430
+      \u043A\u043E\u043C\u0430\u043D\u0434\u0430 \u0431\u044B\u043B\u0430 \u0438\u0441\u0442\u043E\u0449\u0435\u043D\u0430
+      \u0432 \u0431\u043E\u044F\u0445, \u0430 \u043F\u0440\u0438\u043F\u0430\u0441\u043E\u0432
+      \u043F\u043E\u0447\u0442\u0438 \u043D\u0435 \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C."
+    English: "It was tough \u2014 our team was exhausted from battles, and we had
+      almost no supplies left."
+    Turkish: "Zordu \u2014 ekibimiz sava\u015Flardan bitkin d\xFC\u015Fm\xFC\u015Ft\xFC
+      ve neredeyse hi\xE7 erza\u011F\u0131m\u0131z kalmam\u0131\u015Ft\u0131."
+  - Key: Cutscene6_3
+    Russian: "\u041C\u043D\u0435\u043D\u0438\u044F \u0440\u0430\u0437\u043E\u0448\u043B\u0438\u0441\u044C,
+      \u043E\u0434\u043D\u0438 \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u043B\u0438
+      \u043F\u043E\u0432\u0435\u0440\u043D\u0443\u0442\u044C \u043D\u0430\u0437\u0430\u0434
+      \u0438 \u0432\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0439
+      \u0434\u043E\u0440\u043E\u0433\u043E\u0439."
+    English: 'Opinions were divided: some suggested turning back and returning by
+      the safe road.'
+    Turkish: "G\xF6r\xFC\u015Fler ayr\u0131lm\u0131\u015Ft\u0131: baz\u0131lar\u0131
+      geri d\xF6n\xFCp g\xFCvenli yoldan gitmeyi \xF6nerdi."
+  - Key: Cutscene6_4
+    Russian: "\u0414\u0440\u0443\u0433\u0438\u0435 \u043D\u0430\u0441\u0442\u0430\u0438\u0432\u0430\u043B\u0438
+      \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C \u043F\u0443\u0442\u044C,
+      \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u044F \u0447\u0442\u043E \u043F\u043E\u0447\u0442\u0438
+      \u0434\u043E\u0441\u0442\u0438\u0433\u043B\u0438 \u0446\u0435\u043B\u0438."
+    English: Others insisted on continuing the journey, feeling that we were almost
+      at our goal.
+    Turkish: "Di\u011Ferleri ise hedefe neredeyse ula\u015Ft\u0131\u011F\u0131m\u0131z\u0131
+      hissederek yola devam etmemiz konusunda \u0131srar etti."
+  - Key: Cutscene6_5
+    Russian: "\u041A\u0430\u0437\u0430\u043B\u043E\u0441\u044C \u0435\u0449\u0451
+      \u043D\u0435\u043C\u043D\u043E\u0433\u043E \u0438 \u0432\u0441\u0435 \u0440\u0430\u0437\u0434\u0435\u043B\u044F\u0442\u0441\u044F,
+      \u043D\u043E \u0438\u043C\u0435\u043D\u043D\u043E \u0432 \u044D\u0442\u043E\u0442
+      \u0442\u0440\u0443\u0434\u043D\u044B\u0439 \u043C\u043E\u043C\u0435\u043D\u0442
+      \u042D\u043D\u043E\u0440 \u0432\u0434\u043E\u0445\u043D\u043E\u0432\u0438\u043B
+      \u043D\u0430\u0441."
+    English: It seemed that we were about to split up, but at that difficult moment,
+      Enor inspired us.
+    Turkish: "Sanki herkes ayr\u0131lacak gibiydi ama tam o zorlu anda Enor bize
+      ilham verdi."

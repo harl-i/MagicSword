@@ -1,25 +1,23 @@
-using System.Collections;
+﻿using System.Collections;
+using LevelsManagment;
 using UnityEngine;
 
-public class OrderActionsOnMap : MonoBehaviour
+namespace Map
 {
-    [SerializeField] private SwordIconAnimMover _swordIconAnimMover;
-    [SerializeField] private NextSceneLoader _nextSceneLoader;
-
-    private void Start()
+    public class OrderActionsOnMap : MonoBehaviour
     {
-        StartCoroutine(StartAnimationAndLoadScene());
-    }
+        [SerializeField] private SwordIconAnimMover _swordIconAnimMover;
+        [SerializeField] private NextSceneLoader _nextSceneLoader;
 
-    private IEnumerator StartAnimationAndLoadScene()
-    {
-        yield return StartCoroutine(_swordIconAnimMover.StartAnimationAfterDelay());
+        private void Start() => StartCoroutine(StartAnimationAndLoadScene());
 
-        while (!_swordIconAnimMover.IsMoveCompleted)
+        private IEnumerator StartAnimationAndLoadScene()
         {
-            yield return null;
-        }
+            yield return StartCoroutine(_swordIconAnimMover.StartAnimationAfterDelay());
 
-        _nextSceneLoader.LoadScene();
+            yield return new WaitUntil(() => _swordIconAnimMover.IsMoveCompleted);
+
+            _nextSceneLoader.LoadScene();
+        }
     }
 }

@@ -1,0 +1,16 @@
+using Enemies;
+using UnityEngine;
+
+namespace StateMachine
+{
+    public class ArcherArrowHitTransition : Transition
+    {
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.TryGetComponent(out CollisionTag collisionTag))
+            {
+                NeedTransit = true;
+            }
+        }
+    }
+}

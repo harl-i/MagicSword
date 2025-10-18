@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bef1b8eaa29a141a7fbdbeb62b334f, type: 3}
+  m_Name: Cutscene4
+  m_EditorClassIdentifier: 
+  Entries:
+  - Key: Cutscene4_0
+    Russian: "\u042D\u043D\u043E\u0440 - \u0441\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u0439
+      \u0438\u0437 \u043D\u0430\u0441. \u042D\u0442\u043E \u0441\u0430\u043C\u044B\u0439
+      \u043C\u043E\u0433\u0443\u0449\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439
+      \u043C\u0430\u0433 \u0412\u0438\u043B\u044C\u043D\u043E\u0440\u0430."
+    English: Enor is the eldest among us. He is the most powerful mage of Vilnor.
+    Turkish: "Enor aram\u0131zdaki en ya\u015Fl\u0131s\u0131yd\u0131. Vilnor\u2019un
+      en g\xFC\xE7l\xFC b\xFCy\xFCc\xFCs\xFCd\xFCr."
+  - Key: Cutscene4_1
+    Russian: "\u041B\u0438\u0448\u044C \u043E\u0434\u0438\u043D \u0443\u0434\u0430\u0440
+      \u0435\u0433\u043E \u043F\u043E\u0441\u043E\u0445\u0430 \u0437\u0430\u0441\u0442\u0430\u0432\u043B\u044F\u043B
+      \u0433\u043E\u0440\u044B \u0432\u0437\u0434\u0440\u0430\u0433\u0438\u0432\u0430\u0442\u044C,
+      \u0430 \u043C\u043E\u0440\u044F \u043D\u0435\u0438\u0441\u0442\u043E\u0432\u043E
+      \u0431\u0443\u0448\u0435\u0432\u0430\u0442\u044C."
+    English: A single strike of his staff could make mountains tremble and seas rage
+      fiercely.
+    Turkish: "Asas\u0131n\u0131n tek bir darbesi da\u011Flar\u0131 titretebilir,
+      denizleri kudurtabilirdi."
+  - Key: Cutscene4_2
+    Russian: "\u041E\u043D \u0440\u0435\u0434\u043A\u043E \u0432\u0441\u0442\u0443\u043F\u0430\u043B
+      \u0432 \u0431\u043E\u0439, \u043B\u0438\u0448\u044C \u0432\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u043D\u043E
+      \u0441\u043B\u0435\u0434\u0438\u043B \u0437\u0430 \u0441\u0432\u043E\u0438\u043C\u0438
+      \u0443\u0447\u0435\u043D\u0438\u043A\u0430\u043C\u0438."
+    English: He rarely joined battles; instead, he carefully watched over his students.
+    Turkish: "Sava\u015Fa nadiren kat\u0131l\u0131rd\u0131; bunun yerine \xF6\u011Frencilerini
+      dikkatle g\xF6zetlerdi."
+  - Key: Cutscene4_3
+    Russian: "\u041D\u0438 \u043E\u0434\u0438\u043D \u043F\u0440\u043E\u043C\u0430\u0445
+      \u043D\u0435 \u0443\u0441\u043A\u043E\u043B\u044C\u0437\u0430\u043B \u043E\u0442
+      \u0435\u0433\u043E \u0432\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0445
+      \u0433\u043B\u0430\u0437."
+    English: Not a single mistake escaped his watchful eyes.
+    Turkish: "Onun dikkatli g\xF6zlerinden tek bir hata bile ka\xE7mazd\u0131."
+  - Key: Cutscene4_4
+    Russian: "\u042D\u043D\u043E\u0440 \u0432\u0441\u0435\u0433\u0434\u0430 \u0431\u044B\u043B
+      \u0434\u043E\u0431\u0440 \u0438 \u0432\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u0435\u043D
+      \u043A \u0434\u0440\u0443\u0433\u0438\u043C, \u043D\u043E \u0435\u0433\u043E
+      \u0442\u0440\u0435\u043D\u0438\u0440\u043E\u0432\u043A\u0438 \u0432\u044B\u043C\u0430\u0442\u044B\u0432\u0430\u043B\u0438
+      \u0434\u0430\u0436\u0435 \u043C\u043E\u0439 \u0437\u0430\u043A\u0430\u043B\u0451\u043D\u043D\u044B\u0439
+      \u043A\u043B\u0438\u043D\u043E\u043A."
+    English: Enor was always kind and considerate to others, but his training sessions
+      could exhaust even my tempered blade.
+    Turkish: "Enor her zaman ba\u015Fkalar\u0131na kar\u015F\u0131 nazik ve d\xFC\u015F\xFCnceliydi,
+      ama onun antrenmanlar\u0131 benim sertle\u015Ftirilmi\u015F k\u0131l\u0131c\u0131m\u0131
+      bile yorabilirdi."

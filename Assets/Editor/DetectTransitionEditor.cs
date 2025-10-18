@@ -1,3 +1,5 @@
+﻿using StateMachine;
+using TriggersAndZones;
 using UnityEditor;
 using UnityEngine;
 
@@ -17,10 +19,9 @@ public class DetectTransitionEditor : Editor
     private SerializedProperty _offsetY;
     private SerializedProperty _offsetX;
 
-
     private void OnEnable()
     {
-        _targetState = serializedObject.FindProperty("_targetState");
+        _targetState = serializedObject.FindProperty("TargetState");
         _targetLayer = serializedObject.FindProperty("_targetLayer");
         _detectionZoneType = serializedObject.FindProperty("_detectionZoneType");
         _zoneMovementType = serializedObject.FindProperty("_zoneMovementType");
@@ -75,10 +76,7 @@ public class DetectTransitionEditor : Editor
         }
     }
 
-    private void ShowCircleZoneFields()
-    {
-        EditorGUILayout.PropertyField(_detectionRadius);
-    }
+    private void ShowCircleZoneFields() => EditorGUILayout.PropertyField(_detectionRadius);
 
     private void DrawLine()
     {

@@ -277,6 +277,7 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 0
   _speed: 0.5
   _colliderOffsetX: 0
+  _lengthPatrolRoute: 1.7
 --- !u!114 &6810693592395496989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 3688423276642450206}
+  TargetState: {fileID: 3688423276642450206}
 --- !u!114 &3688423276642450206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa956f5424179ff458a2ec35f80b21c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 6998779756537067754}
+  TargetState: {fileID: 6998779756537067754}
 --- !u!114 &6998779756537067754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ae46ce9fd928e4b81d4973e7b27d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 3280231507076138224}
+  TargetState: {fileID: 3280231507076138224}
   _raycastDirection: 1
   _raycastLength: 0.8
   _layerMask:
@@ -376,7 +377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 2216008750422845915}
+  TargetState: {fileID: 2216008750422845915}
   _delay: 1.5
 --- !u!114 &2216008750422845915
 MonoBehaviour:
@@ -405,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 6998779756537067754}
+  TargetState: {fileID: 6998779756537067754}
   _delay: 0.7
 --- !u!1 &6115034562858873471
 GameObject:

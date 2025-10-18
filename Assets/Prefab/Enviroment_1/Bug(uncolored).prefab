@@ -271,6 +271,7 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 0
   _speed: 0.5
   _colliderOffsetX: 0
+  _lengthPatrolRoute: 1.7
 --- !u!114 &3015333494346689361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 8424759608597832945}
+  TargetState: {fileID: 8424759608597832945}
 --- !u!114 &8424759608597832945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,7 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa956f5424179ff458a2ec35f80b21c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 3109643478540745277}
+  TargetState: {fileID: 3109643478540745277}
 --- !u!114 &3109643478540745277
 MonoBehaviour:
   m_ObjectHideFlags: 0

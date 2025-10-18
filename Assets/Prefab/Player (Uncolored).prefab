@@ -758,7 +758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b5678631cef9e4d9c2b9baa993480e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 5723692574511867585}
+  TargetState: {fileID: 5723692574511867585}
   _player: {fileID: 362071652712938266}
 --- !u!114 &7233208598962122849
 MonoBehaviour:
@@ -772,7 +772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e1054a0ef4c24f4ab47a45a3b804c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 9133914983859560287}
+  TargetState: {fileID: 9133914983859560287}
   _rescureTriggerCollider: {fileID: 5345503928587898359}
 --- !u!114 &9133914983859560287
 MonoBehaviour:
@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 8599519615340213093}
+  TargetState: {fileID: 8599519615340213093}
   _delay: 0.5
 --- !u!114 &5723692574511867585
 MonoBehaviour:
@@ -829,7 +829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa956f5424179ff458a2ec35f80b21c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 8599519615340213093}
+  TargetState: {fileID: 8599519615340213093}
 --- !u!114 &5802494525734627429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,7 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f5850285a687a41a33a3103235a212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 3171270730821891954}
+  TargetState: {fileID: 3171270730821891954}
   _player: {fileID: 362071652712938266}
 --- !u!114 &3171270730821891954
 MonoBehaviour:
@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4001e338e34484f869b91caa647699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 7914180364526594867}
+  TargetState: {fileID: 7914180364526594867}
 --- !u!114 &7914180364526594867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -903,7 +903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 8599519615340213093}
+  TargetState: {fileID: 8599519615340213093}
   _delay: 3
 --- !u!114 &3655263428263527992
 MonoBehaviour:
@@ -918,7 +918,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _platformDestroyer: {fileID: 7705320582611805227}
-  _platformDestroyerButton: {fileID: 0}
+  _platformDestroyerButtonDesktop: {fileID: 0}
+  _platformDestroyerButtonMobile: {fileID: 0}
   _shieldActivator: {fileID: 778701344080452361}
 --- !u!114 &778701344080452361
 MonoBehaviour:
@@ -933,9 +934,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shield: {fileID: 7978850115604282527}
-  _shieldButton: {fileID: 0}
+  _shieldButtonMobile: {fileID: 0}
+  _shieldButtonDesktop: {fileID: 0}
   _platformDestroyerActivator: {fileID: 3655263428263527992}
-  _shieldCounter: {fileID: 0}
+  _shieldCounterDesktop: {fileID: 0}
+  _shieldCounterMobile: {fileID: 0}
 --- !u!114 &1456525028782722527
 MonoBehaviour:
   m_ObjectHideFlags: 0

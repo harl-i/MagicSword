@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using CutScenes;
 using UnityEditor;
 using UnityEngine;
 
@@ -10,12 +9,10 @@ public class CutSceneEditor : Editor
     private SerializedProperty _needFlashEffect;
     private SerializedProperty _sceneForFlashEffect;
     private SerializedProperty _flashBangEffect;
-    private SerializedProperty _images;
+    private SerializedProperty _frames;
     private SerializedProperty _textDisplay;
-    private SerializedProperty _textsRu;
-    private SerializedProperty _textsEn;
-    private SerializedProperty _textsTr;
     private SerializedProperty _typingSpeed;
+    private SerializedProperty _localizationManager;
     private SerializedProperty _nextSceneLoader;
     private SerializedProperty _skipCutscene;
     private SerializedProperty _tapToScreenTip;
@@ -25,13 +22,10 @@ public class CutSceneEditor : Editor
         _needFlashEffect = serializedObject.FindProperty("_needFlashEffect");
         _sceneForFlashEffect = serializedObject.FindProperty("_sceneForFlashEffect");
         _flashBangEffect = serializedObject.FindProperty("_flashBangEffect");
-        _images = serializedObject.FindProperty("_images");
+        _frames = serializedObject.FindProperty("_frames");
         _textDisplay = serializedObject.FindProperty("_textDisplay");
-        _textsRu = serializedObject.FindProperty("_textsRu");
-        _textsEn = serializedObject.FindProperty("_textsEn");
-        _textsTr = serializedObject.FindProperty("_textsTr");
         _typingSpeed = serializedObject.FindProperty("_typingSpeed");
-        _nextSceneLoader = serializedObject.FindProperty("_nextSceneLoader");
+        _localizationManager = serializedObject.FindProperty("_localizationManager");
         _nextSceneLoader = serializedObject.FindProperty("_nextSceneLoader");
         _skipCutscene = serializedObject.FindProperty("_skipCutscene");
         _tapToScreenTip = serializedObject.FindProperty("_tapToScreenTip");
@@ -51,17 +45,15 @@ public class CutSceneEditor : Editor
 
         DrawLine();
 
-        EditorGUILayout.LabelField("Images", EditorStyles.boldLabel);
-        EditorGUILayout.PropertyField(_images);
+        EditorGUILayout.LabelField("Frames", EditorStyles.boldLabel);
+        EditorGUILayout.PropertyField(_frames);
 
         DrawLine();
 
         EditorGUILayout.LabelField("Dialogue", EditorStyles.boldLabel);
         EditorGUILayout.PropertyField(_textDisplay);
         EditorGUILayout.PropertyField(_typingSpeed);
-        EditorGUILayout.PropertyField(_textsRu);
-        EditorGUILayout.PropertyField(_textsEn);
-        EditorGUILayout.PropertyField(_textsTr);
+        EditorGUILayout.PropertyField(_localizationManager);
 
         DrawLine();
 

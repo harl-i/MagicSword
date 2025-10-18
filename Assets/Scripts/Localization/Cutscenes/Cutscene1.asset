@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bef1b8eaa29a141a7fbdbeb62b334f, type: 3}
+  m_Name: Cutscene1
+  m_EditorClassIdentifier: 
+  Entries:
+  - Key: Cutscene1_0
+    Russian: "\u0422\u0435\u043C\u043D\u043E..."
+    English: It's dark...
+    Turkish: "Karanl\u0131k..."
+  - Key: Cutscene1_1
+    Russian: "\u0421\u044B\u0440\u043E...."
+    English: It's damp...
+    Turkish: Nemli...
+  - Key: Cutscene1_2
+    Russian: "\u0425\u043E\u043B\u043E\u0434\u043D\u043E..."
+    English: It's cold...
+    Turkish: "So\u011Fuk..."
+  - Key: Cutscene1_3
+    Russian: "\u0413\u0434\u0435 \u044F?"
+    English: where am I?
+    Turkish: Neredeyim?

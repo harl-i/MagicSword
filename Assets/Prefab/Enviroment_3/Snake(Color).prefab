@@ -154,7 +154,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5924539773287088968}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -176,7 +176,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -494,6 +494,7 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 0
   _speed: 0.5
   _colliderOffsetX: 0
+  _lengthPatrolRoute: 1.7
 --- !u!114 &9077855063887219969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,7 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 7260754350536311459}
+  TargetState: {fileID: 7260754350536311459}
 --- !u!114 &7260754350536311459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,7 +534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 5950227661191096227}
+  TargetState: {fileID: 5950227661191096227}
   _delay: 2
 --- !u!114 &5950227661191096227
 MonoBehaviour:

@@ -1,35 +1,37 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
-public class SwordIconAnimMover : MonoBehaviour
+namespace Map
 {
-    [SerializeField] private float _delay;
-
-    private Animator _animator;
-
-    public bool IsMoveCompleted { get; private set; }
-
-    private void Awake()
+    [RequireComponent(typeof(Animator))]
+    public class SwordIconAnimMover : MonoBehaviour
     {
-        _animator = GetComponent<Animator>();
-    }
+        [SerializeField] private float _delay;
 
-    private void Start()
-    {
-        IsMoveCompleted = false;
-    }
+        private Animator _animator;
 
-    private void SetMovedCompletedFlag()
-    {
-        IsMoveCompleted = true;
-    }
+        public bool IsMoveCompleted { get; private set; }
 
-    public IEnumerator StartAnimationAfterDelay()
-    {
-        yield return new WaitForSeconds(_delay);
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+        }
 
-        _animator.SetTrigger("MoveToNextPoint");
+        private void Start()
+        {
+            IsMoveCompleted = false;
+        }
+
+        private void SetMovedCompletedFlag()
+        {
+            IsMoveCompleted = true;
+        }
+
+        public IEnumerator StartAnimationAfterDelay()
+        {
+            yield return new WaitForSeconds(_delay);
+
+            _animator.SetTrigger("MoveToNextPoint");
+        }
     }
 }

@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 8251068272446838288}
+  TargetState: {fileID: 8251068272446838288}
 --- !u!114 &7579014230301006321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 247272616341823111}
+  TargetState: {fileID: 247272616341823111}
   _detectionZoneType: 0
   _zoneMovementType: 0
   _detectionRadius: 3.5
@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa956f5424179ff458a2ec35f80b21c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 3607116523962834201}
+  TargetState: {fileID: 3607116523962834201}
 --- !u!114 &3607116523962834201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,7 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb69c20f1b141b418445449dd719de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 5215879310980652377}
+  TargetState: {fileID: 5215879310980652377}
 --- !u!114 &5215879310980652377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
   _transitions:
   - {fileID: 4763464403801573637}
   - {fileID: 4726608783155134913}
-  arrowLength: 1
+  _arrowLength: 1
   _rayLength: 1
   _numberOfRays: 12
   _rayStartOffset: 0.1
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bffa03c04b8ac654b984f3ea0690b1ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 247272616341823111}
+  TargetState: {fileID: 247272616341823111}
   _timeout: 2
 --- !u!114 &2483879061017452676
 MonoBehaviour:
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e7530ccc12e4744cbb05ff009974861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 8622917931818980023}
+  TargetState: {fileID: 8622917931818980023}
 --- !u!1 &8378266284523944527
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,33 +1,36 @@
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
-public class Shield : MonoBehaviour 
+namespace Sword
 {
-    [SerializeField] private Player _player;
-
-    private SpriteRenderer _spriteRenderer;
-
-    private void Awake()
+    [RequireComponent(typeof(SpriteRenderer))]
+    public class Shield : MonoBehaviour
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+        [SerializeField] private Player _player;
 
-    private void OnEnable()
-    {
-        transform.position = _player.transform.position;
-        transform.rotation = _player.transform.rotation;
+        private SpriteRenderer _spriteRenderer;
 
-        _spriteRenderer.enabled = true;
-    }
+        private void Awake()
+        {
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
 
-    private void OnDisable()
-    {
-        _spriteRenderer.enabled = false;
-    }
+        private void OnEnable()
+        {
+            transform.position = _player.transform.position;
+            transform.rotation = _player.transform.rotation;
 
-    private void Update()
-    {
-        transform.position = _player.transform.position;
-        transform.rotation = _player.transform.rotation;
+            _spriteRenderer.enabled = true;
+        }
+
+        private void OnDisable()
+        {
+            _spriteRenderer.enabled = false;
+        }
+
+        private void Update()
+        {
+            transform.position = _player.transform.position;
+            transform.rotation = _player.transform.rotation;
+        }
     }
 }

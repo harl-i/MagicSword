@@ -1,16 +1,19 @@
 using UnityEngine;
 
-public class StraightBullet : Bullet
+namespace Bullets
 {
-    private void Update()
+    public class StraightBullet : Bullet
     {
-        if (_isFlip)
+        private void Update()
         {
-            transform.Translate(new Vector2(0, _speed * Time.deltaTime), Space.Self);
-        }
-        else
-        {
-            transform.Translate(new Vector2(0, _speed * Time.deltaTime * -1), Space.Self);
+            if (IsFlip)
+            {
+                transform.Translate(new Vector2(0, _speed * Time.deltaTime), Space.Self);
+            }
+            else
+            {
+                transform.Translate(new Vector2(0, _speed * Time.deltaTime * -1), Space.Self);
+            }
         }
     }
 }

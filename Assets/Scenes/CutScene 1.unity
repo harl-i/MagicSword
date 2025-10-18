@@ -1490,6 +1490,7 @@ GameObject:
   - component: {fileID: 1780910126}
   - component: {fileID: 1780910129}
   - component: {fileID: 1780910128}
+  - component: {fileID: 1780910130}
   m_Layer: 0
   m_Name: CutScene
   m_TagString: Untagged
@@ -1512,44 +1513,27 @@ MonoBehaviour:
   _needFlashEffect: 1
   _sceneForFlashEffect: 4
   _flashBangEffect: {fileID: 1780910128}
-  _images:
-  - {fileID: 152833759}
-  - {fileID: 152833759}
-  - {fileID: 152833759}
-  - {fileID: 152833759}
-  - {fileID: 88982436}
-  - {fileID: 84150875}
-  - {fileID: 637475851}
-  - {fileID: 1423638722}
+  _frames:
+  - ImageObject: {fileID: 152833759}
+    TextKey: Cutscene1_0
+  - ImageObject: {fileID: 152833759}
+    TextKey: Cutscene1_1
+  - ImageObject: {fileID: 152833759}
+    TextKey: Cutscene1_2
+  - ImageObject: {fileID: 152833759}
+    TextKey: Cutscene1_3
+  - ImageObject: {fileID: 88982436}
+    TextKey: 
+  - ImageObject: {fileID: 84150875}
+    TextKey: 
+  - ImageObject: {fileID: 637475851}
+    TextKey: 
+  - ImageObject: {fileID: 1423638722}
+    TextKey: 
   _textDisplay: {fileID: 1907219123}
-  _textsRu:
-  - "\u0422\u0435\u043C\u043D\u043E..."
-  - "\u0421\u044B\u0440\u043E...."
-  - "\u0425\u043E\u043B\u043E\u0434\u043D\u043E..."
-  - "\u0413\u0434\u0435 \u044F?"
-  - 
-  - 
-  - 
-  - 
-  _textsEn:
-  - It's dark...
-  - It's damp...
-  - It's cold...
-  - where am I?
-  - 
-  - 
-  - 
-  - 
-  _textsTr:
-  - "Karanl\u0131k..."
-  - Nemli...
-  - "So\u011Fuk..."
-  - Neredeyim?
-  - 
-  - 
-  - 
-  - 
+  _dialogueKeys: []
   _typingSpeed: 0.05
+  _localizationManager: {fileID: 1780910130}
   _nextSceneLoader: {fileID: 1780910129}
   _skipCutscene: {fileID: 1685432320}
   _tapToScreenTip: {fileID: 202558046}
@@ -1598,6 +1582,19 @@ MonoBehaviour:
   _player: {fileID: 0}
   _isDelayNeeded: 0
   _delay: 0
+--- !u!114 &1780910130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780910125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146352afeebd5be4eaf161d8a15da950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueLocalization: {fileID: 11400000, guid: 391bd875ff500dd4fad6bc0228e0e770, type: 2}
 --- !u!1 &1907219121
 GameObject:
   m_ObjectHideFlags: 0

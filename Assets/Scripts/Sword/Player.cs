@@ -1,81 +1,68 @@
-using System;
+﻿using System;
+using DamageInterfaces;
 using UnityEngine;
 using YG;
 
-[RequireComponent(typeof(SwordMovingState))]
-[RequireComponent(typeof(ShieldActivator))]
-[RequireComponent(typeof(Animator))]
-public class Player : MonoBehaviour, IDamageable
+namespace Sword
 {
-    private int _healthCount = 3;
-
-    private bool _isLaunched;
-    private bool _isShieldActivated;
-
-    private SwordMovingState _swordMovingState;
-    private ShieldActivator _shieldActivator;
-    private Animator _animator;
-
-    public bool IsLaunched => _isLaunched;
-    public bool IsShieldActivated => _isShieldActivated;
-
-    public static Action<int> HealthHasChanged;
-
-    public int Health => _healthCount;
-
-    private void Awake()
+    [RequireComponent(typeof(SwordMovingState))]
+    [RequireComponent(typeof(ShieldActivator))]
+    [RequireComponent(typeof(Animator))]
+    public class Player : MonoBehaviour, IDamageable
     {
-        _swordMovingState = GetComponent<SwordMovingState>();
-        _shieldActivator = GetComponent<ShieldActivator>();
-        _animator = GetComponent<Animator>();
-    }
+        private SwordMovingState _swordMovingState;
+        private ShieldActivator _shieldActivator;
+        private Animator _animator;
 
-    private void Start()
-    {
-        HealthHasChanged?.Invoke(_healthCount);
-    }
+        public static Action<int> HealthHasChanged;
 
-    private void OnEnable()
-    {
-        _swordMovingState.SwordLaunched += OnSwordLaunched;
-        _shieldActivator.ShieldActivated += OnShieldActivated;
-    }
+        public bool IsLaunched { get; private set; }
+        public bool IsShieldActivated { get; private set; }
+        public int Health { get; private set; } = 3;
 
-    private void OnDisable()
-    {
-        _swordMovingState.SwordLaunched -= OnSwordLaunched;
-        _shieldActivator.ShieldActivated -= OnShieldActivated;
-    }
-
-    public void TakeDamage()
-    {
-        if (YG2.saves.godMode == 1)
+        private void Awake()
         {
-            return;
+            _swordMovingState = GetComponent<SwordMovingState>();
+            _shieldActivator = GetComponent<ShieldActivator>();
+            _animator = GetComponent<Animator>();
         }
 
-        if (_healthCount > 0 && !_isShieldActivated)
+        private void Start() => HealthHasChanged?.Invoke(Health);
+
+        private void OnEnable()
         {
-            _healthCount--;
-            HealthHasChanged?.Invoke(_healthCount);
+            _swordMovingState.SwordLaunched += OnSwordLaunched;
+            _shieldActivator.ShieldActivated += OnShieldActivated;
         }
-    }
 
-    public void FullHealing()
-    {
-        _healthCount = 3;
-        HealthHasChanged?.Invoke(_healthCount);
-    }
+        private void OnDisable()
+        {
+            _swordMovingState.SwordLaunched -= OnSwordLaunched;
+            _shieldActivator.ShieldActivated -= OnShieldActivated;
+        }
 
-    private void OnSwordLaunched(bool isLaunched)
-    {
-        _isLaunched = isLaunched;
-    }
+        public void TakeDamage()
+        {
+            if (YG2.saves.GodMode == 1)
+            {
+                return;
+            }
 
-    private void OnShieldActivated(bool isActivated)
-    {
-        _isShieldActivated = isActivated;
+            if (Health > 0 && !IsShieldActivated)
+            {
+                Health--;
+                HealthHasChanged?.Invoke(Health);
+            }
+        }
+
+        public void FullHealing()
+        {
+            Health = 3;
+            HealthHasChanged?.Invoke(Health);
+        }
+
+        private void OnSwordLaunched(bool isLaunched) => IsLaunched = isLaunched;
+
+        private void OnShieldActivated(bool isActivated) => IsShieldActivated = isActivated;
     }
 }
-
-

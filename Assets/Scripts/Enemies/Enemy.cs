@@ -1,54 +1,39 @@
-using System.Collections;
+п»їusing System.Collections;
+using DamageInterfaces;
+using Sword;
 using UnityEngine;
 
-[RequireComponent(typeof(PolygonCollider2D))]
-public class Enemy : MonoBehaviour, IDamaging //IDamageable
+namespace Enemies
 {
-    [SerializeField] private float _enableColliderDelay = 1.5f;
-    private PolygonCollider2D _collider;
-
-    private void Awake()
+    [RequireComponent(typeof(PolygonCollider2D))]
+    public class Enemy : MonoBehaviour, IDamaging
     {
-        _collider = GetComponent<PolygonCollider2D>();
-    }
+        [SerializeField] private float _enableColliderDelay = 1.5f;
 
-    public void ApplyDamage(Player player)
-    {
-        player.TakeDamage();
-    }
+        private PolygonCollider2D _collider;
 
-    //public void TakeDamage()
-    //{
-    //    //если будет логика принятия урона
-    //}
+        private void Awake() => _collider = GetComponent<PolygonCollider2D>();
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        collision.TryGetComponent(out Player player);
-        if (player != null)
+        public void ApplyDamage(Player player) => player.TakeDamage();
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            //if (player.IsLaunched)
-            //{
-            //    TakeDamage();
-            //}
-            //else if (!player.IsLaunched)
-            //{
-            //    ApplyDamage(player);
-            //    StartCoroutine(TemporarilyDisableCollider());
-            //}
-
-            if (!player.IsLaunched)
+            collision.TryGetComponent(out Player player);
+            if (player != null)
             {
-                ApplyDamage(player);
-                StartCoroutine(TemporarilyDisableCollider());
+                if (!player.IsLaunched)
+                {
+                    ApplyDamage(player);
+                    StartCoroutine(TemporarilyDisableCollider());
+                }
             }
         }
-    }
 
-    private IEnumerator TemporarilyDisableCollider()
-    {
-        _collider.enabled = false;
-        yield return new WaitForSeconds(_enableColliderDelay);
-        _collider.enabled = true;
+        private IEnumerator TemporarilyDisableCollider()
+        {
+            _collider.enabled = false;
+            yield return new WaitForSeconds(_enableColliderDelay);
+            _collider.enabled = true;
+        }
     }
 }

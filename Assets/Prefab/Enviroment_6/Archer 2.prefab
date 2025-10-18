@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 3952971154196169300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.966, y: 0, z: 0}
+  m_LocalPosition: {x: 0.5, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -155,7 +155,7 @@ Transform:
   m_GameObject: {fileID: 5876919906217066741}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.131, y: 0, z: 0}
+  m_LocalPosition: {x: -0.86, y: 0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -177,13 +177,14 @@ GameObject:
   - component: {fileID: 1560754202480602542}
   - component: {fileID: 5654429319270065997}
   - component: {fileID: 3788125102438179860}
-  - component: {fileID: 6768650749032105985}
+  - component: {fileID: 7137412778559504926}
   - component: {fileID: 3780281592645890378}
   - component: {fileID: 5606611293542800252}
   - component: {fileID: 4012524349726605181}
   - component: {fileID: 4504448963349884128}
   - component: {fileID: 4393121977896580381}
   - component: {fileID: 7348381151501827658}
+  - component: {fileID: 1978123090729029780}
   m_Layer: 0
   m_Name: archer 2 32x32_0
   m_TagString: Untagged
@@ -364,6 +365,7 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 0
   _speed: 0.3
   _colliderOffsetX: 0
+  _lengthPatrolRoute: 1.7
 --- !u!114 &5654429319270065997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 3788125102438179860}
+  TargetState: {fileID: 3788125102438179860}
   _detectionZoneType: 1
   _zoneMovementType: 1
   _detectionRadius: 5
@@ -405,9 +407,9 @@ MonoBehaviour:
   - {fileID: 3780281592645890378}
   - {fileID: 5606611293542800252}
   _enemyType: 5
-  _shootingComponent: {fileID: 6768650749032105985}
+  _shootingComponent: {fileID: 7137412778559504926}
   _shootDelay: 5
---- !u!114 &6768650749032105985
+--- !u!114 &7137412778559504926
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -416,17 +418,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7690351901100307118}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ed37d92b4198f42a68a46d7307fa73, type: 3}
+  m_Script: {fileID: 11500000, guid: 53c50aae2be50564c93bbe7073a07fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _container: {fileID: 2382937744266675390}
-  _capacity: 8
-  _enemyType: 5
-  _shootPoint: {fileID: 3082531721286330339}
-  _towardsBullet: {fileID: 8812371218968243853, guid: a1eb93e9eebbd914c83604e2ac5660f2, type: 3}
-  _straightBullet: {fileID: 0}
-  _homingBullet: {fileID: 0}
-  _showTurretComponent: {fileID: 0}
+  ShootPoint: {fileID: 3082531721286330339}
+  TowardsBullet: {fileID: 8812371218968243853, guid: a1eb93e9eebbd914c83604e2ac5660f2, type: 3}
+  StraightBullet: {fileID: 0}
+  HomingBullet: {fileID: 0}
+  ShowTurretComponent: {fileID: 0}
 --- !u!114 &3780281592645890378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfae695672a26a04484ae413cb49c21c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 1560754202480602542}
+  TargetState: {fileID: 1560754202480602542}
   _detectionZoneType: 1
   _zoneMovementType: 0
   _detectionRadius: 5
@@ -460,7 +459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 4012524349726605181}
+  TargetState: {fileID: 4012524349726605181}
 --- !u!114 &4012524349726605181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,7 +486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 4393121977896580381}
+  TargetState: {fileID: 4393121977896580381}
   _delay: 1
 --- !u!114 &4393121977896580381
 MonoBehaviour:
@@ -516,6 +515,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enableColliderDelay: 1.5
+--- !u!114 &1978123090729029780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690351901100307118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97bd1622f8731b64e9a8a947a300efee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _container: {fileID: 2382937744266675390}
 --- !u!1001 &2764073884263477196
 PrefabInstance:
   m_ObjectHideFlags: 0

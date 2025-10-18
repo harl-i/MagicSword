@@ -1,305 +1,233 @@
-using System;
+﻿using System;
 using System.Collections;
+using Localization;
+using Sword;
 using TMPro;
+using UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using YG;
 
-public class SceneDialogue : MonoBehaviour
+namespace DialogueTriggers
 {
-    [SerializeField] private Animator _animator;
-    [SerializeField] private DialogueWindow _dialogueWindow;
-    [SerializeField] private TextMeshProUGUI _dialogueTextField;
-    [SerializeField] private string[] _textRu;
-    [SerializeField] private string[] _textEn;
-    [SerializeField] private string[] _textTr;
-    [SerializeField] private float _typingSpeed = 0.05f;
-
-    [SerializeField] private bool _needPermanentDisableTrigger;
-    [SerializeField] private Collider2D _trigger;
-    [SerializeField] private float _timeForTemporaryDisable;
-    [SerializeField] private GameObject[] _auxiliaryObjects;
-
-    [SerializeField] private GameObject _mobileUI;
-    [SerializeField] private GameObject _desktopUI;
-    [SerializeField] private GameObject _tapToScreenTip;
-
-    private const string RU = "ru";
-    private const string EN = "en";
-    private const string TR = "tr";
-
-    private int _currentIndex = 0;
-    private bool _isTyping = true;
-    private string _lang;
-    private Animator _tapTipAnimator;
-
-    public static Action<bool> OnDialogShow;
-
-    private void OnEnable()
+    public enum Level
     {
-        _tapTipAnimator = _tapToScreenTip.GetComponent<Animator>();
-        _isTyping = true;
-        _lang = YG2.lang;
-
-        _dialogueWindow.WindowShown += OnDialogueWindowShown;
+        FirstLevel = 2,
+        ThirdLevel = 8,
+        FifthLevel = 14,
+        SeventhLevel = 20,
     }
 
-    private void OnDisable()
+    public class SceneDialogue : MonoBehaviour
     {
-        _dialogueWindow.WindowShown -= OnDialogueWindowShown;
-    }
+        [SerializeField] private Animator _animator;
+        [SerializeField] private DialogueWindow _dialogueWindow;
+        [SerializeField] private TextMeshProUGUI _dialogueTextField;
+        [SerializeField] private string[] _dialogueKeys;
+        [SerializeField] private float _typingSpeed = 0.05f;
+        [SerializeField] private LocalizationManager _localizationManager;
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && _dialogueWindow.gameObject.activeSelf)
+        [SerializeField] private bool _needPermanentDisableTrigger;
+        [SerializeField] private Collider2D _trigger;
+        [SerializeField] private float _timeForTemporaryDisable;
+        [SerializeField] private GameObject[] _auxiliaryObjects;
+
+        [SerializeField] private GameObject _mobileUI;
+        [SerializeField] private GameObject _desktopUI;
+        [SerializeField] private GameObject _tapToScreenTip;
+
+        private int _currentIndex = 0;
+        private bool _isTyping = true;
+        private Animator _tapTipAnimator;
+
+        public static Action<bool> OnDialogShow;
+
+        private void OnEnable()
         {
-            if(!_isTyping)
+            _tapTipAnimator = _tapToScreenTip.GetComponent<Animator>();
+            _isTyping = true;
+
+            _dialogueWindow.WindowShown += OnDialogueWindowShown;
+        }
+
+        private void OnDisable() => _dialogueWindow.WindowShown -= OnDialogueWindowShown;
+
+        private void Update()
+        {
+            if (Input.GetMouseButtonDown(0) && _dialogueWindow.gameObject.activeSelf)
             {
-                AdvanceDialogue();
+                if (!_isTyping)
+                {
+                    AdvanceDialogue();
+                }
             }
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (SkipIfSeenBefore()) return;
-
-        if (collision.TryGetComponent(out Player player))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            PauseGame();
-        }
-    }
+            if (SkipIfSeenBefore())
+                return;
 
-    public void StartDialogue()
-    {
-        _isTyping = true;
-
-        if (_lang == RU)
-        {
-            StartCoroutine(TypeText(_textRu[_currentIndex]));
+            if (collision.TryGetComponent(out Player player))
+            {
+                PauseGame();
+            }
         }
 
-        if (_lang == EN)
+        public void StartDialogue()
         {
-            StartCoroutine(TypeText(_textEn[_currentIndex]));
+            _isTyping = true;
+
+            if (_dialogueKeys.Length > 0)
+            {
+                string text = _localizationManager.GetText(_dialogueKeys[_currentIndex]);
+                StartCoroutine(TypeText(text));
+            }
+
+            EnableAuxularyObjects();
         }
 
-        if (_lang == TR)
+        private void OnDialogueWindowShown()
         {
-            StartCoroutine(TypeText(_textTr[_currentIndex]));
+            StartDialogue();
+            OnDialogShow?.Invoke(true);
         }
 
-        EnableAuxularyObjects();
-    }
-
-    private void OnDialogueWindowShown()
-    {
-        StartDialogue();
-        OnDialogShow?.Invoke(true);
-    }
-
-
-    private void AdvanceDialogue()
-    {
-        _currentIndex++;
-
-        if (_lang == RU)
+        private void AdvanceDialogue()
         {
-            if (_currentIndex < _textRu.Length)
+            _currentIndex++;
+
+            if (_currentIndex < _dialogueKeys.Length)
             {
                 UpdateDialogue();
             }
-            else if (_currentIndex == _textRu.Length)
+            else
             {
                 EndDialogue();
             }
         }
 
-        if (_lang == EN)
+        private void UpdateDialogue()
         {
-            if (_currentIndex < _textEn.Length)
+            _isTyping = true;
+
+            if (_currentIndex < _dialogueKeys.Length)
             {
-                UpdateDialogue();
-            }
-            else if (_currentIndex == _textEn.Length)
-            {
-                EndDialogue();
+                string text = _localizationManager.GetText(_dialogueKeys[_currentIndex]);
+                StartCoroutine(TypeText(text));
             }
         }
 
-        if (_lang == TR)
+        private void EndDialogue()
         {
-            if (_currentIndex < _textTr.Length)
-            {
-                UpdateDialogue();
-            }
-            else if (_currentIndex == _textTr.Length)
-            {
-                EndDialogue();
-            }
-        }
-    }
-
-    private void UpdateDialogue()
-    {
-        _isTyping = true;
-
-        if (_lang == RU)
-        {
-            if (_currentIndex < _textRu.Length)
-            {
-                StartCoroutine(TypeText(_textRu[_currentIndex]));
-            }
+            DisableAuxularyObjects();
+            OnDialogShow?.Invoke(false);
+            ResumeGame();
         }
 
-        if (_lang == EN)
+        private void PauseGame()
         {
-            if (_currentIndex < _textEn.Length)
+            _mobileUI.SetActive(false);
+            _desktopUI.SetActive(false);
+
+            Time.timeScale = 0f;
+            _dialogueWindow.gameObject.SetActive(true);
+
+            _tapTipAnimator.updateMode = AnimatorUpdateMode.UnscaledTime;
+            _animator.updateMode = AnimatorUpdateMode.UnscaledTime;
+            _animator.SetTrigger("DialogueTrigger");
+        }
+
+        private IEnumerator TypeText(string dialogue)
+        {
+            ClearDialogueField();
+            HideTapTip();
+
+            foreach (char letter in dialogue.ToCharArray())
             {
-                StartCoroutine(TypeText(_textEn[_currentIndex]));
+                _dialogueTextField.text += letter;
+
+                yield return new WaitForSecondsRealtime(_typingSpeed);
             }
+
+            _isTyping = false;
+            ShowTapTip();
         }
 
-        if (_lang == TR)
+        private void ClearDialogueField() => _dialogueTextField.text = string.Empty;
+
+        private void ResumeGame()
         {
-            if (_currentIndex < _textRu.Length)
+            _mobileUI.SetActive(true);
+            _desktopUI.SetActive(true);
+
+            _animator.updateMode = AnimatorUpdateMode.Normal;
+            _animator.updateMode = AnimatorUpdateMode.Normal;
+            _dialogueWindow.gameObject.SetActive(false);
+
+            if (_needPermanentDisableTrigger)
             {
-                StartCoroutine(TypeText(_textTr[_currentIndex]));
+                _trigger.enabled = false;
             }
-        }
-    }
+            else
+            {
+                StartCoroutine(TemporaryDisableTrigger());
+            }
 
-    private void EndDialogue()
-    {
-        DisableAuxularyObjects();
-        OnDialogShow?.Invoke(false);
-        ResumeGame();
-    }
+            ClearDialogueField();
+            _currentIndex = 0;
 
-    private void PauseGame()
-    {
-        _mobileUI.SetActive(false);
-        _desktopUI.SetActive(false);
- 
-        Time.timeScale = 0f;
-        _dialogueWindow.gameObject.SetActive(true);
-
-        _tapTipAnimator.updateMode = AnimatorUpdateMode.UnscaledTime;
-        _animator.updateMode = AnimatorUpdateMode.UnscaledTime;
-        _animator.SetTrigger("DialogueTrigger");
-    }
-
-    private IEnumerator TypeText(string dialogue)
-    {
-        ClearDialogueField();
-        HideTapTip();
-
-        foreach (char letter in dialogue.ToCharArray())
-        {
-            _dialogueTextField.text += letter;
-
-            yield return new WaitForSecondsRealtime(_typingSpeed);
+            HideTapTip();
+            Time.timeScale = 1f;
         }
 
-        _isTyping = false;
-        ShowTapTip();
-    }
-
-    private void ClearDialogueField()
-    {
-        _dialogueTextField.text = "";
-    }
-
-    private void ResumeGame()
-    {
-        _mobileUI.SetActive(true);
-        _desktopUI.SetActive(true);
-
-        _animator.updateMode = AnimatorUpdateMode.Normal;
-        _animator.updateMode = AnimatorUpdateMode.Normal;
-        _dialogueWindow.gameObject.SetActive(false);
-
-        if (_needPermanentDisableTrigger)
+        private IEnumerator TemporaryDisableTrigger()
         {
             _trigger.enabled = false;
+
+            yield return new WaitForSeconds(_timeForTemporaryDisable);
+
+            _trigger.enabled = true;
         }
-        else
+
+        private void EnableAuxularyObjects()
         {
-            StartCoroutine(TemporaryDisableTrigger());
-        }
-
-        ClearDialogueField();
-        _currentIndex = 0;
-
-        HideTapTip();
-        Time.timeScale = 1f;
-    }
-
-    private IEnumerator TemporaryDisableTrigger()
-    {
-        _trigger.enabled = false;
-
-        yield return new WaitForSeconds(_timeForTemporaryDisable);
-
-        _trigger.enabled = true;
-    }
-
-    private void EnableAuxularyObjects()
-    {
-        if (_auxiliaryObjects != null)
-        {
-            foreach (var item in _auxiliaryObjects)
+            if (_auxiliaryObjects != null)
             {
-                item.SetActive(true);
+                foreach (var item in _auxiliaryObjects)
+                {
+                    item.SetActive(true);
+                }
             }
         }
-    }
 
-    private void DisableAuxularyObjects()
-    {
-        if (_auxiliaryObjects != null)
+        private void DisableAuxularyObjects()
         {
-            foreach (var item in _auxiliaryObjects)
+            if (_auxiliaryObjects != null)
             {
-                item.SetActive(false);
+                foreach (var item in _auxiliaryObjects)
+                {
+                    item.SetActive(false);
+                }
             }
         }
-    }
 
-    private bool SkipIfSeenBefore()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-        switch (currentSceneIndex)
+        private bool SkipIfSeenBefore()
         {
-            case (int)level.firstLevel:
-                return YG2.saves.firstLevelDialogueWatch == 1;
-            case (int)level.thirdLevel:
-                return YG2.saves.thirdLevelDialogueWatch == 1;
-            case (int)level.fifthLevel:
-                return YG2.saves.fifthLevelDialogueWatch == 1;
-            case (int)level.seventhLevel:
-                return YG2.saves.seventhLevelDialogueWatch == 1;
-            default:
-                return false;
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+            return currentSceneIndex switch
+            {
+                (int)Level.FirstLevel => YG2.saves.FirstLevelDialogueWatch == 1,
+                (int)Level.ThirdLevel => YG2.saves.ThirdLevelDialogueWatch == 1,
+                (int)Level.FifthLevel => YG2.saves.FifthLevelDialogueWatch == 1,
+                (int)Level.SeventhLevel => YG2.saves.SeventhLevelDialogueWatch == 1,
+                _ => false,
+            };
         }
-    }
 
-    private void ShowTapTip()
-    {
-        _tapToScreenTip.gameObject.SetActive(true);
-    }
+        private void ShowTapTip() => _tapToScreenTip.gameObject.SetActive(true);
 
-    private void HideTapTip()
-    {
-        _tapToScreenTip.gameObject.SetActive(false);
+        private void HideTapTip() => _tapToScreenTip.gameObject.SetActive(false);
     }
-}
-
-public enum level
-{
-    firstLevel = 2,
-    thirdLevel = 8,
-    fifthLevel = 14,
-    seventhLevel = 20
 }

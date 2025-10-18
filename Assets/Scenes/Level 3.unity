@@ -5618,6 +5618,7 @@ GameObject:
   - component: {fileID: 1000728532}
   - component: {fileID: 1000728531}
   - component: {fileID: 1000728530}
+  - component: {fileID: 1000728533}
   m_Layer: 0
   m_Name: First time see desctructable platform
   m_TagString: Untagged
@@ -5640,24 +5641,12 @@ MonoBehaviour:
   _animator: {fileID: 124287059}
   _dialogueWindow: {fileID: 124287058}
   _dialogueTextField: {fileID: 26306860}
-  _textRu:
-  - "\u042D\u0442\u0430 \u0441\u0442\u0435\u043D\u0430 \u0432\u0441\u044F \u0432
-    \u0442\u0440\u0435\u0449\u0438\u043D\u0430\u0445"
-  - "\u041E\u0434\u043D\u0430 \u0438\u0437 \u043C\u043E\u0438\u0445 \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0435\u0439
-    \u043F\u043E\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u043A\u043B\u0438\u043D\u043E\u043A
-    \u043C\u0430\u043D\u043E\u0439"
-  - "\u0411\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u044D\u0442\u043E\u043C\u0443
-    \u044F \u043C\u043E\u0433\u0443 \u043F\u0440\u043E\u043B\u043E\u043C\u0438\u0442\u044C
-    \u0442\u0430\u043A\u0443\u044E \u0441\u0442\u0435\u043D\u0443"
-  _textEn:
-  - This wall is riddled with cracks!
-  - One of my abilities lets me sheath the blade in mana.
-  - That's how I shatter walls like this!
-  _textTr:
-  - "Bu duvar \xE7atlaklarla dolu!"
-  - "Yeteneklerimden biri a\u011Fz\u0131 manayla ku\u015Fatmam\u0131 sa\u011Flar."
-  - "\u0130\u015Fte b\xF6yle duvarlar\u0131 par\xE7alayabilirim!"
+  _dialogueKeys:
+  - FirstTimeSeeDesctructablePlatform_0
+  - FirstTimeSeeDesctructablePlatform_1
+  - FirstTimeSeeDesctructablePlatform_2
   _typingSpeed: 0.05
+  _localizationManager: {fileID: 1000728533}
   _needPermanentDisableTrigger: 1
   _trigger: {fileID: 1000728531}
   _timeForTemporaryDisable: 0
@@ -5727,6 +5716,19 @@ Transform:
   - {fileID: 1775436416}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1000728533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000728529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146352afeebd5be4eaf161d8a15da950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueLocalization: {fileID: 11400000, guid: 63c966562b5aa2d40878d20372e5d24e, type: 2}
 --- !u!1001 &1033340614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11814,17 +11816,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1657803502 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8599519615340213093, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}
-  m_PrefabInstance: {fileID: 8839701073901126465}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452358436}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57f660fc43fdd3c499bd5b1313949a4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1671643679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15066,7 +15057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbc66ce10da7f924b9dd4e17b6d81db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 3853471597365420265}
+  TargetState: {fileID: 0}
 --- !u!212 &1122851534265007207
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15236,7 +15227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 1376225882884704227}
+  TargetState: {fileID: 0}
   _delay: 3
 --- !u!114 &2031765156940682419
 MonoBehaviour:
@@ -25469,7 +25460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356d5304b36071e48bfb1dba5c6e98ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 1376225882884704227}
+  TargetState: {fileID: 0}
 --- !u!1001 &4021323257250628162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26042,7 +26033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf65313dfb98a4140b0cbd97cdbe8431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 1657803502}
+  TargetState: {fileID: 0}
 --- !u!4 &6299006504346429782
 Transform:
   m_ObjectHideFlags: 0
@@ -35653,7 +35644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2957a26ebfb34ee4198d81bede288c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 4479889870804588260}
+  TargetState: {fileID: 0}
 --- !u!114 &7875043598977807166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35705,7 +35696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8effbc3303fdcde43a52ffd54af02a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 1657803502}
+  TargetState: {fileID: 0}
 --- !u!114 &8006012201931101506 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5802494525734627429, guid: 86e2c0b758d7178438a32fbb85b8e063, type: 3}

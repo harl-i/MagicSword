@@ -144,7 +144,7 @@ GameObject:
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1525337018594870181
 Transform:
   m_ObjectHideFlags: 0
@@ -154,7 +154,7 @@ Transform:
   m_GameObject: {fileID: 4775792916319300194}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.343, z: 0}
+  m_LocalPosition: {x: -0.468, y: 0.343, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -182,8 +182,9 @@ GameObject:
   - component: {fileID: 4911214298691200446}
   - component: {fileID: 7093850728372998678}
   - component: {fileID: 6458018909080853869}
-  - component: {fileID: 431540153994367427}
+  - component: {fileID: 588047993658533740}
   - component: {fileID: 2837040927635280758}
+  - component: {fileID: 8225164258608303168}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Untagged
@@ -408,6 +409,7 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 0
   _speed: 0.5
   _colliderOffsetX: -0.58
+  _lengthPatrolRoute: 1.7
 --- !u!114 &6839155469942275086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,7 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 8423455578726352380}
+  TargetState: {fileID: 8423455578726352380}
 --- !u!114 &8423455578726352380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa956f5424179ff458a2ec35f80b21c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 4911214298691200446}
+  TargetState: {fileID: 4911214298691200446}
 --- !u!114 &4911214298691200446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 6458018909080853869}
+  TargetState: {fileID: 6458018909080853869}
   _detectionZoneType: 1
   _zoneMovementType: 0
   _detectionRadius: 5
@@ -503,28 +505,25 @@ MonoBehaviour:
   - {fileID: 6839155469942275086}
   - {fileID: 2837040927635280758}
   _enemyType: 0
-  _shootingComponent: {fileID: 431540153994367427}
+  _shootingComponent: {fileID: 588047993658533740}
   _shootDelay: 3
---- !u!114 &431540153994367427
+--- !u!114 &588047993658533740
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6910390252967289087}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ed37d92b4198f42a68a46d7307fa73, type: 3}
+  m_Script: {fileID: 11500000, guid: 11ab36eb579ec9b46abe97d28cff29a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _container: {fileID: 8968686843497621948}
-  _capacity: 10
-  _enemyType: 0
-  _shootPoint: {fileID: 1525337018594870181}
-  _towardsBullet: {fileID: 0}
-  _straightBullet: {fileID: 660479779829443832, guid: 8c930718c6841294e8358772ed9d7345, type: 3}
-  _homingBullet: {fileID: 0}
-  _showTurretComponent: {fileID: 0}
+  ShootPoint: {fileID: 1525337018594870181}
+  TowardsBullet: {fileID: 0}
+  StraightBullet: {fileID: 660479779829443832, guid: 8c930718c6841294e8358772ed9d7345, type: 3}
+  HomingBullet: {fileID: 0}
+  ShowTurretComponent: {fileID: 0}
 --- !u!114 &2837040927635280758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,7 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfae695672a26a04484ae413cb49c21c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 3871833442436764250}
+  TargetState: {fileID: 3871833442436764250}
   _detectionZoneType: 1
   _zoneMovementType: 0
   _detectionRadius: 5
@@ -546,6 +545,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   _offsetY: 0
+--- !u!114 &8225164258608303168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910390252967289087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97bd1622f8731b64e9a8a947a300efee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _container: {fileID: 8968686843497621948}
+  _capacity: 6
 --- !u!1001 &6955858651869360906
 PrefabInstance:
   m_ObjectHideFlags: 0

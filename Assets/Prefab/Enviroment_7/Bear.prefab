@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1710142476430418828}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.36, y: 0, z: 0}
+  m_LocalPosition: {x: 0.69, y: 0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 2035444319424497457}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.62, y: 0, z: 0}
+  m_LocalPosition: {x: -1.25, y: 0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -346,7 +346,6 @@ MonoBehaviour:
   _needUpdateWaypointPosition: 0
   _speed: 0.3
   _colliderOffsetX: 0.59
-  _transformForUpdate: {fileID: 0}
   _lengthPatrolRoute: 1.7
 --- !u!114 &2144942553531112271
 MonoBehaviour:
@@ -360,7 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e8cf7d69e44bc4ea413c1d18b8e2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 9219647724171564621}
+  TargetState: {fileID: 9219647724171564621}
   _detectionZoneType: 1
   _zoneMovementType: 0
   _detectionRadius: 5
@@ -403,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfae695672a26a04484ae413cb49c21c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 6571964863998588012}
+  TargetState: {fileID: 6571964863998588012}
   _detectionZoneType: 1
   _zoneMovementType: 0
   _detectionRadius: 5
@@ -440,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 9219647724171564621}
+  TargetState: {fileID: 1875310873992045871}
   _delay: 2
 --- !u!114 &1829911913603351587
 MonoBehaviour:
@@ -454,7 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d3cf612a496e8458eb0bd841b5f182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 1875310873992045871}
+  TargetState: {fileID: 6571964863998588012}
   _detectionZoneType: 1
   _zoneMovementType: 0
   _detectionRadius: 5
@@ -475,7 +474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1f0641be52e144b0cacd8b5acc5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 6488071173345681765}
+  TargetState: {fileID: 6488071173345681765}
 --- !u!114 &6488071173345681765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,7 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8aa950e7b99e544bbef969eaadf6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetState: {fileID: 2653194951264314550}
+  TargetState: {fileID: 2653194951264314550}
   _delay: 1
 --- !u!114 &2653194951264314550
 MonoBehaviour:

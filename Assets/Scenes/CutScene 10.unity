@@ -1003,6 +1003,7 @@ GameObject:
   - component: {fileID: 1780910126}
   - component: {fileID: 1780910129}
   - component: {fileID: 1780910128}
+  - component: {fileID: 1780910130}
   m_Layer: 0
   m_Name: CutScene
   m_TagString: Untagged
@@ -1025,157 +1026,57 @@ MonoBehaviour:
   _needFlashEffect: 0
   _sceneForFlashEffect: 0
   _flashBangEffect: {fileID: 1780910128}
-  _images:
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 105509643}
-  - {fileID: 1205909462}
-  - {fileID: 1205909462}
-  - {fileID: 1205909462}
-  - {fileID: 1205909462}
-  - {fileID: 1976458}
-  - {fileID: 1976458}
-  - {fileID: 1976458}
-  - {fileID: 197053356}
-  - {fileID: 197053356}
-  - {fileID: 197053356}
+  _frames:
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_0
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_1
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_2
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_3
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_4
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_5
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_6
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_7
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_8
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_9
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_10
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_11
+  - ImageObject: {fileID: 105509643}
+    TextKey: Cutscene10_12
+  - ImageObject: {fileID: 1205909462}
+    TextKey: Cutscene10_13
+  - ImageObject: {fileID: 1205909462}
+    TextKey: Cutscene10_14
+  - ImageObject: {fileID: 1205909462}
+    TextKey: Cutscene10_15
+  - ImageObject: {fileID: 1205909462}
+    TextKey: Cutscene10_16
+  - ImageObject: {fileID: 1976458}
+    TextKey: Cutscene10_17
+  - ImageObject: {fileID: 1976458}
+    TextKey: Cutscene10_18
+  - ImageObject: {fileID: 1976458}
+    TextKey: Cutscene10_19
+  - ImageObject: {fileID: 197053356}
+    TextKey: Cutscene10_20
+  - ImageObject: {fileID: 197053356}
+    TextKey: Cutscene10_21
+  - ImageObject: {fileID: 197053356}
+    TextKey: Cutscene10_22
   _textDisplay: {fileID: 1907219123}
-  _textsRu:
-  - "\u0421\u0442\u043E\u0439! \u041F\u043E\u0434\u043E\u0436\u0434\u0438, \u044F
-    \u043D\u0435 \u0442\u0430\u043A\u043E\u0439 \u0443\u0436 \u043F\u043B\u043E\u0445\u043E\u0439."
-  - "\u041A\u0442\u043E \u0442\u044B?"
-  - "\u042F \u043E\u0431\u044B\u0447\u043D\u044B\u0439 \u0441\u0432\u0435\u0442\u043B\u044F\u0447\u043E\u043A,
-    \u043D\u043E \u044F \u0441\u043B\u044B\u0448\u0430\u043B, \u043A\u0430\u043A
-    \u0442\u044B \u0440\u0430\u0437\u0433\u043E\u0432\u0430\u0440\u0438\u0432\u0430\u0435\u0448\u044C
-    \u0441\u0430\u043C \u0441 \u0441\u043E\u0431\u043E\u0439."
-  - "\u0412\u043E\u0437\u043C\u043E\u0436\u043D\u043E. \u0427\u0442\u043E \u0442\u0435\u0431\u0435
-    \u043D\u0443\u0436\u043D\u043E?"
-  - "\u041D\u0438\u0447\u0435\u0433\u043E \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u043E\u0433\u043E,
-    \u044F \u043B\u0438\u0448\u044C \u0445\u043E\u0447\u0443 \u043F\u043E\u043C\u043E\u0447\u044C
-    \u0442\u0435\u0431\u0435 \u0432 \u043E\u0431\u043C\u0435\u043D \u043D\u0430 \u0443\u0441\u043B\u0443\u0433\u0443."
-  - "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u0439."
-  - "\u042F \u0437\u043D\u0430\u044E, \u0447\u0442\u043E \u0442\u044B \u0445\u043E\u0447\u0435\u0448\u044C
-    \u0432\u044B\u0431\u0440\u0430\u0442\u044C\u0441\u044F \u043D\u0430 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C
-    \u0438 \u043D\u0430\u0439\u0442\u0438 \u0441\u0432\u043E\u0435\u0433\u043E \u0432\u043B\u0430\u0434\u0435\u043B\u044C\u0446\u0430,
-    \u0443 \u043C\u0435\u043D\u044F \u0435\u0441\u0442\u044C \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F
-    \u043F\u043E \u0434\u043E\u0440\u043E\u0433\u0435."
-  - "\u0427\u0442\u043E \u0442\u044B \u0445\u043E\u0447\u0435\u0448\u044C \u0432\u0437\u0430\u043C\u0435\u043D?"
-  - "\u041C\u043D\u0435 \u0442\u043E\u0436\u0435 \u043D\u0443\u0436\u043D\u043E \u0432\u044B\u0431\u0440\u0430\u0442\u044C\u0441\u044F
-    \u043E\u0442\u0441\u044E\u0434\u0430, \u043D\u043E \u0442\u044B \u0435\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439
-    \u0438\u0437 \u0432\u0441\u0435\u0445 \u0441\u0443\u0449\u0435\u0441\u0442\u0432,
-    \u043A\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u0442\u044C
-    \u044D\u0442\u043E\u0442 \u043F\u043E\u0440\u0442\u0430\u043B."
-  - "\u0421 \u0447\u0435\u0433\u043E \u0431\u044B \u043C\u043D\u0435 \u0432\u0435\u0440\u0438\u0442\u044C,
-    \u0447\u0442\u043E \u0442\u044B \u043D\u0435 \u043F\u043E\u0434\u0441\u0442\u0430\u0432\u0438\u0448\u044C
-    \u043C\u0435\u043D\u044F?"
-  - "\u041D\u0435 \u0432\u0435\u0440\u0438\u0448\u044C - \u043D\u0435 \u0432\u0435\u0440\u044C,
-    \u043D\u043E \u0431\u0435\u0437 \u043C\u0435\u043D\u044F \u0442\u044B \u043C\u043E\u0436\u0435\u0448\u044C
-    \u043D\u0430\u0432\u0441\u0435\u0433\u0434\u0430 \u0437\u0430\u0431\u043B\u0443\u0434\u0438\u0442\u044C\u0441\u044F
-    \u0432 \u0431\u0435\u0441\u043A\u043E\u043D\u0435\u0447\u043D\u044B\u0445 \u043A\u043E\u0440\u0438\u0434\u043E\u0440\u0430\u0445
-    \u044D\u0442\u043E\u0433\u043E \u043F\u043E\u0434\u0437\u0435\u043C\u0435\u043B\u044C\u044F."
-  - "\u0425\u043E\u0440\u043E\u0448\u043E..."
-  - "\u041D\u043E \u0437\u0430\u0447\u0435\u043C \u0442\u0435\u0431\u0435 \u043D\u0430
-    \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C, \u0432\u0435\u0434\u044C
-    \u0442\u044B \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E \u0438\u0437 \u044D\u0442\u043E\u0433\u043E
-    \u043C\u0438\u0440\u0430?"
-  - "\u041D\u0435\u0442."
-  - "\u0420\u0430\u043D\u044C\u0448\u0435 \u044F \u0431\u044B\u043B \u0434\u0440\u0443\u0433\u0438\u043C."
-  - "\u042F \u0431\u044B\u043B \u043E\u0442\u0432\u0430\u0436\u043D\u044B\u043C \u0433\u0435\u0440\u043E\u0435\u043C,
-    \u0441\u0440\u0430\u0436\u0430\u0432\u0448\u0438\u043C\u0441\u044F \u0437\u0430
-    \u0441\u043F\u0440\u0430\u0432\u0435\u0434\u043B\u0438\u0432\u043E\u0441\u0442\u044C."
-  - "\u0414\u043B\u044F \u043C\u0435\u043D\u044F \u043D\u0435 \u0431\u044B\u043B\u043E
-    \u043D\u0438\u0447\u0435\u0433\u043E \u043D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0433\u043E
-    - \u043C\u043E\u043B\u043E\u0434\u043E\u0439 \u044E\u043D\u043E\u0448\u0430,
-    \u0432\u0441\u0435\u0433\u0434\u0430 \u0440\u0432\u0430\u0432\u0448\u0438\u0439\u0441\u044F
-    \u0432 \u0431\u043E\u0439."
-  - "\u041E\u0434\u043D\u0430\u0436\u0434\u044B \u044F \u0440\u0435\u0448\u0438\u043B\u0441\u044F
-    \u043D\u0430 \u0441\u0430\u043C\u044B\u0439 \u043E\u0442\u0447\u0430\u044F\u043D\u043D\u044B\u0439
-    \u0438 \u0440\u043E\u043A\u043E\u0432\u043E\u0439 \u043F\u043E\u0441\u0442\u0443\u043F\u043E\u043A."
-  - "\u0420\u0430\u0434\u0438 \u0441\u043B\u0430\u0432\u044B \u044F \u043F\u043E\u043E\u0431\u0435\u0449\u0430\u043B
-    \u043F\u043E\u0433\u0440\u0443\u0437\u0438\u0442\u044C\u0441\u044F \u0432 \u043F\u0435\u0449\u0435\u0440\u044B
-    \u0432 \u043E\u0434\u0438\u043D\u043E\u0447\u043A\u0443 \u0438 \u043F\u0440\u0438\u043D\u0435\u0441\u0442\u0438
-    \u0434\u043E\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E
-    \u0441\u0432\u043E\u0435\u0439 \u043E\u0442\u0432\u0430\u0433\u0438."
-  - "\u041D\u043E \u043F\u0435\u0449\u0435\u0440\u0430 \u043F\u043E\u0433\u043B\u043E\u0442\u0438\u043B\u0430
-    \u043C\u0435\u043D\u044F."
-  - "\u042F \u0437\u0430\u0431\u043B\u0443\u0434\u0438\u043B\u0441\u044F."
-  - "\u041F\u043E\u0441\u0442\u0435\u043F\u0435\u043D\u043D\u043E \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0430
-    \u0432\u043E\u043A\u0440\u0443\u0433 \u0441\u0442\u0430\u043B\u0438 \u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0442\u044C
-    \u043C\u0435\u043D\u044F \u0437\u0430 \u0441\u0432\u043E\u0435\u0433\u043E."
-  - "\u0410 \u044F \u0438 \u043D\u0435 \u0437\u0430\u043C\u0435\u0442\u0438\u043B,
-    \u043A\u0430\u043A \u0441\u0442\u0430\u043B \u043E\u0434\u043D\u0438\u043C \u0438\u0437
-    \u043D\u0438\u0445."
-  _textsEn:
-  - Halt! Wait, I'm not that bad.
-  - who are you?
-  - Just a humble firefly, but I heard you talking to yourself.
-  - Perhaps. What do you need?
-  - Nothing specific. I merely wish to help you... for a favor in return.
-  - Go on.
-  - I know you want to reach the surface and find your master. I have information
-    about the way.
-  - what do you want in return?
-  - I need to get out of here too. But you're the only being among all creatures
-    who can activate that portal.
-  - why should I trust you won't betray me?
-  - Don't trust me, then. But without me, you could wander lost forever in the endless
-    corridors of this dungeon.
-  - Alright...
-  - But why do you need the surface? Aren't you a creature of this world?
-  - No.
-  - I was different once.
-  - I was a valiant hero who fought for justice.
-  - Nothing was impossible for me. A young lad, always eager for battle.
-  - Then came the day I undertook the most desperate and fateful deed.
-  - For glory, I vowed to delve into the caves alone and bring back proof of my valor.
-  - But the cave consumed me.
-  - I got lost.
-  - Slowly, the creatures around began to accept me as one of their own.
-  - I didn't even notice when I became one of them.
-  _textsTr:
-  - "Dur! Bekle, o kadar da k\xF6t\xFC biri de\u011Filim."
-  - Sen de kimsin?
-  - "S\u0131radan bir ate\u015F b\xF6ce\u011Fiyim, ama kendi kendine konu\u015Ftu\u011Funu
-    duydum."
-  - Belki. Ne istiyorsun?
-  - "\xD6zel bir \u015Fey de\u011Fil. Sadece sana yard\u0131m etmek istiyorum...
-    kar\u015F\u0131l\u0131\u011F\u0131nda bir iyilik kar\u015F\u0131l\u0131\u011F\u0131nda."
-  - Anlat.
-  - "Y\xFCzeye \xE7\u0131k\u0131p efendini bulmak istedi\u011Fini biliyorum. Yol
-    hakk\u0131nda bilgim var."
-  - "Kar\u015F\u0131l\u0131\u011F\u0131nda ne istiyorsun?"
-  - "Benim de buradan \xE7\u0131kmam gerekiyor. Ama t\xFCm yarat\u0131klar aras\u0131nda
-    o portal\u0131 etkinle\u015Ftirebilecek tek varl\u0131k sensin."
-  - "Sana ihanet etmeyece\u011Fine neden g\xFCveneyim?"
-  - "G\xFCvenme \xF6yleyse. Ama bensiz, bu zindan\u0131n sonsuz koridorlar\u0131nda
-    sonsuza kadar kaybolabilirsin."
-  - Pekala...
-  - "Ama senin neden y\xFCzeye ihtiyac\u0131n var? Bu d\xFCnyan\u0131n bir yarat\u0131\u011F\u0131
-    de\u011Fil misin sen?"
-  - "Hay\u0131r."
-  - "Bir zamanlar farkl\u0131yd\u0131m."
-  - "Adalet i\xE7in sava\u015Fan cesur bir kahramand\u0131m."
-  - "Benim i\xE7in imkans\u0131z diye bir \u015Fey yoktu. Her zaman sava\u015Fmaya
-    hevesli gen\xE7 bir delikanl\u0131."
-  - "Bir g\xFCn, en umutsuz ve kaderimi belirleyen eyleme giri\u015Ftim."
-  - "\u015Ean i\xE7in, ma\u011Faralara tek ba\u015F\u0131ma inip cesaretimin kan\u0131t\u0131n\u0131
-    getirece\u011Fime ant i\xE7tim."
-  - "Ama ma\u011Fara beni yuttu."
-  - Kayboldum.
-  - "Zamanla, etraftaki yarat\u0131klar beni kendilerinden biri olarak kabul etmeye
-    ba\u015Flad\u0131."
-  - "Ben de ne zaman onlardan biri oldu\u011Fumu fark etmedim bile."
+  _dialogueKeys: []
   _typingSpeed: 0.05
+  _localizationManager: {fileID: 1780910130}
   _nextSceneLoader: {fileID: 1780910129}
   _skipCutscene: {fileID: 1998547774}
   _tapToScreenTip: {fileID: 1382737740}
@@ -1224,6 +1125,19 @@ MonoBehaviour:
   _player: {fileID: 0}
   _isDelayNeeded: 0
   _delay: 0
+--- !u!114 &1780910130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780910125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146352afeebd5be4eaf161d8a15da950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueLocalization: {fileID: 11400000, guid: 5619b0fb79b76db4bad2ea2627e56035, type: 2}
 --- !u!1 &1907219121
 GameObject:
   m_ObjectHideFlags: 0
