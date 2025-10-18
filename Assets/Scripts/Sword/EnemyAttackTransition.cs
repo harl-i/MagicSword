@@ -1,4 +1,4 @@
-using Bullets;
+﻿using Bullets;
 using Enemies;
 using StateMachine;
 using Traps;
@@ -37,9 +37,6 @@ namespace Sword
             }
         }
 
-        public void Transition()
-        {
-            NeedTransit = true;
-        }
+        public void Transition() => NeedTransit = true;
     }
 }
